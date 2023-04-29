@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ExaminationApp"
         mc:Ignorable="d"
         Icon="/Assets/Images/online-test.png"
-        Title="Examination Practicing App" Height="768" Width="1080">
+        Title="Examination Practicing App" Height="1000" Width="1080">
     <Grid>
         <Grid>
 
@@ -202,6 +202,7 @@
 
                             <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                           x:Name="editBtn" 
+                                          Click="addNewQuiz_click"
                                           Margin="0,130,20,20"
                                           Background="#0073A5"
                                           Width="200"
@@ -222,6 +223,227 @@
                         BorderBrush="#888888"
                         Margin="15 20 15 0">
                         <Grid Height="600"></Grid>
+                    </Border>
+
+                    <Border x:Name="addQuiz_box"
+                        Visibility="Collapsed"
+                        BorderThickness="1"
+                        BorderBrush="#888888"
+                        Margin="15 20 15 0">
+                        <StackPanel Orientation="Vertical"
+                                    Height="600"
+                                    Margin="20">
+                            <TextBlock FontSize="32"
+                                   FontFamily="Cambria"
+                                   Foreground="#C02424">
+                                Adding a new quiz
+                            </TextBlock>
+
+                            <ToggleButton x:Name="addQuiz_general_btn"
+                                      Click="addQuiz_general_click"
+                                      Height="24"
+                                      Margin="20 20 0 0"
+                                      Width="auto"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Top"
+                                      Background="White"
+                                      BorderThickness="0">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Image x:Name="addQuiz_general_status"
+                                       Source="/Assets/Images/arrow-right.png"
+                                       Margin="2.5"/>
+                                    <TextBlock FontSize="16"
+                                           Margin="5 0 0 0"
+                                           FontFamily="Cambria"
+                                           FontWeight="SemiBold"
+                                           Foreground="#C02424">
+                                        General
+                                    </TextBlock>
+
+                                </StackPanel>
+
+                            </ToggleButton>
+
+                            <Grid x:Name="addQuiz_general_box"
+                                  Visibility="Collapsed"
+                                  Margin="20 10">
+                                
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="400"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Foreground="Gray"
+                                           FontSize="18">
+                                    Name
+                                </TextBlock>
+
+                                <Image Grid.Column="0"
+                                               Grid.Row="0"
+                                               HorizontalAlignment="Right"
+                                               Height="15"
+                                               Margin="0 7.5 10 7.5"
+                                               Source="/Assets/Images/warning.png"/>
+
+                                <TextBlock Foreground="Gray"
+                                           FontSize="18"
+                                           Grid.Row="1">
+                                    Description
+                                </TextBlock>
+                                <TextBox x:Name="name_addQuiz"
+                                         Grid.Column="1"
+                                         Height="30"
+                                         Width="350" HorizontalAlignment="Left"
+                                         Margin="0 5 0 5"></TextBox>
+                                <TextBox x:Name="description_addQuiz"
+                                         Grid.Column="1" Grid.Row="1"
+                                         Height="150"
+                                         
+                                         Margin="0 5 0 5"></TextBox>
+
+                                <CheckBox x:Name="displayDes_addquiz_checkbox"
+                                          Margin="0 5 0 0"
+                                          Grid.Column="1" Grid.Row="2"
+                                          Content="Also show questions from subcategories"
+                                          Foreground="gray"
+                                          Checked="displayDes_addquiz_check"/>
+                            </Grid>
+
+                            <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="30 0"/>
+
+                            <ToggleButton x:Name="addQuiz_timing_btn"
+                                      Click="addQuiz_timing_click"
+                                      Height="24"
+                                      Margin="20 20 0 0"
+                                      Width="auto"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Top"
+                                      Background="White"
+                                      BorderThickness="0">
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Image x:Name="addQuiz_timing_status"
+                                       Source="/Assets/Images/arrow-right.png"
+                                       Margin="2.5"/>
+                                    <TextBlock FontSize="16"
+                                           Margin="5 0 0 0"
+                                           FontFamily="Cambria"
+                                           FontWeight="SemiBold"
+                                           Foreground="#C02424">
+                                        Timing
+                                    </TextBlock>
+
+                                </StackPanel>
+
+                            </ToggleButton>
+
+                            <Grid x:Name="addQuiz_timing_box"
+                                  Visibility="Collapsed"
+                                  Margin="20 10">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="400"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="35"/>
+                                    <RowDefinition Height="35"/>
+                                    <RowDefinition Height="35"/>
+                                    <RowDefinition Height="35"/>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Foreground="Gray"
+                                           FontSize="18">
+                                    Open the quiz
+                                </TextBlock>
+
+                                <Image Grid.Column="0"
+                                       Grid.Row="0"
+                                       HorizontalAlignment="Right"
+                                       Height="15"
+                                       Margin="0 7.5 10 7.5"
+                                       Source="/Assets/Images/question.png"/>
+
+                                <TextBlock Foreground="Gray"
+                                           FontSize="18"
+                                           Grid.Row="1">
+                                    Close the quiz
+                                </TextBlock>
+
+                                <TextBlock Foreground="Gray"
+                                           FontSize="18"
+                                           Grid.Row="2">
+                                    Time limit
+                                </TextBlock>
+
+                                <Image Grid.Column="0"
+                                       Grid.Row="2"
+                                       HorizontalAlignment="Right"
+                                       Height="15"
+                                       Margin="0 7.5 10 7.5"
+                                       Source="/Assets/Images/question.png"/>
+
+                                <TextBlock Foreground="Gray"
+                                           FontSize="18"
+                                           Grid.Row="3">
+                                    When time expires
+                                </TextBlock>
+
+                                <Image Grid.Column="0"
+                                       Grid.Row="3"
+                                       HorizontalAlignment="Right"
+                                       Height="15"
+                                       Margin="0 7.5 10 7.5"
+                                       Source="/Assets/Images/question.png"/>
+
+                                <!--code tiếp vào đây máy cái đoạn thời gian các kiểu-->
+
+                                <TextBlock Grid.Column="1"
+                                           FontSize="20">
+                                    Code vào đây cái đoạn thời gian ấy
+                                </TextBlock>
+                                
+                            </Grid>
+
+                            <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="30 0"/>
+
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
+                                              x:Name="addQuiz_btn" 
+                                              Click="addQuiz_btn_click"
+                                              Margin="10"
+                                              Background="#C02424"
+                                              Width="120" Height="40">
+                                    <TextBlock FontSize="20"
+                                               Foreground="white"
+                                               FontFamily="cambria"
+                                               FontWeight="Light">
+                                    ADD QUIZ
+                                    </TextBlock>
+                                </ToggleButton>
+
+                                <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
+                                              x:Name="cancel_addQuiz_btn" 
+                                              Click="cancel_addQuiz_btn_click"
+                                              Margin="10"
+                                              Background="#009FE5"
+                                              Width="120" Height="40">
+                                    <TextBlock FontSize="20"
+                                               Foreground="white"
+                                               FontFamily="cambria"
+                                               FontWeight="Light">
+                                    CANCEL
+                                    </TextBlock>
+                                </ToggleButton>
+                            </StackPanel>
+ 
+                        </StackPanel>
                     </Border>
 
                     <Border x:Name="Questionbank_box"
@@ -280,7 +502,7 @@
 
                             <Grid Margin="20 60 20 20">
 
-                                <Grid x:Name="Questions" Visibility="Collapsed">
+                                <Grid x:Name="Questions" Visibility="Visible">
                                     <TextBlock FontSize="32"
                                                FontFamily="Cambria"
                                                Foreground="#C02424">
@@ -349,7 +571,7 @@
                                     </TextBlock>
                                     <Grid Margin="0 60 0 0" Grid.ColumnSpan="2">
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="300"/>
+                                            <ColumnDefinition Width="400"/>
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <Grid.RowDefinitions>
@@ -504,7 +726,7 @@
 
                                             <StackPanel Orientation="Horizontal">
                                                 <Image x:Name="fileFomat_status"
-                                                       Source="/Assets/Images/arrow-down.png"
+                                                       Source="/Assets/Images/arrow-right.png"
                                                        Margin="2.5"/>
                                                 <TextBlock FontSize="16"
                                                            Margin="5 0 0 0"
@@ -536,7 +758,7 @@
 
                                             <StackPanel Orientation="Horizontal">
                                                 <Image x:Name="general_status"
-                                                       Source="/Assets/Images/arrow-down.png"
+                                                       Source="/Assets/Images/arrow-right.png"
                                                        Margin="2.5"/>
                                                 <TextBlock FontSize="16"
                                                            Margin="5 0 0 0"
@@ -568,7 +790,7 @@
 
                                             <StackPanel Orientation="Horizontal">
                                                 <Image x:Name="file_status"
-                                                       Source="/Assets/Images/arrow-down.png"
+                                                       Source="/Assets/Images/arrow-right.png"
                                                        Margin="2.5"/>
                                                 <TextBlock FontSize="16"
                                                            Margin="5 0 0 0"
@@ -678,10 +900,10 @@
                             <TextBlock FontSize="32"
                                    FontFamily="Cambria"
                                    Foreground="#C02424">
-                            Adding a multipal choise
+                            Adding a multipal choice
                             </TextBlock>
 
-                            <ToggleButton x:Name="addQuestion_general_bn"
+                            <ToggleButton x:Name="addQuestion_general_btn"
                                       Click="addQuestion_general_click"
                                       Height="24"
                                       Margin="20 80 0 0"
@@ -905,7 +1127,7 @@
 
                     </Border>
 
-                    <Border x:Name="course_examListBox"
+                    <Border x:Name="course_examList_box"
                         Visibility="Collapsed"
                         BorderThickness="1"
                         BorderBrush="#888888"
@@ -929,36 +1151,37 @@
                     </Border>
 
                     <Grid x:Name="footer"
-                    VerticalAlignment="Bottom"
-                    Height="120"
-                    Background="#0073A5">
+                          VerticalAlignment="Bottom"
+                          Height="120"
+                          Background="#0073A5"
+                          Margin="0 20 0 0">
 
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="500"/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <Grid Grid.Column="0" 
-                      Height="40"
-                      Margin="20 10"
-                      VerticalAlignment="Top">
+                              Height="40"
+                              Margin="20 10"
+                              VerticalAlignment="Top">
                             <Image Source="/Assets/Images/online-test.png" HorizontalAlignment="Left"/>
                             <TextBlock Margin="50 0 0 0"
-                               Foreground="White"
-                               FontSize="28"
-                               FontWeight="DemiBold">
-                        Examination App
+                                       Foreground="White"
+                                       FontSize="28"
+                                       FontWeight="DemiBold">
+                                Examination App
                             </TextBlock>
                         </Grid>
                         <Grid Grid.Column="0"
-                      Margin="20 60 10 0">
+                              Margin="20 60 10 0">
                             <TextBlock Foreground="white" FontSize="16"
-                               TextWrapping="Wrap">
+                                       TextWrapping="Wrap">
                                 This is an application created for the purposes of creating examinations online, self-learning, etc...
                             </TextBlock>
                         </Grid>
                         <StackPanel Orientation="Vertical"
-                            Grid.Column="1"
-                            Margin="20 10">
+                                    Grid.Column="1"
+                                    Margin="20 10">
                             <TextBlock Foreground="white" FontSize="16">
                         Created by:
                             </TextBlock>

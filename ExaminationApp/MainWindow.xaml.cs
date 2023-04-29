@@ -186,13 +186,13 @@ namespace ExaminationApp
             if (import_fileFormat_box.Visibility == Visibility.Visible)
             {
                 import_fileFormat_box.Visibility = Visibility.Collapsed;
-                fileFomat_status.Source = new BitmapImage(new Uri("/arrow-right.png", UriKind.Relative));
+                fileFomat_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-right.png", UriKind.Relative));
             }
 
             else if (import_fileFormat_box.Visibility == Visibility.Collapsed)
             {
                 import_fileFormat_box.Visibility = Visibility.Visible;
-                fileFomat_status.Source = new BitmapImage(new Uri("/arrow-down.png", UriKind.Relative));
+                fileFomat_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-down.png", UriKind.Relative));
             }
         }
 
@@ -201,13 +201,13 @@ namespace ExaminationApp
             if (import_general_box.Visibility == Visibility.Visible)
             {
                 import_general_box.Visibility = Visibility.Collapsed;
-                general_status.Source = new BitmapImage(new Uri("/arrow-right.png", UriKind.Relative));
+                general_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-right.png", UriKind.Relative));
             }
 
             else if (import_general_box.Visibility == Visibility.Collapsed)
             {
                 import_general_box.Visibility = Visibility.Visible;
-                general_status.Source = new BitmapImage(new Uri("/arrow-down.png", UriKind.Relative));
+                general_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-down.png", UriKind.Relative));
             }
         }
 
@@ -216,13 +216,13 @@ namespace ExaminationApp
             if (import_file_box.Visibility == Visibility.Visible)
             {
                 import_file_box.Visibility = Visibility.Collapsed;
-                file_status.Source = new BitmapImage(new Uri("/arrow-right.png", UriKind.Relative));
+                file_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-right.png", UriKind.Relative));
             }
 
             else if (import_file_box.Visibility == Visibility.Collapsed)
             {
                 import_file_box.Visibility = Visibility.Visible;
-                file_status.Source = new BitmapImage(new Uri("/arrow-down.png", UriKind.Relative));
+                file_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-down.png", UriKind.Relative));
             }
         }
 
@@ -276,6 +276,53 @@ namespace ExaminationApp
         {
 
         }
+        private void addNewQuiz_click(object sender, RoutedEventArgs e)
+        {
+            addQuiz_box.Visibility = Visibility.Visible;
+            blank.Visibility = Visibility.Collapsed;
+        }
+        private void addQuiz_general_click(object sender, RoutedEventArgs e)
+        {
+            if (addQuiz_general_box.Visibility == Visibility.Visible)
+            {
+                addQuiz_general_box.Visibility = Visibility.Collapsed;
+                addQuiz_general_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-right.png", UriKind.Relative));
+            }
 
+            else if (addQuiz_general_box.Visibility == Visibility.Collapsed)
+            {
+                addQuiz_general_box.Visibility = Visibility.Visible;
+                addQuiz_general_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-down.png", UriKind.Relative));
+            }
+        }
+        private void addQuiz_timing_click(object sender, RoutedEventArgs e)
+        {
+            if (addQuiz_timing_box.Visibility == Visibility.Visible)
+            {
+                addQuiz_timing_box.Visibility = Visibility.Collapsed;
+                addQuiz_timing_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-right.png", UriKind.Relative));
+            }
+
+            else if (addQuiz_timing_box.Visibility == Visibility.Collapsed)
+            {
+                addQuiz_timing_box.Visibility = Visibility.Visible;
+                addQuiz_timing_status.Source = new BitmapImage(new Uri("/Assets/Images/arrow-down.png", UriKind.Relative));
+            }
+        }
+        private void displayDes_addquiz_check(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void addQuiz_btn_click(object sender, RoutedEventArgs e)
+        {
+            addQuiz_box.Visibility = Visibility.Collapsed;
+            blank.Visibility = Visibility.Visible;
+        }
+        private void cancel_addQuiz_btn_click(object sender, RoutedEventArgs e)
+        {
+            addQuiz_box.Visibility = Visibility.Collapsed;
+            blank.Visibility = Visibility.Visible;
+        }
     }
 }

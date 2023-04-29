@@ -44,6 +44,58 @@ namespace sebExamination
             public string courseName { get; set; }
         }
 
+        private void settingQuestions_click(object sender, RoutedEventArgs e)
+        {
+            Questionbank_box.Visibility = Visibility.Visible;
+            Questions.Visibility = Visibility.Visible;
+            Categories.Visibility = Visibility.Collapsed;
+            Import.Visibility = Visibility.Collapsed;
+            Export.Visibility = Visibility.Collapsed;
+            QuestionBank_Questions.Foreground = Brushes.Gray;
+            QuestionBank_Categories.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Import.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Export.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+        }
+
+        private void settingCategories_click(object sender, RoutedEventArgs e)
+        {
+            Questionbank_box.Visibility = Visibility.Visible;
+            Questions.Visibility = Visibility.Collapsed;
+            Categories.Visibility = Visibility.Visible;
+            Import.Visibility = Visibility.Collapsed;
+            Export.Visibility = Visibility.Collapsed;
+            QuestionBank_Questions.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Categories.Foreground = Brushes.Gray;
+            QuestionBank_Import.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Export.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+        }
+
+        private void settingImport_click(object sender, RoutedEventArgs e)
+        {
+            Questionbank_box.Visibility = Visibility.Visible;
+            Questions.Visibility = Visibility.Collapsed;
+            Categories.Visibility = Visibility.Collapsed;
+            Import.Visibility = Visibility.Visible;
+            Export.Visibility = Visibility.Collapsed;
+            QuestionBank_Questions.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Categories.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Import.Foreground = Brushes.Gray;
+            QuestionBank_Export.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+        }
+
+        private void settingExport_click(object sender, RoutedEventArgs e)
+        {
+            Questionbank_box.Visibility = Visibility.Visible;
+            Questions.Visibility = Visibility.Collapsed;
+            Categories.Visibility = Visibility.Collapsed;
+            Import.Visibility = Visibility.Collapsed;
+            Export.Visibility = Visibility.Visible;
+            QuestionBank_Questions.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Categories.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Import.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
+            QuestionBank_Export.Foreground = Brushes.Gray;
+        }
+
         private void showSubcategoriesQuestions_check(object sender, RoutedEventArgs e)
         {
 

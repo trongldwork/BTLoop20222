@@ -219,6 +219,7 @@
                                             </TextBlock>
                                             <TextBlock Margin="400 40 0 0">
                                                 <Hyperlink x:Name="settingQuestions"
+                                                           Click="settingQuestions_click"
                                                            FontFamily="cambria"
                                                            FontSize="24">
                                                     Question
@@ -226,6 +227,7 @@
                                             </TextBlock>
                                             <TextBlock Margin="400 70 0 0">
                                                 <Hyperlink x:Name="settingCategories"
+                                                           Click="settingCategories_click"
                                                            FontFamily="cambria"
                                                            FontSize="24">
                                                     Categories
@@ -233,6 +235,7 @@
                                             </TextBlock>
                                             <TextBlock Margin="400 100 0 0">
                                                 <Hyperlink x:Name="settingImport"
+                                                           Click="settingImport_click"
                                                            FontFamily="cambria"
                                                            FontSize="24"> 
                                                     Import
@@ -240,6 +243,7 @@
                                             </TextBlock>
                                             <TextBlock Margin="400 130 0 0">
                                                 <Hyperlink x:Name="settingExport"
+                                                           Click="settingExport_click"
                                                            FontFamily="cambria"
                                                            FontSize="24">
                                                     Export
@@ -298,7 +302,8 @@
                         </Grid>
                     </Border>
 
-                    <Border BorderThickness="1"
+                    <Border x:Name="Questionbank_box" Visibility="Collapsed"
+                            BorderThickness="1"
                             BorderBrush="#888888"
                             Margin="15 20 15 0">
 

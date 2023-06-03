@@ -9,12 +9,12 @@
         Title="Examination Practicing App" Height="1000" Width="1080">
     <Grid>
         <Grid>
-
+            <!--Thanh navigation-->
             <Grid x:Name="navBar"
                   VerticalAlignment="Top"
                   Height="60"
                   Background="#0073A5">
-
+                <!--Nút menu góc trên bên trái nhưng mà giờ chưa có chức năng của nó-->
                 <Grid x:Name="menu"
                       HorizontalAlignment="Left"
                       Width="60"
@@ -39,12 +39,12 @@
                     </ToggleButton>
 
                 </Grid>
-
+                <!--Chứa tên người dùng và ảnh đại diện-->
                 <StackPanel x:Name="user"
                           HorizontalAlignment="Right"
                           Orientation="Horizontal"
                           Margin="0 0 40 0">
-
+                    <!--Tên người dùng nếu khác tài khoản thì nên có một function đổi tên-->
                     <TextBlock x:Name="userName"
                                VerticalAlignment="Center"
                                Foreground="White"
@@ -52,7 +52,7 @@
                                FontSize="18"
                                FontWeight="DemiBold">
                         Nguyễn Khánh Sơn</TextBlock>
-
+                    <!--Nút để ấn vào hiện popup của user nhưng chưa có popup-->
                     <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
                                   x:Name="userBtn"
                                   Margin="10 5 0 5"
@@ -71,23 +71,26 @@
                 </StackPanel>
 
             </Grid>
-
+            
+            <!--Đây là phần chính chứa nội dung
+                Scrollviewer dùng khi nội dung có chiều dài hơn cửa sổ thì có thể trượt xuống-->
             <ScrollViewer Margin="0 60 0 0">
-
+                
                 <StackPanel x:Name="mainBody"
                             Orientation="Vertical">
-
+                    <!--Border này chứa phần box đầu của nội dung chứa
+                        tên khoá học, đường dẫn, nút setting, nút edit on-->
                     <Border BorderThickness="1" 
                             BorderBrush="#888888"
                             Margin="15 0 15 0">
                         <Grid x:Name="course"
                               Height="200">
-
+                            <!--Khu vực tên của khoá học-->
                             <Grid x:Name="courseTitle"
                                   Height="60"
                                   Margin="15 0 15 0"
                                   VerticalAlignment="Top">
-
+                                <!--tên khoá học-->
                                 <TextBlock x:Name="courseName"
                                            FontSize="42"
                                            Foreground="#C02424"
@@ -95,7 +98,7 @@
                                            FontWeight="Medium">
                                     IT
                                 </TextBlock>
-
+                                <!--nút setting-->
                                 <ToggleButton Style="{DynamicResource ToggleButtonStyle}" x:Name="settingBtn"
                                               Click="ShowQuestionBank_Click"
                                               Margin="0,10,0,10"
@@ -111,6 +114,8 @@
                                     </Grid>
 
                                 </ToggleButton>
+                                <!--Popup chứa đường dẫn đến Question bank
+                                    popup được hiện ra khi nhấn vào nút setting-->
                                 <Popup x:Name="QuestionBank" 
                                        IsOpen="False" StaysOpen="False"
                                        Placement="Left"
@@ -131,6 +136,7 @@
                                                 FontSize="32">
                                                     QUESTION BANK
                                             </TextBlock>
+                                            <!--Link đến các mục trong question bank-->
                                             <TextBlock Margin="400 40 0 0">
                                                 <Hyperlink x:Name="settingQuestions"
                                                            Click="settingQuestions_click"
@@ -169,6 +175,7 @@
 
                             </Grid>
 
+                            <!--Đường dẫn đến mục đang hiện trên màn hình-->
                             <StackPanel x:Name="map"
                                         Margin="15 60 15 0"
                                         Height="28"
@@ -199,7 +206,9 @@
                                 </TextBlock>
 
                             </StackPanel>
-
+                            
+                            <!--Nút edit on
+                                ấn vào hiện bảng addQuizz-->
                             <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                           x:Name="editBtn" 
                                           Click="addNewQuiz_click"
@@ -216,7 +225,9 @@
 
                         </Grid>
                     </Border>
-
+                    
+                    <!--Border này đang trống nhưng dự kiến sẽ 
+                        dùng làm trang mặc định của nó-->
                     <Border x:Name="blank"
                         Visibility="Visible"
                         BorderThickness="1"
@@ -225,11 +236,13 @@
                         <Grid Height="600"></Grid>
                     </Border>
 
+                    <!--Border này chứa box của thêm quiz mới-->
                     <Border x:Name="addQuiz_box"
                         Visibility="Collapsed"
                         BorderThickness="1"
                         BorderBrush="#888888"
                         Margin="15 20 15 0">
+                        
                         <StackPanel Orientation="Vertical"
                                     Height="600"
                                     Margin="20">
@@ -238,7 +251,8 @@
                                    Foreground="#C02424">
                                 Adding a new quiz
                             </TextBlock>
-
+                            
+                            <!--Btn này khi ấn vào sẽ hiện nội dung phần general-->
                             <ToggleButton x:Name="addQuiz_general_btn"
                                       Click="addQuiz_general_click"
                                       Height="24"
@@ -264,7 +278,7 @@
                                 </StackPanel>
 
                             </ToggleButton>
-
+                            <!--nội dung phần general-->
                             <Grid x:Name="addQuiz_general_box"
                                   Visibility="Collapsed"
                                   Margin="20 10">
@@ -316,7 +330,8 @@
                             </Grid>
 
                             <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="30 0"/>
-
+                            
+                            <!--Btn này khi ấn vào sẽ hiện nội dung phần timing-->
                             <ToggleButton x:Name="addQuiz_timing_btn"
                                       Click="addQuiz_timing_click"
                                       Height="24"
@@ -342,7 +357,7 @@
                                 </StackPanel>
 
                             </ToggleButton>
-
+                            <!--nội dung phần timing-->
                             <Grid x:Name="addQuiz_timing_box"
                                   Visibility="Collapsed"
                                   Margin="20 10">
@@ -414,6 +429,7 @@
                             <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="30 0"/>
 
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <!--nút addquiz-->
                                 <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
                                               x:Name="addQuiz_btn" 
                                               Click="addQuiz_btn_click"
@@ -427,7 +443,7 @@
                                     ADD QUIZ
                                     </TextBlock>
                                 </ToggleButton>
-
+                                <!--nút cancel-->
                                 <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
                                               x:Name="cancel_addQuiz_btn" 
                                               Click="cancel_addQuiz_btn_click"
@@ -446,17 +462,20 @@
                         </StackPanel>
                     </Border>
 
+                    <!--Border này chứa box của question bank
+                        bao gồm 4 phần nhỏ hơn là questions, categories, import, export-->
                     <Border x:Name="Questionbank_box"
                         Visibility="Collapsed"
                         BorderThickness="1"
                         BorderBrush="#888888"
                         Margin="15 20 15 0">
 
-                        <Grid 
-                            Height="600">
+                        <Grid Height="600">
+                            <!--Menu này chứa 4 nút chọn để hiện ra các box nhỏ hơn-->
                             <Menu 
                                 Margin="20"
                                 Background="white">
+                                
                                 <MenuItem x:Name="QuestionBank_Questions" Visibility="Visible"
                                           Click="MenuItem_Questions_Click"
                                           Header="Questions"
@@ -501,7 +520,7 @@
                             </Menu>
 
                             <Grid Margin="20 60 20 20">
-
+                                <!--Question box-->
                                 <Grid x:Name="Questions" Visibility="Visible">
                                     <TextBlock FontSize="32"
                                                FontFamily="Cambria"
@@ -513,6 +532,8 @@
                                                Foreground="Gray">
                                         Select a category:
                                     </TextBlock>
+                                    
+                                    <!--Combobox dùng để hiển thị các categories đã có-->
                                     <ComboBox x:Name="categorySelector"
                                               Height="30" Width="200" 
                                               HorizontalAlignment="Left" VerticalAlignment="Top" 
@@ -530,10 +551,12 @@
                                         <ComboBoxItem>Top for IT</ComboBoxItem>
                                         <ComboBoxItem>Default for IT</ComboBoxItem>
                                     </ComboBox>
+                                    
                                     <TextBlock Margin="0 90 0 0"
                                                Foreground="#444444">
                                         The default category for questions shared in context
                                     </TextBlock>
+                                    <!--check box để lọc các câu hỏi-->
                                     <CheckBox x:Name="showSubcategoriesQuestions"
                                               Margin="0 115 0 0"
                                               Content="Also show questions from subcategories"
@@ -545,6 +568,7 @@
                                               Foreground="gray"
                                               Checked="showOldQuestions_check"/>
 
+                                    <!--btn tạo câu hỏi mới-->
                                     <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
                                               x:Name="createQuestionBtn" 
                                               Click="createQuestion_click"
@@ -562,6 +586,7 @@
                                     </ToggleButton>
                                 </Grid>
 
+                                <!--Categories box-->
                                 <Grid x:Name="Categories" Visibility="Collapsed">
 
                                     <TextBlock FontSize="32"
@@ -569,6 +594,7 @@
                                                Foreground="#C02424" Grid.ColumnSpan="2">
                                         Add category
                                     </TextBlock>
+                                    
                                     <Grid Margin="0 60 0 0" Grid.ColumnSpan="2">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="400"/>
@@ -581,6 +607,7 @@
                                             <RowDefinition Height="35"/>
                                             <RowDefinition/>
                                         </Grid.RowDefinitions>
+                                        
                                         <TextBlock Grid.Column="0" Grid.Row="0"
                                                    VerticalAlignment="Center"
                                                    Foreground="Gray"
@@ -600,7 +627,6 @@
                                                    FontSize="16">
                                             Name
                                         </TextBlock>
-
                                         <Image Grid.Column="0"
                                                Grid.Row="1"
                                                HorizontalAlignment="Right"
@@ -615,7 +641,6 @@
                                                    FontSize="16">
                                             Category info
                                         </TextBlock>
-
                                         <Image Grid.Column="0"
                                                Grid.Row="2"
                                                HorizontalAlignment="Right"
@@ -630,7 +655,6 @@
                                                    FontSize="16">
                                             ID number
                                         </TextBlock>
-
                                         <Image Grid.Column="0"
                                                Grid.Row="3"
                                                HorizontalAlignment="Right"
@@ -638,6 +662,7 @@
                                                Margin="0 7.5 10 7.5"
                                                Source="/Assets/Images/question.png"/>
 
+                                        <!--Combobox hiện các categories hiện có-->
                                         <ComboBox x:Name="categoryParent"
                                                   Grid.Column="1"
                                                   Grid.Row="0"
@@ -653,6 +678,8 @@
                                             <ComboBoxItem>Default for IT</ComboBoxItem>
                                         </ComboBox>
 
+                                        <!--text box nhập tên categories mới
+                                            chưa có name:x-->
                                         <TextBox Grid.Column="1" Grid.Row="1"
                                                  Width="300"
                                                  Margin="5"
@@ -660,11 +687,15 @@
 
                                         </TextBox>
 
+                                        <!--text box nhập thông tin của categories mới
+                                            chưa có name:x-->
                                         <TextBox Grid.Column="1" Grid.Row="2"
                                                  Margin="5">
 
                                         </TextBox>
 
+                                        <!--text box nhập ID categories mới
+                                            chưa có name:x-->
                                         <TextBox Grid.Column="1" Grid.Row="3"
                                                  Width="150"
                                                  Margin="5"
@@ -677,6 +708,10 @@
 
                                     <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="100 370 100 0"/>
 
+                                    <!--nút hoàn tất nhập thông tin cho các categories
+                                        và thêm yêu cầu mới
+                                        yêu cầu backend: phải điền tất cả các trường có dấu ! thì
+                                        - mới được thêm categories-->
                                     <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                   x:Name="addCategoryBtn"
                                                   Click="addCategory_click"
@@ -705,8 +740,10 @@
                                     </TextBlock>
                                 </Grid>
 
+                                <!--Import box-->
                                 <Grid x:Name="Import" Visibility="Collapsed">
-
+    
+                                    <!--tiêu đề Import box-->
                                     <TextBlock FontSize="32"
                                                FontFamily="Cambria"
                                                Foreground="#C02424">
@@ -715,7 +752,8 @@
 
                                     <StackPanel Orientation="Vertical"
                                                 Margin="0 60 0 0">
-
+            
+                                        <!--Btn khi ấn vào sẽ hiện nội dung của file format-->
                                         <ToggleButton x:Name="import_fileFormat_btn"
                                                       Click="import_fileFormat_click"
                                                       Height="24"
@@ -740,6 +778,8 @@
 
                                         </ToggleButton>
 
+                                        <!--nội dung của phần file format
+                                            tạm thời chưa có gì-->
                                         <Grid x:Name="import_fileFormat_box" Visibility="Collapsed"
                                               Height="auto">
                                             <TextBlock FontFamily="cambria"
@@ -748,6 +788,7 @@
 
                                         <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
 
+                                        <!--Btn khi ấn vào sẽ hiện nội dung của phần general-->
                                         <ToggleButton x:Name="import_general_btn"
                                                       Click="import_general_click"
                                                       Height="24"
@@ -772,6 +813,8 @@
 
                                         </ToggleButton>
 
+                                        <!--nội dung của phần general
+                                            tạm thời chưa có gì-->
                                         <Grid x:Name="import_general_box" Visibility="Collapsed"
                                               Height="auto">
                                             <TextBlock FontFamily="cambria"
@@ -780,6 +823,7 @@
 
                                         <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
 
+                                        <!--Btn khi ấn vào sẽ hiện nội dung của phần import file question-->
                                         <ToggleButton x:Name="import_file_btn"
                                                       Click="import_file_click"
                                                       Height="24"
@@ -803,7 +847,8 @@
                                             </StackPanel>
 
                                         </ToggleButton>
-
+                                        
+                                        <!--nội dung của phần import file question-->
                                         <Grid x:Name="import_file_box" Visibility="Visible"
                                               Height="200"
                                               Margin="0 20 0 0">
@@ -815,6 +860,8 @@
                                                 import
                                             </TextBlock>
 
+                                            <!--nút chọn file từ máy tính
+                                                chưa thêm tính năng đấy mà chỉ có nút thôi-->
                                             <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                           x:Name="upload_Btn"
                                                           Click="upload_Btn_click"
@@ -833,6 +880,8 @@
 
                                             </ToggleButton>
 
+                                            <!--border này để kéo thả file vào
+                                                kéo thả được nhưng có lỗi-->
                                             <Border BorderThickness="1" BorderBrush="Black" Width="auto" Height="auto" AllowDrop="True" 
                                                     DragEnter="OnDragEnter" DragLeave="OnDragLeave" Drop="OnDrop"
                                                     Grid.Column="1"
@@ -841,6 +890,9 @@
                                             </Border>
 
                                         </Grid>
+                                        
+                                        <!--nút Import
+                                            yêu cầu hoàn thành các trường có dấu ! mới được phép import-->
                                         <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                   x:Name="importQuestion_btn"
                                                   Click="importQuestion_btn_click"
@@ -872,6 +924,9 @@
 
                                 </Grid>
 
+                                <!--Export box
+                                    Chưa có nội dung vì không có yêu cầu nào cho phần export
+                                    chưa hiều cần nhét gì vào-->
                                 <Grid x:Name="Export" Visibility="Collapsed">
 
                                     <TextBlock FontSize="32"
@@ -888,6 +943,8 @@
 
                     </Border>
 
+                    <!--Border này dùng cho box của add question
+                        hiện ra khi ấn vào CREATE NEW QUESTION trong /question bank/Questions-->
                     <Border x:Name="createQuestion_box"
                         Visibility="Collapsed"
                         BorderThickness="1"
@@ -896,13 +953,15 @@
 
                         <Grid Height="auto"
                           Margin="20">
-
+  
+                            <!--tiêu đề-->
                             <TextBlock FontSize="32"
                                    FontFamily="Cambria"
                                    Foreground="#C02424">
                             Adding a multipal choice
                             </TextBlock>
 
+                            <!--Btn khi ấn sẽ hiện nội dung của phần general(phần duy nhất trong box này)-->
                             <ToggleButton x:Name="addQuestion_general_btn"
                                       Click="addQuestion_general_click"
                                       Height="24"
@@ -928,6 +987,8 @@
                                 </StackPanel>
 
                             </ToggleButton>
+                            
+                            <!--Nội dung của add question-->
                             <StackPanel>
                                 <Grid Margin="20 120 0 0">
 
@@ -942,6 +1003,7 @@
                                         <RowDefinition/>
                                         <RowDefinition/>
                                     </Grid.RowDefinitions>
+                                    
                                     <TextBlock Foreground="gray"
                                            FontSize="16"
                                            >
@@ -962,6 +1024,8 @@
                                            Grid.Row="3">
                                     Default mark
                                     </TextBlock>
+                                    
+                                    <!--Combobox chọn categories cho câu hỏi mới-->
                                     <ComboBox x:Name="categorySelector_addQuestion"
                                           Height="30" Width="200" 
                                           HorizontalAlignment="Left" VerticalAlignment="Top" 
@@ -981,6 +1045,7 @@
                                         <ComboBoxItem>Default for IT</ComboBoxItem>
                                     </ComboBox>
 
+                                    <!--Text box nhập tên của câu hỏi-->
                                     <TextBox x:Name="questionName_addQuestion"
                                          Grid.Column="1" Grid.Row="1"
                                          Height="30" Width="300"
@@ -988,6 +1053,8 @@
                                          Margin="0 5">
 
                                     </TextBox>
+
+                                    <!--Text box nhập nội dung của câu hỏi-->
                                     <TextBox x:Name="questionText_addQuestion"
                                          Grid.Column="1" Grid.Row="2"
                                          Height="150" Width="400"
@@ -995,6 +1062,8 @@
                                          Margin="0 5">
 
                                     </TextBox>
+
+                                    <!--Text box nhập điểm của câu hỏi-->
                                     <TextBox x:Name="questionMark_addQuestion"
                                          Grid.Column="1" Grid.Row="3"
                                          Height="30" Width="70"
@@ -1004,8 +1073,12 @@
 
                                     </TextBox>
 
+                                    <!--stackPanel này theo chiều dọc chứa các đáp án của câu hỏi
+                                        yêu cầu thêm dynamic template để thêm câu hỏi-->
                                     <StackPanel Orientation="Vertical"
                                             Grid.Column="1" Grid.Row="4">
+
+                                        <!--demo cho đáp án thứ nhất tại chưa có dynamic template-->
                                         <Grid x:Name="choice1_addQuestion"
                                           Height="80" Width="400"
                                           HorizontalAlignment="Left"
@@ -1035,6 +1108,8 @@
                                                 <ComboBoxItem>10%</ComboBoxItem>
                                             </ComboBox>
                                         </Grid>
+
+                                        <!--demo cho đáp án thứ hai tại chưa có dynamic template-->
                                         <Grid x:Name="choice2_addQuestion"
                                           Height="80" Width="400"
                                           HorizontalAlignment="Left"
@@ -1064,12 +1139,15 @@
                                                 <ComboBoxItem>10%</ComboBoxItem>
                                             </ComboBox>
                                         </Grid>
+                                        
                                         <TextBlock FontSize="40" Foreground="red" TextWrapping="Wrap">
                                         Đoạn này chưa biết dùng dynamic template như nào!!! SoS
                                         </TextBlock>
                                     </StackPanel>
 
                                 </Grid>
+                                
+                                <!--Nút lưu câu hỏi và tiếp tục-->
                                 <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                   x:Name="saveChangeAndContinue_addQuestion_btn"
                                                   Click="saveChangeAndContinue_addQuestion_btn_click"
@@ -1085,10 +1163,14 @@
                                                 SAVE CHANGES AND CONTINUE EDITING
                                     </TextBlock>
                                 </ToggleButton>
+                                
+                                <!--Một chú căn chỉnh-->
                                 <Grid HorizontalAlignment="Center"
                                                   VerticalAlignment="Top"
                                                   Margin="0 10 0 0">
                                     <StackPanel Orientation="Horizontal">
+
+                                        <!--Nút lưu câu hỏi và thoát-->
                                         <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                   x:Name="saveChange_addQuestion_btn"
                                                   Click="saveChange_addQuestion_btn_click"
@@ -1104,6 +1186,8 @@
                                                 SAVE CHANGES
                                             </TextBlock>
                                         </ToggleButton>
+                                        
+                                        <!--nút huỷ-->
                                         <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                   x:Name="cancel_addQuestion_btn"
                                                   Click="cancel_addQuestion_btn_click"
@@ -1127,6 +1211,8 @@
 
                     </Border>
 
+                    <!--Border này chứa danh sách các bài kiểm tra
+                        nhưng chưa làm xong-->
                     <Border x:Name="course_examList_box"
                         Visibility="Collapsed"
                         BorderThickness="1"
@@ -1149,7 +1235,8 @@
                         </ListBox>
 
                     </Border>
-
+                    
+                    <!--footer-->
                     <Grid x:Name="footer"
                           VerticalAlignment="Bottom"
                           Height="120"

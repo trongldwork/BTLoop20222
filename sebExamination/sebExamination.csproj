@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Image\arrow-down.png" />
+    <None Remove="Assets\Image\arrow-point-to-down.png" />
+    <None Remove="Assets\Image\arrow-right.png" />
+    <None Remove="Assets\Image\arrowRed.png" />
+    <None Remove="Assets\Image\arrowWhite.png" />
+    <None Remove="Assets\Image\menu.png" />
+    <None Remove="Assets\Image\question.png" />
+    <None Remove="Assets\Image\settings.png" />
+    <None Remove="Assets\Image\task.png" />
+    <None Remove="Assets\Image\user.png" />
+    <None Remove="Assets\Image\warning.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Image\arrow-down.png" />
+    <Resource Include="Assets\Image\arrow-point-to-down.png" />
+    <Resource Include="Assets\Image\arrow-right.png" />
+    <Resource Include="Assets\Image\arrowRed.png" />
+    <Resource Include="Assets\Image\arrowWhite.png" />
+    <Resource Include="Assets\Image\menu.png" />
+    <Resource Include="Assets\Image\question.png" />
+    <Resource Include="Assets\Image\settings.png" />
+    <Resource Include="Assets\Image\task.png" />
+    <Resource Include="Assets\Image\user.png" />
+    <Resource Include="Assets\Image\warning.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+
+</Project>

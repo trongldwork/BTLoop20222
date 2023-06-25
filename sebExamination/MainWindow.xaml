@@ -1,0 +1,297 @@
+﻿<Window x:Class="sebExamination.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sebExamination"
+        xmlns:local_uc="clr-namespace:sebExamination.Assets.Controls"
+        xmlns:VM="clr-namespace:sebExamination.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="auto" Width="960">
+    <Window.DataContext>
+        <VM:HomeViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate x:Key="course_exam">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Assets/image/task.png"
+                       Margin="35 0 15 0"/>
+                <TextBlock Text="{Binding Path=courseName}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="examList">
+
+            <ListBox x:Name="cours_examList"
+                                 Margin="50 40 50 400"
+                                 BorderThickness="0"
+                                 >
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/image/task.png"
+                                       Height="30"
+                                       Margin="35 0 15 0"/>
+                    <TextBlock Text="nhét list với hyperlink của C# vào nhưng t chưa học" 
+                                           FontSize="24"
+                                           FontFamily="Cambria"
+                                           VerticalAlignment="Bottom"/>
+                </StackPanel>
+
+            </ListBox>
+
+        </DataTemplate>
+
+    </Window.Resources>
+    <Grid>
+
+        <Grid>
+
+            <Grid x:Name="navBar"
+                  VerticalAlignment="Top"
+                  Height="60"
+                  Background="#0073A5">
+
+                <Grid x:Name="menu"
+                      HorizontalAlignment="Left"
+                      Width="60"
+                      Margin="20 0 0 0">
+
+                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                  x:Name="menuBtn"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Width="30"
+                                  Height="30"
+                                  BorderThickness="0">
+
+                        <ToggleButton.Background>
+
+                            <ImageBrush ImageSource="Assets/image/menu.png"/>
+
+                        </ToggleButton.Background>
+
+
+
+                    </ToggleButton>
+
+                </Grid>
+
+                <StackPanel x:Name="user"
+                          HorizontalAlignment="Right"
+                          Orientation="Horizontal"
+                          Margin="0 0 40 0">
+
+                    <TextBlock x:Name="userName"
+                               VerticalAlignment="Center"
+                               Foreground="White"
+                               FontFamily="ariel"
+                               FontSize="18"
+                               FontWeight="DemiBold">
+                        Nguyễn Khánh Sơn</TextBlock>
+
+                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
+                                  x:Name="userBtn"
+                                  Margin="10 5 0 5"
+                                  Width="70"
+                                  BorderThickness="0"
+                                  Background="#0073A5">
+                        <Grid>
+                            <Image Source="Assets/image/user.png"
+                                   Margin="0 0 20 0"/>
+                            <Image Source="Assets/image/arrowWhite.png"
+                                   Margin="55 0 0 0"/>
+                        </Grid>
+
+                    </ToggleButton>
+
+                </StackPanel>
+
+            </Grid>
+
+            <ScrollViewer Margin="0 60 0 0">
+
+                <StackPanel x:Name="mainBody"
+                    Orientation="Vertical">
+
+                    <Border BorderThickness="1" 
+                            BorderBrush="#888888"
+                            Margin="15 0 15 0">
+                        <Grid x:Name="course"
+                              Height="200">
+
+                            <Grid x:Name="courseTitle"
+                                  Height="60"
+                                  Margin="15 0 15 0"
+                                  VerticalAlignment="Top">
+
+                                <TextBlock x:Name="courseName"
+                                           FontSize="42"
+                                           Foreground="#C02424"
+                                           FontFamily="Cambria"
+                                           FontWeight="Medium">
+                                    IT
+                                </TextBlock>
+
+                                <ToggleButton Style="{DynamicResource ToggleButtonStyle}" x:Name="settingBtn"
+                                              Click="ShowQuestionBank_Click"
+                                              Margin="0,10,0,10"
+                                              Width="70"
+                                              BorderThickness="0"
+                                              Background="White"
+                                              HorizontalAlignment="Right">
+                                    <Grid>
+                                        <Image Source="Assets/image/settings.png"
+                                               Margin="0 0 20 0"/>
+                                        <Image Source="Assets/image/arrowRed.png"
+                                               Margin="55 0 0 0"/>
+                                    </Grid>
+
+                                </ToggleButton>
+                                <Popup x:Name="QuestionBank" 
+                                       IsOpen="False" StaysOpen="False"
+                                       Placement="Left"
+                                       PlacementTarget="{Binding ElementName=ShowPopupButton}"
+                                       HorizontalOffset="-700" VerticalOffset="60">
+                                    <Border BorderThickness="1" 
+                                            BorderBrush="#888888"
+                                            Width="700">
+
+                                        <Grid HorizontalAlignment="Left"
+                                          Width="700"
+                                          Height="200" Background="White">
+
+                                            <TextBlock
+                                                Margin="30"
+                                                FontFamily="Cambria"
+                                                Foreground="#0073A5"
+                                                FontSize="32">
+                                                    QUESTION BANK
+                                            </TextBlock>
+                                            <TextBlock Margin="400 40 0 0">
+                                                <Hyperlink x:Name="settingQuestions"
+                                                           FontFamily="cambria"
+                                                           FontSize="24"
+                                                           Click="QuestionBank_Click_question"
+                                                           >
+                                                    Question
+                                                </Hyperlink>
+                                            </TextBlock>
+                                            <TextBlock Margin="400 70 0 0">
+                                                <Hyperlink x:Name="settingCategories"
+                                                           FontFamily="cambria"
+                                                           FontSize="24"
+                                                           Click="QuestionBank_Click_categories"
+                                                           >
+                                                    Categories
+                                                </Hyperlink>
+                                            </TextBlock>
+                                            <TextBlock Margin="400 100 0 0">
+                                                <Hyperlink x:Name="settingImport"
+                                                           FontFamily="cambria"
+                                                           FontSize="24"
+                                                           Click="QuestionBank_Click_import"
+                                                           > 
+                                                    Import
+                                                </Hyperlink>
+                                            </TextBlock>
+                                            <TextBlock Margin="400 130 0 0">
+                                                <Hyperlink x:Name="settingExport"
+                                                           FontFamily="cambria"
+                                                           FontSize="24"
+                                                           Click="QuestionBank_Click_export"
+                                                           >
+                                                    Export
+                                                </Hyperlink>
+                                            </TextBlock>
+                                        </Grid>
+                                    </Border>
+                                </Popup>
+
+                            </Grid>
+
+                            <StackPanel x:Name="map"
+                                        Margin="15 60 15 0"
+                                        Height="28"
+                                        VerticalAlignment="Top"
+                                        Orientation="Horizontal">
+
+                                <TextBlock x:Name="map_Home">
+                                    <Hyperlink Click="SwitchViewHome_Click"
+                                               FontSize="20"
+                                               Foreground="#C02424">
+                                            Home
+                                    </Hyperlink>
+                                </TextBlock>
+
+                                <TextBlock x:Name="map_course"
+                                           Margin="10 0 0 0">
+                                    <Hyperlink Click="SwitchViewCourse_Click"
+                                               FontSize="20">
+                                            /           My course
+                                    </Hyperlink>
+                                </TextBlock>
+
+                                <TextBlock x:Name="map_courseName"
+                                           Margin="10 0 0 0"
+                                           Foreground="#C02424"
+                                           FontSize="20">
+                                    /          THI CUỐI KỲ
+                                </TextBlock>
+
+                            </StackPanel>
+
+                            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          x:Name="editBtn" 
+                                          Margin="0,130,20,20"
+                                          Background="#0073A5"
+                                          Width="200"
+                                          HorizontalAlignment="Right">
+                                <TextBlock FontSize="24"
+                                           Foreground="white"
+                                    FontFamily="cambria">
+                                    TURN EDIT ON
+                                </TextBlock>
+                            </ToggleButton>
+
+                        </Grid>
+                    </Border>
+
+                    <Border x:Name="border_menu"
+                            BorderThickness="1"
+                            BorderBrush="#888888"
+                            Margin="15 20 15 0"
+                            Visibility="Collapsed">
+                        <ContentControl Content="{Binding MenuContentControl, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
+                    </Border>
+
+
+                    <Border BorderThickness="1"
+                            BorderBrush="#888888"
+                            Margin="15 20 15 0">
+
+                        <ListBox x:Name="cours_examList"
+                                 Margin="50 40 50 400"
+                                 BorderThickness="0"
+                                 >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="Assets/image/task.png"
+                                       Height="30"
+                                       Margin="35 0 15 0"/>
+                                <TextBlock Text="nhét list với hyperlink của C# vào nhưng t chưa học" 
+                                           FontSize="24"
+                                           FontFamily="Cambria"
+                                           VerticalAlignment="Bottom"/>
+                            </StackPanel>
+
+                        </ListBox>
+
+                    </Border>
+
+                </StackPanel>
+
+            </ScrollViewer>
+
+        </Grid>
+
+    </Grid>
+
+</Window>

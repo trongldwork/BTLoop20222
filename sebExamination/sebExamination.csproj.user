@@ -7,10 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Assets\Controls\AddQuestion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Assets\Controls\AddQuiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Assets\Controls\Categories.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Assets\Controls\Export.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Assets\Controls\Footer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Assets\Controls\Import.xaml.cs">
@@ -24,10 +33,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Assets\Controls\AddQuestion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\Controls\AddQuiz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Assets\Controls\Categories.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Assets\Controls\Export.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\Controls\Footer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Assets\Controls\Import.xaml">

@@ -21,6 +21,7 @@ namespace sebExamination
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int i = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -53,25 +54,38 @@ namespace sebExamination
             border_menu.Visibility = Visibility.Visible;
             MenuContentControl = new Menu_uc();
             MenuContentControl.MainContentControl = new Question();
+            Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+
         }
         private void QuestionBank_Click_categories(object sender, RoutedEventArgs e)
         {
             border_menu.Visibility = Visibility.Visible;
             MenuContentControl = new Menu_uc();
             MenuContentControl.MainContentControl = new Categories();
+            Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+
         }
         private void QuestionBank_Click_import(object sender, RoutedEventArgs e)
         {
             border_menu.Visibility = Visibility.Visible;
             MenuContentControl = new Menu_uc();
             MenuContentControl.MainContentControl = new Import();
+            Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+
         }
         private void QuestionBank_Click_export(object sender, RoutedEventArgs e)
         {
             border_menu.Visibility = Visibility.Visible;
             MenuContentControl = new Menu_uc();
             MenuContentControl.MainContentControl = new Export();
+            Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
         }
+        private void ClickEditOn(object sender, RoutedEventArgs e)
+        {
+            border_menu.Visibility = Visibility.Visible;
+            Iborder_menu.Content = new AddQuiz();
+        }
+
         public class courseSource
         {
             public string courseName { get; set; }

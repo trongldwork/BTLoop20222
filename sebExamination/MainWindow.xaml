@@ -240,6 +240,7 @@
                             </StackPanel>
 
                             <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          Click="ClickEditOn"
                                           x:Name="editBtn" 
                                           Margin="0,130,20,20"
                                           Background="#0073A5"
@@ -255,12 +256,13 @@
                         </Grid>
                     </Border>
 
+
                     <Border x:Name="border_menu"
                             BorderThickness="1"
                             BorderBrush="#888888"
                             Margin="15 20 15 0"
                             Visibility="Collapsed">
-                        <ContentControl Content="{Binding MenuContentControl, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
+                        <ContentControl x:Name="Iborder_menu" Content="{Binding MenuContentControl, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
                     </Border>
 
 
@@ -285,6 +287,8 @@
                         </ListBox>
 
                     </Border>
+
+                    <local_uc:Footer/>
 
                 </StackPanel>
 

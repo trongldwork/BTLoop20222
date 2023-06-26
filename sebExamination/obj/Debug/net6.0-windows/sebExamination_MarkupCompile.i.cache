@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\
+D:\code\sebExamination\obj\Debug\net6.0-windows\
 sebExamination
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\code\BTLoop20222\sebExamination\App.xaml
-71232863589
+D:\code\sebExamination\App.xaml
+101874544701
 
-14-342271866
+17129489610
 194-1617825143
-Assets\Controls\Categories.xaml;Assets\Controls\Export.xaml;Assets\Controls\Import.xaml;Assets\Controls\Menu_uc.xaml;Assets\Controls\Question.xaml;MainWindow.xaml;Template\ButtonTheme.xaml;
+Assets\Controls\AddQuestion.xaml;Assets\Controls\AddQuiz.xaml;Assets\Controls\Categories.xaml;Assets\Controls\Export.xaml;Assets\Controls\Footer.xaml;Assets\Controls\Import.xaml;Assets\Controls\Menu_uc.xaml;Assets\Controls\Question.xaml;MainWindow.xaml;Template\ButtonTheme.xaml;
 
-False
+True
 

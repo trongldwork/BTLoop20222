@@ -20,9 +20,14 @@ namespace sebExamination.Assets.Controls
     /// </summary>
     public partial class Question : UserControl
     {
+
         public Question()
         {
             InitializeComponent();
+        }
+        private void CreateQuestionBtn_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

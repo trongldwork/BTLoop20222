@@ -51,6 +51,7 @@
 
         <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                   x:Name="CreateQuestionBtn" 
+                                                  Click="CreateQuestionBtn_Click"
                                                   Margin="0,160,0,0"
                                                   Background="#0073A5"
                                                   Width="200" Height="30"

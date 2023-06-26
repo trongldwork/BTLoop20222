@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\BTLoop20222\\sebExamination\\sebExamination.csproj",
+      "projectUniqueName": "D:\\code\\sebExamination\\sebExamination.csproj",
       "projectName": "sebExamination",
-      "projectPath": "D:\\code\\BTLoop20222\\sebExamination\\sebExamination.csproj",
+      "projectPath": "D:\\code\\sebExamination\\sebExamination.csproj",
       "packagesPath": "C:\\Users\\trong\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\BTLoop20222\\sebExamination\\obj\\",
+      "outputPath": "D:\\code\\sebExamination\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

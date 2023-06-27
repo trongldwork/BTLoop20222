@@ -4,12 +4,12 @@
 winexe
 C#
 .cs
-D:\code\sebExamination\obj\Debug\net6.0-windows\
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\
 sebExamination
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\code\sebExamination\App.xaml
+D:\code\local\sebExamination\App.xaml
 101874544701
 
 15-36681901

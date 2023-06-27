@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\code\sebExamination\obj\Debug\net6.0-windows\
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\
 sebExamination
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\code\sebExamination\App.xaml
+D:\code\local\sebExamination\App.xaml
 101874544701
 
 17129489610
 194-1617825143
 Assets\Controls\AddQuestion.xaml;Assets\Controls\AddQuiz.xaml;Assets\Controls\Categories.xaml;Assets\Controls\Export.xaml;Assets\Controls\Footer.xaml;Assets\Controls\Import.xaml;Assets\Controls\Menu_uc.xaml;Assets\Controls\Question.xaml;MainWindow.xaml;Template\ButtonTheme.xaml;
 
-True
+False
 

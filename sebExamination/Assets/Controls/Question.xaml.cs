@@ -27,7 +27,12 @@ namespace sebExamination.Assets.Controls
         }
         private void CreateQuestionBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            // Truyền giá trị newValue cho MainWindow
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new AddQuestion();
+            }
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GCNW1gEnHkLkAngQc9gt/02QNgoOVmZiwET1fMdqLckKdlpJfZ0Elb6teyRMVBPskqxpjoNBTM4BJZiaxmf+yQ==",
+  "dgSpecHash": "p1PPtE1npBBR3n3LcxlEI81rk632MHwBst+rMxrkCLiU/HibDkVAY+fQWjqaUax2yNylM+aDkg1xAIH9DayW7A==",
   "success": true,
-  "projectFilePath": "D:\\code\\sebExamination\\sebExamination.csproj",
+  "projectFilePath": "D:\\code\\local\\sebExamination\\sebExamination.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

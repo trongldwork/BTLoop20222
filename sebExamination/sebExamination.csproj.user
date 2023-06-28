@@ -7,54 +7,54 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Assets\Controls\AddQuestion.xaml.cs">
+    <Compile Update="Controls\AddQuestion.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Assets\Controls\AddQuiz.xaml.cs">
+    <Compile Update="Controls\AddQuiz.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Assets\Controls\Categories.xaml.cs">
+    <Compile Update="Controls\Categories.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Assets\Controls\Export.xaml.cs">
+    <Compile Update="Controls\Export.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Assets\Controls\Footer.xaml.cs">
+    <Compile Update="Controls\Footer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Assets\Controls\Import.xaml.cs">
+    <Compile Update="Controls\Import.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Assets\Controls\Menu_uc.xaml.cs">
+    <Compile Update="Controls\Menu_uc.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Assets\Controls\Question.xaml.cs">
+    <Compile Update="Controls\Question.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Assets\Controls\AddQuestion.xaml">
+    <Page Update="Controls\AddQuestion.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Assets\Controls\AddQuiz.xaml">
+    <Page Update="Controls\AddQuiz.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Assets\Controls\Categories.xaml">
+    <Page Update="Controls\Categories.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Assets\Controls\Export.xaml">
+    <Page Update="Controls\Export.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Assets\Controls\Footer.xaml">
+    <Page Update="Controls\Footer.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Assets\Controls\Import.xaml">
+    <Page Update="Controls\Import.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Assets\Controls\Menu_uc.xaml">
+    <Page Update="Controls\Menu_uc.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Assets\Controls\Question.xaml">
+    <Page Update="Controls\Question.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

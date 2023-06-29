@@ -30,13 +30,13 @@ namespace sebExamination.Controls
             if (addQuiz_general_box.Visibility == Visibility.Visible)
             {
                 addQuiz_general_box.Visibility = Visibility.Collapsed;
-                addQuiz_general_status.Source = new BitmapImage(new Uri("../image/arrow-right.png", UriKind.Relative));
+                addQuiz_general_status.Source = new BitmapImage(new Uri("../Assets/image/arrow-right.png", UriKind.Relative));
             }
 
             else if (addQuiz_general_box.Visibility == Visibility.Collapsed)
             {
                 addQuiz_general_box.Visibility = Visibility.Visible;
-                addQuiz_general_status.Source = new BitmapImage(new Uri("../image/arrow-down.png", UriKind.Relative));
+                addQuiz_general_status.Source = new BitmapImage(new Uri("../Assets/image/arrow-down.png", UriKind.Relative));
             }
         }
         private void addQuiz_timing_click(object sender, RoutedEventArgs e)
@@ -44,13 +44,13 @@ namespace sebExamination.Controls
             if (addQuiz_timing_box.Visibility == Visibility.Visible)
             {
                 addQuiz_timing_box.Visibility = Visibility.Collapsed;
-                addQuiz_timing_status.Source = new BitmapImage(new Uri("../image/arrow-right.png", UriKind.Relative));
+                addQuiz_timing_status.Source = new BitmapImage(new Uri("../Assets/image/arrow-right.png", UriKind.Relative));
             }
 
             else if (addQuiz_timing_box.Visibility == Visibility.Collapsed)
             {
                 addQuiz_timing_box.Visibility = Visibility.Visible;
-                addQuiz_timing_status.Source = new BitmapImage(new Uri("../image/arrow-down.png", UriKind.Relative));
+                addQuiz_timing_status.Source = new BitmapImage(new Uri("../Assets/image/arrow-down.png", UriKind.Relative));
             }
         }
         private void displayDes_addquiz_check(object sender, RoutedEventArgs e)

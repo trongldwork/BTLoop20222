@@ -37,5 +37,50 @@ namespace sebExamination.Controls
         {
 
         }
+
+        private void import_fileFormat_click(object sender, RoutedEventArgs e)
+        {
+            if (import_fileFormat_box.Visibility == Visibility.Visible)
+            {
+                import_fileFormat_box.Visibility = Visibility.Collapsed;
+                fileFomat_status.Source = new BitmapImage(new Uri("/Assets/image/arrow-right.png", UriKind.Relative));
+            }
+
+            else if (import_fileFormat_box.Visibility == Visibility.Collapsed)
+            {
+                import_fileFormat_box.Visibility = Visibility.Visible;
+                fileFomat_status.Source = new BitmapImage(new Uri("/Assets/image/arrow-down.png", UriKind.Relative));
+            }
+        }
+
+        private void import_general_click(object sender, RoutedEventArgs e)
+        {
+            if (import_general_box.Visibility == Visibility.Visible)
+            {
+                import_general_box.Visibility = Visibility.Collapsed;
+                general_status.Source = new BitmapImage(new Uri("/Assets/image/arrow-right.png", UriKind.Relative));
+            }
+
+            else if (import_general_box.Visibility == Visibility.Collapsed)
+            {
+                import_general_box.Visibility = Visibility.Visible;
+                general_status.Source = new BitmapImage(new Uri("/Assets/image/arrow-down.png", UriKind.Relative));
+            }
+        }
+
+        private void import_file_click(object sender, RoutedEventArgs e)
+        {
+            if (import_file_box.Visibility == Visibility.Visible)
+            {
+                import_file_box.Visibility = Visibility.Collapsed;
+                file_status.Source = new BitmapImage(new Uri("/Assets/image/arrow-right.png", UriKind.Relative));
+            }
+
+            else if (import_file_box.Visibility == Visibility.Collapsed)
+            {
+                import_file_box.Visibility = Visibility.Visible;
+                file_status.Source = new BitmapImage(new Uri("/Assets/image/arrow-down.png", UriKind.Relative));
+            }
+        }
     }
 }

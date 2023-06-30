@@ -13,7 +13,9 @@
     <None Remove="Assets\Image\arrow-right.png" />
     <None Remove="Assets\Image\arrowRed.png" />
     <None Remove="Assets\Image\arrowWhite.png" />
+    <None Remove="Assets\Image\calendar.png" />
     <None Remove="Assets\Image\menu.png" />
+    <None Remove="Assets\Image\online-test.png" />
     <None Remove="Assets\Image\question.png" />
     <None Remove="Assets\Image\settings.png" />
     <None Remove="Assets\Image\task.png" />
@@ -27,7 +29,9 @@
     <Resource Include="Assets\Image\arrow-right.png" />
     <Resource Include="Assets\Image\arrowRed.png" />
     <Resource Include="Assets\Image\arrowWhite.png" />
+    <Resource Include="Assets\Image\calendar.png" />
     <Resource Include="Assets\Image\menu.png" />
+    <Resource Include="Assets\Image\online-test.png" />
     <Resource Include="Assets\Image\question.png" />
     <Resource Include="Assets\Image\settings.png" />
     <Resource Include="Assets\Image\task.png" />

@@ -17,7 +17,7 @@
                                                 Margin="0 60 0 0">
 
             <ToggleButton x:Name="import_fileFormat_btn"
-                                                      
+                                                      Click="import_fileFormat_click"
                                                       Height="24"
                                                       Width="auto"
                                                       HorizontalAlignment="Left"
@@ -26,7 +26,7 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Image x:Name="fileFomat_status"
-                                                       Source="../Assets/image/arrow-down.png"
+                                                       Source="../Assets/image/arrow-right.png"
                                                        Margin="2.5"/>
                     <TextBlock FontSize="16"
                                                            Margin="5 0 0 0"
@@ -49,7 +49,7 @@
             <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
 
             <ToggleButton x:Name="import_general_btn"
-                                                      
+                                                      Click="import_general_click"
                                                       Height="24"
                                                       Width="auto"
                                                       HorizontalAlignment="Left"
@@ -58,7 +58,7 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Image x:Name="general_status"
-                                                       Source="../Assets/image/arrow-down.png"
+                                                       Source="../Assets/image/arrow-right.png"
                                                        Margin="2.5"/>
                     <TextBlock FontSize="16"
                                                            Margin="5 0 0 0"
@@ -81,7 +81,7 @@
             <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
 
             <ToggleButton x:Name="import_file_btn"
-                                                      
+                                                      Click="import_file_click"
                                                       Height="24"
                                                       Width="auto"
                                                       HorizontalAlignment="Left"

@@ -123,7 +123,7 @@
             </ToggleButton>
             <!--nội dung phần timing-->
             <Grid x:Name="addQuiz_timing_box"
-                                  Visibility="Collapsed"
+                                  Visibility="Visible"
                                   Margin="20 10">
 
                 <Grid.ColumnDefinitions>
@@ -183,10 +183,106 @@
 
                 <!--code tiếp vào đây máy cái đoạn thời gian các kiểu-->
 
-                <TextBlock Grid.Column="1"
-                                           FontSize="20">
-                                    Code vào đây cái đoạn thời gian ấy
-                </TextBlock>
+                <StackPanel Grid.Column=" 1"
+                                            Orientation="Horizontal">
+                    <ComboBox x:Name="cb_opentime_day"
+                                              Height="25" Width="40"
+                                              SelectedIndex="0">
+
+                    </ComboBox>
+                    <ComboBox x:Name ="cb_opentime_month"
+                                              Margin="10,0,0,0"
+                                              Width="90" Height= "25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_opentime_year"
+                                              Margin="10,0,0,0"
+                                              Width ="60" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_opentime_hour"
+                                              Margin =" 10,0,0,0"
+                                              Width="40" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_opentime_minute"
+                                              Margin ="10,0,0,0"
+                                              Width =" 70" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <Image Source="/Assets/Image/calendar.png" 
+                                           Height="15" Width="15"
+                                           Margin="7,7,7,7"
+                                           >
+                    </Image>
+                    <CheckBox Margin="5,5,0,0"
+                              VerticalAlignment="Center"
+                                              Content="Enable">
+                    </CheckBox>
+
+                </StackPanel>
+                <StackPanel Grid.Column=" 1"
+                                            Grid.Row="1"
+                                            Orientation="Horizontal">
+                    <ComboBox x:Name="cb_closetime_day"
+                                              Height="25" Width="40"
+                                              SelectedIndex="0">
+
+                    </ComboBox>
+                    <ComboBox x:Name ="cb_closetime_month"
+                                              Margin="10,0,0,0"
+                                              Width="90" Height= "25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_closetime_year"
+                                              Margin="10,0,0,0"
+                                              Width ="60" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_closetime_hour"
+                                              Margin =" 10,0,0,0"
+                                              Width="40" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_closetime_minute"
+                                              Margin ="10,0,0,0"
+                                              Width =" 70" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <Image Source="/Assets/Image/calendar.png" 
+                                           Height="15" Width="15"
+                                           Margin="7,7,7,7"
+                                           >
+                    </Image>
+                    <CheckBox Margin="5,5,0,0"
+                              VerticalAlignment="Center"
+                                              Content="Enable">
+                    </CheckBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1"
+                                            Grid.Row="2"
+                                            Orientation="Horizontal">
+                    <ComboBox x:Name="cb_timelimit"
+                                              Height="25" Width="40"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_timelimit2"
+                                              Height="25" Width="90"
+                                              Margin="10,0,0,0"
+                                              SelectedIndex="0">
+                        <ComboBoxItem>Minutes</ComboBoxItem>
+                        <ComboBoxItem>Hours</ComboBoxItem>
+                    </ComboBox>
+                    <CheckBox Content="Enable" VerticalAlignment="Center" Margin="10,0,0,0"></CheckBox>
+                </StackPanel>
+                <ComboBox Grid.Row="3"
+                                          Grid.Column="1"
+                                          Height="25" Width="250"
+                                          HorizontalAlignment="Left" IsReadOnly="True"
+                                          SelectedIndex="0">
+                    <ComboBoxItem Content="Open attempts are submitted automatically"/>
+
+                </ComboBox>
 
             </Grid>
 

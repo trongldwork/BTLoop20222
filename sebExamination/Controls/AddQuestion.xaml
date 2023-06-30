@@ -130,8 +130,9 @@
 
                 <!--stackPanel này theo chiều dọc chứa các đáp án của câu hỏi
                                         yêu cầu thêm dynamic template để thêm câu hỏi-->
-                <StackPanel Orientation="Vertical"
-                                            Grid.Column="1" Grid.Row="4">
+                <StackPanel x:Name="Choices"
+                            Orientation="Vertical"
+                            Grid.Column="1" Grid.Row="4">
 
                     <!--demo cho đáp án thứ nhất tại chưa có dynamic template-->
                     <Grid x:Name="choice1_addQuestion"
@@ -195,13 +196,26 @@
                         </ComboBox>
                     </Grid>
 
-                    <TextBlock FontSize="40" Foreground="red" TextWrapping="Wrap">
-                                        Đoạn này chưa biết dùng dynamic template như nào!!! SoS
-                    </TextBlock>
+                    
                 </StackPanel>
 
             </Grid>
+            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                          x:Name="moreChoices_btn"
+                          Click="moreChoices_btn_click"
+                          Background="#009FE5"
+                          Width="150" Height="35"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Top"
+                          Margin="170 0 0 0">
+                <TextBlock FontSize="18"
+                           Foreground="white"
+                           FontFamily="cambria"
+                           FontWeight="Light">
 
+                    More choice                
+                </TextBlock>
+            </ToggleButton>
             <!--Nút lưu câu hỏi và tiếp tục-->
             <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                   x:Name="saveChangeAndContinue_addQuestion_btn"

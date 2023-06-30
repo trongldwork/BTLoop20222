@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Numerics;
 using System.Text;
@@ -24,6 +25,7 @@ namespace sebExamination.Controls
         public AddQuiz()
         {
             InitializeComponent();
+            Window_Loaded();
         }
         private void addQuiz_general_click(object sender, RoutedEventArgs e)
         {
@@ -53,16 +55,68 @@ namespace sebExamination.Controls
                 addQuiz_timing_status.Source = new BitmapImage(new Uri("../Assets/image/arrow-down.png", UriKind.Relative));
             }
         }
+
+        private void cancel_addQuiz_btn_click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        private void ComboBox_Day() //tạo data từ 1 đến 31 cho combo box chỉ ngày
+        {
+            for (int i = 1; i <= 31; i++)
+            {
+                cb_opentime_day.Items.Add(i);
+                cb_closetime_day.Items.Add(i);
+            }
+        }
+        private void ComboBox_Month() //tạo data từ 1 đến 31 cho combo box chỉ tháng
+        {
+            DateTimeFormatInfo dateFormatInfo = new DateTimeFormatInfo();
+            for (int month = 1; month <= 12; month++)
+            {
+                string monthName = dateFormatInfo.GetMonthName(month);
+                cb_opentime_month.Items.Add(monthName);
+                cb_closetime_month.Items.Add(monthName);
+            }
+        }
+        private void ComboBox_Year()        //tạo data từ 1 đến 31 cho combo box chỉ năm
+        {
+            for (int i = 2020; i <= 2030; i++)
+            {
+                cb_opentime_year.Items.Add(i);
+                cb_closetime_year.Items.Add(i);
+            }
+        }
+        private void ComboBox_Hour()        //tạo data từ 1 đến 31 cho combo box chỉ giờ
+        {
+            for (int i = 1; i <= 24; i++)
+            {
+                cb_opentime_hour.Items.Add(i);
+                cb_closetime_hour.Items.Add(i);
+            }
+        }
+        private void ComboBox_Minute()      //tạo data từ 1 đến 31 cho combo box chỉ phút
+        {
+            for (int i = 1; i <= 60; i++)
+            {
+                cb_opentime_minute.Items.Add(i);
+                cb_closetime_minute.Items.Add(i);
+                cb_timelimit.Items.Add(i);
+            }
+        }
+        private void Window_Loaded()
+        {
+            ComboBox_Day();
+            ComboBox_Month();
+            ComboBox_Year();
+            ComboBox_Hour();
+            ComboBox_Minute();
+        }
         private void displayDes_addquiz_check(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void addQuiz_btn_click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void cancel_addQuiz_btn_click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -15,17 +15,28 @@ namespace filereader
         List<Categories> categories = new List<Categories>();
         public string Name { get; set; }
         public string CategoryInfo { get; set; }
-        public List<Questions> questions { get; set; }
+        public List<Questions> Questions { get; set; }
+        public List<Categories> ChildCategories { get; set; }
+        public Categories FatherCategory { get; set; }
+        public Categories(string Name)
+        {
+            this.Name = Name;
+        }
+        public Categories(Categories FatherCategory, string Name)
+        {
+            this.FatherCategory = FatherCategory;
+            this.Name = Name;
+        }
         public Categories(string Name, string CategoryInfo)
         {
             this.Name = Name;
             this.CategoryInfo = CategoryInfo;
         }
-        public Categories(string Name, string CategoryInfo, List<Questions> questions)
+        public Categories(string Name, string CategoryInfo, List<Questions> Questions)
         {
             this.Name = Name;
             this.CategoryInfo = CategoryInfo;
-            this.questions = questions;
+            this.Questions = Questions;
         }
     }
     public class Questions

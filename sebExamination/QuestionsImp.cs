@@ -14,19 +14,5 @@ namespace filereader
             
         }
 
-        public void sortByCategory(List<Categories> categories, List<Questions> questions)
-        {   
-            foreach (var category in categories)
-            {
-                foreach(var question in questions)
-                {
-                    if (question.Category == category)
-                    {
-                        category.questions.Add(question);
-                    }
-                }
-            }
-        }
-
     }
 }

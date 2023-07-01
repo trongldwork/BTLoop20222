@@ -9,7 +9,6 @@ namespace filereader
 {
     internal interface IQuestions
     {
-        void sortByCategory(List<Categories> categories, List<Questions> questions);
         
     }
 }

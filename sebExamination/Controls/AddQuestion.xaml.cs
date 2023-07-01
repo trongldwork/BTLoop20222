@@ -24,21 +24,20 @@ namespace sebExamination.Controls
 
     public partial class AddQuestion : UserControl
     {
-        List<Questions> questions = new List<Questions>();
-        List<Categories> categories = new List<Categories>();
+        List<Questions> questions;
         FileImp fileImp = new FileImp();
         private List<ComboBox> comboboxs = new List<ComboBox>();
         List<TextBox> textBoxes = new List<TextBox>();
         public AddQuestion()
         {
             InitializeComponent();
+            questions = new List<Questions>();
             create_category_parent_ComboBox();
             textBoxes.Add(text_choice1);
             textBoxes.Add(text_choice2);
             comboboxs.Add(text_choice1_mark);
             comboboxs.Add(text_choice2_mark);
         }
-
         private void create_category_parent_ComboBox()
         {
             // Tạo đường dẫn đến thư mục "Categories"
@@ -101,17 +100,30 @@ namespace sebExamination.Controls
         {
 
         }
+
+        private int countLevel(string str)
+        {
+            int res = 0;
+            while (str[0] == ' ')
+            {
+                str = str.Substring(1);
+                res++;
+            }
+            res /= 3;
+            return res + 1;
+        }
         private void saveChange_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
             
             List<string> answer = new List<string>();
-            string quest = questionText_addQuestion.Text;
+            
             string ans = "ANSWER: ";
+            int tmp = 0;
             foreach (TextBox textBox in textBoxes)
             {
-                answer.Add(textBox.Text);
+                answer.Add((char)(65+tmp++)+". "+textBox.Text);
             }
-            int tmp =0;
+            tmp =0;
             foreach(ComboBox comboBox in comboboxs)
             {
                 
@@ -123,9 +135,56 @@ namespace sebExamination.Controls
                 tmp++;
 
             }
-            Questions tempQ = new Questions(quest, answer, ans, 1);
+            Questions tempQ = new Questions(questionName_addQuestion.Text, answer, ans, double.Parse(questionMark_addQuestion.Text));
             questions.Add(tempQ);
-            fileImp.SaveDataToFile("Questions.txt", questions);
+
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+            string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
+            string filePath = "";
+
+            if (category_parent.SelectedIndex != 0)
+            {
+                int index = category_parent.SelectedIndex;
+                List<string> parent = new List<string>();
+                parent.Add(category_parent.Items[index].ToString());
+                int k = countLevel(parent[0]) - 1;
+
+                int n = countLevel(parent[0]);
+                while (parent[0][0] == ' ')
+                {
+                    parent[0] = parent[0].Substring(1);
+                }
+                for (int i = index; i > 0; i--)
+                {
+                    if (countLevel(category_parent.Items[i].ToString()) == k)
+                    {
+                        parent.Add(category_parent.Items[i].ToString());
+                        while (parent[n - k][0] == ' ')
+                        {
+                            parent[n - k] = parent[n - k].Substring(1);
+                        }
+                        k--;
+                    }
+                }
+                for (int i = n - 1; i >= 0; i--)
+                {
+                    categoriesPath = System.IO.Path.Combine(categoriesPath, parent[i]);
+                }
+                filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
+
+            }
+
+            //string folderPath = System.IO.Path.Combine(categoriesPath, category_parent.SelectedItem.ToString());
+            //string filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
+            MessageBox.Show(filePath);
+
+            fileImp.SaveDataToFile(filePath, questions);
+            string countFile = System.IO.Path.Combine(categoriesPath, "count.txt");
+            var data = File.ReadAllText(countFile);
+            int count = int.Parse(data) + 1;
+            File.WriteAllText(countFile, count.ToString());
+            
         }
         private void cancel_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {

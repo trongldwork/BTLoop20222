@@ -29,8 +29,6 @@ namespace sebExamination.Controls
             InitializeComponent();
             create_category_parent_ComboBox();
 
-
-
         }
         private void create_category_parent_ComboBox()
         {
@@ -87,29 +85,18 @@ namespace sebExamination.Controls
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
             }
         }
+        string path;
 
-
-        public string find_parent(string path, string parent, int k)
+        private int countLevel(string str)
         {
-                string[] folders = Directory.GetDirectories(path);
-                foreach (string folder in folders)
-                {
-                    // Lấy tên thư mục từ đường dẫn
-                    string folderName = new DirectoryInfo(folder).Name;
-
-
-                    if (folderName == parent)
-                    {
-                    if (k != 0) return folderName;
-                    else return folder;
-                    }
-                    // Thêm tên thư mục vào ComboBox
-
-
-                    // Tiếp tục đệ quy để lấy tất cả các thư mục con bên trong thư mục hiện tại
-                    return System.IO.Path.Combine(folder,find_parent(folder, parent, k+1));
-                }
-            return null;
+            int res = 0;
+            while (str[0] == ' ')
+            {
+                str = str.Substring(1);
+                res++;
+            }
+            res /= 3;
+            return res+1;
         }
         private void addCategoryBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -121,16 +108,37 @@ namespace sebExamination.Controls
 
             if(category_parent.SelectedIndex != 0)
             {
-                string parent = category_parent.SelectedItem.ToString();
-                while (parent[0] == ' ')
+                int index = category_parent.SelectedIndex;
+                List<string> parent = new List<string>();
+                parent.Add(category_parent.Items[index].ToString());
+                int k = countLevel(parent[0])-1;
+                
+                int n = countLevel(parent[0]);
+                while (parent[0][0] == ' ')
                 {
-                    parent = parent.Substring(1);
+                    parent[0] = parent[0].Substring(1);
                 }
-                categoriesPath = find_parent(categoriesPath, parent, 0);
+                for (int i = index; i>0; i--)
+                {
+                    if (countLevel(category_parent.Items[i].ToString()) == k)
+                    {
+                        parent.Add(category_parent.Items[i].ToString());
+                        while (parent[n-k][0] == ' ')
+                        {
+                            parent[n-k] = parent[n-k].Substring(1);
+                        }
+                        k--;
+                    }
+                }
+                for(int i = n-1; i>=0; i--)
+                {
+                    categoriesPath = System.IO.Path.Combine(categoriesPath, parent[i]);
+                }
             }
 
             string folderPath = System.IO.Path.Combine(categoriesPath, categoryName);
             string filePath = System.IO.Path.Combine(folderPath, fileName);
+            string countFile = System.IO.Path.Combine(folderPath, "count.txt");
 
             try
             {
@@ -140,10 +148,10 @@ namespace sebExamination.Controls
                 }
 
                 // Lấy nội dung từ TextBox
-                string fileContent = category_info.Text;
-
+                string fileContent = "0";
+                File.Create(filePath);
                 // Tạo và ghi nội dung vào file
-                using (StreamWriter writer = new StreamWriter(filePath))
+                using (StreamWriter writer = new StreamWriter(countFile))
                 {
                     writer.Write(fileContent);
                 }

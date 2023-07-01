@@ -25,6 +25,7 @@ namespace filereader
                 builder.AppendLine(question.Answer);
                 builder.AppendLine(question.Mark.ToString());
             }
+            
             File.AppendAllText(fileName, builder.ToString());
         }
 

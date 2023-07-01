@@ -81,24 +81,9 @@
                 </TextBlock>
 
                 <!--Combobox chọn categories cho câu hỏi mới-->
-                <ComboBox x:Name="categorySelector_addQuestion"
-                                          Height="30" Width="200" 
-                                          HorizontalAlignment="Left" VerticalAlignment="Top" 
-                                          Grid.Column="1"   
-                                          Margin="0 5"
-                                          SelectedIndex="0"
-                                          Background="White"
-                                          FontSize="16">
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="destination" Foreground="{Binding YourColor}"
-                                                       FontWeight="{Binding YourFontWeight}" />
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
-                    <ComboBoxItem>Default</ComboBoxItem>
-                    <ComboBoxItem>Top for IT</ComboBoxItem>
-                    <ComboBoxItem>Default for IT</ComboBoxItem>
-                </ComboBox>
+                <ComboBox
+                    x:Name="category_parent"
+                    Grid.Column="1"></ComboBox>
 
                 <!--Text box nhập tên của câu hỏi-->
                 <TextBox x:Name="questionName_addQuestion"

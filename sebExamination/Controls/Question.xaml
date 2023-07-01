@@ -17,23 +17,14 @@
                                                Foreground="Gray">
                                         Select a category:
         </TextBlock>
-        <ComboBox x:Name="categorySelector"
+        <Grid x:Name="category_Selector"
                                               Height="30" Width="200" 
                                               HorizontalAlignment="Left" VerticalAlignment="Top" 
-                                              Margin="160 48 0 0"
-                                              SelectedIndex="0"
-                                              Background="White"
-                                              FontSize="16">
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="destination" Foreground="{Binding YourColor}"
-                                                           FontWeight="{Binding YourFontWeight}" />
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-            <ComboBoxItem>Default</ComboBoxItem>
-            <ComboBoxItem>Top for IT</ComboBoxItem>
-            <ComboBoxItem>Default for IT</ComboBoxItem>
-        </ComboBox>
+                                              Margin="160 48 0 0">
+            <ComboBox
+                    x:Name="category_parent"></ComboBox>
+            
+        </Grid>
         <TextBlock Margin="0 90 0 0"
                                                Foreground="#444444">
                                         The default category for questions shared in context

@@ -1,6 +1,7 @@
 ﻿using filereader;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,10 +32,66 @@ namespace sebExamination.Controls
         public AddQuestion()
         {
             InitializeComponent();
+            create_category_parent_ComboBox();
             textBoxes.Add(text_choice1);
             textBoxes.Add(text_choice2);
             comboboxs.Add(text_choice1_mark);
             comboboxs.Add(text_choice2_mark);
+        }
+
+        private void create_category_parent_ComboBox()
+        {
+            // Tạo đường dẫn đến thư mục "Categories"
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+            string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
+
+            // Tạo ComboBox và thêm tên thư mục vào nó
+
+            ComboBox comboBox = category_parent;
+            comboBox.Items.Add("default");
+            comboBox.Height = 25;
+            comboBox.Width = 200;
+            comboBox.HorizontalAlignment = HorizontalAlignment.Left;
+            comboBox.SelectedIndex = 0;
+            comboBox.Background = Brushes.White;
+            comboBox.FontSize = 12;
+
+
+            // Gọi hàm để lấy tất cả các thư mục trong "Categories" và thư mục con bên trong chúng
+            GetAllFolders(categoriesPath, comboBox);
+
+        }
+        int elevator = 0;
+        private void GetAllFolders(string path, ComboBox comboBox)
+        {
+            try
+            {
+                // Lấy danh sách tất cả các thư mục trong đường dẫn cụ thể
+                string[] folders = Directory.GetDirectories(path);
+
+                // Duyệt qua từng thư mục
+                foreach (string folder in folders)
+                {
+                    // Lấy tên thư mục từ đường dẫn
+                    string folderName = new DirectoryInfo(folder).Name;
+                    for (int i = 0; i < elevator; i++)
+                    {
+                        folderName = "   " + folderName;
+                    }
+                    elevator++;
+                    // Thêm tên thư mục vào ComboBox
+                    comboBox.Items.Add(folderName);
+
+                    // Tiếp tục đệ quy để lấy tất cả các thư mục con bên trong thư mục hiện tại
+                    GetAllFolders(folder, comboBox);
+                    elevator--;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
+            }
         }
         private void addQuestion_general_click(object sender, RoutedEventArgs e)
         {
@@ -46,7 +103,7 @@ namespace sebExamination.Controls
         }
         private void saveChange_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
-            saveChange_addQuestion_btn.Content = "đúng vcl";
+            
             List<string> answer = new List<string>();
             string quest = questionText_addQuestion.Text;
             string ans = "ANSWER: ";

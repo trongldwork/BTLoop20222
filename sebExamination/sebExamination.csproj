@@ -24,6 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Open-XML-SDK" Version="2.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Assets\Image\arrow-down.png" />
     <Resource Include="Assets\Image\arrow-point-to-down.png" />
     <Resource Include="Assets\Image\arrow-right.png" />
@@ -40,7 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
+    <Folder Include="File question\" />
   </ItemGroup>
 
 </Project>

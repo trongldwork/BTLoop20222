@@ -24,7 +24,9 @@ namespace sebExamination.Controls
     /// </summary>
     public partial class Categories : UserControl
     {
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public Categories()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             InitializeComponent();
             create_category_parent_ComboBox();
@@ -34,7 +36,9 @@ namespace sebExamination.Controls
         {
             // Tạo đường dẫn đến thư mục "Categories"
             string currentDirectory = Directory.GetCurrentDirectory();
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
 
             // Tạo ComboBox và thêm tên thư mục vào nó
@@ -72,8 +76,14 @@ namespace sebExamination.Controls
                         folderName = "   " + folderName;
                     }
                     elevator++;
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+                    string dataPath = Directory.GetParent(folder).FullName;
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                    dataPath = System.IO.Path.Combine(dataPath, folder);
+                    dataPath = System.IO.Path.Combine(dataPath, "Count.txt");
+                    string data = File.ReadAllText(dataPath);
                     // Thêm tên thư mục vào ComboBox
-                    comboBox.Items.Add(folderName);
+                    comboBox.Items.Add(folderName + " (" + data + ")");
 
                     // Tiếp tục đệ quy để lấy tất cả các thư mục con bên trong thư mục hiện tại
                     GetAllFolders(folder, comboBox);
@@ -85,7 +95,9 @@ namespace sebExamination.Controls
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
             }
         }
+#pragma warning disable CS0169 // The field 'Categories.path' is never used
         string path;
+#pragma warning restore CS0169 // The field 'Categories.path' is never used
 
         private int countLevel(string str)
         {
@@ -103,14 +115,18 @@ namespace sebExamination.Controls
             string categoryName = category_name.Text; // Lấy tên thư mục từ TextBox category_name
             string fileName = categoryName + ".txt";
             string currentDirectory = Directory.GetCurrentDirectory();
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
 
             if(category_parent.SelectedIndex != 0)
             {
                 int index = category_parent.SelectedIndex;
                 List<string> parent = new List<string>();
+#pragma warning disable CS8604 // Possible null reference argument.
                 parent.Add(category_parent.Items[index].ToString());
+#pragma warning restore CS8604 // Possible null reference argument.
                 int k = countLevel(parent[0])-1;
                 
                 int n = countLevel(parent[0]);
@@ -118,17 +134,23 @@ namespace sebExamination.Controls
                 {
                     parent[0] = parent[0].Substring(1);
                 }
+                parent[0] = parent[0].Substring(0, parent[0].Length - 4);
                 for (int i = index; i>0; i--)
                 {
+#pragma warning disable CS8604 // Possible null reference argument.
                     if (countLevel(category_parent.Items[i].ToString()) == k)
                     {
+#pragma warning disable CS8604 // Possible null reference argument.
                         parent.Add(category_parent.Items[i].ToString());
+#pragma warning restore CS8604 // Possible null reference argument.
                         while (parent[n-k][0] == ' ')
                         {
                             parent[n-k] = parent[n-k].Substring(1);
                         }
+                        parent[n-k] = parent[n-k].Substring(0, parent[n-k].Length - 4);
                         k--;
                     }
+#pragma warning restore CS8604 // Possible null reference argument.
                 }
                 for(int i = n-1; i>=0; i--)
                 {
@@ -149,8 +171,8 @@ namespace sebExamination.Controls
 
                 // Lấy nội dung từ TextBox
                 string fileContent = "0";
+                // Tạo và ghi nội dung vào file\
                 File.Create(filePath);
-                // Tạo và ghi nội dung vào file
                 using (StreamWriter writer = new StreamWriter(countFile))
                 {
                     writer.Write(fileContent);

@@ -42,7 +42,9 @@ namespace sebExamination.Controls
         {
             // Tạo đường dẫn đến thư mục "Categories"
             string currentDirectory = Directory.GetCurrentDirectory();
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
 
             // Tạo ComboBox và thêm tên thư mục vào nó
@@ -79,8 +81,14 @@ namespace sebExamination.Controls
                         folderName = "   " + folderName;
                     }
                     elevator++;
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+                    string dataPath = Directory.GetParent(folder).FullName;
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+                    dataPath = System.IO.Path.Combine(dataPath, folder);
+                    dataPath = System.IO.Path.Combine(dataPath, "Count.txt");
+                    string data = File.ReadAllText(dataPath);
                     // Thêm tên thư mục vào ComboBox
-                    comboBox.Items.Add(folderName);
+                    comboBox.Items.Add(folderName + " (" + data + ")");
 
                     // Tiếp tục đệ quy để lấy tất cả các thư mục con bên trong thư mục hiện tại
                     GetAllFolders(folder, comboBox);
@@ -137,9 +145,10 @@ namespace sebExamination.Controls
             }
             Questions tempQ = new Questions(questionName_addQuestion.Text, answer, ans, double.Parse(questionMark_addQuestion.Text));
             questions.Add(tempQ);
-
             string currentDirectory = Directory.GetCurrentDirectory();
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
             string filePath = "";
 
@@ -147,7 +156,9 @@ namespace sebExamination.Controls
             {
                 int index = category_parent.SelectedIndex;
                 List<string> parent = new List<string>();
+#pragma warning disable CS8604 // Possible null reference argument.
                 parent.Add(category_parent.Items[index].ToString());
+#pragma warning restore CS8604 // Possible null reference argument.
                 int k = countLevel(parent[0]) - 1;
 
                 int n = countLevel(parent[0]);
@@ -155,18 +166,27 @@ namespace sebExamination.Controls
                 {
                     parent[0] = parent[0].Substring(1);
                 }
+                parent[0] = parent[0].Substring(0, parent[0].Length - 4);
+
                 for (int i = index; i > 0; i--)
                 {
+#pragma warning disable CS8604 // Possible null reference argument.
                     if (countLevel(category_parent.Items[i].ToString()) == k)
                     {
+#pragma warning disable CS8604 // Possible null reference argument.
                         parent.Add(category_parent.Items[i].ToString());
+#pragma warning restore CS8604 // Possible null reference argument.
                         while (parent[n - k][0] == ' ')
                         {
+                            
                             parent[n - k] = parent[n - k].Substring(1);
                         }
+                        parent[n - k] = parent[n - k].Substring(0, parent[n - k].Length - 4);
                         k--;
                     }
+#pragma warning restore CS8604 // Possible null reference argument.
                 }
+
                 for (int i = n - 1; i >= 0; i--)
                 {
                     categoriesPath = System.IO.Path.Combine(categoriesPath, parent[i]);
@@ -174,10 +194,8 @@ namespace sebExamination.Controls
                 filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
 
             }
-
             //string folderPath = System.IO.Path.Combine(categoriesPath, category_parent.SelectedItem.ToString());
             //string filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
-            MessageBox.Show(filePath);
 
             fileImp.SaveDataToFile(filePath, questions);
             string countFile = System.IO.Path.Combine(categoriesPath, "count.txt");

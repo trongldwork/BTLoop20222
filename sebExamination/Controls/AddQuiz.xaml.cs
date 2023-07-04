@@ -58,7 +58,11 @@ namespace sebExamination.Controls
 
         private void cancel_addQuiz_btn_click(object sender, RoutedEventArgs e)
         {
-            
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new Course_list();
+            }
         }
         private void ComboBox_Day() //tạo data từ 1 đến 31 cho combo box chỉ ngày
         {

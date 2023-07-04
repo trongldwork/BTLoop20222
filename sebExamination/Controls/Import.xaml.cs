@@ -53,7 +53,7 @@ namespace sebExamination.Controls
                     }
                     else
                     {
-                        MessageBox.Show("Không phải file txt hoặc docx");
+                        MessageBox.Show("Wrong Format");
                     }
                 }
                 catch (IOException ex)
@@ -64,6 +64,7 @@ namespace sebExamination.Controls
                 if (ValidInput(lines))
                 {
                     input_field.Text = $"đã đọc file từ đường dãn:\n {filePath}";
+                    MessageBox.Show($"Success {lines.Count}");
                     _Filename = filename;
                     _Lines = lines;
                 }
@@ -105,7 +106,7 @@ namespace sebExamination.Controls
                     }
                     else
                     {
-                        MessageBox.Show("Không phải file txt hoặc docx");
+                        MessageBox.Show("Wrong Format");
                     }
                 }
                 catch (IOException ex)
@@ -116,6 +117,7 @@ namespace sebExamination.Controls
                 if (ValidInput(lines))
                 {
                     input_field.Text = $"đã đọc file từ đường dãn:\n {filePath}";
+                    MessageBox.Show($"Success {lines.Count}");
                     _Filename = filename;
                     _Lines = lines;
                 }
@@ -229,6 +231,7 @@ namespace sebExamination.Controls
                     if (input[i].Type == "question")
                     {
                         next_type.Remove("question");
+                        if (next_type.Contains("none")) next_type.Remove("none");
                         next_type.Add("choice");
                     }
                     if (input[i].Type == "choice")
@@ -255,7 +258,6 @@ namespace sebExamination.Controls
                     }
                     if (input[i].Type == "none")
                     {
-                        next_type.Remove("none");
                         next_type.Add("question");
                     }
                 }
@@ -267,6 +269,7 @@ namespace sebExamination.Controls
         public void Import_btn_click(object sender, EventArgs e)
         {
             Savefileques(_Filename, _Lines);
+            MessageBox.Show("OK");
         }
         private void import_fileFormat_click(object sender, RoutedEventArgs e)
         {

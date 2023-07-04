@@ -32,7 +32,7 @@ namespace sebExamination.Controls
             System.Windows.Controls.Image image = (System.Windows.Controls.Image)stackPanel.Children[0];
             TextBlock textBlock = (TextBlock)stackPanel.Children[1];
 
-            image.Source = new BitmapImage(new Uri("/Assets/Images/white-plus-small.png", UriKind.Relative)); // Đường dẫn đến hình ảnh dấu cộng màu trắng
+            image.Source = new BitmapImage(new Uri("../Assets/image/white-plus-small.png", UriKind.Relative)); // Đường dẫn đến hình ảnh dấu cộng màu trắng
             textBlock.Foreground = Brushes.WhiteSmoke;
         }
 
@@ -43,7 +43,7 @@ namespace sebExamination.Controls
             System.Windows.Controls.Image image = (System.Windows.Controls.Image)stackPanel.Children[0];
             TextBlock textBlock = (TextBlock)stackPanel.Children[1];
 
-            image.Source = new BitmapImage(new Uri("/Assets/Images/plus-small.png", UriKind.Relative)); // Đường dẫn đến hình ảnh dấu cộng màu xanh
+            image.Source = new BitmapImage(new Uri("../Assets/image/plus-small.png", UriKind.Relative)); // Đường dẫn đến hình ảnh dấu cộng màu xanh
             textBlock.Foreground = Brushes.Black;
         }
         private void Add_QuestionBtn_Click(object sender, RoutedEventArgs e)

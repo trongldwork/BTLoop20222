@@ -38,12 +38,12 @@ namespace sebExamination
         }
         private void SwitchViewHome_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void SwitchViewCourse_Click(object sender, RoutedEventArgs e)
         {
-
+            Iborder_menu.Content = new Course_list();
         }
         
         private void ShowQuestionBank_Click(object sender, RoutedEventArgs e)

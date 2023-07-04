@@ -261,34 +261,11 @@
                     <Border x:Name="border_menu"
                             BorderThickness="1"
                             BorderBrush="#888888"
-                            Margin="15 20 15 0"
-                            Visibility="Collapsed">
+                            Margin="15 20 15 0">
                         <ContentControl x:Name="Iborder_menu" Content="{Binding MenuContentControl, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
                     </Border>
 
-
-                    <Border BorderThickness="1"
-                            BorderBrush="#888888"
-                            Margin="15 20 15 0">
-
-                        <ListBox x:Name="cours_examList"
-                                 Margin="50 40 50 400"
-                                 BorderThickness="0"
-                                 >
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="Assets/image/task.png"
-                                       Height="30"
-                                       Margin="35 0 15 0"/>
-                                <TextBlock Text="nhét list với hyperlink của C# vào nhưng t chưa học" 
-                                           FontSize="24"
-                                           FontFamily="Cambria"
-                                           VerticalAlignment="Bottom"/>
-                            </StackPanel>
-
-                        </ListBox>
-
-                    </Border>
-
+<!-- da an di border-->
                     <local_uc:Footer/>
 
                 </StackPanel>

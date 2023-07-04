@@ -353,7 +353,6 @@ C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debu
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
-C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.g.cs
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -368,7 +367,6 @@ C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debu
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
-C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.baml
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
@@ -382,3 +380,14 @@ C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debu
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CopyComplete
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\course_exam.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\examListItem.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\textStyle.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle2.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.baml

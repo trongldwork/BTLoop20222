@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DataTemplate x:Key="course_exam">
+        <StackPanel Orientation="Horizontal">
+            <Image Source="/task.png"
+                       Margin="35 0 15 0"/>
+            <TextBlock Text="{Binding Path=courseName}" />
+        </StackPanel>
+    </DataTemplate>
+</ResourceDictionary>

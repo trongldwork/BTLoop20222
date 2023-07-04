@@ -7,6 +7,11 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Template/ButtonTheme.xaml"/>
+                <ResourceDictionary Source="Template/course_exam.xaml"/>
+                <ResourceDictionary Source="Template/examListItem.xaml"/>
+                <ResourceDictionary Source="Template/textStyle.xaml"/>
+                <ResourceDictionary Source="Template/toggleBtnStyle.xaml"/>
+                <ResourceDictionary Source="Template/toggleBtnStyle2.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

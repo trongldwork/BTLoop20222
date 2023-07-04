@@ -29,7 +29,7 @@ namespace sebExamination.Controls
             InitializeComponent();
         }
         
-        static string _Filename { get; set; }
+        static string? _Filename { get; set; }
         static List<Line> _Lines = new List<Line>();
         public void OnDrop(object sender, DragEventArgs e)
         {
@@ -124,7 +124,7 @@ namespace sebExamination.Controls
         }
         static void Savefileques(string filename, List<Line> lines)
         {
-
+            
             string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
 
             string categoriesPath = System.IO.Path.Combine(project_path, "File question");

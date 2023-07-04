@@ -31,9 +31,9 @@ namespace sebExamination.Controls
         {
             // Tạo đường dẫn đến thư mục "Categories"
             string currentDirectory = Directory.GetCurrentDirectory();
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
+
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
+
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
 
             // Tạo ComboBox và thêm tên thư mục vào nó
@@ -70,9 +70,9 @@ namespace sebExamination.Controls
                         folderName = "   " + folderName;
                     }
                     elevator++;
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
+
                     string dataPath = Directory.GetParent(folder).FullName;
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
+
                     dataPath = System.IO.Path.Combine(dataPath, folder);
                     dataPath = System.IO.Path.Combine(dataPath, "Count.txt");
                     string data = File.ReadAllText(dataPath);

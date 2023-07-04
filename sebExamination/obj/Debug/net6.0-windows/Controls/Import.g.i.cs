@@ -157,7 +157,7 @@ namespace sebExamination.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/sebExamination;V1.0.0.0;component/controls/import.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/sebExamination;component/controls/import.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\Import.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

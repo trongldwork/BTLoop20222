@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\App.xaml
-11-1262579126
+18-830572230
 
-22-893319588
+24-2065364477
 1951105065323
-Controls\AddQuestion.xaml;Controls\AddQuiz.xaml;Controls\Categories.xaml;Controls\Export.xaml;Controls\Footer.xaml;Controls\Import.xaml;Controls\Menu_uc.xaml;Controls\Question.xaml;Controls\TestUC.xaml;MainWindow.xaml;Template\ButtonTheme.xaml;
+Controls\AddQuestion.xaml;Controls\AddQuiz.xaml;Controls\Categories.xaml;Controls\Course_list.xaml;Controls\EditQuiz.xaml;Controls\Export.xaml;Controls\Footer.xaml;Controls\Import.xaml;Controls\Menu_uc.xaml;Controls\Question.xaml;Controls\Test_Preview.xaml;MainWindow.xaml;Template\ButtonTheme.xaml;Template\course_exam.xaml;Template\examListItem.xaml;Template\textStyle.xaml;Template\toggleBtnStyle.xaml;Template\toggleBtnStyle2.xaml;
 
 False
 

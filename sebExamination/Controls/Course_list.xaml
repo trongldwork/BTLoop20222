@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="sebExamination.Controls.Course_list"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sebExamination.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Height="600">
+            <StackPanel Orientation="Vertical"
+                                        >
+                <StackPanel Orientation="Horizontal"
+                                            Height="50"
+                                            Margin="20,100,0,-80"
+                                            >
+                    <Image
+                                       Source="../Assets/image/test.png"
+                                       Margin="50,0,0,0" Width="64" Height="65"/>
+                    <ToggleButton x:Name="test1"
+                                                  Content="Kiểm tra cuối kì môn IT4895Q"
+                                                  Width="800"
+                                                  FontSize="22"
+                                                  Background="White"
+                                                  BorderThickness="0"
+                                                  Margin="0,15,0,0" FontFamily="Times New Roman"
+                                                  HorizontalContentAlignment="Left"
+                                                  Style="{StaticResource CustomToggleButtonStyle}" Checked="test1_Checked">
+                    </ToggleButton>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                                            Height="50"
+                                            Margin="20,100,0,-80">
+                    <Image
+                                       Source="../Assets/image/test.png"
+                                       Margin="50,0,0,0" Width="64" Height="65"/>
+                    <ToggleButton x:Name="test2"
+                                                  Content="Kiểm tra cuối kì môn IT4895Q"
+                                                  Width="800"
+                                                  FontSize="22"
+                                                  Background="White"
+                                                  BorderThickness="0"
+                                                  Margin="0,15,0,0" FontFamily="Times New Roman"
+                                                  HorizontalContentAlignment="Left"
+                                                  Style="{StaticResource CustomToggleButtonStyle}">
+                    </ToggleButton>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                                            Height="50"
+                                            Margin="20,100,0,-80">
+                    <Image
+                                       Source="../Assets/image/test.png"
+                                       Margin="50,0,0,0" Width="64" Height="65"/>
+                    <ToggleButton x:Name="test3"
+                                                  Content="Kiểm tra cuối kì môn IT4895Q"
+                                                  Width="800"
+                                                  FontSize="22"
+                                                  Background="White"
+                                                  BorderThickness="0"
+                                                  Margin="0,15,0,0" FontFamily="Times New Roman"
+                                                  HorizontalContentAlignment="Left"
+                                                  Style="{StaticResource CustomToggleButtonStyle}">
+                    </ToggleButton>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                                            Height="50"
+                                            Margin="20,100,0,-80">
+                    <Image
+                                       Source="../Assets/image/test.png"
+                                       Margin="50,0,0,0" Width="64" Height="65"/>
+                    <ToggleButton x:Name="test4"
+                                                  Content="Kiểm tra cuối kì môn IT4895Q"
+                                                  Width="800"
+                                                  FontSize="22"
+                                                  Background="White"
+                                                  BorderThickness="0"
+                                                  Margin="0,15,0,0" FontFamily="Times New Roman"
+                                                  HorizontalContentAlignment="Left"
+                                                  Style="{StaticResource CustomToggleButtonStyle}">
+                    </ToggleButton>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                                            Height="50"
+                                            Margin="20,100,0,-80">
+                    <Image
+                                       Source="../Assets/image/test.png"
+                                       Margin="50,0,0,0" Width="64" Height="65"/>
+                    <ToggleButton x:Name="test5"
+                                                  Content="Kiểm tra cuối kì môn IT4895Q"
+                                                  Width="800"
+                                                  FontSize="22"
+                                                  Background="White"
+                                                  BorderThickness="0"
+                                                  Margin="0,15,0,0" FontFamily="Times New Roman"
+                                                  HorizontalContentAlignment="Left"
+                                                  Style="{StaticResource CustomToggleButtonStyle}">
+                    </ToggleButton>
+                </StackPanel>
+
+            </StackPanel>
+
+
+    </Grid>
+</UserControl>

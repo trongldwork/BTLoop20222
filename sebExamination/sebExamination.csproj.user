@@ -16,6 +16,9 @@
     <Compile Update="Controls\Categories.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Controls\Course_list.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Controls\Export.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -42,6 +45,12 @@
     <Page Update="Controls\Categories.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Controls\Course_list.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\EditQuiz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Controls\Export.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -57,10 +66,28 @@
     <Page Update="Controls\Question.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Controls\Test_Preview.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Template\ButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\course_exam.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\examListItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\textStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\toggleBtnStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\toggleBtnStyle2.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -32,6 +32,7 @@
                                        Source="../Assets/image/arrow-right.png"
                                        Margin="2.5"/>
                     <TextBlock FontSize="16"
+                               
                                            Margin="5 0 0 0"
                                            FontFamily="Cambria"
                                            FontWeight="SemiBold"
@@ -44,7 +45,7 @@
             </ToggleButton>
             <!--nội dung phần general-->
             <Grid x:Name="addQuiz_general_box"
-                                  Visibility="Collapsed"
+                                  Visibility="Visible"
                                   Margin="20 10">
 
                 <Grid.ColumnDefinitions>
@@ -58,6 +59,7 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Foreground="Gray"
+                           
                                            FontSize="18">
                                     Name
                 </TextBlock>
@@ -74,7 +76,7 @@
                                            Grid.Row="1">
                                     Description
                 </TextBlock>
-                <TextBox x:Name="name_addQuiz"
+                <TextBox x:Name="quizName"
                                          Grid.Column="1"
                                          Height="30"
                                          Width="350" HorizontalAlignment="Left"
@@ -186,28 +188,29 @@
                 <StackPanel Grid.Column=" 1"
                                             Orientation="Horizontal">
                     <ComboBox x:Name="cb_opentime_day"
-                                              Height="25" Width="40"
-                                              SelectedIndex="0">
-
+                                              Height="25" Width="50"
+                                              SelectedIndex="0"
+                              >
                     </ComboBox>
                     <ComboBox x:Name ="cb_opentime_month"
                                               Margin="10,0,0,0"
                                               Width="90" Height= "25"
-                                              SelectedIndex="0">
+                                              SelectedIndex="0"
+                              >
                     </ComboBox>
                     <ComboBox x:Name="cb_opentime_year"
                                               Margin="10,0,0,0"
-                                              Width ="60" Height ="25"
+                                              Width ="55" Height ="25"
                                               SelectedIndex="0">
                     </ComboBox>
                     <ComboBox x:Name="cb_opentime_hour"
                                               Margin =" 10,0,0,0"
-                                              Width="40" Height ="25"
+                                              Width="65" Height ="25"
                                               SelectedIndex="0">
                     </ComboBox>
                     <ComboBox x:Name="cb_opentime_minute"
                                               Margin ="10,0,0,0"
-                                              Width =" 70" Height ="25"
+                                              Width ="55" Height ="25"
                                               SelectedIndex="0">
                     </ComboBox>
                     <Image Source="/Assets/Image/calendar.png" 
@@ -215,7 +218,8 @@
                                            Margin="7,7,7,7"
                                            >
                     </Image>
-                    <CheckBox Margin="5,5,0,0"
+                    <CheckBox x:Name="cb_opentime_enable"
+                              Margin="5,5,0,0"
                               VerticalAlignment="Center"
                                               Content="Enable">
                     </CheckBox>
@@ -225,7 +229,7 @@
                                             Grid.Row="1"
                                             Orientation="Horizontal">
                     <ComboBox x:Name="cb_closetime_day"
-                                              Height="25" Width="40"
+                                              Height="25" Width="50"
                                               SelectedIndex="0">
 
                     </ComboBox>
@@ -236,17 +240,17 @@
                     </ComboBox>
                     <ComboBox x:Name="cb_closetime_year"
                                               Margin="10,0,0,0"
-                                              Width ="60" Height ="25"
+                                              Width ="55" Height ="25"
                                               SelectedIndex="0">
                     </ComboBox>
                     <ComboBox x:Name="cb_closetime_hour"
                                               Margin =" 10,0,0,0"
-                                              Width="40" Height ="25"
+                                              Width="65" Height ="25"
                                               SelectedIndex="0">
                     </ComboBox>
                     <ComboBox x:Name="cb_closetime_minute"
                                               Margin ="10,0,0,0"
-                                              Width =" 70" Height ="25"
+                                              Width ="55" Height ="25"
                                               SelectedIndex="0">
                     </ComboBox>
                     <Image Source="/Assets/Image/calendar.png" 
@@ -255,6 +259,7 @@
                                            >
                     </Image>
                     <CheckBox Margin="5,5,0,0"
+                              x:Name="cb_closetime_enable"
                               VerticalAlignment="Center"
                                               Content="Enable">
                     </CheckBox>
@@ -263,7 +268,7 @@
                                             Grid.Row="2"
                                             Orientation="Horizontal">
                     <ComboBox x:Name="cb_timelimit"
-                                              Height="25" Width="40"
+                                              Height="25" Width="55"
                                               SelectedIndex="0">
                     </ComboBox>
                     <ComboBox x:Name="cb_timelimit2"
@@ -273,15 +278,16 @@
                         <ComboBoxItem>Minutes</ComboBoxItem>
                         <ComboBoxItem>Hours</ComboBoxItem>
                     </ComboBox>
-                    <CheckBox Content="Enable" VerticalAlignment="Center" Margin="10,0,0,0"></CheckBox>
+                    <CheckBox Content="Enable" x:Name="cb_timelimit_enable" VerticalAlignment="Center" Margin="10,0,0,0"></CheckBox>
                 </StackPanel>
                 <ComboBox Grid.Row="3"
+                          x:Name="whenclose"
                                           Grid.Column="1"
-                                          Height="25" Width="250"
+                                          Height="25" Width="290"
                                           HorizontalAlignment="Left" IsReadOnly="True"
                                           SelectedIndex="0">
                     <ComboBoxItem Content="Open attempts are submitted automatically"/>
-
+                    <ComboBoxItem Content="Open attempts are submitted manually"/>
                 </ComboBox>
 
             </Grid>

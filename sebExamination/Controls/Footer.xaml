@@ -37,7 +37,8 @@
         </Grid>
         <StackPanel Orientation="Vertical"
                                     Grid.Column="1"
-                                    Margin="20 10">
+                                    Margin="30 10"
+                    HorizontalAlignment="Right">
             <TextBlock Foreground="white" FontSize="16">
                         Created by:
             </TextBlock>

@@ -35,7 +35,7 @@ namespace filereader
             try
             {
                 var data = File.ReadAllText(fileName).Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                int pre = 4;
+                int pre = 2;
                 for (int i = 0; i < data.Length; i++)
                 {
                     if (data[i].StartsWith("A."))

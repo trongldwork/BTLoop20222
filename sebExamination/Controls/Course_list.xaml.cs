@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,17 +21,62 @@ namespace sebExamination.Controls
     /// </summary>
     public partial class Course_list : UserControl
     {
+        string path = "";
         public Course_list()
         {
             InitializeComponent();
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+            string quizPath = System.IO.Path.Combine(projectDirectory, "Quiz");
+            int fileCount = Directory.GetFiles(quizPath).Length;
+            string[] files = Directory.GetFiles(quizPath);
+
+            foreach (string file in files)
+            {
+                StackPanel stackPanel = new StackPanel()
+                {
+                    Orientation = Orientation.Horizontal,
+                    Height = 50,
+                    Margin = new Thickness(20, 100, 0, -80)
+                };
+
+                Image image = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/test.png", UriKind.Relative)),
+                    Margin = new Thickness(50, 0, 0, 0),
+                    Width = 64,
+                    Height = 65
+                };
+                stackPanel.Children.Add(image);
+
+                Button button = new Button()
+                {
+                    Name = System.IO.Path.GetFileName(file).Remove(System.IO.Path.GetFileName(file).Length - 4),
+                    Content = System.IO.Path.GetFileName(file).Remove(System.IO.Path.GetFileName(file).Length - 4),
+                    Width = 800,
+                    FontSize = 22,
+                    Background = Brushes.White,
+                    BorderThickness = new Thickness(0),
+                    Margin = new Thickness(0, 15, 0, 0),
+                    HorizontalContentAlignment = HorizontalAlignment.Left
+                };
+                button.Click += test1_Checked;
+                stackPanel.Children.Add(button);
+                QuizContainer.Children.Add(stackPanel);
+
+            }
         }
         private void test1_Checked(object sender, RoutedEventArgs e)
         {
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+            string quizPath = System.IO.Path.Combine(projectDirectory, "Quiz");
+            path = System.IO.Path.Combine(quizPath, sender.ToString().Substring(32) + ".txt");
             // Truyền giá trị newValue cho MainWindow
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
-                mainWindow.Iborder_menu.Content = new Test_Preview();
+                mainWindow.Iborder_menu.Content = new Test_Preview(path);
             }
         }
     }

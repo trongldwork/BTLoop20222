@@ -1,6 +1,8 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Text;
@@ -66,6 +68,8 @@ namespace sebExamination.Controls
         }
         private void ComboBox_Day() //tạo data từ 1 đến 31 cho combo box chỉ ngày
         {
+            cb_opentime_day.Items.Add("Day");
+            cb_closetime_day.Items.Add("Day");
             for (int i = 1; i <= 31; i++)
             {
                 cb_opentime_day.Items.Add(i);
@@ -75,6 +79,8 @@ namespace sebExamination.Controls
         private void ComboBox_Month() //tạo data từ 1 đến 31 cho combo box chỉ tháng
         {
             DateTimeFormatInfo dateFormatInfo = new DateTimeFormatInfo();
+            cb_opentime_month.Items.Add("Month");
+            cb_closetime_month.Items.Add("Month");
             for (int month = 1; month <= 12; month++)
             {
                 string monthName = dateFormatInfo.GetMonthName(month);
@@ -84,6 +90,8 @@ namespace sebExamination.Controls
         }
         private void ComboBox_Year()        //tạo data từ 1 đến 31 cho combo box chỉ năm
         {
+            cb_opentime_year.Items.Add("Year");
+            cb_closetime_year.Items.Add("Year");
             for (int i = 2020; i <= 2030; i++)
             {
                 cb_opentime_year.Items.Add(i);
@@ -92,6 +100,8 @@ namespace sebExamination.Controls
         }
         private void ComboBox_Hour()        //tạo data từ 1 đến 31 cho combo box chỉ giờ
         {
+            cb_opentime_hour.Items.Add("Hours");
+            cb_closetime_hour.Items.Add("Hours");
             for (int i = 1; i <= 24; i++)
             {
                 cb_opentime_hour.Items.Add(i);
@@ -100,6 +110,9 @@ namespace sebExamination.Controls
         }
         private void ComboBox_Minute()      //tạo data từ 1 đến 31 cho combo box chỉ phút
         {
+            cb_opentime_minute.Items.Add("Mins");
+            cb_closetime_minute.Items.Add("Mins");
+            cb_timelimit.Items.Add("Time");
             for (int i = 1; i <= 60; i++)
             {
                 cb_opentime_minute.Items.Add(i);
@@ -122,6 +135,28 @@ namespace sebExamination.Controls
 
         private void addQuiz_btn_click(object sender, RoutedEventArgs e)
         {
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+            string quizPath = System.IO.Path.Combine(projectDirectory, "Quiz");
+            quizPath = System.IO.Path.Combine(quizPath, quizName.Text+".txt");
+            string quizContent = "";
+            quizContent += "Quizname " + quizName.Text + "\n";
+            quizContent += "Time ";
+            int time =0;
+            if (cb_timelimit_enable.IsChecked == true)
+            {
+                if(cb_timelimit2.SelectedIndex == 1)
+                {
+                    time = cb_timelimit.SelectedIndex * 60;
+                }
+                quizContent += time.ToString();
+            }
+            quizContent += "\n";
+
+            using (StreamWriter writer = new StreamWriter(quizPath))
+            {
+                writer.Write(quizContent);
+            }
 
         }
     }

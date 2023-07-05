@@ -20,9 +20,12 @@ namespace sebExamination.Controls
     /// </summary>
     public partial class Test_Preview : UserControl
     {
-        public Test_Preview()
+        string path = "";
+        public Test_Preview(string QuizPath)
         {
             InitializeComponent();
+            path = QuizPath;
+            TestName.Text = System.IO.Path.GetFileName(path).Remove(System.IO.Path.GetFileName(path).Length - 4);
         }
 
         private void settingTestBtn_Click(object sender, RoutedEventArgs e)
@@ -31,7 +34,7 @@ namespace sebExamination.Controls
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
-                mainWindow.Iborder_menu.Content = new EditQuiz();
+                mainWindow.Iborder_menu.Content = new EditQuiz(path);
             }
         }
     }

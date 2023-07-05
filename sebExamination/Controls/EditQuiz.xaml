@@ -18,14 +18,12 @@
                 <StackPanel>
                     <Grid Height="100"
                                       Margin="15,0,0,0">
-                        <TextBlock
+                        <TextBlock x:Name="editTitle"
                                            FontSize="34"
                                            Foreground="#C02424"
                                            FontFamily="Cambria"
                                            FontWeight="Medium" HorizontalAlignment="Left" Width="1001"
                                            >
-                                        <Run Text="Editing quiz:" />
-                                        <Run Text="{Binding Content, ElementName=test1}" />
                         </TextBlock>
                         <ToggleButton Style="{DynamicResource ToggleButtonStyle}" x:Name="settingTestBtn"
                                               Margin="0,10,10,10"

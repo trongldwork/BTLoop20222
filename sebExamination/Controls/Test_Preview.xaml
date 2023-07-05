@@ -13,8 +13,7 @@
                         <TextBlock x:Name="TestName" FontSize="42"
                                    Foreground="#C02424"
                                    FontFamily="Cambria"
-                                   FontWeight="Medium" HorizontalAlignment="Left" Width="1001"
-                                   Text="{Binding Content, ElementName=test1}">
+                                   FontWeight="Medium" HorizontalAlignment="Left" Width="1001">
                         </TextBlock>
 
                         <ToggleButton Style="{DynamicResource ToggleButtonStyle}" x:Name="settingTestBtn"
@@ -55,9 +54,9 @@
 
                         </TextBlock>
                     </Grid>
-                    <Grid Height="100">
+                    <Grid Height="50">
                         <TextBlock
-                                           FontSize="42"
+                                           FontSize="26"
                                            Foreground="#C02424"
                                            FontFamily="Cambria"
                                            FontWeight="Medium" Width="1001"

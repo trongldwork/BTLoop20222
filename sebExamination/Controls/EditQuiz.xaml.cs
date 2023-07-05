@@ -1,5 +1,7 @@
-﻿using System;
+﻿using filereader;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,9 +23,27 @@ namespace sebExamination.Controls
     /// </summary>
     public partial class EditQuiz : UserControl
     {
-        public EditQuiz()
+
+        public ObservableCollection<object> QuestionBoxes { get; } = new ObservableCollection<object>();
+        private List<RadioButton> radioButtons = new List<RadioButton>();
+        private List<Button> buttons = new List<Button>();
+        private string fileName = "Quizz.txt";
+        List<Questions> questions = new List<Questions>();
+        public EditQuiz(string QuizPath)
         {
             InitializeComponent();
+            fileName = QuizPath;
+            editTitle.Text = "Editing quiz: " + System.IO.Path.GetFileName(QuizPath).Remove(System.IO.Path.GetFileName(QuizPath).Length - 4);
+            FileImp fileImp = new FileImp();
+            questions = fileImp.LoadDataFromFile(fileName);
+            for (int i = 0; i < questions.Count; i++)
+            {
+                AddQuestionToContainer();
+            }
+        }
+        private void AddQuestionToContainer()
+        {
+
         }
         private void Add_Ques_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -63,7 +83,7 @@ namespace sebExamination.Controls
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
-                mainWindow.Iborder_menu.Content = new Test_Preview();
+                mainWindow.Iborder_menu.Content = new Test_Preview(fileName);
             }
         }
     }

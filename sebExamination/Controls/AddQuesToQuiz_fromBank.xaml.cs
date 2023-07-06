@@ -106,6 +106,11 @@ namespace sebExamination.Controls
         }
         private void changeCategory(object sender, EventArgs e)
         {
+            StackPanel questionContainer = (StackPanel)FindName("QuestionContainer");
+            if (questionContainer != null)
+            {
+                questionContainer.Children.Clear();
+            }
             string currentDirectory = Directory.GetCurrentDirectory();
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");

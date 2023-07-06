@@ -145,18 +145,22 @@ namespace sebExamination.Controls
             string folderPath = System.IO.Path.Combine(categoriesPath, categoryName);
             string filePath = System.IO.Path.Combine(folderPath, fileName);
             string countFile = System.IO.Path.Combine(folderPath, "count.txt");
-
+            
             try
             {
                 if (!Directory.Exists(folderPath))
                 {
                     Directory.CreateDirectory(folderPath);
+                    
                 }
-
+                string categoryContent = "Category name: " + categoryName + "\nthisline support the file reader to read both quizz file and category file\n";
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    writer.Write(categoryContent);
+                }
                 // Lấy nội dung từ TextBox
                 string fileContent = "0";
                 // Tạo và ghi nội dung vào file\
-                File.Create(filePath);
                 using (StreamWriter writer = new StreamWriter(countFile))
                 {
                     writer.Write(fileContent);

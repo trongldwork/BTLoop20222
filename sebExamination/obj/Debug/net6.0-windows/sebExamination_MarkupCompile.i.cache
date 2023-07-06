@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\App.xaml
-19928531912
+211952462524
 
-271598265149
+28-477766649
 195-1191033808
-Controls\AddQuestion.xaml;Controls\AddQuiz.xaml;Controls\Categories.xaml;Controls\Course_list.xaml;Controls\EditQuiz.xaml;Controls\Export.xaml;Controls\Footer.xaml;Controls\Import.xaml;Controls\Menu_uc.xaml;Controls\Question.xaml;Controls\TestUC.xaml;Controls\Test_Preview.xaml;MainWindow.xaml;Template\ButtonTheme.xaml;Template\course_exam.xaml;Template\examListItem.xaml;Template\textStyle.xaml;Template\toggleBtnStyle.xaml;Template\toggleBtnStyle2.xaml;
+Controls\AddQuestion.xaml;Controls\AddQuesToQuiz_fromBank.xaml;Controls\AddQuiz.xaml;Controls\Categories.xaml;Controls\Course_list.xaml;Controls\EditQuiz.xaml;Controls\Export.xaml;Controls\Footer.xaml;Controls\Import.xaml;Controls\Menu_uc.xaml;Controls\Question.xaml;Controls\TestUC.xaml;Controls\Test_Preview.xaml;MainWindow.xaml;Template\ButtonTheme.xaml;Template\course_exam.xaml;Template\examListItem.xaml;Template\SquareRadioButton.xaml;Template\textStyle.xaml;Template\toggleBtnStyle.xaml;Template\toggleBtnStyle2.xaml;
 
-True
+False
 

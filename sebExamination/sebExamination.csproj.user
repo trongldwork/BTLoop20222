@@ -10,6 +10,9 @@
     <Compile Update="Controls\AddQuestion.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Controls\AddQuesToQuiz_fromBank.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Controls\AddQuiz.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\AddQuestion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\AddQuesToQuiz_fromBank.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controls\AddQuiz.xaml">
@@ -79,6 +85,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Template\examListItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\SquareRadioButton.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Template\textStyle.xaml">

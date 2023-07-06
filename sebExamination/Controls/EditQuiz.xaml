@@ -173,6 +173,7 @@
                     </ToggleButton>
 
                     <ToggleButton Background="Transparent" BorderBrush="Transparent"
+                                  Click="open_addFromQuestionBank_Click"
                                           BorderThickness="0"  MouseEnter="Add_Ques_MouseEnter" MouseLeave="Add_Ques_MouseLeave">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="\Assets\Images\plus-small.png"
@@ -206,6 +207,7 @@
             </ScrollViewer>
             
         </StackPanel>
+
     </Grid>
 
 </UserControl>

@@ -24,9 +24,6 @@ namespace sebExamination.Controls
     public partial class EditQuiz : UserControl
     {
 
-        public ObservableCollection<object> QuestionBoxes { get; } = new ObservableCollection<object>();
-        private List<RadioButton> radioButtons = new List<RadioButton>();
-        private List<Button> buttons = new List<Button>();
         private string fileName = "Quizz.txt";
         List<Questions> questions = new List<Questions>();
         public EditQuiz(string QuizPath)
@@ -189,6 +186,15 @@ namespace sebExamination.Controls
             {
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new Test_Preview(fileName);
+            }
+        }
+
+        private void open_addFromQuestionBank_Click(object sender, RoutedEventArgs e)
+        {
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new AddQuesToQuiz_fromBank(fileName);
             }
         }
     }

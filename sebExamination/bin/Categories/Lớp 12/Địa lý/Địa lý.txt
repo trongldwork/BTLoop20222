@@ -1,0 +1,2 @@
+Category name: Địa lý
+thisline support the file reader to read both quizz file and category file

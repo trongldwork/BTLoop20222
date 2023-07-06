@@ -15,11 +15,13 @@
     <None Remove="Assets\Image\arrowWhite.png" />
     <None Remove="Assets\Image\bin.png" />
     <None Remove="Assets\Image\calendar.png" />
+    <None Remove="Assets\Image\cross.png" />
     <None Remove="Assets\Image\edit-text.png" />
     <None Remove="Assets\Image\list.png" />
     <None Remove="Assets\Image\menu.png" />
     <None Remove="Assets\Image\move.png" />
     <None Remove="Assets\Image\online-test.png" />
+    <None Remove="Assets\Image\plus-small.png" />
     <None Remove="Assets\Image\question.png" />
     <None Remove="Assets\Image\search.png" />
     <None Remove="Assets\Image\settings.png" />
@@ -41,11 +43,13 @@
     <Resource Include="Assets\Image\arrowWhite.png" />
     <Resource Include="Assets\Image\bin.png" />
     <Resource Include="Assets\Image\calendar.png" />
+    <Resource Include="Assets\Image\cross.png" />
     <Resource Include="Assets\Image\edit-text.png" />
     <Resource Include="Assets\Image\list.png" />
     <Resource Include="Assets\Image\menu.png" />
     <Resource Include="Assets\Image\move.png" />
     <Resource Include="Assets\Image\online-test.png" />
+    <Resource Include="Assets\Image\plus-small.png" />
     <Resource Include="Assets\Image\question.png" />
     <Resource Include="Assets\Image\search.png" />
     <Resource Include="Assets\Image\settings.png" />

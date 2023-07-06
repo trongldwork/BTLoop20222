@@ -388,3 +388,6 @@ C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Doc
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.baml
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.baml
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CopyComplete
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\SquareRadioButton.baml

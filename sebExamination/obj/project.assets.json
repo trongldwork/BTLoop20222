@@ -5029,24 +5029,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\trong\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\sth\\BTLoop20222\\sebExamination\\BTLoop20222\\sebExamination\\sebExamination.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\OneDrive - Hanoi University of Science and Technology\\Documents\\GitHub\\BTLoop20222\\sebExamination\\sebExamination.csproj",
       "projectName": "sebExamination",
-      "projectPath": "D:\\code\\sth\\BTLoop20222\\sebExamination\\BTLoop20222\\sebExamination\\sebExamination.csproj",
-      "packagesPath": "C:\\Users\\trong\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\sth\\BTLoop20222\\sebExamination\\BTLoop20222\\sebExamination\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\OneDrive - Hanoi University of Science and Technology\\Documents\\GitHub\\BTLoop20222\\sebExamination\\sebExamination.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\OneDrive - Hanoi University of Science and Technology\\Documents\\GitHub\\BTLoop20222\\sebExamination\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\trong\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5054,7 +5049,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5097,7 +5091,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -37,5 +37,24 @@ namespace sebExamination.Controls
                 mainWindow.Iborder_menu.Content = new EditQuiz(path);
             }
         }
+
+        private void PreviewQuiz_Click(object sender, RoutedEventArgs e)
+        {
+            confirmation_box.Visibility = Visibility.Visible;
+        }
+
+        private void closeConfirmationBox_btn_Click(object sender, RoutedEventArgs e)
+        {
+            confirmation_box.Visibility = Visibility.Collapsed;
+        }
+
+        private void startAttempt_Click(object sender, RoutedEventArgs e)
+        {
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new Quiz(path);
+            }
+        }
     }
 }

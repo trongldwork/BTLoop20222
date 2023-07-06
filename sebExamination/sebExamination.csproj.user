@@ -37,6 +37,9 @@
     <Compile Update="Controls\Question.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Controls\Quiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\AddQuestion.xaml">
@@ -70,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controls\Question.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Quiz.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controls\Test_Preview.xaml">

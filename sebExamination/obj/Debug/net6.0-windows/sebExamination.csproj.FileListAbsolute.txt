@@ -237,7 +237,6 @@ C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Doc
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
-C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.g.cs
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -252,7 +251,6 @@ C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Doc
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
-C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.baml
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
@@ -449,3 +447,5 @@ D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Quiz.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Quiz.baml

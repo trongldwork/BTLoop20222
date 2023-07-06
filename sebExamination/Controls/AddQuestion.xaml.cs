@@ -118,7 +118,11 @@ namespace sebExamination.Controls
         }
         private void saveChange_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
-            
+            if (category_parent.SelectedIndex == 0)
+            {
+                MessageBox.Show("Vui lòng chọn category");
+                return;
+            }
             List<string> answer = new List<string>();
             
             string ans = "ANSWER: ";

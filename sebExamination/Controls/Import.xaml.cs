@@ -1,4 +1,5 @@
-﻿using DocumentFormat.OpenXml.Packaging;
+﻿using DocumentFormat.OpenXml;
+using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using Microsoft.Win32;
 using System;
@@ -7,11 +8,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
-using System.Windows.Media;
+using System.Windows;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using sebExamination.Model;
@@ -64,9 +64,9 @@ namespace sebExamination.Controls
                 if (ValidInput(lines))
                 {
                     input_field.Text = $"đã đọc file từ đường dãn:\n {filePath}";
-                    MessageBox.Show($"Success {lines.Count}");
                     _Filename = filename;
                     _Lines = lines;
+                    MessageBox.Show($"Success {lines.Count}");
                 }
             }
         }
@@ -117,27 +117,37 @@ namespace sebExamination.Controls
                 if (ValidInput(lines))
                 {
                     input_field.Text = $"đã đọc file từ đường dãn:\n {filePath}";
-                    MessageBox.Show($"Success {lines.Count}");
                     _Filename = filename;
                     _Lines = lines;
+                    MessageBox.Show($"Success {lines.Count}");
                 }
             }
 
         }
         static void Savefileques(string filename, List<Line> lines)
         {
-            
+            int count = 0;
             string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
 
-            string categoriesPath = System.IO.Path.Combine(project_path, "File question");
-            string Filename = filename + ".txt";
-            string _filepath = Path.Combine(categoriesPath, Filename);
+            string categoriesPath = System.IO.Path.Combine(project_path, "bin/Categories");
+            string FolderName = categoriesPath + "/" + filename + "/";
+            Directory.CreateDirectory(FolderName);
+            string filePath = Path.Combine(FolderName,filename + ".txt");
+            string Countpath = FolderName + "count.txt";
+
             // Tạo FileStream và đóng nó ngay sau khi tạo xong
-            using (FileStream fs = File.Create(_filepath)) { }
-            using (StreamWriter writer = new StreamWriter(_filepath))
+            using (FileStream fs = File.Create(filePath)) { }
+            using (StreamWriter writer = new StreamWriter(filePath))
             {
-                foreach (Line line in lines) { writer.WriteLine(line.LineContent); }
+                writer.WriteLine($"Category name: {filename}");
+                writer.WriteLine("thisline support the file reader to read both quizz file and category file"); 
+                foreach (Line line in lines) { 
+                    writer.WriteLine(line.LineContent);
+                    if (line.Type == "answer") writer.WriteLine("1");
+                    count += (line.Type == "question") ? 1 : 0;
+                }
             }
+            File.WriteAllText(Countpath, count.ToString());
         }
         static List<Line> Readtxt(string filePath)
         {
@@ -173,28 +183,72 @@ namespace sebExamination.Controls
                 // Get the main document part (i.e. the content)
                 var body = document.MainDocumentPart.Document.Body;
                 int pos = 0;
-
+                int num_image = 0;
                 // Loop through all paragraphs in the document
                 foreach (var paragraph in body.Descendants<Paragraph>())
                 {
                     // Check if the paragraph contains any text
-                    if (paragraph.InnerText.Trim().Length > 0)
+                    if (paragraph.InnerText.Trim().Length > 0 || (paragraph.HasChildren && paragraph.Descendants<Drawing>().Any()))
                     {
                         // Loop through all runs in the paragraph
                         foreach (var run in paragraph.Descendants<Run>())
                         {
-                            // Loop through all text elements in the run
-                            foreach (var text in run.Descendants<Text>())
+                            // Kiểm tra nếu Run chứa hình ảnh
+                            if (run.HasChildren && run.GetFirstChild<Drawing>() != null)
                             {
-                                // Get the byte array of the text content
-                                byte[] bytes = Encoding.UTF8.GetBytes(text.Text);
+                                // Lấy đối tượng Drawing (chứa hình ảnh)
+                                Drawing drawing = run.GetFirstChild<Drawing>();
 
-                                // Decode the byte array to a string using UTF-8
-                                string line = Encoding.UTF8.GetString(bytes);
+                                // Lấy đối tượng hình ảnh từ Drawing
+                                var image = drawing.Descendants<DocumentFormat.OpenXml.Drawing.Pictures.Picture>().FirstOrDefault();
 
-                                // Do something with the line
-                                pos++;
-                                lines.Add(new Line(line, pos));
+                                if (image != null)
+                                {
+                                    // Lấy định dạng của hình ảnh
+                                    string imageFormat = image.BlipFill.Blip.Embed.Value;
+
+                                    // Tìm kiếm phần Body trong tài liệu để lấy đường dẫn của hình ảnh
+                                    var imagePart = document.MainDocumentPart.GetPartById(imageFormat);
+
+                                    if (imagePart != null)
+                                    {
+                                        // Lấy dữ liệu của hình ảnh
+                                        using (Stream imageStream = imagePart.GetStream())
+                                        {
+                                            // Tiếp tục xử lý dữ liệu hình ảnh theo nhu cầu của bạn
+                                            // Ví dụ: lưu hình ảnh vào một tệp khác
+                                            num_image++;
+                                            string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+                                            string filename = Path.GetFileNameWithoutExtension(filePath);
+                                            string categoriesPath = System.IO.Path.Combine(project_path, "bin/Categories");
+                                            string folderPath = categoriesPath + "/" + filename + "/";
+                                            string quesPath = System.IO.Path.Combine(project_path, "File question/");
+                                            string imageName = "ques" + num_image + ".jpg";
+                                            string outputImagePath = Path.Combine(folderPath, imageName);
+                                            using (FileStream outputImageFile = new FileStream(outputImagePath, FileMode.Create))
+                                            {
+                                                imageStream.CopyTo(outputImageFile);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                // Loop through all text elements in the run
+                                foreach (var text in run.Descendants<Text>())
+                                {
+                                    // Get the byte array of the text content
+                                    byte[] bytes = Encoding.UTF8.GetBytes(text.Text);
+
+                                    // Decode the byte array to a string using UTF-8
+                                    string line = Encoding.UTF8.GetString(bytes);
+
+                                    // Do something with the line
+                                    pos++;
+                                    Line tmpLine = new Line(line, pos);
+                                    if (tmpLine.Type != "none") lines.Add(tmpLine);
+                                }
                             }
                         }
                     }

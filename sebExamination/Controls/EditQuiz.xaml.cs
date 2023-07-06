@@ -42,22 +42,22 @@ namespace sebExamination.Controls
             {
                 Grid grid = new Grid()
                 {
-                    Background = new SolidColorBrush(Color.FromRgb(247, 246, 246)),
+                    Background = new SolidColorBrush(Color.FromArgb(255, 247, 246, 246)),
                     Name = "Quest",
                     Height = 20,
                     Margin = new Thickness(20, 2, 20, 2)
                 };
 
-                Image image1 = new Image()
+                Image moveImage = new Image()
                 {
                     Source = new BitmapImage(new Uri("../Assets/image/move.png", UriKind.Relative)),
                     Margin = new Thickness(0, 1, 5, 1),
                     HorizontalAlignment = HorizontalAlignment.Left
                 };
 
-                TextBlock textBlock1 = new TextBlock()
+                TextBlock indexTextBlock = new TextBlock()
                 {
-                    Text =( i+1).ToString(),
+                    Text = (i+1).ToString(),
                     Margin = new Thickness(30, 2, 5, 2),
                     TextAlignment = TextAlignment.Center,
                     Background = Brushes.LightGray,
@@ -65,60 +65,84 @@ namespace sebExamination.Controls
                     HorizontalAlignment = HorizontalAlignment.Left
                 };
 
-                Image image2 = new Image()
+                Image listImage = new Image()
                 {
                     Source = new BitmapImage(new Uri("../Assets/image/list.png", UriKind.Relative)),
                     Margin = new Thickness(60, 1, 5, 1),
                     HorizontalAlignment = HorizontalAlignment.Left
                 };
 
-                Image image3 = new Image()
+                Image settingsImage = new Image()
                 {
                     Source = new BitmapImage(new Uri("../Assets/image/settings.png", UriKind.Relative)),
                     Margin = new Thickness(85, 1, 5, 1),
                     HorizontalAlignment = HorizontalAlignment.Left
                 };
 
-                TextBlock textBlock2 = new TextBlock()
+                TextBlock textBlock = new TextBlock()
                 {
-                    Text = questions[i].Quest,
                     Width = 450,
                     HorizontalAlignment = HorizontalAlignment.Left,
-                    Margin = new Thickness(110, 0, 0, 0)
+                    Margin = new Thickness(110, 0, 0, 0),
+                    FontSize = 16,
+                    FontWeight = FontWeights.DemiBold,
+                    TextDecorations = null
                 };
 
                 Hyperlink hyperlink = new Hyperlink()
                 {
-                    Foreground = new SolidColorBrush(Color.FromArgb(51, 51, 51, 1)),
+                    Foreground = new SolidColorBrush(Color.FromArgb(255, 51, 51, 51)),
                     FontSize = 16,
-                    FontWeight = FontWeights.Bold,
+                    FontWeight = FontWeights.DemiBold,
                     TextDecorations = null
                 };
-                hyperlink.Inlines.Add(textBlock2.Text);
+                hyperlink.Inlines.Add(questions[i].Quest);
+                textBlock.Inlines.Add(hyperlink);
 
-                TextBlock textBlock3 = new TextBlock()
+                Image searchImage = new Image()
                 {
-                    Width = 50
+                    Source = new BitmapImage(new Uri("../Assets/image/search.png", UriKind.Relative)),
+                    Margin = new Thickness(5, 1, 100, 1),
+                    HorizontalAlignment = HorizontalAlignment.Right
                 };
 
-                Image image4 = new Image()
+                Image binImage = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/bin.png", UriKind.Relative)),
+                    Margin = new Thickness(5, 1, 70, 1),
+                    HorizontalAlignment = HorizontalAlignment.Right
+                };
+
+                Grid settingsGrid = new Grid()
+                {
+                    HorizontalAlignment = HorizontalAlignment.Right,
+                    Margin = new Thickness(10, 1, 10, 1)
+                };
+
+                TextBox textBox = new TextBox()
+                {
+                    Width = 50,
+                    Text = "1.0"
+                };
+
+                Image settingsImage2 = new Image()
                 {
                     Source = new BitmapImage(new Uri("../Assets/image/settings.png", UriKind.Relative)),
                     Margin = new Thickness(0),
                     HorizontalAlignment = HorizontalAlignment.Right
                 };
 
-                grid.Children.Add(image1);
-                grid.Children.Add(textBlock1);
-                grid.Children.Add(image2);
-                grid.Children.Add(image3);
-                grid.Children.Add(textBlock2);
-                grid.Children.Add(image4);
-                Grid.SetColumn(textBlock3, 1);
-                Grid.SetColumn(image4, 1);
-                Grid.SetRow(image4, 0);
-                Grid.SetRow(textBlock3, 0);
-                grid.Children.Add(textBlock3);
+                settingsGrid.Children.Add(textBox);
+                settingsGrid.Children.Add(settingsImage2);
+
+                grid.Children.Add(moveImage);
+                grid.Children.Add(indexTextBlock);
+                grid.Children.Add(listImage);
+                grid.Children.Add(settingsImage);
+                grid.Children.Add(textBlock);
+                grid.Children.Add(searchImage);
+                grid.Children.Add(binImage);
+                grid.Children.Add(settingsGrid);
                 quesContainer.Children.Add(grid);
             }
         }

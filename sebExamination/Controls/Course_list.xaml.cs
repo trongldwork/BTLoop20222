@@ -42,10 +42,10 @@ namespace sebExamination.Controls
 
                 Image image = new Image()
                 {
-                    Source = new BitmapImage(new Uri("../Assets/image/test.png", UriKind.Relative)),
+                    Source = new BitmapImage(new Uri("../Assets/image/task.png", UriKind.Relative)),
                     Margin = new Thickness(50, 0, 0, 0),
-                    Width = 64,
-                    Height = 65
+                    Width = 35,
+                    Height = 35
                 };
                 stackPanel.Children.Add(image);
 

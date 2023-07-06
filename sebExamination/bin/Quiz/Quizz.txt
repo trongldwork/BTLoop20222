@@ -1,7 +1,5 @@
 Quizname abc
-TotalMark 10
 Time 1200
-NumberOfQues 10
 
 Trong cuốn tiểu thuyết "1984" của George Orwell, Orwell mô tả một xã hội tương lai được cai trị bởi một chính phủ độc tài và siêu hình thức. Tên của chính phủ này là gì?
 A. Đảng Hiệp sĩ

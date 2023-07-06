@@ -36,9 +36,90 @@ namespace sebExamination.Controls
             editTitle.Text = "Editing quiz: " + System.IO.Path.GetFileName(QuizPath).Remove(System.IO.Path.GetFileName(QuizPath).Length - 4);
             FileImp fileImp = new FileImp();
             questions = fileImp.LoadDataFromFile(fileName);
+            questNum.Text = "Questions: " + questions.Count;
+            totalMark.Text = questions.Count.ToString();
             for (int i = 0; i < questions.Count; i++)
             {
-                AddQuestionToContainer();
+                Grid grid = new Grid()
+                {
+                    Background = new SolidColorBrush(Color.FromRgb(247, 246, 246)),
+                    Name = "Quest",
+                    Height = 20,
+                    Margin = new Thickness(20, 2, 20, 2)
+                };
+
+                Image image1 = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/move.png", UriKind.Relative)),
+                    Margin = new Thickness(0, 1, 5, 1),
+                    HorizontalAlignment = HorizontalAlignment.Left
+                };
+
+                TextBlock textBlock1 = new TextBlock()
+                {
+                    Text =( i+1).ToString(),
+                    Margin = new Thickness(30, 2, 5, 2),
+                    TextAlignment = TextAlignment.Center,
+                    Background = Brushes.LightGray,
+                    Width = 25,
+                    HorizontalAlignment = HorizontalAlignment.Left
+                };
+
+                Image image2 = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/list.png", UriKind.Relative)),
+                    Margin = new Thickness(60, 1, 5, 1),
+                    HorizontalAlignment = HorizontalAlignment.Left
+                };
+
+                Image image3 = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/settings.png", UriKind.Relative)),
+                    Margin = new Thickness(85, 1, 5, 1),
+                    HorizontalAlignment = HorizontalAlignment.Left
+                };
+
+                TextBlock textBlock2 = new TextBlock()
+                {
+                    Text = questions[i].Quest,
+                    Width = 450,
+                    HorizontalAlignment = HorizontalAlignment.Left,
+                    Margin = new Thickness(110, 0, 0, 0)
+                };
+
+                Hyperlink hyperlink = new Hyperlink()
+                {
+                    Foreground = new SolidColorBrush(Color.FromArgb(51, 51, 51, 1)),
+                    FontSize = 16,
+                    FontWeight = FontWeights.Bold,
+                    TextDecorations = null
+                };
+                hyperlink.Inlines.Add(textBlock2.Text);
+
+                TextBlock textBlock3 = new TextBlock()
+                {
+                    Width = 50
+                };
+
+                Image image4 = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/settings.png", UriKind.Relative)),
+                    Margin = new Thickness(0),
+                    HorizontalAlignment = HorizontalAlignment.Right
+                };
+
+                grid.Children.Add(image1);
+                grid.Children.Add(textBlock1);
+                grid.Children.Add(image2);
+                grid.Children.Add(image3);
+                grid.Children.Add(textBlock2);
+                grid.Children.Add(image4);
+                Grid.SetColumn(textBlock3, 1);
+                Grid.SetColumn(image4, 1);
+                Grid.SetRow(image4, 0);
+                Grid.SetRow(textBlock3, 0);
+                grid.Children.Add(textBlock3);
+                quesContainer.Children.Add(grid);
             }
         }
         private void AddQuestionToContainer()

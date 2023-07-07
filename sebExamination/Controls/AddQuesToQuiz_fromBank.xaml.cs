@@ -162,7 +162,7 @@ namespace sebExamination.Controls
             }
             FileImp fileImp = new FileImp();
             questions = new List<Questions>();
-
+            checkBoxes.Clear();
             questions = fileImp.LoadDataFromFile(filePath);
             numberOfQues = questions.Count;
             for (int i = 0; i<numberOfQues; i++)
@@ -247,8 +247,12 @@ namespace sebExamination.Controls
                     temp.Add(questions[i]);
                 }
             }
-            MessageBox.Show(fileName);
             fileImp.SaveDataToFile(fileName, temp);
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new EditQuiz(fileName);
+            }
         }
         private void close(object sender, RoutedEventArgs e)
         {

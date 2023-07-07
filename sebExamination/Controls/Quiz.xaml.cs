@@ -32,9 +32,13 @@ namespace sebExamination.Controls
 
         private DispatcherTimer timer;      //DispatcherTimer để đếm ngược thời gian
         private TimeSpan remainingTime;     // Biến lưu trữ thời gian còn lại
+        
+        string startTime, endTime;
         public Quiz(string quizPath)
         {
             InitializeComponent();
+            DateTime now = DateTime.Now;
+            startTime = now.ToString();
             fileName = quizPath;
             FileImp fileImp = new FileImp();
             questions = fileImp.LoadDataFromFile(fileName);
@@ -452,6 +456,8 @@ namespace sebExamination.Controls
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
+            DateTime now = DateTime.Now;
+            endTime = now.ToString();
             int correctAnswerCount = 0;
             int[] temp;
             temp = new int[99];
@@ -469,20 +475,102 @@ namespace sebExamination.Controls
 
                 // Tìm RadioButton tương ứng với câu hỏi
                 RadioButton selectedRadioButton = radioButtons.Find(rb => rb.Name == $"Question{questionNumber}_Answer{temp[questionNumber - 1]}");
-
+                
                 // Kiểm tra xem RadioButton được chọn có khớp với đáp án đúng hay không
                 if (selectedRadioButton.IsChecked == true)
                 {
                     correctAnswerCount++;
-                    questionGrid.Children.OfType<StackPanel>().FirstOrDefault()?.SetValue(BackgroundProperty, Brushes.LimeGreen);
+                    questionGrid.Children.OfType<StackPanel>().FirstOrDefault()?.SetValue(BackgroundProperty, new SolidColorBrush(Color.FromRgb(201, 250, 183)));
                 }
                 else
                 {
-                    questionGrid.Children.OfType<StackPanel>().FirstOrDefault()?.SetValue(BackgroundProperty, Brushes.Red);
+                    questionGrid.Children.OfType<StackPanel>().FirstOrDefault()?.SetValue(BackgroundProperty, new SolidColorBrush(Color.FromRgb(250, 175, 175)));
                 }
+                Grid grid = new Grid()
+                {
+                    Height = 35,
+                    Margin = new Thickness(10),
+                    Background = new SolidColorBrush(Color.FromRgb(252, 239, 220))
+                };
+
+                TextBlock textBlock = new TextBlock()
+                {
+                    Foreground = new SolidColorBrush(Color.FromRgb(154, 111, 67)),
+                    Margin = new Thickness(10),
+                    Text = "The correct answer is: " + questions[questionNumber - 1].Ans[temp[questionNumber-1]],
+                };
+
+                grid.Children.Add(textBlock);
+                questionGrid.Children.OfType<StackPanel>().FirstOrDefault()?.Children.Add(grid);
             }
 
+            //update bảng kết quả
+
+            Grid grid1 = ResultTable;
+
+            AddTextBlock(grid1, 0, 1, "#F7F7F7", startTime);
+            AddTextBlock(grid1, 1, 1, "#FAFAFA", "Finished");
+            AddTextBlock(grid1, 2, 1, "#F7F7F7", endTime);
+            AddTextBlock(grid1, 3, 1, "#FAFAFA", "Time take");
+            AddTextBlock(grid1, 4, 1, "#F7F7F7", correctAnswerCount.ToString() +"/" +(QuestionNumber+1).ToString());
+            AddTextBlock(grid1, 5, 1, "#FAFAFA", ((double)correctAnswerCount / (double)(QuestionNumber + 1) *10).ToString("F2"));
+            ResultTable.Visibility = Visibility.Visible;
+
+            //update finish review
+
+            Submit_btn.Visibility = Visibility.Collapsed;
+
+            TextBlock text = new TextBlock()
+            {
+                Margin = new Thickness(20)
+            };
+
+            Hyperlink hyperlink = new Hyperlink()
+            {
+                FontSize = 18,
+                Foreground = Brushes.Gray,
+                TextDecorations = null
+            };
+
+            hyperlink.Inlines.Add("Finish review");
+            hyperlink.Click += finishReview_Click;
+
+            text.Inlines.Add(hyperlink);
+
+            map.Children.Insert(1, text);
         }
 
+        private void AddTextBlock(Grid grid, int row, int column, string background, string text)
+        {
+            TextBlock textBlock = new TextBlock()
+            {
+                Foreground = new SolidColorBrush(Colors.DarkGray),
+                Margin = new Thickness(5, 0, 0, 0),
+                Text = text
+            };
+
+            
+
+            Grid backgroundGrid = new Grid()
+            {
+                Background = (SolidColorBrush)(new BrushConverter().ConvertFrom(background))
+            };
+            backgroundGrid.SetValue(Grid.RowProperty, row);
+            backgroundGrid.SetValue(Grid.ColumnProperty, column);
+
+            grid.Children.Add(backgroundGrid);
+            grid.Children.Add(textBlock);
+            Grid.SetRow(textBlock, row);
+            Grid.SetColumn(textBlock, column);
+        }
+
+        private void finishReview_Click(object sender, RoutedEventArgs e)
+        {
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new Course_list();
+            }
+        }
     }
 }

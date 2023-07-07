@@ -16,6 +16,125 @@
                     BorderThickness="0.5"
                     Margin="10 20 20 20">
             <StackPanel>
+                <Grid Margin="20"
+                      x:Name="ResultTable"
+                      Visibility="Collapsed">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="16"/>
+                        <RowDefinition Height="16"/>
+                        <RowDefinition Height="16"/>
+                        <RowDefinition Height="16"/>
+                        <RowDefinition Height="16"/>
+                        <RowDefinition Height="16"/>
+                    </Grid.RowDefinitions>
+                    <Grid Background="#F7F7F7"
+                          Grid.Row="0">
+                        <TextBlock Foreground="#C02424"
+                                   HorizontalAlignment="Right"
+                                   FontWeight="DemiBold"
+                                   Margin="0 0 5 0">
+                        Started on
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#F0F0F0"
+                          Grid.Row="1">
+                        <TextBlock Foreground="#C02424"
+                                   HorizontalAlignment="Right"
+                                   FontWeight="DemiBold"
+                                   Margin="0 0 5 0">
+                        State
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#F7F7F7"
+                          Grid.Row="2">
+                        <TextBlock Foreground="#C02424"
+                                   HorizontalAlignment="Right"
+                                   FontWeight="DemiBold"
+                                   Margin="0 0 5 0">
+                        Completed on
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#F0F0F0"
+                          Grid.Row="3">
+                        <TextBlock Foreground="#C02424"
+                                   HorizontalAlignment="Right"
+                                   FontWeight="DemiBold"
+                                   Margin="0 0 5 0">
+                        Time taken
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#F7F7F7"
+                          Grid.Row="4">
+                        <TextBlock Foreground="#C02424"
+                                   HorizontalAlignment="Right"
+                                   FontWeight="DemiBold"
+                                   Margin="0 0 5 0">
+                        Marks
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#F0F0F0"
+                          Grid.Row="5">
+                        <TextBlock Foreground="#C02424"
+                                   HorizontalAlignment="Right"
+                                   FontWeight="DemiBold"
+                                   Margin="0 0 5 0">
+                        Grade
+                        </TextBlock>
+                    </Grid>
+
+                    <Grid Background="#F7F7F7"
+                          Grid.Row="0"
+                          Grid.Column="1">
+                        <TextBlock Foreground="DarkGray"
+                                   Margin="5 0 0 0">
+                        Srart time
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#FAFAFA"
+                          Grid.Row="1"
+                          Grid.Column="1">
+                        <TextBlock Foreground="DarkGray"
+                                   Margin="5 0 0 0">
+                        Finished
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#F7F7F7"
+                          Grid.Row="2"
+                          Grid.Column="1">
+                        <TextBlock Foreground="DarkGray"
+                                   Margin="5 0 0 0">
+                        Complete time
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#FAFAFA"
+                          Grid.Row="3"
+                          Grid.Column="1">
+                        <TextBlock Foreground="DarkGray"
+                                   Margin="5 0 0 0">
+                        Time take
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#F7F7F7"
+                          Grid.Row="4"
+                          Grid.Column="1">
+                        <TextBlock Foreground="DarkGray"
+                                   Margin="5 0 0 0">
+                        Marks
+                        </TextBlock>
+                    </Grid>
+                    <Grid Background="#FAFAFA"
+                          Grid.Row="5"
+                          Grid.Column="1">
+                        <TextBlock Foreground="DarkGray"
+                                   Margin="5 0 0 0">
+                        Grade
+                        </TextBlock>
+                    </Grid>
+                </Grid>
                 <TextBlock x:Name="timerText" FontSize="24" />
 
                 <ItemsControl ItemsSource="{Binding QuestionBoxes}"/>
@@ -57,6 +176,8 @@
                                 FontWeight="DemiBold">
 
                 </Button>
+
+                
             </StackPanel>
         </Border>
 

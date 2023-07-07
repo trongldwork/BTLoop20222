@@ -1,5 +1,6 @@
 Category name: Liên minh huyền thoại
 this line support the file reader to read both quizz file and category file
+
 Công thức cấu tạo chung của các hidrocacbon no là gì?
 A. CnH2n
 B. CnH2n+1

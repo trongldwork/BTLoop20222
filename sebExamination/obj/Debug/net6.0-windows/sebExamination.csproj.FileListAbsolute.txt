@@ -507,3 +507,5 @@ D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\ob
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.baml

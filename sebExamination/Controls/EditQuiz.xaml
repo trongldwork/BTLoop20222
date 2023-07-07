@@ -186,7 +186,7 @@
                         </StackPanel>
                     </ToggleButton>
 
-                    <ToggleButton Background="Transparent" BorderBrush="Transparent"
+                    <ToggleButton Background="Transparent" BorderBrush="Transparent" Click="Add_Random_Question"
                                           BorderThickness="0"  MouseEnter="Add_Ques_MouseEnter" MouseLeave="Add_Ques_MouseLeave">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="\Assets\Images\plus-small.png"

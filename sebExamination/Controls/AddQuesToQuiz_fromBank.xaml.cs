@@ -1,4 +1,6 @@
-﻿using DocumentFormat.OpenXml.Math;
+﻿using DocumentFormat.OpenXml.EMMA;
+using DocumentFormat.OpenXml.InkML;
+using DocumentFormat.OpenXml.Math;
 using DocumentFormat.OpenXml.VariantTypes;
 using filereader;
 using System;
@@ -6,6 +8,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,6 +33,7 @@ namespace sebExamination.Controls
         List<CheckBox> checkBoxes = new List<CheckBox>();
         List<Questions> questions = new List<Questions>();
         int numberOfQues = 0;
+        int numcheck = 0;
         public AddQuesToQuiz_fromBank(string path)
         {
             fileName = path;
@@ -114,11 +118,23 @@ namespace sebExamination.Controls
         }
         private void changeCategory(object sender, EventArgs e)
         {
+            numcheck = 0;
             StackPanel questionContainer = (StackPanel)FindName("QuestionContainer");
             if (questionContainer != null)
             {
                 questionContainer.Children.Clear();
             }
+            string folderPath = GetFilePathFrombox();
+            List<Grid> grids = Read_Category(folderPath);
+            foreach (Grid grid in grids)
+            {
+                questionContainer.Children.Add(grid);
+            }
+            if (Show_subcate.IsChecked == true) { Show_subcate_Checked(sender, null); }
+        }
+
+        public string GetFilePathFrombox()
+        {
             string currentDirectory = Directory.GetCurrentDirectory();
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
@@ -160,12 +176,21 @@ namespace sebExamination.Controls
                 filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
 
             }
+            return filePath;
+        }
+        /// <summary>
+        /// đọc categories thành một list chứa các grid câu hỏi từ path (vị trí file chứa câu hỏi)
+        /// </summary>
+        /// <param name="path"></param>
+        public List<Grid> Read_Category(string path)
+        {
+            List<Grid> tmpGrid = new List<Grid>();
             FileImp fileImp = new FileImp();
             questions = new List<Questions>();
             checkBoxes.Clear();
-            questions = fileImp.LoadDataFromFile(filePath);
+            questions = fileImp.LoadDataFromFile(path);
             numberOfQues = questions.Count;
-            for (int i = 0; i<numberOfQues; i++)
+            for (int i = 0; i < numberOfQues; i++)
             {
                 Grid grid = new Grid()
                 {
@@ -186,7 +211,7 @@ namespace sebExamination.Controls
                     Name = $"ques{i}",
                     Margin = new Thickness(20, 2, 0, 0),
                     Foreground = Brushes.DarkGray
-};
+                };
 
                 Grid innerGrid = new Grid();
                 Image imageList = new Image()
@@ -216,8 +241,39 @@ namespace sebExamination.Controls
                     HorizontalAlignment = HorizontalAlignment.Right
                 };
                 grid.Children.Add(imageSearch);
-                QuestionContainer.Children.Add(grid);
+                //QuestionContainer.Children.Add(grid);
+                tmpGrid.Add(grid);
             }
+            return tmpGrid;
+        }
+        /// <summary>
+        /// hàm đệ quy trả về list các đường dẫn thư mục con của folderPath
+        /// </summary>
+        /// <param name="folderPath"></param>
+        /// <returns></returns>
+        public static List<string> GetAllSubdirectories(string folderPath)
+        {
+            List<string> subdirectories = new List<string>();
+
+            try
+            {
+                // Lấy tất cả các thư mục con trong thư mục hiện tại
+                string[] directories = Directory.GetDirectories(folderPath);
+
+                // Đệ quy lấy thư mục con của từng thư mục con
+                foreach (string directory in directories)
+                {
+                    subdirectories.Add(directory);
+                    subdirectories.AddRange(GetAllSubdirectories(directory));
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                Console.WriteLine($"Đã xảy ra lỗi: {ex.Message}");
+            }
+
+            return subdirectories;
         }
 
         private void selectAll_Click(object sender, RoutedEventArgs e)
@@ -261,6 +317,28 @@ namespace sebExamination.Controls
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new EditQuiz(fileName);
             }
+        }
+
+
+        private void Show_subcate_Checked(object sender, RoutedEventArgs e)
+        {
+            if (numcheck == 0)
+            {
+                string filePath = GetFilePathFrombox();
+                string folderPath = System.IO.Path.GetDirectoryName(filePath);
+                List<string> subfolders = GetAllSubdirectories(folderPath);
+                foreach (string subfolder in subfolders)
+                {
+                    string folderName = System.IO.Path.GetFileName(subfolder);
+                    string _filepath = subfolder + "\\" + folderName + ".txt";
+                    List<Grid> grids = Read_Category(_filepath);
+                    foreach (Grid grid in grids)
+                    {
+                        QuestionContainer.Children.Add(grid);
+                    }
+                }
+            }
+            numcheck++;
         }
     }
 }

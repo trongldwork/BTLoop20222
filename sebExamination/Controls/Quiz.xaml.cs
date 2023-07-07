@@ -461,7 +461,7 @@ namespace sebExamination.Controls
             int correctAnswerCount = 0;
             int[] temp;
             temp = new int[99];
-
+            timer.Stop();
             foreach (var question in QuestionBoxes)
             {
                 Grid questionGrid = (Grid)question;
@@ -511,9 +511,9 @@ namespace sebExamination.Controls
             AddTextBlock(grid1, 0, 1, "#F7F7F7", startTime);
             AddTextBlock(grid1, 1, 1, "#FAFAFA", "Finished");
             AddTextBlock(grid1, 2, 1, "#F7F7F7", endTime);
-            AddTextBlock(grid1, 3, 1, "#FAFAFA", "Time take");
-            AddTextBlock(grid1, 4, 1, "#F7F7F7", correctAnswerCount.ToString() +"/" +(QuestionNumber+1).ToString());
-            AddTextBlock(grid1, 5, 1, "#FAFAFA", ((double)correctAnswerCount / (double)(QuestionNumber + 1) *10).ToString("F2"));
+            AddTextBlock(grid1, 3, 1, "#FAFAFA", (DateTime.Parse(startTime) - DateTime.Parse(endTime)).ToString(@"hh\:mm\:ss"));
+            AddTextBlock(grid1, 4, 1, "#F7F7F7", correctAnswerCount.ToString() +"/" +(QuestionNumber).ToString());
+            AddTextBlock(grid1, 5, 1, "#FAFAFA", ((double)correctAnswerCount / (double)(QuestionNumber) *10).ToString("F2"));
             ResultTable.Visibility = Visibility.Visible;
 
             //update finish review

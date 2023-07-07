@@ -91,7 +91,7 @@
                           Grid.Column="1">
                         <TextBlock Foreground="DarkGray"
                                    Margin="5 0 0 0">
-                        Srart time
+                        Start time
                         </TextBlock>
                     </Grid>
                     <Grid Background="#FAFAFA"

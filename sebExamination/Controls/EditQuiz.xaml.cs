@@ -188,7 +188,14 @@ namespace sebExamination.Controls
                 mainWindow.Iborder_menu.Content = new Test_Preview(fileName);
             }
         }
-
+        private void Add_Random_Question(object sender, RoutedEventArgs e)
+        {
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new Add_Rand_Question(fileName);
+            }
+        }
         private void open_addFromQuestionBank_Click(object sender, RoutedEventArgs e)
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)

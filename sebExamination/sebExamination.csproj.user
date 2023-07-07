@@ -51,6 +51,9 @@
     <Page Update="Controls\AddQuiz.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Controls\Add_Rand_Question.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Controls\Categories.xaml">
       <SubType>Designer</SubType>
     </Page>

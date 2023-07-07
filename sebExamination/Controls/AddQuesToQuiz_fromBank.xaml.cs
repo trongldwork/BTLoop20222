@@ -1,4 +1,5 @@
-﻿using DocumentFormat.OpenXml.VariantTypes;
+﻿using DocumentFormat.OpenXml.Math;
+using DocumentFormat.OpenXml.VariantTypes;
 using filereader;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,7 @@ namespace sebExamination.Controls
     public partial class AddQuesToQuiz_fromBank : UserControl
     {
         private string fileName = "";
+        FileImp fileImp = new FileImp();
         List<CheckBox> checkBoxes = new List<CheckBox>();
         List<Questions> questions = new List<Questions>();
         int numberOfQues = 0;
@@ -104,6 +106,12 @@ namespace sebExamination.Controls
             res /= 3;
             return res + 1;
         }
+        private int countLength(string str)
+        {
+            char tmp = '(';
+            int position = str.IndexOf(tmp,str.Length-6);
+            return 1+ str.Length-position;
+        }
         private void changeCategory(object sender, EventArgs e)
         {
             StackPanel questionContainer = (StackPanel)FindName("QuestionContainer");
@@ -128,7 +136,7 @@ namespace sebExamination.Controls
                 {
                     parent[0] = parent[0].Substring(1);
                 }
-                parent[0] = parent[0].Substring(0, parent[0].Length - 5);
+                parent[0] = parent[0].Substring(0, parent[0].Length - countLength(parent[0]));
 
                 for (int i = index; i > 0; i--)
                 {
@@ -140,7 +148,7 @@ namespace sebExamination.Controls
 
                             parent[n - k] = parent[n - k].Substring(1);
                         }
-                        parent[n - k] = parent[n - k].Substring(0, parent[n - k].Length - 4);
+                        parent[n - k] = parent[n - k].Substring(0, parent[n - k].Length - countLength(parent[n - k]));
                         k--;
                     }
                 }
@@ -228,6 +236,19 @@ namespace sebExamination.Controls
                     checkBox.IsChecked = false;
                 }
             }
+        }
+        private void AddQuestion_btn_Click(object sender, RoutedEventArgs e)
+        {
+            List<Questions> temp = new List<Questions>();
+            for(int i = 0; i<checkBoxes.Count; i++)
+            {
+                if (checkBoxes[i].IsChecked == true)
+                {
+                    temp.Add(questions[i]);
+                }
+            }
+            MessageBox.Show(fileName);
+            fileImp.SaveDataToFile(fileName, temp);
         }
         private void close(object sender, RoutedEventArgs e)
         {

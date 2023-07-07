@@ -102,6 +102,12 @@ namespace sebExamination.Controls
             res /= 3;
             return res+1;
         }
+        private int countLength(string str)
+        {
+            char tmp = '(';
+            int position = str.IndexOf(tmp, str.Length - 6);
+            return 1 + str.Length - position;
+        }
         private void addCategoryBtn_Click(object sender, RoutedEventArgs e)
         {
             string categoryName = category_name.Text; // Lấy tên thư mục từ TextBox category_name
@@ -122,7 +128,7 @@ namespace sebExamination.Controls
                 {
                     parent[0] = parent[0].Substring(1);
                 }
-                parent[0] = parent[0].Substring(0, parent[0].Length - 4);
+                parent[0] = parent[0].Substring(0, parent[0].Length - countLength(parent[0]));
                 for (int i = index; i>0; i--)
                 {
                     if (countLevel(category_parent.Items[i].ToString()) == k)
@@ -132,7 +138,7 @@ namespace sebExamination.Controls
                         {
                             parent[n-k] = parent[n-k].Substring(1);
                         }
-                        parent[n-k] = parent[n-k].Substring(0, parent[n-k].Length - 4);
+                        parent[n-k] = parent[n-k].Substring(0, parent[n-k].Length - countLength(parent[n-k]));
                         k--;
                     }
                 }

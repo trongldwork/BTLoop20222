@@ -68,6 +68,12 @@ namespace sebExamination.Controls
                     _Lines = lines;
                     MessageBox.Show($"Success {lines.Count}");
                 }
+                else if (fileExtension == ".docx")
+                {
+                    string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+                    string FolderImagePath = project_path + "/question image/" + filename;
+                    Directory.Delete(FolderImagePath, true);
+                }
             }
         }
         public void OnDragLeave(object sender, DragEventArgs e)
@@ -121,6 +127,12 @@ namespace sebExamination.Controls
                     _Lines = lines;
                     MessageBox.Show($"Success {lines.Count}");
                 }
+                else if (fileExtension == ".docx")
+                {
+                    string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+                    string FolderImagePath = project_path + "/question image/" + filename;
+                    Directory.Delete(FolderImagePath, true);
+                }
             }
 
         }
@@ -140,7 +152,8 @@ namespace sebExamination.Controls
             using (StreamWriter writer = new StreamWriter(filePath))
             {
                 writer.WriteLine($"Category name: {filename}");
-                writer.WriteLine("thisline support the file reader to read both quizz file and category file"); 
+                writer.WriteLine("thisline support the file reader to read both quizz file and category file");
+                writer.WriteLine();
                 foreach (Line line in lines) { 
                     writer.WriteLine(line.LineContent);
                     if (line.Type == "answer") writer.WriteLine("1");
@@ -217,14 +230,12 @@ namespace sebExamination.Controls
                                         {
                                             // Tiếp tục xử lý dữ liệu hình ảnh theo nhu cầu của bạn
                                             // Ví dụ: lưu hình ảnh vào một tệp khác
-                                            num_image++;
                                             string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
                                             string filename = Path.GetFileNameWithoutExtension(filePath);
-                                            string categoriesPath = System.IO.Path.Combine(project_path, "bin/Categories");
-                                            string folderPath = categoriesPath + "/" + filename + "/";
-                                            string quesPath = System.IO.Path.Combine(project_path, "File question/");
-                                            string imageName = "ques" + num_image + ".jpg";
-                                            string outputImagePath = Path.Combine(folderPath, imageName);
+                                            string FolderImagePath = project_path + "/question image/" + filename;
+                                            Directory.CreateDirectory(FolderImagePath);
+                                            string imageName = "line_" + lines.Count + ".jpg";
+                                            string outputImagePath = Path.Combine(FolderImagePath, imageName);
                                             using (FileStream outputImageFile = new FileStream(outputImagePath, FileMode.Create))
                                             {
                                                 imageStream.CopyTo(outputImageFile);
@@ -323,7 +334,8 @@ namespace sebExamination.Controls
         public void Import_btn_click(object sender, EventArgs e)
         {
             Savefileques(_Filename, _Lines);
-            MessageBox.Show("OK");
+            input_field.Text = "Kéo thả file vào đây để upload";
+            if (_Filename != null) MessageBox.Show("OK");
         }
         private void import_fileFormat_click(object sender, RoutedEventArgs e)
         {

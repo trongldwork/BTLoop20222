@@ -43,7 +43,7 @@
             <Grid x:Name="import_fileFormat_box" Visibility="Collapsed"
                                               Height="auto">
                 <TextBlock FontFamily="cambria"
-                                                       FontSize="16">chưa biết nhét gì vào đây import_fileFormat_box</TextBlock>
+                                                       FontSize="16">Aiken format</TextBlock>
             </Grid>
 
             <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
@@ -75,7 +75,7 @@
             <Grid x:Name="import_general_box" Visibility="Collapsed"
                                               Height="auto">
                 <TextBlock FontFamily="cambria"
-                                                       FontSize="18">chưa biết nhét gì vào đây import_general_box</TextBlock>
+                                                       FontSize="18">Đề bài không nói trong nút này có gì</TextBlock>
             </Grid>
 
             <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>

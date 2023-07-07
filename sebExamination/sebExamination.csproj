@@ -62,7 +62,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="File question\" />
+    <Folder Include="question image\" />
   </ItemGroup>
 
 </Project>

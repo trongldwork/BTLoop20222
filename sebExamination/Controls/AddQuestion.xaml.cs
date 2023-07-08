@@ -1,4 +1,6 @@
-﻿using filereader;
+﻿using DocumentFormat.OpenXml.Bibliography;
+using DocumentFormat.OpenXml.Math;
+using filereader;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -289,10 +291,19 @@ namespace sebExamination.Controls
             comboBox.Items.Add(new ComboBoxItem() { Content = "12.5%" });
             comboBox.Items.Add(new ComboBoxItem() { Content = "10%" });
 
+            Image image = new Image()
+            {
+                Height = 40,
+                Width=50,
+                Margin= new Thickness(345, 40, 0, 0),
+                HorizontalAlignment = HorizontalAlignment.Left,
+                Source = new BitmapImage(new Uri("../Assets/image/add-image.png", UriKind.Relative)),
+            };
             choice_addQuestion.Children.Add(textBlock1);
             choice_addQuestion.Children.Add(textBlock2);
             choice_addQuestion.Children.Add(textBox);
             choice_addQuestion.Children.Add(comboBox);
+            choice_addQuestion.Children.Add(image);
             textBoxes.Add(textBox);
             comboboxs.Add(comboBox);
 

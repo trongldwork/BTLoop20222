@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Image\add-image.png" />
     <None Remove="Assets\Image\arrow-down.png" />
     <None Remove="Assets\Image\arrow-point-to-down.png" />
     <None Remove="Assets\Image\arrow-right.png" />
@@ -29,6 +30,8 @@
     <None Remove="Assets\Image\test.png" />
     <None Remove="Assets\Image\user.png" />
     <None Remove="Assets\Image\warning.png" />
+    <None Remove="Controls\add-image.png" />
+    <None Remove="Controls\edit-text.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +39,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Image\add-image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\Image\arrow-down.png" />
     <Resource Include="Assets\Image\arrow-point-to-down.png" />
     <Resource Include="Assets\Image\arrow-right.png" />
@@ -59,6 +65,8 @@
     </Resource>
     <Resource Include="Assets\Image\user.png" />
     <Resource Include="Assets\Image\warning.png" />
+    <Resource Include="Controls\add-image.png" />
+    <Resource Include="Controls\edit-text.png" />
   </ItemGroup>
 
   <ItemGroup>

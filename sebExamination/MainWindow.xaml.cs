@@ -44,6 +44,7 @@ namespace sebExamination
         private void SwitchViewCourse_Click(object sender, RoutedEventArgs e)
         {
             Iborder_menu.Content = new Course_list();
+            editBtn.Visibility = Visibility.Visible;
         }
         
         private void ShowQuestionBank_Click(object sender, RoutedEventArgs e)
@@ -55,6 +56,7 @@ namespace sebExamination
             MenuContentControl = new Menu_uc();
             MenuContentControl.MainContentControl = new Question();
             Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+            editBtn.Visibility = Visibility.Collapsed;
 
         }
         private void QuestionBank_Click_categories(object sender, RoutedEventArgs e)
@@ -62,6 +64,7 @@ namespace sebExamination
             MenuContentControl = new Menu_uc();
             MenuContentControl.MainContentControl = new Categories();
             Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+            editBtn.Visibility = Visibility.Collapsed;
 
         }
         private void QuestionBank_Click_import(object sender, RoutedEventArgs e)
@@ -69,6 +72,7 @@ namespace sebExamination
             MenuContentControl = new Menu_uc();
             MenuContentControl.MainContentControl = new Import();
             Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+            editBtn.Visibility = Visibility.Collapsed;
 
         }
         private void QuestionBank_Click_export(object sender, RoutedEventArgs e)
@@ -76,10 +80,12 @@ namespace sebExamination
             MenuContentControl = new Menu_uc();
             MenuContentControl.MainContentControl = new Export();
             Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+            editBtn.Visibility = Visibility.Collapsed;
         }
         private void ClickEditOn(object sender, RoutedEventArgs e)
         {
             Iborder_menu.Content = new AddQuiz();
+            editBtn.Visibility = Visibility.Collapsed;
         }
 
         public class courseSource

@@ -1,0 +1,2 @@
+Category name: 1234566666
+thisline support the file reader to read both quizz file and category file

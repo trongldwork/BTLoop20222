@@ -233,7 +233,10 @@ namespace sebExamination.Controls
                     Height = 18,
                     HorizontalAlignment = HorizontalAlignment.Right
                 };
+
                 grid.Children.Add(imageSearch);
+
+
                 //QuestionContainer.Children.Add(grid);
                 tmpGrid.Add(grid);
             }

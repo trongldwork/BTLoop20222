@@ -76,6 +76,7 @@ namespace sebExamination.Controls
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.editBtn.Visibility = Visibility.Collapsed;
                 mainWindow.Iborder_menu.Content = new Test_Preview(path);
             }
         }

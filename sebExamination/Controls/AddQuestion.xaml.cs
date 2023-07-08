@@ -204,7 +204,14 @@ namespace sebExamination.Controls
         }
         private void cancel_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
-
+            // Truyền giá trị newValue cho MainWindow
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                Menu_uc tmp = new Menu_uc();
+                tmp.MainContentControl = new Question();
+                mainWindow.Iborder_menu.Content = tmp;
+            }
         }
 
         

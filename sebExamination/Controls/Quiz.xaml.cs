@@ -522,7 +522,7 @@ namespace sebExamination.Controls
 
             TextBlock text = new TextBlock()
             {
-                Margin = new Thickness(20)
+                Margin = new Thickness(20),
             };
 
             Hyperlink hyperlink = new Hyperlink()
@@ -530,6 +530,7 @@ namespace sebExamination.Controls
                 FontSize = 18,
                 Foreground = Brushes.Gray,
                 TextDecorations = null
+                
             };
 
             hyperlink.Inlines.Add("Finish review");

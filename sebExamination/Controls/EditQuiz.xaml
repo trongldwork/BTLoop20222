@@ -202,7 +202,7 @@
             </Grid>
             <ScrollViewer Height="240">
                 <StackPanel x:Name="quesContainer"
-                        Orientation="Vertical">
+                        Orientation="Vertical" Margin="0 0 0 10">
                 </StackPanel>
             </ScrollViewer>
             

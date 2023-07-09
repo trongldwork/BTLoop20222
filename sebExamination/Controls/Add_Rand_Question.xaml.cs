@@ -23,34 +23,33 @@ namespace sebExamination.Controls
     public partial class Add_Rand_Question : UserControl
     {
         private string fileName = "";
-        List<CheckBox> checkBoxes = new List<CheckBox>();
+        FileImp fileImp = new FileImp();
         List<Questions> questions = new List<Questions>();
         int numberOfQues = 0;
         public Add_Rand_Question(string path)
         {
             fileName = path;
             InitializeComponent();
-            Add_Ques_Category_ComboBox();
-            //Number_of_Rand_Ques_ComboBox();
-
-
+            create_category_parent_ComboBox();
+            for (int i = 1; i <= 50; i++)
+            {
+                Number_of_Rand_Ques_cb.Items.Add(i.ToString());
+            }
         }
-        private void Add_Ques_Category_ComboBox()
+        private void create_category_parent_ComboBox()
         {
             // Tạo đường dẫn đến thư mục "Categories"
             string currentDirectory = Directory.GetCurrentDirectory();
-
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
-
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
 
             // Tạo ComboBox và thêm tên thư mục vào nó
 
-            ComboBox comboBox = Add_Ques_Category;
+            ComboBox comboBox = category_parent;
             comboBox.Items.Add("default");
             comboBox.Height = 25;
             comboBox.Width = 200;
-            comboBox.HorizontalAlignment = HorizontalAlignment.Center;
+            comboBox.HorizontalAlignment = HorizontalAlignment.Left;
             comboBox.SelectedIndex = 0;
             comboBox.Background = Brushes.Transparent;
             comboBox.FontSize = 12;
@@ -60,7 +59,6 @@ namespace sebExamination.Controls
             GetAllFolders(categoriesPath, comboBox);
 
         }
-
         int elevator = 0;
         private void GetAllFolders(string path, ComboBox comboBox)
         {
@@ -79,9 +77,7 @@ namespace sebExamination.Controls
                         folderName = "   " + folderName;
                     }
                     elevator++;
-
                     string dataPath = Directory.GetParent(folder).FullName;
-
                     dataPath = System.IO.Path.Combine(dataPath, folder);
                     dataPath = System.IO.Path.Combine(dataPath, "Count.txt");
                     string data = File.ReadAllText(dataPath);
@@ -109,30 +105,44 @@ namespace sebExamination.Controls
             res /= 3;
             return res + 1;
         }
+        private int countLength(string str)
+        {
+            char tmp = '(';
+            int position = str.IndexOf(tmp, str.Length - 6);
+            return 1 + str.Length - position;
+        }
         private void changeCategory(object sender, EventArgs e)
+        {
+            num = 0;
+
+            StackPanel questionContainer = (StackPanel)FindName("QuestionContainer");
+            if (questionContainer != null)
+            {
+                questionContainer.Children.Clear();
+            }
+            string folderPath = GetFilePathFrombox();
+            List<Grid> grids = Read_Category(folderPath);
+            foreach (Grid grid in grids)
+            {
+                questionContainer.Children.Add(grid);
+            }
+            if (Show_subcate.IsChecked == true) { Show_subcate_Checked(sender, null); }
+            
+            
+        }
+
+        public string GetFilePathFrombox()
         {
             string currentDirectory = Directory.GetCurrentDirectory();
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
             string filePath = "";
-            // clear các box khi thay đổi categories
-            StackPanel Random_Question = (StackPanel)FindName("Random_Question");
-            if (Random_Question != null)
-            {
-                Random_Question.Children.Clear();
-            }
 
-            ComboBox Number_of_Rand_Ques_cb = (ComboBox)FindName("Number_of_Rand_Ques_cb");
-            if (Number_of_Rand_Ques_cb != null)
+            if (category_parent.SelectedIndex != 0)
             {
-                Number_of_Rand_Ques_cb.Items.Clear();
-            }
-            // tính toán đường dẫn đến thư mục chứa câu hỏi của categories
-            if (Add_Ques_Category.SelectedIndex != 0)
-            {
-                int index = Add_Ques_Category.SelectedIndex;
+                int index = category_parent.SelectedIndex;
                 List<string> parent = new List<string>();
-                parent.Add(Add_Ques_Category.Items[index].ToString());
+                parent.Add(category_parent.Items[index].ToString());
                 int k = countLevel(parent[0]) - 1;
 
                 int n = countLevel(parent[0]);
@@ -144,9 +154,9 @@ namespace sebExamination.Controls
 
                 for (int i = index; i > 0; i--)
                 {
-                    if (countLevel(Add_Ques_Category.Items[i].ToString()) == k)
+                    if (countLevel(category_parent.Items[i].ToString()) == k)
                     {
-                        parent.Add(Add_Ques_Category.Items[i].ToString());
+                        parent.Add(category_parent.Items[i].ToString());
                         while (parent[n - k][0] == ' ')
                         {
 
@@ -164,68 +174,149 @@ namespace sebExamination.Controls
                 filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
 
             }
+            return filePath;
+        }
+        /// <summary>
+        /// đọc categories thành một list chứa các grid câu hỏi từ path (vị trí file chứa câu hỏi)
+        /// </summary>
+        /// <param name="path"></param>
+        int num = 0;
+        public List<Grid> Read_Category(string path)
+        {
+            List<Grid> tmpGrid = new List<Grid>();
             FileImp fileImp = new FileImp();
-            questions = new List<Questions>();
+            List<Questions> tmp = new List<Questions>();
 
-            questions = fileImp.LoadDataFromFile(filePath);
-            numberOfQues = questions.Count;
+            tmp = fileImp.LoadDataFromFile(path);
+            questions.AddRange(tmp);
+            numberOfQues = tmp.Count;
             for (int i = 0; i < numberOfQues; i++)
             {
                 Grid grid = new Grid()
                 {
-                    Height = 40,
+                    Height = 20,
                     Background = Brushes.White
                 };
 
-
-                TextBlock textblock = new TextBlock()
+                Grid innerGrid = new Grid() 
                 {
-                    Name = $"ques{i}",
-                    Margin = new Thickness(20, 2, 0, 0),
-                    Foreground = Brushes.DarkGray
-
+                    Margin = new Thickness(15, 0, 0, 0)
                 };
-
-                Grid innerGrid = new Grid();
                 Image imageList = new Image()
                 {
-                    Source = new BitmapImage(new Uri("../Assets/image/list-black.png", UriKind.Relative)),
-                    Height = 22,
-                    HorizontalAlignment = HorizontalAlignment.Left,
-                    VerticalAlignment = VerticalAlignment.Top,
-                    Margin = new Thickness(20, 0, 0, 0),
-
+                    Source = new BitmapImage(new Uri("../Assets/image/list.png", UriKind.Relative)),
+                    Height = 18,
+                    HorizontalAlignment = HorizontalAlignment.Left
                 };
                 innerGrid.Children.Add(imageList);
 
                 TextBlock textBlock = new TextBlock()
                 {
-                    Margin = new Thickness(60, 0, 0, 0),
-                    Text = questions[i].Quest,
-                    FontFamily = new FontFamily("Times New Roman"),
-                    FontSize = 18,
-                    VerticalAlignment = VerticalAlignment.Top,
+                    Margin = new Thickness(25, 0, 30, 0),
+                    Text = questions[num++].Quest,
+                    Foreground = Brushes.DimGray,
+                    FontWeight = FontWeights.Bold
                 };
                 innerGrid.Children.Add(textBlock);
 
                 grid.Children.Add(innerGrid);
-                Random_Question.Children.Add(grid);
 
-
+                Image imageSearch = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/search.png", UriKind.Relative)),
+                    Height = 18,
+                    HorizontalAlignment = HorizontalAlignment.Right
+                };
+                grid.Children.Add(imageSearch);
+                //QuestionContainer.Children.Add(grid);
+                tmpGrid.Add(grid);
             }
-
-            for (int j = 1; j <= numberOfQues; j++)
-            {
-                Number_of_Rand_Ques_cb.Items.Add(j);
-            }
+            return tmpGrid;
         }
-
-        private int countLength(string str)
+        /// <summary>
+        /// hàm đệ quy trả về list các đường dẫn thư mục con của folderPath
+        /// </summary>
+        /// <param name="folderPath"></param>
+        /// <returns></returns>
+        public static List<string> GetAllSubdirectories(string folderPath)
         {
-            char tmp = '(';
-            int position = str.IndexOf(tmp, str.Length - 6);
-            return 1 + str.Length - position;
+            List<string> subdirectories = new List<string>();
+
+            try
+            {
+                // Lấy tất cả các thư mục con trong thư mục hiện tại
+                string[] directories = Directory.GetDirectories(folderPath);
+
+                // Đệ quy lấy thư mục con của từng thư mục con
+                foreach (string directory in directories)
+                {
+                    subdirectories.Add(directory);
+                    subdirectories.AddRange(GetAllSubdirectories(directory));
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                Console.WriteLine($"Đã xảy ra lỗi: {ex.Message}");
+            }
+
+            return subdirectories;
         }
+        private void Show_subcate_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Show_subcate.IsChecked == true)
+            {
+                string filePath = GetFilePathFrombox();
+                string folderPath = System.IO.Path.GetDirectoryName(filePath);
+                List<string> subfolders = GetAllSubdirectories(folderPath);
+                foreach (string subfolder in subfolders)
+                {
+                    string folderName = System.IO.Path.GetFileName(subfolder);
+                    string _filepath = subfolder + "\\" + folderName + ".txt";
+                    List<Grid> grids = Read_Category(_filepath);
+                    foreach (Grid grid in grids)
+                    {
+                        QuestionContainer.Children.Add(grid);
+                    }
+                }
+            }
+            if (Show_subcate.IsChecked == false)
+            {
+                GetFilePathFrombox();
+                changeCategory(null, null);
+            }
+        }
+
+        private void AddQuestion_btn_Click(object sender, RoutedEventArgs e)
+        {
+            if(Number_of_Rand_Ques_cb.SelectedIndex != 0)
+            {
+                Random random = new Random();
+                List<Questions> temp = new List<Questions>();
+                List<int> randomNumbers = new List<int>();
+
+                while (randomNumbers.Count < Number_of_Rand_Ques_cb.SelectedIndex)
+                {
+                    int randomNumber = random.Next(questions.Count+1);
+                    if (!randomNumbers.Contains(randomNumber))
+                    {
+                        randomNumbers.Add(randomNumber);
+                    }
+                }
+                for (int i = 0; i < randomNumbers.Count; i++)
+                {
+                    temp.Add(questions[randomNumbers[i]]);
+                }
+                fileImp.SaveDataToFile(fileName, temp);
+                if (Window.GetWindow(this) is MainWindow mainWindow)
+                {
+                    // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                    mainWindow.Iborder_menu.Content = new EditQuiz(fileName);
+                }
+            }
+            
+        }
+
         private void close(object sender, RoutedEventArgs e)
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)

@@ -119,6 +119,9 @@ namespace sebExamination.Controls
         private void changeCategory(object sender, EventArgs e)
         {
             numcheck = 0;
+            num = 0;
+            checkBoxes.Clear();
+            questions.Clear();
             StackPanel questionContainer = (StackPanel)FindName("QuestionContainer");
             if (questionContainer != null)
             {
@@ -182,14 +185,16 @@ namespace sebExamination.Controls
         /// đọc categories thành một list chứa các grid câu hỏi từ path (vị trí file chứa câu hỏi)
         /// </summary>
         /// <param name="path"></param>
+        int num = 0;
         public List<Grid> Read_Category(string path)
         {
             List<Grid> tmpGrid = new List<Grid>();
             FileImp fileImp = new FileImp();
-            questions = new List<Questions>();
-            checkBoxes.Clear();
-            questions = fileImp.LoadDataFromFile(path);
-            numberOfQues = questions.Count;
+            List<Questions> tmp = new List<Questions>();
+            
+            tmp = fileImp.LoadDataFromFile(path);
+            questions.AddRange(tmp);
+            numberOfQues = tmp.Count;
             for (int i = 0; i < numberOfQues; i++)
             {
                 Grid grid = new Grid()
@@ -208,9 +213,9 @@ namespace sebExamination.Controls
 
                 CheckBox checkBox = new CheckBox()
                 {
-                    Name = $"ques{i}",
+                    Name = $"ques{num}",
                     Margin = new Thickness(20, 2, 0, 0),
-                    Foreground = Brushes.DarkGray
+                    Foreground = Brushes.DimGray
                 };
 
                 Grid innerGrid = new Grid();
@@ -225,7 +230,7 @@ namespace sebExamination.Controls
                 TextBlock textBlock = new TextBlock()
                 {
                     Margin = new Thickness(20, 0, 30, 0),
-                    Text = questions[i].Quest,
+                    Text = questions[num++].Quest,
                     FontWeight = FontWeights.Bold
                 };
                 innerGrid.Children.Add(textBlock);
@@ -322,7 +327,7 @@ namespace sebExamination.Controls
 
         private void Show_subcate_Checked(object sender, RoutedEventArgs e)
         {
-            if (numcheck == 0)
+            if (Show_subcate.IsChecked==true)
             {
                 string filePath = GetFilePathFrombox();
                 string folderPath = System.IO.Path.GetDirectoryName(filePath);
@@ -339,6 +344,12 @@ namespace sebExamination.Controls
                 }
             }
             numcheck++;
+            if(Show_subcate.IsChecked == false)
+            {
+                GetFilePathFrombox();
+                changeCategory(null, null);
+            }
         }
+        
     }
 }

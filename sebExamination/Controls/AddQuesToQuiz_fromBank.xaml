@@ -83,7 +83,8 @@
             </ToggleButton>
 
             <StackPanel x:Name="SearchOption_box">
-                <CheckBox x:Name="Show_subcate" Margin="0 5 0 0" Foreground="Gray" Checked="Show_subcate_Checked">
+                <CheckBox x:Name="Show_subcate" Margin="0 5 0 0" Foreground="Gray"
+                          Click="Show_subcate_Checked">
                     Also show question from subcategories
                 </CheckBox>
                 <CheckBox Margin="0 5 0 0" Foreground="Gray">

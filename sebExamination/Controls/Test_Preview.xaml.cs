@@ -1,5 +1,7 @@
-﻿using System;
+﻿using filereader;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +57,15 @@ namespace sebExamination.Controls
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new Quiz(path);
             }
+        }
+
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+            //FileImp fileImp = new FileImp();
+            //fileImp.ConvertTxtToDocx(path, "tempDocx.docx");
+            //string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            //string filename = System.IO.Path.GetFileNameWithoutExtension(path);
+            //string FolderImagePath = project_path + "/question image/" + filename;
         }
     }
 }

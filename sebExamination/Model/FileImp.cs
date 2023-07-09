@@ -15,6 +15,11 @@ namespace filereader
 {
     public class FileImp : IFile
     {
+        /// <summary>
+        /// lưu các câu hỏi trong list vào địa chỉ fileName
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="questions"></param>
         public void SaveDataToFile(string fileName, List<Questions> questions)
         {
             StringBuilder builder = new StringBuilder();
@@ -30,16 +35,18 @@ namespace filereader
             }
             File.AppendAllText(fileName, builder.ToString());
         }
-
+        /// <summary>
+        /// hàm đọc câu hỏi thành một list từ fileName
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
         public List<Questions> LoadDataFromFile(string fileName)
         {
             List<Questions> questions = new List<Questions>();
             try
             {
                 var data = File.ReadAllText(fileName).Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                int pre = 4;
-
-
+                int pre = 2;
                 int post = 0;
                 for (int i = 0; i < data.Length; i++)
                 {
@@ -51,7 +58,6 @@ namespace filereader
                         {
                             tmp += data[j] + '\n';
                         }
-                        //int post;
                         for (post = i; !data[post].StartsWith("ANSWER"); post++) ;
                         List<string> tempList = new List<string>();
                         for (int k = i; k < post; k++)
@@ -117,7 +123,11 @@ namespace filereader
         }
 
 
-
+        /// <summary>
+        /// hàm chuyển file txt tại địa chỉ txtPath sang file docx tại địa chỉ docxPath
+        /// </summary>
+        /// <param name="txtPath"></param>
+        /// <param name="docxPath"></param>
         public void ConvertTxtToDocx(string txtPath, string docxPath)
         {
             using (WordprocessingDocument wordDocument = WordprocessingDocument.Create(docxPath, WordprocessingDocumentType.Document))
@@ -147,13 +157,22 @@ namespace filereader
                 mainPart.Document.Save();
             }
         }
-
+        /// <summary>
+        /// hàm chuyển file docx tại địa chỉ docxFilePath sang file pdf tại địa chỉ pdfFilePath
+        /// </summary>
+        /// <param name="docxFilePath"></param>
+        /// <param name="pdfFilePath"></param>
         public void ConvertDocxToPdf(string docxFilePath, string pdfFilePath)
         {
             Aspose.Words.Document document = new Aspose.Words.Document(docxFilePath);
             document.Save(pdfFilePath, SaveFormat.Pdf);
         }
-
+        /// <summary>
+        /// hàm chèn ảnh từ imageFilePath vào file docx tại docxFilePath tại dòng lineIndex
+        /// </summary>
+        /// <param name="docxFilePath"></param>
+        /// <param name="imageFilePath"></param>
+        /// <param name="lineIndex"></param>
         public void AddImageToDocx(string docxFilePath, string imageFilePath, int lineIndex)
         {
             using (WordprocessingDocument doc = WordprocessingDocument.Open(docxFilePath, true))
@@ -164,11 +183,11 @@ namespace filereader
                 {
                     imagePart.FeedData(stream);
                 }
-                AddImageToDocx(doc, mainPart.GetIdOfPart(imagePart), lineIndex);
+                AddImageToParagraph(doc, mainPart.GetIdOfPart(imagePart), lineIndex);
             }
         }
 
-        public void AddImageToDocx(WordprocessingDocument doc, string relationshipId, int lineIndex)
+        public void AddImageToParagraph(WordprocessingDocument doc, string relationshipId, int lineIndex)
         {
             var paragraphs = doc.MainDocumentPart.Document.Descendants<DocumentFormat.OpenXml.Wordprocessing.Paragraph>().ToList();
             if (lineIndex >= 0 && lineIndex < paragraphs.Count)
@@ -216,6 +235,54 @@ namespace filereader
             {
                 Console.WriteLine("Invalid paragraph index!");
             }
+        }
+        public List<string> GetImagePaths(string folderPath)
+        {
+            List<string> imagePaths = new List<string>();
+
+            try
+            {
+                string[] files = Directory.GetFiles(folderPath);
+                foreach (string file in files)
+                {
+                    string extension = Path.GetExtension(file);
+                    if (IsImageExtension(extension))
+                    {
+                        imagePaths.Add(file);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
+            return imagePaths;
+        }
+
+        public bool IsImageExtension(string extension)
+        {
+            string[] imageExtensions = { ".jpg", ".jpeg", ".png", ".gif" }; // Thêm phần mở rộng khác nếu cần
+            return Array.IndexOf(imageExtensions, extension.ToLower()) >= 0;
+        }
+
+        public (string, string) SplitStringByImage(string input)
+        {
+            string beforeImage = string.Empty;
+            string afterImage = string.Empty;
+
+            int index = input.IndexOf("<image>:");
+            if (index >= 0)
+            {
+                beforeImage = input.Substring(0, index);
+                afterImage = input.Substring(index + "<image>:".Length);
+            }
+            else
+            {
+                beforeImage = input;
+            }
+
+            return (beforeImage, afterImage);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace sebExamination.Controls
         private List<Button> buttons = new List<Button>();
         private string fileName = "Quizz.txt";
         List<Questions> questions = new List<Questions>();
-
+        FileImp fileImp = new FileImp();
         private DispatcherTimer timer;      //DispatcherTimer để đếm ngược thời gian
         private TimeSpan remainingTime;     // Biến lưu trữ thời gian còn lại
         
@@ -40,7 +40,6 @@ namespace sebExamination.Controls
             DateTime now = DateTime.Now;
             startTime = now.ToString();
             fileName = quizPath;
-            FileImp fileImp = new FileImp();
             questions = fileImp.LoadDataFromFile(fileName);
             DataContext = this;
             for (int i = 0; i < questions.Count; i++)
@@ -65,7 +64,7 @@ namespace sebExamination.Controls
                 {
                     // Trích xuất giá trị thời gian từ dòng
                     int timeInSeconds;
-                    if (int.TryParse(timeLine.Split(' ')[1], out timeInSeconds))
+                    if (int.TryParse(timeLine.Split(' ')[1], out timeInSeconds) && timeInSeconds != 0)
                     {
                         // Khởi tạo đối tượng Timer với khoảng thời gian cập nhật là 1 giây
                         timer = new DispatcherTimer();
@@ -80,10 +79,6 @@ namespace sebExamination.Controls
 
                         // Bắt đầu đồng hồ đếm ngược
                         timer.Start();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid time format in the file.");
                     }
                 }
                 else
@@ -214,7 +209,7 @@ namespace sebExamination.Controls
 
             TextBlock Question = new TextBlock()
             {
-                Text = questions[QuestionNumber - 1].Quest,
+                Text = fileImp.SplitStringByImage(questions[QuestionNumber - 1].Quest).Item1 ,
 
                 //Text = a,
                 TextWrapping = TextWrapping.Wrap,
@@ -236,12 +231,25 @@ namespace sebExamination.Controls
                 Answer[i].Margin = new Thickness(5);
                 Answer[i].Name = $"Question{QuestionNumber}_Answer{i}";
                 tex[i] = new TextBlock();
-                tex[i].Text = questions[QuestionNumber - 1].Ans[i];
+                tex[i].Text = fileImp.SplitStringByImage(questions[QuestionNumber - 1].Ans[i]).Item1; 
                 tex[i].TextWrapping = TextWrapping.Wrap;
                 Answer[i].Content = tex[i];
                 radioButtons.Add(Answer[i]); // Thêm RadioButton vào danh 
                 Answer[i].Checked += RadioButton_Checked;
                 radioButtonStackPanel.Children.Add(Answer[i]);
+                string ImgPathAns = fileImp.SplitStringByImage(questions[QuestionNumber - 1].Ans[i]).Item2;
+                if (ImgPathAns != string.Empty)
+                {
+                    Image QuesImg = new Image()
+                    {
+                        MaxHeight = 200,
+                        MaxWidth = 900,
+                        HorizontalAlignment = HorizontalAlignment.Left,
+                        Source = new BitmapImage(new Uri(ImgPathAns, UriKind.Absolute))
+                    };
+                    radioButtonStackPanel.Children.Add(QuesImg);
+                }
+
             }
             //Answer[0].Margin = new Thickness(5);
             //Answer[0].Name = $"Question{QuestionNumber}_Answer0";
@@ -260,6 +268,18 @@ namespace sebExamination.Controls
             }
 
             contentStackPanel.Children.Add(Question);
+            string imgpath = fileImp.SplitStringByImage(questions[QuestionNumber - 1].Quest).Item2;
+            if (imgpath != string.Empty)
+            {
+                Image QuesImg = new Image()
+                {
+                    MaxHeight = 400,
+                    MaxWidth = 900,
+                    HorizontalAlignment = HorizontalAlignment.Left,
+                    Source = new BitmapImage(new Uri(imgpath, UriKind.Absolute))
+                };
+                contentStackPanel.Children.Add(QuesImg);
+            }
             //radioButtonStackPanel.Children.Add(Answer[0]);
             //radioButtonStackPanel.Children.Add(Answer[1]);
             //radioButtonStackPanel.Children.Add(Answer[2]);
@@ -461,7 +481,7 @@ namespace sebExamination.Controls
             int correctAnswerCount = 0;
             int[] temp;
             temp = new int[99];
-            timer.Stop();
+            if (timer != null) timer.Stop();
             foreach (var question in QuestionBoxes)
             {
                 Grid questionGrid = (Grid)question;
@@ -470,6 +490,7 @@ namespace sebExamination.Controls
                 int questionNumber = int.Parse(questionGrid.Name.Substring(9));
 
                 string a = questions[questionNumber - 1].Answer;
+                
                 char b = a[8];
                 temp[questionNumber - 1] = (int)b - 65;
 
@@ -497,7 +518,8 @@ namespace sebExamination.Controls
                 {
                     Foreground = new SolidColorBrush(Color.FromRgb(154, 111, 67)),
                     Margin = new Thickness(10),
-                    Text = "The correct answer is: " + questions[questionNumber - 1].Ans[temp[questionNumber-1]],
+                    Text = "The correct answer is: " + fileImp.SplitStringByImage(questions[questionNumber - 1].Ans[temp[questionNumber - 1]]).Item1,
+
                 };
 
                 grid.Children.Add(textBlock);

@@ -267,18 +267,18 @@
                 <StackPanel Grid.Column="1"
                                             Grid.Row="2"
                                             Orientation="Horizontal">
-                    <ComboBox x:Name="cb_timelimit"
+                    <ComboBox x:Name="cb_timelimit" IsEnabled="False"
                                               Height="25" Width="55"
                                               SelectedIndex="0">
                     </ComboBox>
-                    <ComboBox x:Name="cb_timelimit2"
+                    <ComboBox x:Name="cb_timelimit2" IsEnabled="False"
                                               Height="25" Width="90"
                                               Margin="10,0,0,0"
                                               SelectedIndex="0">
                         <ComboBoxItem>Minutes</ComboBoxItem>
                         <ComboBoxItem>Hours</ComboBoxItem>
                     </ComboBox>
-                    <CheckBox Content="Enable" x:Name="cb_timelimit_enable" VerticalAlignment="Center" Margin="10,0,0,0"></CheckBox>
+                    <CheckBox Unchecked="cb_timelimit_enable_Unchecked" Checked="cb_timelimit_enable_Checked" Content="Enable" x:Name="cb_timelimit_enable" VerticalAlignment="Center" Margin="10,0,0,0"></CheckBox>
                 </StackPanel>
                 <ComboBox Grid.Row="3"
                           x:Name="whenclose"

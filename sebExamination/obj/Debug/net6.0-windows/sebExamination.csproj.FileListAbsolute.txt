@@ -511,3 +511,10 @@ D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\ob
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.baml
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.g.cs
 C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.Pdf2Word.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\SkiaSharp.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll

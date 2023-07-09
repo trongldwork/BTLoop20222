@@ -218,7 +218,7 @@ namespace sebExamination.Controls
                 TextBlock textBlock = new TextBlock()
                 {
                     Margin = new Thickness(20, 0, 30, 0),
-                    Text = questions[i].Quest,
+                    Text = fileImp.SplitStringByImage(questions[i].Quest).Item1,                     
                     FontWeight = FontWeights.Bold
                 };
                 innerGrid.Children.Add(textBlock);

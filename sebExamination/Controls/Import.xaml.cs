@@ -66,12 +66,17 @@ namespace sebExamination.Controls
                     input_field.Text = $"đã đọc file từ đường dãn:\n {filePath}";
                     _Filename = filename;
                     _Lines = lines;
-                    MessageBox.Show($"Success {lines.Count}");
+                    int count = 0;
+                    foreach (Line line in lines)
+                    {
+                        count += (line.Type == "question") ? 1 : 0;
+                    }
+                    MessageBox.Show($"Success {count}");
                 }
                 else if (fileExtension == ".docx")
                 {
                     string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-                    string FolderImagePath = project_path + "/question image/" + filename;
+                    string FolderImagePath = project_path + "/categories image/" + filename;
                     Directory.Delete(FolderImagePath, true);
                 }
             }
@@ -125,12 +130,17 @@ namespace sebExamination.Controls
                     input_field.Text = $"đã đọc file từ đường dãn:\n {filePath}";
                     _Filename = filename;
                     _Lines = lines;
-                    MessageBox.Show($"Success {lines.Count}");
+                    int count = 0;
+                    foreach (Line line in lines)
+                    {
+                        count += (line.Type == "question") ? 1 : 0;
+                    }
+                    MessageBox.Show($"Success {count}");
                 }
                 else if (fileExtension == ".docx")
                 {
                     string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-                    string FolderImagePath = project_path + "/question image/" + filename;
+                    string FolderImagePath = project_path + "/categories image/" + filename;
                     Directory.Delete(FolderImagePath, true);
                 }
             }
@@ -153,7 +163,6 @@ namespace sebExamination.Controls
             {
                 writer.WriteLine($"Category name: {filename}");
                 writer.WriteLine("thisline support the file reader to read both quizz file and category file");
-                writer.WriteLine();
                 foreach (Line line in lines) { 
                     writer.WriteLine(line.LineContent);
                     if (line.Type == "answer") writer.WriteLine("1");
@@ -196,7 +205,6 @@ namespace sebExamination.Controls
                 // Get the main document part (i.e. the content)
                 var body = document.MainDocumentPart.Document.Body;
                 int pos = 0;
-                int num_image = 0;
                 // Loop through all paragraphs in the document
                 foreach (var paragraph in body.Descendants<Paragraph>())
                 {
@@ -232,14 +240,16 @@ namespace sebExamination.Controls
                                             // Ví dụ: lưu hình ảnh vào một tệp khác
                                             string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
                                             string filename = Path.GetFileNameWithoutExtension(filePath);
-                                            string FolderImagePath = project_path + "/question image/" + filename;
+                                            string FolderImagePath = project_path + "/categories image/" + filename;
                                             Directory.CreateDirectory(FolderImagePath);
-                                            string imageName = "line_" + lines.Count + ".jpg";
+                                            string imageName = "line_" + (lines.Count + 2) + ".jpg";
                                             string outputImagePath = Path.Combine(FolderImagePath, imageName);
                                             using (FileStream outputImageFile = new FileStream(outputImagePath, FileMode.Create))
                                             {
                                                 imageStream.CopyTo(outputImageFile);
                                             }
+                                            lines[lines.Count - 1].LineContent += " <image>:" + outputImagePath;
+                                            
                                         }
                                     }
                                 }

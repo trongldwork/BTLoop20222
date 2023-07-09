@@ -1,6 +1,7 @@
 ﻿using DocumentFormat.OpenXml.Bibliography;
 using DocumentFormat.OpenXml.Math;
 using filereader;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -26,10 +28,17 @@ namespace sebExamination.Controls
 
     public partial class AddQuestion : UserControl
     {
+        struct imagepath
+        {
+            public string Text;
+            public string pos;
+        };
+        List<imagepath> imagepaths = new List<imagepath>();
         List<Questions> questions;
         FileImp fileImp = new FileImp();
         private List<ComboBox> comboboxs = new List<ComboBox>();
         List<TextBox> textBoxes = new List<TextBox>();
+        string ques_image_path = "";
         public AddQuestion()
         {
             InitializeComponent();
@@ -104,6 +113,93 @@ namespace sebExamination.Controls
         }
         private void saveChangeAndContinue_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
+            if (category_parent.SelectedIndex == 0)
+            {
+                MessageBox.Show("Vui lòng chọn category");
+                return;
+            }
+            List<string> answer = new List<string>();
+
+            string ans = "ANSWER: ";
+            int tmp = 0;
+            foreach (TextBox textBox in textBoxes)
+            {
+                string line_choice = textBox.Text;
+                foreach (imagepath tmpImg in imagepaths)
+                {
+                    if (tmpImg.pos == (tmp + 1).ToString()) { line_choice += tmpImg.Text; }
+                }
+                answer.Add((char)(65 + tmp++) + ". " + line_choice);
+            }
+            tmp = 0;
+            foreach (ComboBox comboBox in comboboxs)
+            {
+
+                if (comboBox.SelectedIndex == 1)
+                {
+                    ans += (char)(65 + tmp);
+                    break;
+                }
+                tmp++;
+
+            }
+            string ques = questionName_addQuestion.Text + ":" + questionText_addQuestion.Text;
+            ques += (ques_image_path != "") ? "<image>:" + ques_image_path : ques_image_path;
+            Questions tempQ = new Questions(ques,
+                answer,
+                ans,
+                double.Parse(questionMark_addQuestion.Text));
+            questions.Add(tempQ);
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+            string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
+            string filePath = "";
+
+            if (category_parent.SelectedIndex != 0)
+            {
+                int index = category_parent.SelectedIndex;
+                List<string> parent = new List<string>();
+                parent.Add(category_parent.Items[index].ToString());
+                int k = countLevel(parent[0]) - 1;
+
+                int n = countLevel(parent[0]);
+                while (parent[0][0] == ' ')
+                {
+                    parent[0] = parent[0].Substring(1);
+                }
+                parent[0] = parent[0].Substring(0, parent[0].Length - countLength(parent[n - k - 1]));
+
+                for (int i = index; i > 0; i--)
+                {
+                    if (countLevel(category_parent.Items[i].ToString()) == k)
+                    {
+                        parent.Add(category_parent.Items[i].ToString());
+                        while (parent[n - k][0] == ' ')
+                        {
+
+                            parent[n - k] = parent[n - k].Substring(1);
+                        }
+                        parent[n - k] = parent[n - k].Substring(0, parent[n - k].Length - countLength(parent[n - k]));
+                        k--;
+                    }
+                }
+
+                for (int i = n - 1; i >= 0; i--)
+                {
+                    categoriesPath = System.IO.Path.Combine(categoriesPath, parent[i]);
+                }
+                filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
+
+            }
+            //string folderPath = System.IO.Path.Combine(categoriesPath, category_parent.SelectedItem.ToString());
+            //string filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
+
+            fileImp.SaveDataToFile(filePath, questions);
+            string countFile = System.IO.Path.Combine(categoriesPath, "count.txt");
+            var data = File.ReadAllText(countFile);
+            int count = int.Parse(data) + 1;
+            File.WriteAllText(countFile, count.ToString());
+            ques_image_path = "";
 
         }
 
@@ -126,83 +222,8 @@ namespace sebExamination.Controls
         }
         private void saveChange_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
-            if (category_parent.SelectedIndex == 0)
-            {
-                MessageBox.Show("Vui lòng chọn category");
-                return;
-            }
-            List<string> answer = new List<string>();
-            
-            string ans = "ANSWER: ";
-            int tmp = 0;
-            foreach (TextBox textBox in textBoxes)
-            {
-                answer.Add((char)(65+tmp++)+". "+textBox.Text);
-            }
-            tmp =0;
-            foreach(ComboBox comboBox in comboboxs)
-            {
-                
-                if(comboBox.SelectedIndex == 1)
-                {
-                    ans += (char)(65+tmp);
-                    break;
-                }
-                tmp++;
-
-            }
-            Questions tempQ = new Questions(questionName_addQuestion.Text, answer, ans, double.Parse(questionMark_addQuestion.Text));
-            questions.Add(tempQ);
-            string currentDirectory = Directory.GetCurrentDirectory();
-            string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
-            string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
-            string filePath = "";
-
-            if (category_parent.SelectedIndex != 0)
-            {
-                int index = category_parent.SelectedIndex;
-                List<string> parent = new List<string>();
-                parent.Add(category_parent.Items[index].ToString());
-                int k = countLevel(parent[0]) - 1;
-
-                int n = countLevel(parent[0]);
-                while (parent[0][0] == ' ')
-                {
-                    parent[0] = parent[0].Substring(1);
-                }
-                parent[0] = parent[0].Substring(0, parent[0].Length - countLength(parent[n-k]));
-
-                for (int i = index; i > 0; i--)
-                {
-                    if (countLevel(category_parent.Items[i].ToString()) == k)
-                    {
-                        parent.Add(category_parent.Items[i].ToString());
-                        while (parent[n - k][0] == ' ')
-                        {
-                            
-                            parent[n - k] = parent[n - k].Substring(1);
-                        }
-                        parent[n - k] = parent[n - k].Substring(0, parent[n - k].Length - countLength(parent[n-k]));
-                        k--;
-                    }
-                }
-
-                for (int i = n - 1; i >= 0; i--)
-                {
-                    categoriesPath = System.IO.Path.Combine(categoriesPath, parent[i]);
-                }
-                filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
-
-            }
-            //string folderPath = System.IO.Path.Combine(categoriesPath, category_parent.SelectedItem.ToString());
-            //string filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
-
-            fileImp.SaveDataToFile(filePath, questions);
-            string countFile = System.IO.Path.Combine(categoriesPath, "count.txt");
-            var data = File.ReadAllText(countFile);
-            int count = int.Parse(data) + 1;
-            File.WriteAllText(countFile, count.ToString());
-            
+            saveChangeAndContinue_addQuestion_btn_click(sender, e);
+            cancel_addQuestion_btn_click(null,null);
         }
         private void cancel_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
@@ -210,9 +231,9 @@ namespace sebExamination.Controls
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
-                Menu_uc tmp = new Menu_uc();
-                tmp.MainContentControl = new Question();
-                mainWindow.Iborder_menu.Content = tmp;
+                Menu_uc tmpuc = new Menu_uc();
+                tmpuc.MainContentControl = new Question();
+                mainWindow.Iborder_menu.Content = tmpuc;
             }
         }
 
@@ -294,20 +315,100 @@ namespace sebExamination.Controls
             Image image = new Image()
             {
                 Height = 40,
-                Width=50,
-                Margin= new Thickness(345, 40, 0, 0),
+                Width = 50,
+                Margin = new Thickness(0, 0, 0, -5),
                 HorizontalAlignment = HorizontalAlignment.Left,
                 Source = new BitmapImage(new Uri("../Assets/image/add-image.png", UriKind.Relative)),
             };
+            ToggleButton add_choice_img = new ToggleButton();
+            add_choice_img.Content = image;
+            add_choice_img.Name = "choice_img" + choicesNumber;
+            add_choice_img.Height = 40;
+            add_choice_img.Width = 50;
+            add_choice_img.HorizontalAlignment = HorizontalAlignment.Left;
+            add_choice_img.BorderThickness = new Thickness(0);
+            add_choice_img.Background = Brushes.Transparent;
+            add_choice_img.Click += add_choice_click;
+            add_choice_img.Margin = new Thickness(345, 40, 0, 0);
+            
+
+
+
             choice_addQuestion.Children.Add(textBlock1);
             choice_addQuestion.Children.Add(textBlock2);
             choice_addQuestion.Children.Add(textBox);
             choice_addQuestion.Children.Add(comboBox);
-            choice_addQuestion.Children.Add(image);
+            choice_addQuestion.Children.Add(add_choice_img);
             textBoxes.Add(textBox);
             comboboxs.Add(comboBox);
 
             Choices.Children.Add(choice_addQuestion);
+        }
+
+
+        private void add_ques_img_Click(object sender, RoutedEventArgs e)
+        {
+            add_ques_img.Background = Brushes.Transparent;
+            
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Tập tin hình ảnh|*.jpg;*.jpeg;*.png;*.gif";
+            openFileDialog.Title = "Chọn hình ảnh";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string selectedImagePath = openFileDialog.FileName;
+
+                // Thực hiện xử lý thông tin hình ảnh ở đây
+                // Ví dụ: Lấy tên tập tin
+                string imageName = System.IO.Path.GetFileName(selectedImagePath); 
+                // them thong tin anh
+                if (ques_img.Children.Count > 1) ques_img.Children.RemoveAt(ques_img.Children.Count - 1);
+                TextBox textBox = new TextBox()
+                {
+                    Name = "qu",
+                    Text = imageName,
+                    IsReadOnly = true,
+                    Height = 30,
+                    BorderThickness = new Thickness(0),
+                    MaxWidth = 350,
+                    VerticalAlignment = VerticalAlignment.Center,
+                    HorizontalAlignment = HorizontalAlignment.Left,
+                    Margin = new Thickness(5)
+                    
+                };
+                ques_img.Children.Add(textBox);
+                ques_image_path = selectedImagePath;
+            }
+
+            
+        }
+
+        private void add_ques_img_Checked(object sender, RoutedEventArgs e)
+        {
+            ToggleButton toggle = (ToggleButton)sender;
+            toggle.IsChecked = false;
+        }
+        private void add_choice_click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Tập tin hình ảnh|*.jpg;*.jpeg;*.png;*.gif";
+            openFileDialog.Title = "Chọn hình ảnh";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string selectedImagePath = openFileDialog.FileName;
+
+                // Thực hiện xử lý thông tin hình ảnh ở đây
+                // Ví dụ: Lấy tên tập tin
+                string imageName = System.IO.Path.GetFileName(selectedImagePath);
+
+                // luu anh theo choice
+                ToggleButton toggle = (ToggleButton)sender;
+                imagepath tmp;
+                tmp.Text = "<image>:" +selectedImagePath;
+                tmp.pos = toggle.Name.Substring(10);
+                imagepaths.Add(tmp);
+            }
         }
     }
 }

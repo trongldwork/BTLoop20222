@@ -319,4 +319,8 @@ B. Khiển chế
 C. Phân tán
 D. Hút
 ANSWER: D
+1123
+A. 123
+B. 123
+ANSWER: 
 1

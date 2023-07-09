@@ -320,3 +320,390 @@ C. 120 độ
 D. 180 độ
 ANSWER: B
 1
+Định nghĩa "chọn lọc nhân tạo" trong tiến hóa là gì?
+
+A. Quá trình con cái chọn đối tác để sinh sản
+B. Quá trình tồn tại và sinh sản của các cá thể có sự khác biệt di truyền
+C. Quá trình đột biến di truyền
+D. Quá trình thích nghi của sinh vật với môi trường
+ANSWER: A
+1
+Khi một loài sinh vật tồn tại trong một khu vực mà không gây ảnh hưởng đáng kể đến các loài khác, điều này được gọi là gì?
+
+A. Sự cạnh tranh
+B. Sự ký sinh
+C. Sự hợp sinh
+D. Sự thống trị
+ANSWER: D
+1
+17.Cấu trúc nào trong tế bào chịu trách nhiệm bảo vệ và kiểm soát lưu thông chất lỏng trong và ngoài tế bào?
+
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: B
+1
+Cấu trúc nào trong tế bào chứa các hạt nhân bên trong và chứa các hệ thống di truyền?
+
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+Tích phân của hàm số f(x) = e^(-x) trong khoảng từ 0 đến ∞ là bao nhiêu?
+
+A. 0
+B. 1
+C. ∞
+D. Không tồn tại
+ANSWER: B
+1
+Loại phản ứng nào xảy ra khi một ancol bị oxi hóa thành một aldehyd hoặc axit?
+
+A. Phản ứng cộng
+B. Phản ứng chuyển vị
+C. Phản ứng thế
+D. Phản ứng oxi hóa khử
+ANSWER: D
+1
+Quá trình nào trong tế bào chịu trách nhiệm sản xuất năng lượng hóa học thông qua quang hợp?
+
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: D
+1
+Loại tế bào nào không có nhân?
+
+A. Tế bào thực vật
+B. Tế bào động vật
+C. Tế bào vi khuẩn
+D. Tế bào nấm
+ANSWER: C
+1
+Đơn vị nào được sử dụng để đo khối lượng của một chất?
+
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
+ANSWER: A
+1
+Trong bảng tuần hoàn các nguyên tố, các nguyên tố có cùng cấu hình electron bên trong thuộc cùng một gì?
+
+A. Nhóm
+B. Chu kỳ
+C. Loạt
+D. Chiều
+ANSWER: B
+1
+Sự cân bằng giữa các loài trong một hệ sinh thái gọi là gì?
+
+A. Cân bằng sinh thái
+B. Sự tương tác sinh thái
+C. Sự đa dạng sinh học
+D. Sự phân bố sinh thái
+ANSWER: A
+1
+Nguyên tử của nguyên tố nào có khối lượng nguyên tử lớn nhất?
+
+A. Uranium
+B. Plutonium
+C. Neptunium
+D. Americium
+ANSWER: A
+1
+Loại phản ứng nào xảy ra khi một rượu và một axit tạo thành một este và nước?
+
+A. Phản ứng cộng
+B. Phản ứng thế
+C. Phản ứng trùng hợp
+D. Phản ứng este hóa
+ANSWER: D
+1
+Phân tử H2O có hình dạng như thế nào?
+
+A. Tứ diện
+B. Tam giác tù
+C. Tetraedr
+D. Góc
+ANSWER: D
+1
+Cơ chế chính góp phần vào tiến hóa là gì?
+
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Cả A và C đều đúng
+ANSWER: D
+1
+Sự tương tác giữa các loài trong một môi trường cụ thể được gọi là gì?
+
+A. Cộng sinh
+B. Hợp sinh
+C. Ký sinh
+D. Symbiosis
+ANSWER: D
+1
+Quá trình nào trong tế bào chịu trách nhiệm điều khiển và điều chỉnh các hoạt động của tế bào?
+
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: B
+1
+Loại tế bào nào chịu trách nhiệm sản xuất màng và tạo nên cấu trúc của sinh vật?
+
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào tế bào
+ANSWER: D
+1
+
+A. Đơn vị cấu tạo của cơ thể sống
+B. Đơn vị cấu tạo của gen
+C. Đơn vị cấu tạo của tạp chất
+D. Đơn vị cấu tạo của nguyên tử
+ANSWER: A
+1
+Cơ chế chính góp phần vào tiến hóa là gì?
+
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Cả A và C đều đúng
+ANSWER: D
+1
+Sự cân bằng giữa các loài trong một hệ sinh thái gọi là gì?
+
+A. Cân bằng sinh thái
+B. Sự tương tác sinh thái
+C. Sự đa dạng sinh học
+D. Sự phân bố sinh thái
+ANSWER: A
+1
+Một nhóm các hệ sinh thái gần nhau có tính tương đồng sinh thái và đặc điểm địa lý được gọi là gì?
+
+A. Biome
+B. Ecosystem
+C. Food chain
+D. Zonation
+ANSWER: A
+1
+Định nghĩa "chọn lọc nhân tạo" trong tiến hóa là gì?
+
+A. Quá trình con cái chọn đối tác để sinh sản
+B. Quá trình tồn tại và sinh sản của các cá thể có sự khác biệt di truyền
+C. Quá trình đột biến di truyền
+D. Quá trình thích nghi của sinh vật với môi trường
+ANSWER: A
+1
+Hãy tính giới hạn của hàm số f(x) = (x^2 - 1) / (x + 1) khi x tiến tới -1.
+
+A. 0
+B. 1
+C. -1
+D. Không tồn tại
+ANSWER: B
+1
+Cấu hình electron của nguyên tử Nito (N) là gì?
+
+A. 1s22s22p3B. 1s22s22p4
+C. 1s22s22p5
+D. 1s22s22p6
+ANSWER: B
+1
+Cấu trúc nào trong tế bào chịu trách nhiệm bảo vệ và kiểm soát lưu thông chất lỏng trong và ngoài tế bào?
+
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: B
+1
+Quá trình tạo ra một bản sao chính xác của DNA được gọi là gì?
+
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: C
+1
+Chất nào là sản phẩm chính của quá trình oxi hóa toluen?
+
+A. Benzaldehyd
+B. Benzoic acid
+C. Benzene
+D. Benzyl chloride
+ANSWER: B
+1
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+Trong phản ứng hóa học, số oxi hóa giảm khi:
+
+A. Nhận electron
+B. Mất electron
+C. Giữ nguyên số electron
+D. Lưu giữ electron
+ANSWER: A
+1
+Quá trình nào xảy ra khi một loài sinh vật sống trên hoặc trong một loài khác và gây hại cho loài chủ?
+
+A. Sự cạnh tranh
+B. Sự ký sinh
+C. Sự hợp sinh
+D. Sự thống trị
+ANSWER: B
+1
+Cấu trúc nào trong tế bào chứa các cơ quan và hệ thống hoạt động của tế bào?
+
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: C
+1
+Quá trình nào xảy ra khi các cá thể có sự khác biệt di truyền tồn tại và sinh sản dễ dàng hơn các cá thể khác?
+
+A. Quá trình đồng hóa
+B. Quá trình chọn lọc tự nhiên
+C. Quá trình hóa thạch
+D. Quá trình truyền gen ngang
+ANSWER: B
+1
+Loại di truyền được truyền từ cha mẹ sang con cái qua các thể tế bào sinh sản được gọi là di truyền:
+
+A. Vô hình
+B. Có hình
+C. Lập thể
+D. Đột biến
+ANSWER: B
+1
+Kích thước của nguyên tử tăng khi di chuyển từ:
+
+A. Trái qua phải trong một chu kỳ
+B. Trên xuống dưới trong một nhóm
+C. Phải qua trái trong một chu kỳ
+D. Dưới lên trên trong một nhóm
+ANSWER: B
+1
+Hiện tượng biến dị di truyền chỉ xảy ra ở vi sinh vật và không xảy ra ởđộng vật. Đúng hay sai?
+
+A. Đúng
+B. Sai
+ANSWER: B
+1
+Nguồn năng lượng chính trong mạch điện là gì?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: C
+1
+Trong phân tử nước, góc giữa hai liên kết hiđro là bao nhiêu độ?
+
+A. 90 độ
+B. 109.5 độ
+C. 120 độ
+D. 180 độ
+ANSWER: B
+1
+Quá trình chuyển đổi năng lượng mặt trời thành năng lượng hóa học thông qua quá trình quang hợp xảy ra ở đâu?
+
+A. Trophic level
+B. Food chain
+C. Food web
+D. Producer
+ANSWER: D
+1
+Loại phản ứng nào xảy ra khi một rượu và một axit tạo thành một este và nước?
+
+A. Phản ứng cộng
+B. Phản ứng thế
+C. Phản ứng trùng hợp
+D. Phản ứng este hóa
+ANSWER: D
+1
+Quá trình chuyển đổi năng lượng mặt trời thành năng lượng hóa học thông qua quá trình quang hợp xảy ra ở đâu?
+
+A. Trophic level
+B. Food chain
+C. Food web
+D. Producer
+ANSWER: D
+1
+Đạo hàm của hàm số f(x) = 3^x là gì?
+
+A. 3^x
+B. ln(3) * 3^x
+C. ln(3) * 3^(x-1)
+D. ln(3) * 3^(x+1)
+ANSWER: B
+1
+Công thức cấu tạo của axetilen là gì?
+
+A. C2H4
+B. C2H6
+C. C2H2
+D. C2H5OH
+ANSWER: C
+1
+Đạo hàm của hàm số f(x) = ln(x^2) là gì?
+
+A. 2/x
+B. 2x
+C. 1/x
+D. x^2
+ANSWER: A
+1
+Tên gọi chính xác của chất có công thức C2H5OH là gì?
+
+A. Ethanol
+B. Methanol
+C. Ethylene
+D. Ethene
+ANSWER: A
+1
+Trong phản ứng hóa học, số oxi hóa giảm khi:
+
+A. Nhận electron
+B. Mất electron
+C. Giữ nguyên số electron
+D. Lưu giữ electron
+ANSWER: A
+1
+
+A. Sắt
+B. Niken
+C. Nhôm
+D. Đồng
+ANSWER: C
+1
+Quá trình tạo ra một bản sao chính xác của DNA được gọi là gì?
+
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: C
+1
+Tế bào thực vật được bao bọc bởi cấu trúc nào, có nhiệm vụ bảo vệ và duy trì hình dạng của tế bào?
+
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Vách tế bào
+ANSWER: D
+1

@@ -15,6 +15,9 @@ namespace filereader
         Categories AddCategory(Categories fatherCategory, string name);
         void ConvertDocxToPdf(string txtPath, string pdfPath);
         void ConvertTxtToDocx(string txtPath, string pdfPath);
-        void AddImageToDocx(WordprocessingDocument doc, string relationshipId, int lineIndex);
+        void AddImageToDocx(string docxFilePath, string imageFilePath, int lineIndex);
+        List<string> GetImagePaths(string folderPath);
+        bool IsImageExtension(string extension);
+        void AddImageToParagraph(WordprocessingDocument doc, string relationshipId, int lineIndex);
     }
 }

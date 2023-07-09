@@ -213,7 +213,7 @@ namespace sebExamination.Controls
                 TextBlock textBlock = new TextBlock()
                 {
                     Margin = new Thickness(25, 0, 30, 0),
-                    Text = questions[num++].Quest,
+                    Text = fileImp.SplitStringByImage(questions[num++].Quest).Item1,
                     Foreground = Brushes.DimGray,
                     FontWeight = FontWeights.Bold
                 };

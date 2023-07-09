@@ -30,8 +30,6 @@
     <None Remove="Assets\Image\test.png" />
     <None Remove="Assets\Image\user.png" />
     <None Remove="Assets\Image\warning.png" />
-    <None Remove="Controls\add-image.png" />
-    <None Remove="Controls\edit-text.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -66,12 +64,10 @@
     </Resource>
     <Resource Include="Assets\Image\user.png" />
     <Resource Include="Assets\Image\warning.png" />
-    <Resource Include="Controls\add-image.png" />
-    <Resource Include="Controls\edit-text.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="question image\" />
+    <Folder Include="categories image\" />
   </ItemGroup>
 
 </Project>

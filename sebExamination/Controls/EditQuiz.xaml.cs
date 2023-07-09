@@ -93,7 +93,7 @@ namespace sebExamination.Controls
                     FontWeight = FontWeights.DemiBold,
                     TextDecorations = null
                 };
-                hyperlink.Inlines.Add(questions[i].Quest);
+                hyperlink.Inlines.Add(fileImp.SplitStringByImage(questions[i].Quest).Item1);
                 textBlock.Inlines.Add(hyperlink);
 
                 Image searchImage = new Image()

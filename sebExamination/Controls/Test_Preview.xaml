@@ -194,6 +194,20 @@
                             CANCEL
                         </TextBlock>
                     </ToggleButton>
+                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          x:Name="Export" 
+                              Click="Export_Click"
+                                          Background="#0073A5"
+                                          Width="160"
+                                          HorizontalAlignment="Center"
+                                          Height="50">
+                        <TextBlock FontSize="24"
+                                   HorizontalAlignment="Center"
+                                           Foreground="white" FontFamily="cambria">
+                            EXPORT
+                        </TextBlock>
+                    </ToggleButton>
+
                 </StackPanel>
             </StackPanel>
         </Border>

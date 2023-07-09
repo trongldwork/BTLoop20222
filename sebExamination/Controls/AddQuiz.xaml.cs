@@ -142,7 +142,7 @@ namespace sebExamination.Controls
             string quizContent = "";
             quizContent += "Quizname " + quizName.Text + "\n";
             quizContent += "Time ";
-            int time =0;
+            int time = 0;
             if (cb_timelimit_enable.IsChecked == true)
             {
                 if(cb_timelimit2.SelectedIndex == 1)
@@ -151,6 +151,7 @@ namespace sebExamination.Controls
                 }
                 quizContent += time.ToString();
             }
+
             quizContent += "\n";
 
             using (StreamWriter writer = new StreamWriter(quizPath))
@@ -158,6 +159,18 @@ namespace sebExamination.Controls
                 writer.Write(quizContent);
             }
 
+        }
+
+        private void cb_timelimit_enable_Checked(object sender, RoutedEventArgs e)
+        {
+            cb_timelimit.IsEnabled = true;
+            cb_timelimit2.IsEnabled = true;
+        }
+
+        private void cb_timelimit_enable_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cb_timelimit.IsEnabled = false;
+            cb_timelimit2.IsEnabled = false;
         }
     }
 }

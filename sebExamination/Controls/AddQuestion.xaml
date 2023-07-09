@@ -103,7 +103,18 @@
                                          Margin="0 5">
 
                     </TextBox>
-                    <Image Source="../Assets/image/add-image.png" Height="40" Width="50" HorizontalAlignment="Left" />
+                    <StackPanel Orientation="Horizontal" x:Name="ques_img">
+                    <ToggleButton x:Name="add_ques_img" 
+                                  Checked="add_ques_img_Checked"
+                                  Height="40"
+                                  Width="50" 
+                                  HorizontalAlignment="Left" 
+                                  BorderThickness="0"
+                                  Background="Transparent"
+                                  Click="add_ques_img_Click" Foreground="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="../Assets/image/add-image.png"/>
+                    </ToggleButton>
+                    </StackPanel>
                 </StackPanel>
                 <!--Text box nhập điểm của câu hỏi-->
                 <TextBox x:Name="questionMark_addQuestion"
@@ -150,7 +161,16 @@
                             <ComboBoxItem>12.5%</ComboBoxItem>
                             <ComboBoxItem>10%</ComboBoxItem>
                         </ComboBox>
-                        <Image Source="../Assets/image/add-image.png" Height="40" Width="50" HorizontalAlignment="Left" Margin="345,40,0,0" />
+                        <ToggleButton x:Name="choice_img1" 
+                                  Height="40"
+                                  Width="50" 
+                                  HorizontalAlignment="Left" 
+                                  BorderThickness="0"
+                                  Background="Transparent"
+                                      Margin="340, 40, 0, 0"
+                                  Click="add_choice_click" Foreground="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../Assets/image/add-image.png"/>
+                        </ToggleButton>
                     </Grid>
 
                     <!--demo cho đáp án thứ hai tại chưa có dynamic template-->
@@ -182,7 +202,16 @@
                             <ComboBoxItem>12.5%</ComboBoxItem>
                             <ComboBoxItem>10%</ComboBoxItem>
                         </ComboBox>
-                        <Image Source="../Assets/image/add-image.png" Height="40" Width="50" HorizontalAlignment="Left" Margin="345,40,0,0" />
+                        <ToggleButton x:Name="choice_img2" 
+                                  Height="40"
+                                  Width="50" 
+                                  HorizontalAlignment="Left" 
+                                  BorderThickness="0"
+                                  Background="Transparent"
+                                      Margin="340, 40, 0, 0"
+                                  Click="add_choice_click" Foreground="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../Assets/image/add-image.png"/>
+                        </ToggleButton>
                     </Grid>
 
 

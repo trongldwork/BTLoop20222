@@ -31,10 +31,10 @@ namespace sebExamination.Controls
             fileName = path;
             InitializeComponent();
             create_category_parent_ComboBox();
-            for (int i = 1; i <= 50; i++)
-            {
-                Number_of_Rand_Ques_cb.Items.Add(i.ToString());
-            }
+            //for (int i = 1; i <= 50; i++)
+            //{
+            //    Number_of_Rand_Ques_cb.Items.Add(i.ToString());
+            //}
         }
         private void create_category_parent_ComboBox()
         {
@@ -189,6 +189,11 @@ namespace sebExamination.Controls
 
             tmp = fileImp.LoadDataFromFile(path);
             questions.AddRange(tmp);
+            Number_of_Rand_Ques_cb.Items.Clear();
+            for (int i = 1; i <= tmp.Count; i++)
+            {
+                Number_of_Rand_Ques_cb.Items.Add(i.ToString());
+            }
             numberOfQues = tmp.Count;
             for (int i = 0; i < numberOfQues; i++)
             {
@@ -289,7 +294,7 @@ namespace sebExamination.Controls
 
         private void AddQuestion_btn_Click(object sender, RoutedEventArgs e)
         {
-            if(Number_of_Rand_Ques_cb.SelectedIndex != 0)
+            if (Number_of_Rand_Ques_cb.SelectedIndex != 0)
             {
                 Random random = new Random();
                 List<Questions> temp = new List<Questions>();

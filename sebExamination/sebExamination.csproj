@@ -30,6 +30,7 @@
     <None Remove="Assets\Image\test.png" />
     <None Remove="Assets\Image\user.png" />
     <None Remove="Assets\Image\warning.png" />
+    <None Remove="Assets\Image\white-plus-small.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -64,6 +65,9 @@
     </Resource>
     <Resource Include="Assets\Image\user.png" />
     <Resource Include="Assets\Image\warning.png" />
+    <Resource Include="Assets\Image\white-plus-small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

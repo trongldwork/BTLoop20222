@@ -85,10 +85,14 @@
                 </ComboBox>
 
             </Grid>
-            
+            <Menu Background="Transparent"
+                  Margin="20 0 20 0"
+                  x:Name="paging">
+                
+            </Menu>
             <StackPanel x:Name="QuestionContainer"
                                     Margin="15,30,15,0">
-
+                
             </StackPanel>
 
             <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
@@ -96,7 +100,7 @@
                           Click="AddQuestion_btn_Click"
                                           Background="#0073A5"
                                           Width="300" Height="30"
-                                          Margin="20 10 0 0" VerticalAlignment="Top"
+                                          Margin="20 10 0 20" VerticalAlignment="Top"
                               HorizontalAlignment="Left">
                 <TextBlock FontSize="16" Foreground="white" FontFamily="cambria">
                         ADD RANDOM QUESTION TO THE QUIZ

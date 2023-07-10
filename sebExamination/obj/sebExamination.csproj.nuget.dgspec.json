@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[23.6.0, )"
             },
+            "Microsoft.Office.Interop.Word": {
+              "target": "Package",
+              "version": "[15.0.4797.1004, )"
+            },
             "Open-XML-SDK": {
               "target": "Package",
               "version": "[2.9.1, )"

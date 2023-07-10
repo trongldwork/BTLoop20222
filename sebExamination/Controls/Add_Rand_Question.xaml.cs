@@ -1,4 +1,5 @@
-﻿using filereader;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using filereader;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,6 +27,7 @@ namespace sebExamination.Controls
         FileImp fileImp = new FileImp();
         List<Questions> questions = new List<Questions>();
         int numberOfQues = 0;
+        int page = 1, menu = 0;
         public Add_Rand_Question(string path)
         {
             fileName = path;
@@ -115,20 +117,145 @@ namespace sebExamination.Controls
         {
             num = 0;
 
-            StackPanel questionContainer = (StackPanel)FindName("QuestionContainer");
-            if (questionContainer != null)
-            {
-                questionContainer.Children.Clear();
-            }
+            questions.Clear();
+            //StackPanel questionContainer = (StackPanel)FindName("QuestionContainer");
+            //if (questionContainer != null)
+            //{
+            //    questionContainer.Children.Clear();
+            //}
             string folderPath = GetFilePathFrombox();
             List<Grid> grids = Read_Category(folderPath);
             foreach (Grid grid in grids)
             {
-                questionContainer.Children.Add(grid);
+                QuestionContainer.Children.Add(grid);
             }
             if (Show_subcate.IsChecked == true) { Show_subcate_Checked(sender, null); }
-            
-            
+            else
+            {
+                GeneratePage();
+                AddQuesToContainer(page);
+            }
+        }
+        private void GeneratePage()
+        {
+            paging.Items.Clear();
+            MenuItem menuItemL = new MenuItem()
+            {
+                Header = "Left",
+                FontSize = 16,
+                FontFamily = new System.Windows.Media.FontFamily("Arial"),
+                Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(0, 159, 229)),
+                Height = 30,
+                Width = 50,
+                BorderBrush = new SolidColorBrush(Colors.DimGray),
+                BorderThickness = new Thickness(0.5, 1, 0.5, 1)
+            };
+            menuItemL.Click += pageLeft;
+            paging.Items.Add(menuItemL);
+            for (int i = menu*10+1; i <= (menu+1)*10 && i<= (questions.Count - 1) / 10 + 1; i++)
+            {
+                MenuItem menuItem = new MenuItem()
+                {
+                    Header = i,
+                    FontSize = 16,
+                    FontFamily = new System.Windows.Media.FontFamily("Arial"),
+                    Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(0, 159, 229)),
+                    Height = 30,
+                    Width = 30,
+                    BorderBrush = new SolidColorBrush(Colors.DimGray),
+                    BorderThickness = new Thickness(0.5, 1, 0.5, 1)
+                };
+                menuItem.Click += (sender, e) => AddQuesToContainer(int.Parse(menuItem.Header.ToString()));
+
+                paging.Items.Add(menuItem);
+            }
+            MenuItem menuItemR = new MenuItem()
+            {
+                Header = "Right",
+                FontSize = 16,
+                FontFamily = new System.Windows.Media.FontFamily("Arial"),
+                Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(0, 159, 229)),
+                Height = 30,
+                Width = 50,
+                BorderBrush = new SolidColorBrush(Colors.DimGray),
+                BorderThickness = new Thickness(0.5, 1, 0.5, 1)
+            };
+            menuItemR.Click += pageRight;
+            paging.Items.Add(menuItemR);
+        }
+        private void pageLeft(object sender, EventArgs e)
+        {
+            if (menu > 0)
+            {
+                menu--;
+                GeneratePage();
+                AddQuesToContainer(page);
+            }
+        }
+        private void pageRight(object sender, EventArgs e)
+        {
+            if (100 * (menu+1) + 1 < questions.Count)
+            {
+                menu++;
+                GeneratePage();
+                AddQuesToContainer(page);
+            }
+        }
+        private void AddQuesToContainer(int p)
+        {
+            Number_of_Rand_Ques_cb.Items.Clear();
+            for (int i = 1; i <= questions.Count && i<=100; i++)
+            {
+                Number_of_Rand_Ques_cb.Items.Add(i.ToString());
+            }
+            page = p;
+            QuestionContainer.Children.Clear();
+            num = 0;
+            for(int i=(p-1)*10; i<p*(10) && i<questions.Count; i++)
+            {
+                Grid grid = new Grid()
+                {
+                    Tag = num,
+                    Height = 20
+                };
+                if (num++ % 2 == 0)
+                {
+                    grid.Background = Brushes.White;
+                }
+                else grid.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(0xEE, 0xEE, 0xEE));
+
+                Grid innerGrid = new Grid()
+                {
+                    Margin = new Thickness(15, 0, 0, 0)
+                };
+                Image imageList = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/list.png", UriKind.Relative)),
+                    Height = 18,
+                    HorizontalAlignment = HorizontalAlignment.Left
+                };
+                innerGrid.Children.Add(imageList);
+
+                TextBlock textBlock = new TextBlock()
+                {
+                    Margin = new Thickness(25, 0, 30, 0),
+                    Text = fileImp.SplitStringByImage(questions[i].Quest).Item1,
+                    Foreground = Brushes.DimGray,
+                    FontWeight = FontWeights.Bold
+                };
+                innerGrid.Children.Add(textBlock);
+
+                grid.Children.Add(innerGrid);
+
+                Image imageSearch = new Image()
+                {
+                    Source = new BitmapImage(new Uri("../Assets/image/search.png", UriKind.Relative)),
+                    Height = 18,
+                    HorizontalAlignment = HorizontalAlignment.Right
+                };
+                grid.Children.Add(imageSearch);
+                QuestionContainer.Children.Add(grid);
+            }
         }
 
         public string GetFilePathFrombox()
@@ -189,57 +316,10 @@ namespace sebExamination.Controls
 
             tmp = fileImp.LoadDataFromFile(path);
             questions.AddRange(tmp);
-            Number_of_Rand_Ques_cb.Items.Clear();
-            for (int i = 1; i <= tmp.Count; i++)
-            {
-                Number_of_Rand_Ques_cb.Items.Add(i.ToString());
-            }
+            
             numberOfQues = tmp.Count;
-            for (int i = 0; i < numberOfQues; i++)
-            {
-                Grid grid = new Grid()
-                {
-                    Height = 20
-                };
-                if (num % 2 == 0)
-                {
-                    grid.Background = Brushes.White;
-                }
-                else grid.Background = new SolidColorBrush(Color.FromRgb(0xEE, 0xEE, 0xEE));
-
-                Grid innerGrid = new Grid() 
-                {
-                    Margin = new Thickness(15, 0, 0, 0)
-                };
-                Image imageList = new Image()
-                {
-                    Source = new BitmapImage(new Uri("../Assets/image/list.png", UriKind.Relative)),
-                    Height = 18,
-                    HorizontalAlignment = HorizontalAlignment.Left
-                };
-                innerGrid.Children.Add(imageList);
-
-                TextBlock textBlock = new TextBlock()
-                {
-                    Margin = new Thickness(25, 0, 30, 0),
-                    Text = fileImp.SplitStringByImage(questions[num++].Quest).Item1,
-                    Foreground = Brushes.DimGray,
-                    FontWeight = FontWeights.Bold
-                };
-                innerGrid.Children.Add(textBlock);
-
-                grid.Children.Add(innerGrid);
-
-                Image imageSearch = new Image()
-                {
-                    Source = new BitmapImage(new Uri("../Assets/image/search.png", UriKind.Relative)),
-                    Height = 18,
-                    HorizontalAlignment = HorizontalAlignment.Right
-                };
-                grid.Children.Add(imageSearch);
-                //QuestionContainer.Children.Add(grid);
-                tmpGrid.Add(grid);
-            }
+            
+            
             return tmpGrid;
         }
         /// <summary>
@@ -288,10 +368,12 @@ namespace sebExamination.Controls
                         QuestionContainer.Children.Add(grid);
                     }
                 }
+
+                GeneratePage();
+                AddQuesToContainer(page);
             }
             if (Show_subcate.IsChecked == false)
             {
-                GetFilePathFrombox();
                 changeCategory(null, null);
             }
         }

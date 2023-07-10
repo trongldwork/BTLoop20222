@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "twS7N3/Erf0W4qqb5OLwPmNY9xY2516BgjBmK7wR4fvY4LOgZnV6FjR1VZElU0W/loZ93HAfJ1Edn9DimXLrPw==",
+  "dgSpecHash": "HJeRRQaIVTqNCYSkC8kjdf9+Ew5VpQWTZzZ7+qZ7kYCnkRGV88XiYAF0VER0u2iwkkY27g0KCjyOkhSNmCCwvQ==",
   "success": true,
   "projectFilePath": "D:\\code\\sth\\BTLoop20222\\sebExamination\\BTLoop20222\\BTLoop20222\\sebExamination\\sebExamination.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trong\\.nuget\\packages\\aspose.words\\23.6.0\\aspose.words.23.6.0.nupkg.sha512",
     "C:\\Users\\trong\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\trong\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\trong\\.nuget\\packages\\microsoft.office.interop.word\\15.0.4797.1004\\microsoft.office.interop.word.15.0.4797.1004.nupkg.sha512",
     "C:\\Users\\trong\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\trong\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\trong\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",

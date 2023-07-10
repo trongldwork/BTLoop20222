@@ -14,6 +14,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Word = Microsoft.Office.Interop.Word;
+using Aspose.Words;
+using DocumentFormat.OpenXml.ExtendedProperties;
+using Microsoft.Office.Core;
+
+
 
 namespace sebExamination.Controls
 {
@@ -60,7 +66,6 @@ namespace sebExamination.Controls
                 mainWindow.Iborder_menu.Content = new Quiz(path);
             }
         }
-
         private void Export_Click(object sender, RoutedEventArgs e)
         {
             FileImp fileImp = new FileImp();
@@ -71,7 +76,6 @@ namespace sebExamination.Controls
                 fileImp.AddImageToDocx("tempDocx.docx", fileImp.GetImagePath(path)[i+count], fileImp.GetImageLine(path)[i+count]);
                 count++;
             }
-            fileImp.ConvertDocxToPdf("tempDocx.docx", "pdfPath.pdf");
         }
     }
 }

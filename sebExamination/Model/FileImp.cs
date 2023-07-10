@@ -9,7 +9,10 @@ using System.IO;
 using A = DocumentFormat.OpenXml.Drawing;
 using DW = DocumentFormat.OpenXml.Drawing.Wordprocessing;
 using PIC = DocumentFormat.OpenXml.Drawing.Pictures;
+using Word = Microsoft.Office.Interop.Word;
 using Aspose.Words;
+using DocumentFormat.OpenXml.ExtendedProperties;
+using Microsoft.Office.Core;
 
 namespace filereader
 {
@@ -164,8 +167,7 @@ namespace filereader
         /// <param name="pdfFilePath"></param>
         public void ConvertDocxToPdf(string docxFilePath, string pdfFilePath)
         {
-            Aspose.Words.Document document = new Aspose.Words.Document(docxFilePath);
-            document.Save(pdfFilePath, SaveFormat.Pdf);
+
         }
         /// <summary>
         /// hàm chèn ảnh từ imageFilePath vào file docx tại docxFilePath tại dòng lineIndex
@@ -332,5 +334,8 @@ namespace filereader
 
             return imageLine;
         }
+        Microsoft.Office.Interop.Word.Application app;
+
+        
     }
 }

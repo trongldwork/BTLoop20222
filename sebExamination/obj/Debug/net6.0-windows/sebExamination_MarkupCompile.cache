@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\
 sebExamination
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\App.xaml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\App.xaml
 221935239003
 
 27-763131150
-198-241424150
+198-204207355
 Controls\AddQuestion.xaml;Controls\AddQuesToQuiz_fromBank.xaml;Controls\AddQuiz.xaml;Controls\Add_Rand_Question.xaml;Controls\Categories.xaml;Controls\Course_list.xaml;Controls\EditQuiz.xaml;Controls\Export.xaml;Controls\Footer.xaml;Controls\Import.xaml;Controls\Menu_uc.xaml;Controls\Question.xaml;Controls\Quiz.xaml;Controls\Test_Preview.xaml;MainWindow.xaml;Template\ButtonTheme.xaml;Template\course_exam.xaml;Template\examListItem.xaml;Template\SquareRadioButton.xaml;Template\textStyle.xaml;Template\toggleBtnStyle.xaml;Template\toggleBtnStyle2.xaml;
 
 False

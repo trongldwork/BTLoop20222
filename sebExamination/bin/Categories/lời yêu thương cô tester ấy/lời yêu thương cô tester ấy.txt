@@ -1,0 +1,10 @@
+Category name: lời yêu thương cô tester ấy
+thisline support the file reader to read both quizz file and category file
+
+Một ngày em được mấy bữa cơm?:
+
+A. Đợt này công việc có tốt hơn?
+B. Còn ai hay gièm pha?
+C. Còn ai luôn rầy la mà xót xa, oà lên khóc vô vọng?
+ANSWER: A
+1

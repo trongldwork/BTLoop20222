@@ -311,10 +311,9 @@ namespace sebExamination.Controls
                 questionPath = item.Item2;
 
             }
-            MessageBox.Show(questionPath);
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
-                mainWindow.AddToMap(new AddQuestion(questionPath, edittingQuest, index), "Add question", 2);
+                mainWindow.AddToMap(new AddQuestion(questionPath, edittingQuest, index), "Edit question", 2);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new AddQuestion(questionPath, edittingQuest, index);
             }

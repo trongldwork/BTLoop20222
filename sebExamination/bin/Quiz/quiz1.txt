@@ -1,35 +1,19 @@
 Quizname quiz1
 Time 0
-Chất nào sau đây không phải là chất chống ăn mòn?
+Đơn vị nào được sử dụng để đo nhiệt độ?
 
-A. Sơn
-B. Dầu
-C. Mực in
-D. Chất bảo quản thực phẩm
-ANSWER: C
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
+ANSWER: D
 1
-Trong phản ứng hóa học, số oxi hóa tăng khi:
+Nguyên tử của phần tử nào chứa số proton và số electron bằng nhau trong bảng tuần hoàn các nguyên tố hóa học?
 
-A. Nhận electron
-B. Mất electron
-C. Giữ nguyên số electron
-D. Lưu giữ electron
-ANSWER: B
-1
-Chất nào sau đây không phải là chất trung tính?
-
-A. Nước
-B. Muối
-C. Dung dịch axit đậm đặc
-D. Dung dịch bazơ đậm đặc
-ANSWER: A
-1
-Chất nào sau đây là chất tạo axit trong nước?
-
-A. NaOH
-B. H2SO4
-C. NH3
-D. KOH
+A. Oxi
+B. Nitơ
+C. Canxi
+D. Uran
 ANSWER: B
 1
 Trạng thái tự do của nguyên tử là:
@@ -40,12 +24,132 @@ C. Anion
 D. Phân tử
 ANSWER: A
 1
-Công thức hóa học của nước vôi là gì?
+Quá trình nào xảy ra khi một chất lỏng biến thành hơi?
 
-A. Ca(OH)2
-B. CaCO3
-C. CaO
-D. CaCl2
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: B
+1
+Nguyên tử của phần tử nào chứa số proton và số electron bằng nhau trong bảng tuần hoàn các nguyên tố hóa học?
+
+A. Oxi
+B. Nitơ
+C. Canxi
+D. Uran
+ANSWER: B
+1
+Loại vật liệu nào không dẫn điện?
+
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: D
+1
+Quá trình nào xảy ra khi một chất khí biến thành chất lỏng?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: C
+1
+Chất nào sau đây không phải là chất trung tính?
+
+A. Nước
+B. Muối
+C. Dung dịch axit đậm đặc
+D. Dung dịch bazơ đậm đặc
+ANSWER: A
+1
+Đơn vị nào được sử dụng để đo nhiệt độ?
+
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
+ANSWER: D
+1
+Ngành nào nghiên cứu về cấu trúc, tính chất và biểu hiện của các chất hóa học?
+
+A. Vật lý
+B. Hóa học
+C. Sinh học
+D. Địa chất học
+ANSWER: B
+1
+Loại năng lượng nào được tạo ra từ chuyển động của đối tượng?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: B
+1
+Nguồn năng lượng chính trong mạch điện là gì?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: C
+1
+Lực nào giữ các hạt nhân nguyên tử lại với nhau?
+
+A. Lực hút
+B. Lực đẩy
+C. Lực điện
+D. Lực hấp dẫn
+ANSWER: D
+1
+Quá trình nào xảy ra khi ánh sáng bị giữ lại và không đi xuyên qua một chất?
+
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: A
+1
+Quá trình nào xảy ra khi ánh sáng được giữ lại hoặc hấp thụ bởi một chất?
+
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: D
+1123
+Môi trường tự nhiên được định nghĩa là gì?
+
+A. Môi trường ngoại vi của con người
+B. Môi trường sống của động vật và cây cỏ
+C. Môi trường không có sự can thiệp của con người
+D. Môi trường sống tự nhiên trên Trái Đất
+ANSWER: D
+1
+Quá trình nào xảy ra khi ánh sáng được giữ lại hoặc hấp thụ bởi một chất?
+
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: D
+1123
+Quá trình nào xảy ra khi một chất lỏng biến thành hơi?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: B
+1
+Đơn vị nào được sử dụng để đo khối lượng của một chất?
+
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
 ANSWER: A
 1
 Trong cuốn tiểu thuyết "1984" của George Orwell, Orwell mô tả một xã hội tương lai được cai trị bởi một chính phủ độc tài và siêu hình thức. Tên của chính phủ này là gì? trả lời đi ok bro
@@ -57,6 +161,103 @@ B. Đảng Lão
 C. Đảng Cộng sản
 ANSWER: B
 1
+Loại vật liệu nào không dẫn điện?
+
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: D
+1
+Loại năng lượng nào được sử dụng để làm nóng nước trong bình đun?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: A
+1
+Quá trình nào xảy ra khi ánh sáng được phản xạ từbề mặt phẳng?
+
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: A
+1
+Loại vật liệu nào không dẫn điện?
+
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: D
+1
+Trong phản ứng hóa học, số oxi hóa tăng khi:
+
+A. Nhận electron
+B. Mất electron
+C. Giữ nguyên số electron
+D. Lưu giữ electron
+ANSWER: B
+1
+Loại năng lượng nào được tạo ra từ chuyển động của đối tượng?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: B
+1
+Quá trình nào giúp cây xanh tạo ra thức ăn và oxi từ ánh sáng mặt trời?
+
+A. Quang hợp
+B. Quang phổ
+C. Quang điện
+D. Quang phát
+ANSWER: A
+1
+Nguồn năng lượng chính trong hệ mặt trời là gì?
+
+A. Năng lượng hạt nhân
+B. Năng lượng điện
+C. Nhiệt năng
+D. Năng lượng ánh sáng
+ANSWER: D
+1
+Lực nào giữ các hạt nhân nguyên tử lại với nhau?
+
+A. Lực hút
+B. Lực đẩy
+C. Lực điện
+D. Lực hấp dẫn
+ANSWER: D
+1
+Loại vật liệu nào không dẫn điện?
+:
+
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. con Cặc
+ANSWER: D
+1
+Quá trình nào xảy ra khi một chất khí biến thành chất lỏng?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: C
+1
+Quá trình nào xảy ra khi một chất khí biến thành chất lỏng?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: C
+1
 Nhiệt độ tối đa mà một chất có thể nóng chảy gọi là gì?
 hip hop
 
@@ -65,4 +266,278 @@ B. Điểm chảy
 C. Điểm nóng chảy
 D. Điểm hóa hơi
 ANSWER: B
+1
+Quá trình nào giúp cây xanh tạo ra thức ăn và oxi từ ánh sáng mặt trời?
+
+A. Quang hợp
+B. Quang phổ
+C. Quang điện
+D. Quang phát
+ANSWER: A
+1
+Công thức hóa học của nước vôi là gì?
+
+A. Ca(OH)2
+B. CaCO3
+C. CaO
+D. CaCl2
+ANSWER: A
+1
+Loại chất nào là hỗn hợp của hai hay nhiều nguyên tố?
+
+A. Phân tử
+B. Đơn chất
+C. Hợp chất
+D. Hỗn hợp
+ANSWER: D
+1
+Nguồn năng lượng chính trong mạch điện là gì?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: C
+1
+Quá trình nào xảy ra khi một chất khí biến thành chất lỏng?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: C
+1
+Lực nào giữ các hạt nhân nguyên tử lại với nhau?
+
+A. Lực hút
+B. Lực đẩy
+C. Lực điện
+D. Lực hấp dẫn
+ANSWER: D
+1
+Quá trình nào diễn ra khi một chất rắn trở thành lỏng?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: C
+1
+Nguyên tử của phần tử nào chứa số proton và số electron bằng nhau trong bảng tuần hoàn các nguyên tố hóa học?
+
+A. Oxi
+B. Nitơ
+C. Canxi
+D. Uran
+ANSWER: B
+1
+Loại vật liệu nào không dẫn điện?
+:
+
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Con cặc
+ANSWER: D
+1
+Nguồn năng lượng chính trong hệ mặt trời là gì?
+
+A. Năng lượng hạt nhân
+B. Năng lượng điện
+C. Nhiệt năng
+D. Năng lượng ánh sáng
+ANSWER: D
+1
+Chất nào là nguyên tố có số hiệu nguyên tử là 1 trong bảng tuần hoàn các nguyên tố hóa học?
+
+A. Hiđrô
+B. Oxi
+C. Canxi
+D. Nhôm
+ANSWER: A
+1
+Nguyên tử của phần tử nào chứa số proton lớn nhất trong bảng tuần hoàn các nguyên tố hóa học?
+
+A. Oxi
+B. Nitơ
+C. Canxi
+D. Uran
+ANSWER: D
+1
+Quá trình nào xảy ra khi ánh sáng được giữ lại hoặc hấp thụ bởi một chất?
+
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: D
+1123
+Loại chất nào là kết hợp của hai hoặc nhiều nguyên tử khác nhau?
+
+A. Phân tử
+B. Đơn chất
+C. Hợp chất
+D. Hỗn hợp
+ANSWER: C
+1
+Quá trình nào xảy ra khi một chất lỏng biến thành rắn?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: A
+1
+Loại năng lượng nào được sử dụng để làm nóng nước trong bình đun?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: A
+1
+Loại năng lượng nào được tạo ra từ sự phân hủy của nguyên tử?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: D
+1
+Quá trình nào xảy ra khi ánh sáng được phản xạ từbề mặt phẳng?
+
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: A
+1
+Loại năng lượng nào được tạo ra từ chuyển động của đối tượng?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: B
+1
+Chất nào sau đây là chất tạo axit trong nước?
+
+A. NaOH
+B. H2SO4
+C. NH3
+D. KOH
+ANSWER: B
+1
+Quá trình nào xảy ra khi một chất rắn trở thành chất khí mà không thông qua giai đoạn lỏng?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: B
+1
+Loại chất nào chỉ chứa một nguyên tử?
+
+A. Phân tử
+B. Đơn chất
+C. Hợp chất
+D. Hỗn hợp
+ANSWER: B
+1
+Loại vật liệu nào không dẫn điện?
+:
+
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Con cặc
+ANSWER: D
+1
+Nguồn năng lượng chính trong mạch điện là gì?
+
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: C
+1
+Nguyên tử của phần tử nào chứa số proton nhỏ nhất trong bảng tuần hoàn các nguyên tố hóa học?
+
+A. Hiđrô
+B. Oxi
+C. Canxi
+D. Nhôm
+ANSWER: A
+1
+Nguồn năng lượng mặt trời chính là gì?
+
+A. Năng lượng hạt nhân
+B. Năng lượng điện
+C. Nhiệt năng
+D. Năng lượng ánh sáng
+ANSWER: D
+1
+Môi trường tự nhiên được định nghĩa là gì?
+
+A. Môi trường ngoại vi của con người
+B. Môi trường sống của động vật và cây cỏ
+C. Môi trường không có sự can thiệp của con người
+D. Môi trường sống tự nhiên trên Trái Đất
+ANSWER: D
+1
+Quá trình nào xảy ra khi một chất lỏng biến thành rắn?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: A
+1
+Quá trình nào diễn ra khi một chất rắn trở thành lỏng?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: C
+1
+Quá trình nào xảy ra khi một chất rắn trở thành chất khí mà không thông qua giai đoạn lỏng?
+
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: B
+1
+Loại vật liệu nào được sử dụng để tạo ra điện từ trong mạch điện?
+
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: A
+1
+Nguồn năng lượng chính trong hệ mặt trời là gì?
+
+A. Năng lượng hạt nhân
+B. Năng lượng điện
+C. Nhiệt năng
+D. Năng lượng ánh sáng
+ANSWER: D
+1
+Loại chất nào chỉ chứa một nguyên tử?
+
+A. Phân tử
+B. Đơn chất
+C. Hợp chất
+D. Hỗn hợp
+ANSWER: B
+1
+Chất nào sau đây không phải là chất chống ăn mòn?
+
+A. Sơn
+B. Dầu
+C. Mực in
+D. Chất bảo quản thực phẩm
+ANSWER: C
 1

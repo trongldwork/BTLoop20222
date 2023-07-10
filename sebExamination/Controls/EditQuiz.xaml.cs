@@ -1,7 +1,10 @@
-﻿using filereader;
+﻿using DocumentFormat.OpenXml.Bibliography;
+using DocumentFormat.OpenXml.Math;
+using filereader;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +38,12 @@ namespace sebExamination.Controls
             questions = fileImp.LoadDataFromFile(fileName);
             questNum.Text = "Questions: " + questions.Count;
             totalMark.Text = questions.Count.ToString();
+            AddQuestionToContainer();
+
+        }
+        private void AddQuestionToContainer()
+        {
+            FileImp fileImp = new FileImp();
             for (int i = 0; i < questions.Count; i++)
             {
                 Grid grid = new Grid()
@@ -54,7 +63,7 @@ namespace sebExamination.Controls
 
                 TextBlock indexTextBlock = new TextBlock()
                 {
-                    Text = (i+1).ToString(),
+                    Text = (i + 1).ToString(),
                     Margin = new Thickness(30, 2, 5, 2),
                     TextAlignment = TextAlignment.Center,
                     Background = Brushes.LightGray,
@@ -143,10 +152,6 @@ namespace sebExamination.Controls
                 quesContainer.Children.Add(grid);
             }
         }
-        private void AddQuestionToContainer()
-        {
-
-        }
         private void Add_Ques_MouseEnter(object sender, MouseEventArgs e)
         {
             ToggleButton toggleButton = (ToggleButton)sender;
@@ -184,7 +189,8 @@ namespace sebExamination.Controls
             // Truyền giá trị newValue cho MainWindow
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
-                mainWindow.AddToMap(new Test_Preview(fileName), "MyCourse", 0);
+                string str = System.IO.Path.GetFileName(fileName).Substring(0, System.IO.Path.GetFileName(fileName).Length - 4);
+                mainWindow.AddToMap(new Test_Preview(fileName), str, 1);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new Test_Preview(fileName);
             }
@@ -206,6 +212,35 @@ namespace sebExamination.Controls
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new AddQuesToQuiz_fromBank(fileName);
             }
+        }
+        public static void Shuffle<T>(List<T> list)
+        {
+            Random random = new Random();
+            int n = list.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = random.Next(n + 1);
+                T value = list[k];
+                list[k] = list[n];
+                list[n] = value;
+            }
+        }
+        private void shuffle_checkbox_Click(object sender, RoutedEventArgs e)
+        {
+            if(shuffle_checkbox.IsChecked == true)
+            {
+                Shuffle(questions);
+                quesContainer.Children.Clear();
+                AddQuestionToContainer();
+            }
+        }
+        private void save_Click(object sender, RoutedEventArgs e)
+        {
+            FileImp fileImp = new FileImp();
+            var data = File.ReadAllText(fileName).Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            File.WriteAllText(fileName, data[0] + "\n" + data[1] + "\n");
+            fileImp.SaveDataToFile(fileName, questions);
         }
     }
 }

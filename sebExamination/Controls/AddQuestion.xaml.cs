@@ -137,13 +137,14 @@ namespace sebExamination.Controls
         }
         private void saveChangeAndContinue_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
-            if(setter == -1)
+            if (category_parent.SelectedIndex == 0)
             {
-                if (category_parent.SelectedIndex == 0)
-                {
-                    MessageBox.Show("Vui lòng chọn category");
-                    return;
-                }
+                MessageBox.Show("Vui lòng chọn category");
+                return;
+            }
+            if (setter == -1 || category_parent.SelectedIndex != 0)
+            {
+                questions = new List<Questions>();   
                 List<string> answer = new List<string>();
 
                 string ans = "ANSWER: ";
@@ -169,7 +170,7 @@ namespace sebExamination.Controls
                     tmp++;
 
                 }
-                string ques = questionName_addQuestion.Text + ":" + questionText_addQuestion.Text;
+                string ques = questionName_addQuestion.Text + "\n" + questionText_addQuestion.Text;
                 ques += (ques_image_path != "") ? "<image>:" + ques_image_path : ques_image_path;
                 Questions tempQ = new Questions(ques,
                     answer,
@@ -266,8 +267,6 @@ namespace sebExamination.Controls
                     answer,
                     ans,
                     double.Parse(questionMark_addQuestion.Text));
-                MessageBox.Show(setter.ToString());
-                MessageBox.Show(setterPath);
                 questions[setter] = tempQ;
                 var data = File.ReadAllText(setterPath).Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
                 File.WriteAllText(setterPath, data[0] + "\n" + data[1]+"\n");

@@ -319,7 +319,7 @@ namespace sebExamination.Controls
                 fileImp.SaveDataToFile(fileName, temp);
                 if (Window.GetWindow(this) is MainWindow mainWindow)
                 {
-                    mainWindow.AddToMap(new EditQuiz(fileName), "Edit quiz", 3);
+                    mainWindow.AddToMap(new EditQuiz(fileName), "Edit quiz", 2);
                     // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                     mainWindow.Iborder_menu.Content = new EditQuiz(fileName);
                 }
@@ -332,7 +332,7 @@ namespace sebExamination.Controls
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
-                mainWindow.AddToMap(new EditQuiz(fileName), "Add question", 3);
+                mainWindow.AddToMap(new EditQuiz(fileName), "Edit quiz", 2);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new EditQuiz(fileName);
             }

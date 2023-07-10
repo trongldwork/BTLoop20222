@@ -29,7 +29,7 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Image x:Name="addQuiz_general_status"
-                                       Source="../Assets/image/arrow-right.png"
+                                       Source="../Assets/image/arrow-down.png"
                                        Margin="2.5"/>
                     <TextBlock FontSize="16"
                                
@@ -110,7 +110,7 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Image x:Name="addQuiz_timing_status"
-                                       Source="../Assets/image/arrow-right.png"
+                                       Source="../Assets/image/arrow-down.png"
                                        Margin="2.5"/>
                     <TextBlock FontSize="16"
                                            Margin="5 0 0 0"

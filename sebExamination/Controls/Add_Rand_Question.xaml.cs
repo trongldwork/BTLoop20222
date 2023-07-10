@@ -386,14 +386,20 @@ namespace sebExamination.Controls
                 List<Questions> temp = new List<Questions>();
                 List<int> randomNumbers = new List<int>();
 
-                while (randomNumbers.Count < Number_of_Rand_Ques_cb.SelectedIndex)
+                while (randomNumbers.Count <= Number_of_Rand_Ques_cb.SelectedIndex)
                 {
-                    int randomNumber = random.Next(questions.Count + 1);
+                    int randomNumber = random.Next(questions.Count);
                     if (!randomNumbers.Contains(randomNumber))
                     {
                         randomNumbers.Add(randomNumber);
                     }
                 }
+                string t = "";
+                for(int i = 0; i<randomNumbers.Count; i++)
+                {
+                    t = t+ "/" + randomNumbers[i].ToString();
+                }
+                MessageBox.Show(t);
                 for (int i = 0; i < randomNumbers.Count; i++)
                 {
                     temp.Add(questions[randomNumbers[i]]);

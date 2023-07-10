@@ -135,8 +135,18 @@
                         </TextBlock>
                     </Grid>
                 </Grid>
-                <TextBlock x:Name="timerText" FontSize="24" />
-
+                
+                <Border BorderBrush="DimGray"
+                        BorderThickness="0.5"
+                        Margin="20 10 20 0"
+                        HorizontalAlignment="Right">
+                    <TextBlock x:Name="timerText" FontSize="24"
+                               Height="30"
+                               Width="60"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="10 5 10 5"/>
+                </Border>
                 <ItemsControl ItemsSource="{Binding QuestionBoxes}"/>
 
             </StackPanel>

@@ -62,8 +62,10 @@ namespace sebExamination.Controls
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
-
-                mainWindow.SwitchViewHome_Click(null, null);
+                mainWindow.AddToMap(new Course_list(), "My course", 0);
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new Course_list();
+                mainWindow.editBtn.Visibility = Visibility.Visible;
             }
         }
         private void ComboBox_Day() //tạo data từ 1 đến 31 cho combo box chỉ ngày
@@ -145,10 +147,12 @@ namespace sebExamination.Controls
             int time = 0;
             if (cb_timelimit_enable.IsChecked == true)
             {
-                if(cb_timelimit2.SelectedIndex == 1)
+                time = cb_timelimit.SelectedIndex;
+                if (cb_timelimit2.SelectedIndex == 1)
                 {
-                    time = cb_timelimit.SelectedIndex * 60;
+                     time *= 60;
                 }
+                time *=60;
                 quizContent += time.ToString();
             }
 
@@ -157,6 +161,13 @@ namespace sebExamination.Controls
             using (StreamWriter writer = new StreamWriter(quizPath))
             {
                 writer.Write(quizContent);
+            }
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                mainWindow.AddToMap(new Course_list(), "My course", 0);
+                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
+                mainWindow.Iborder_menu.Content = new Course_list();
+                mainWindow.editBtn.Visibility = Visibility.Visible;
             }
 
         }

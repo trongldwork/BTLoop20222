@@ -7,13 +7,19 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     
-    <Grid Height="600">
-            <StackPanel Orientation="Vertical"
-                        x:Name="QuizContainer">
+    <StackPanel>
+        <Grid Height="30">
+
+        </Grid>
+        <StackPanel Orientation="Vertical"
+                        x:Name="QuizContainer"
+                        Margin="20 0 40 0">
                 
 
-            </StackPanel>
+        </StackPanel>
 
-
-    </Grid>
+        <Grid Height="30">
+            
+        </Grid>
+    </StackPanel>
 </UserControl>

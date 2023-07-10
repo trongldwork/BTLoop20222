@@ -505,7 +505,7 @@ namespace sebExamination.Controls
             endTime = now.ToString();
             int correctAnswerCount = 0;
             int[] temp;
-            temp = new int[99];
+            temp = new int[300];
             if (timer != null) timer.Stop();
             foreach (var question in QuestionBoxes)
             {

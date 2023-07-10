@@ -51,8 +51,8 @@ namespace sebExamination.Controls
 
                 Button button = new Button()
                 {
-                    Name = System.IO.Path.GetFileName(file).Remove(System.IO.Path.GetFileName(file).Length - 4),
-                    Content = System.IO.Path.GetFileName(file).Remove(System.IO.Path.GetFileName(file).Length - 4),
+                    
+                    Content = System.IO.Path.GetFileName(file).ToString().Remove(System.IO.Path.GetFileName(file).ToString().Length - 4),
                     Width = 800,
                     FontSize = 22,
                     Background = Brushes.White,

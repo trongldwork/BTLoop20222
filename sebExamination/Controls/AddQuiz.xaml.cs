@@ -62,9 +62,8 @@ namespace sebExamination.Controls
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
-                mainWindow.AddToMap(new Course_list(), "My course", 0);
-                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
-                mainWindow.Iborder_menu.Content = new Course_list();
+
+                mainWindow.SwitchViewHome_Click(null, null);
             }
         }
         private void ComboBox_Day() //tạo data từ 1 đến 31 cho combo box chỉ ngày

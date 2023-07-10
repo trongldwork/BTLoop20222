@@ -58,7 +58,7 @@ namespace sebExamination.Controls
                 Title.Text = "Editting a multipal choice";
                 questions = fileImp.LoadDataFromFile(path);
 
-                questionName_addQuestion.Text = questions[QuestionNumber].Quest;
+                questionText_addQuestion.Text = questions[QuestionNumber].Quest;
                 questionMark_addQuestion.Text = questions[QuestionNumber].Mark.ToString();
                 text_choice1.Text = questions[QuestionNumber].Ans[0].Substring(3);
                 text_choice2.Text = questions[QuestionNumber].Ans[1].Substring(3);
@@ -260,7 +260,7 @@ namespace sebExamination.Controls
                     tmp++;
 
                 }
-                string ques = questionName_addQuestion.Text + ":" + questionText_addQuestion.Text;
+                string ques = questionName_addQuestion.Text + "\n"+ questionText_addQuestion.Text;
                 ques += (ques_image_path != "") ? "<image>:" + ques_image_path : ques_image_path;
                 Questions tempQ = new Questions(ques,
                     answer,
@@ -269,7 +269,8 @@ namespace sebExamination.Controls
                 MessageBox.Show(setter.ToString());
                 MessageBox.Show(setterPath);
                 questions[setter] = tempQ;
-                File.WriteAllText(setterPath, string.Empty);
+                var data = File.ReadAllText(setterPath).Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                File.WriteAllText(setterPath, data[0] + "\n" + data[1]+"\n");
                 fileImp.SaveDataToFile(setterPath, questions);
             }
         }

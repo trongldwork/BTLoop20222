@@ -38,9 +38,12 @@ namespace sebExamination
             get { return (Menu_uc)GetValue(MenuContentControlProperty); }
             set { SetValue(MenuContentControlProperty, value); }
         }
-        private void SwitchViewHome_Click(object sender, RoutedEventArgs e)
+        public void SwitchViewHome_Click(object sender, RoutedEventArgs e)
         {
-            
+            Iborder_menu.Content = new Course_list();
+            editBtn.Visibility = Visibility.Visible;
+            while(map.Children.Count > 2) map.Children.RemoveAt(map.Children.Count - 1);
+
         }
 
         private void SwitchViewCourse_Click(object sender, RoutedEventArgs e)

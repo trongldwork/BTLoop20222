@@ -1,7 +1,0 @@
-Category name: abc
-thisline support the file reader to read both quizz file and category file
-1:1
-A. 1
-B. 1
-ANSWER: 
-1

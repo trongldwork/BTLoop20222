@@ -1,268 +1,269 @@
-Category name: Câu hỏi hóc búa
-thisline support the file reader to read both quizz file and category file
-
-Trong cuốn tiểu thuyết "1984" của George Orwell, Orwell mô tả một xã hội tương lai được cai trị bởi một chính phủ độc tài và siêu hình thức. Tên của chính phủ này là gì?
+1
+1
+Trong cuốn tiểu thuyết "1984" của George Orwell, Orwell mô tả một xã hội tương lai được cai trị bởi một chính phủ độc tài và siêu hình thức. Tên của chính phủ này là gì? trả lời đi ok bro
+:
+:<image>:C:\Users\trong\OneDrive\Desktop\tai lieu hoc tap\dnp-thoi-dung-do-loi-02.jpg
 A. Đảng Hiệp sĩ
 B. Đảng Lão
 C. Đảng Cộng sản
 ANSWER: B
 1
-
 Hãy mô tả quy trình tiêu hóa thức ăn trong cơ thể người, bao gồm các bước từ khi thức ăn vào miệng cho đến khi chất thải được tiết ra khỏi cơ thể.
+
 A. Một. Tiếp nhận thức ăn qua miệng; Hai. Nghiền và nhai thức ăn trong miệng; Ba. Hệ tiêu hóa hóa thức ăn thành chất lỏng; Bốn. Hấp thụ dưỡng chất trong ruột non; Năm. Hấp thụ nước trong ruột già; Sáu. Tiết ra chất thải qua hậu môn.
 B. Một. Tiếp nhận thức ăn qua miệng; Hai. Nghiền và nhai thức ăn trong miệng; Ba. Vận chuyển thức ăn qua dạ dày; Bốn. Tiêu hóa thức ăn trong ruột non; Năm. Hấp thụ dưỡng chất trong ruột già; Sáu. Tiết ra chất thải qua hậu môn.
 C. Một. Tiếp nhận thức ăn qua miệng; Hai. Nghiền và nhai thức ăn trong miệng; Ba. Tiêu hóa thức ăn trong dạ dày; Bốn. Hấp thụ dưỡng chất trong ruột non; Năm. Hấp thụ nước trong ruột già; Sáu. Tiết ra chất thải qua hậu môn.
 ANSWER: C
 1
-
 Trong cuốn tiểu thuyết "Pride and Prejudice" của Jane Austen, câu chuyện tập trung vào nhân vật chính Elizabeth Bennet và hành trình của cô trong việc tìm kiếm tình yêu và sự công bằng xã hội. Nhân vật nào là người đàn ông giàu có và tự phụ mà Elizabeth ban đầu coi là tồi tệ?
+
 A. Fitzwilliam Darcy
 C. George Wickham
 D. Mr. Collins
 ANSWER: A
 1
-
 Mô tả quy trình quang hợp trong cây xanh, bao gồm các bước từ khi cây tiếp nhận ánh sáng mặt trời cho đến khi chất điều chỉnh được tạo ra.
+
 A. Một. Cây tiếp nhận ánh sáng mặt trời qua lá; Hai. Quang hợp xảy ra trong các tế bào lá; Ba. Các tế bào lá chuyển năng lượng ánh sáng thành năng lượng hóa học; Bốn. Năng lượng hóa học được sử dụng để tạo ra chất điều chỉnh.
 B. Một. Cây tiếp nhận ánh sáng mặt trời qua rễ; Hai. Quang hợp xảy ra trong các tế bào rễ; Ba. Các tế bào rễ chuyển năng lượng ánh sáng thành năng lượng hóa học; Bốn. Năng lượng hóa học được sử dụng để tạo ra chất điều chỉnh.
 C. Một. Cây tiếp nhận ánh sáng mặt trời qua cành; Hai. Quang hợp xảy ra trong các tế bào cành; Ba. Các tế bào cành chuyển năng lượng ánh sáng thành năng lượng hóa học; Bốn. Năng lượng hóa học được sử dụng để tạo ra chất điều chỉnh.
 D. Một. Cây tiếp nhận ánh sáng mặt trời qua lá; Hai. Quang hợp xảy ra trong các tế bào lá; Ba. Các tế bào lá chuyển năng lượng ánh sáng thành năng lượng hóa học; Bốn. Năng lượng hóa học được sử dụng để tạo ra chất điều chỉnh.
 ANSWER: D
 1
-
 Tiểu thuyết "Tôi thấy hoa vàng trên cỏ xanh" được viết bởi ai?
+
 A. Nguyễn Nhật Ánh
 B. Nguyễn Du
 C. Nguyễn Nhật Minh
 D. Nguyễn Nhật Ánh và Nguyễn Nhật Minh
 ANSWER: A
 1
-
 Bức tượng "David" được tạo bởi nhà điêu khắc nổi tiếng nào?
+
 A. Leonardo da Vinci
 B. Michelangelo
 C. Auguste Rodin
 D. Pablo Picasso
 ANSWER: B
 1
-
 Ai là người đầu tiên điều hành Hành tinh Xanh (Blue Origin)?
+
 A. Elon Musk
 B. Richard Branson
 C. Jeff Bezos
 D. Mark Zuckerberg
 ANSWER: C
 1
-
 Loạt phim "Harry Potter" dựa trên tiểu thuyết của tác giả nào?
+
 A. J.K. Rowling
 B. Stephen King
 C. George R.R. Martin
 D. Roald Dahl
 ANSWER: A
 1
-
 Thành phố Paris nằm ở quốc gia nào?
+
 A. Ý
 B. Pháp
 C. Tây Ban Nha
 D. Đức
 ANSWER: B
 1
-
 Ai là nhà khoa học nổi tiếng phát minh ra đèn huỳnh quang?
+
 A. Thomas Edison
 B. Nikola Tesla
 C. Isaac Newton
 D. Albert Einstein
 ANSWER: A
 1
-
 "La Gioconda" là bức tranh nổi tiếng khác được gọi là gì?
+
 A. Bức thảm họa
 B. Mona Lisa
 C. Đại bàng mất cánh
 D. Mặt Trăng
 ANSWER: B
 1
-
 Năm 2022 là năm gì trong dương lịch Trung Quốc?
+
 A. Năm Dần
 B. Năm Thìn
 C. Năm Tý
 D. Năm Mão
 ANSWER: A
 1
-
 Ai là nhà văn Việt Nam đầu tiên được trao Giải Nobel Văn học?
+
 A. Nguyễn Du
 B. Nguyễn Huy Tưởng
 C. Nguyễn Văn Tạo
 D. Nguyễn Xuân Diệu
 ANSWER: B
 1
-
 Loài động vật nào có khả năng bay không đồng cánh?
+
 A. Chim
 B. Cá
 C. Khủng long
 D. Cá voi
 ANSWER: A
 1
-
 Ai là tác giả cuốn sách "To Kill a Mockingbird"?
+
 A. Harper Lee
 B. J.D. Salinger
 C. F. Scott Fitzgerald
 D. John Steinbeck
 ANSWER: A
 1
-
 Ai là người sáng lập Microsoft?
+
 A. Bill Gates
 B. Steve Jobs
 C. Jeff Bezos
 D. Mark Zuckerberg
 ANSWER: A
 1
-
 Quốc gia nào có thủ đô là Tokyo?
+
 A. Nhật Bản
 B. Hàn Quốc
 C. Trung Quốc
 D. Thái Lan
 ANSWER: A
 1
-
 Ai là vị vua nổi tiếng của Ai Cập cổ đại và xây dựng Đại kim tự tháp Giza?
+
 A. Ramses II
 B. Tutankhamun
 C. Cleopatra
 D. Khufu
 ANSWER: D
 1
-
 Bộ phim "The Shawshank Redemption" được dựa trên tác phẩm của nhà văn nào?
+
 A. Stephen King
 B. J.R.R. Tolkien
 C. George Orwell
 D. Ernest Hemingway
 ANSWER: A
 1
-
 Ai là người đầu tiên bước chân lên Mặt trăng?
+
 A. Neil Armstrong
 B. Buzz Aldrin
 C. Yuri Gagarin
 D. Alan Shepard
 ANSWER: A
 1
-
 Quốc gia nào là quê hương của Mozart?
+
 A. Áo
 B. Đức
 C. Ý
 D. Pháp
 ANSWER: A
 1
-
 Ai là vị vua nổi tiếng của Anh và có biệt danh là "Trái tim dũng cảm"?
+
 A. King Henry VIII
 B. King Richard III
 C. King George III
 D. King Henry V
 ANSWER: D
 1
-
 Quốc gia nào có ngôn ngữ tiếng Hàn?
+
 A. Hàn Quốc
 B. Nhật Bản
 C. Trung Quốc
 D. Thái Lan
 ANSWER: A
 1
-
 Cuộc cách mạng Công nghiệp bắt đầu từ quốc gia nào?
+
 A. Anh
 B. Mỹ
 C. Pháp
 D. Đức
 ANSWER: A
 1
-
 Cuốn tiểu thuyết "Pride and Prejudice" được viết bởi ai?
+
 A. Jane Austen
 B. Emily Brontë
 C. Charlotte Brontë
 D. Virginia Woolf
 ANSWER: A
 1
-
 Thành phố Sydney nằm ở quốc gia nào?
+
 A. Úc
 B. New Zealand
 C. Canada
 D. Mỹ
 ANSWER: A
 1
-
 Ai là nhà khoa học phát minh ra đèn bóng đèn đầu tiên?
+
 A. Thomas Edison
 B. Nikola Tesla
 C. Benjamin Franklin
 D. James Watt
 ANSWER: A
 1
-
 Quốc gia nào có ngôn ngữ tiếng Pháp?
+
 A. Pháp
 B. Tây Ban Nha
 C. Đức
 D. Ý
 ANSWER: A
 1
-
 Bộ phim "The Godfather" dựa trên tiểu thuyết của nhà văn nào?
+
 A. Mario Puzo
 B. J.R.R. Tolkien
 C. George R.R. Martin
 D. Ernest Hemingway
 ANSWER: A
 1
-
 Ai là nhà văn của cuốn sách "Crime and Punishment"?
+
 A. Leo Tolstoy
 B. Fyodor Dostoevsky
 C. Anton Chekhov
 D. Vladimir Nabokov
 ANSWER: B
 1
-
 Quốc gia nào có ngôn ngữ tiếng Đức?
+
 A. Đức
 B. Áo
 C. Thụy Sĩ
 D. Bỉ
 ANSWER: A
 1
-
 Ai là người đứng đầu công ty SpaceX?
+
 A. Elon Musk
 B. Jeff Bezos
 C. Richard Branson
 D. Mark Zuckerberg
 ANSWER: A
 1
-
 Bức tượng nổi tiếng "Vị nữ báo tái sinh" (The Statue of Liberty) nằm ở thành phố nào?
+
 A. New York City
 B. Washington, D.C.
 C. Los Angeles
 D. Chicago
 ANSWER: A
 1
-
 Ai là tác giả cuốn tiểu thuyết "The Great Gatsby"?
+
 A. F. Scott Fitzgerald
 B. Ernest Hemingway
 C. J.D. Salinger

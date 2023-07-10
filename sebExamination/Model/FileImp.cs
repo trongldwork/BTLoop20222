@@ -9,11 +9,9 @@ using System.IO;
 using A = DocumentFormat.OpenXml.Drawing;
 using DW = DocumentFormat.OpenXml.Drawing.Wordprocessing;
 using PIC = DocumentFormat.OpenXml.Drawing.Pictures;
-using Word = Microsoft.Office.Interop.Word;
 using Aspose.Words;
-using DocumentFormat.OpenXml.ExtendedProperties;
-using Microsoft.Office.Core;
-
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 namespace filereader
 {
     public class FileImp : IFile
@@ -189,6 +187,81 @@ namespace filereader
             }
         }
 
+        public void splitImage(string textFilePath)
+        {
+            try
+            {
+                string content = File.ReadAllText(textFilePath);
+                List<int> imagePositions = new List<int>();
+                int index = content.IndexOf(":<image>:");
+                while (index != -1)
+                {
+                    imagePositions.Add(index);
+                    index = content.IndexOf(":<image>:", index + 1);
+                }
+                StringBuilder formattedContent = new StringBuilder();
+                int startIndex = 0;
+                foreach (int position in imagePositions)
+                {
+                    formattedContent.AppendLine(content.Substring(startIndex, position - startIndex));
+                    startIndex = position;
+                }
+                formattedContent.Append(content.Substring(startIndex));
+                File.WriteAllText(textFilePath, formattedContent.ToString());
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+            }
+        }
+
+
+        public void ConvertTxtToPdf(string textFilePath, string pdfFilePath)
+        {
+            iTextSharp.text.Document document = new iTextSharp.text.Document();
+
+            try
+            {
+                using (StreamReader sr = new StreamReader(textFilePath))
+                {
+                    PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(pdfFilePath, FileMode.Create));
+                    BaseFont vietnameseFont = BaseFont.CreateFont("times.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+                    iTextSharp.text.Font vietnameseFontStyle = new iTextSharp.text.Font(vietnameseFont, 12);
+                    document.Open();
+
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        if (line.StartsWith(":<image>:"))
+                        {
+                            string imagePath = line.Substring(":<image>:".Length);
+                            iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(imagePath);
+
+                            float newWidth = 400f;
+                            float newHeight = 300f;
+                            image.ScaleAbsolute(newWidth, newHeight);
+
+                            image.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
+
+                            document.Add(image);
+                        }
+                        else
+                        {
+                            if (!string.IsNullOrEmpty(line))
+                            {
+                                document.Add(new iTextSharp.text.Paragraph(line, vietnameseFontStyle));
+                            }
+                        }
+                    }
+
+                    document.Close();
+                }
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+            }
+        }
         public void AddImageToParagraph(WordprocessingDocument doc, string relationshipId, int lineIndex)
         {
             var paragraphs = doc.MainDocumentPart.Document.Descendants<DocumentFormat.OpenXml.Wordprocessing.Paragraph>().ToList();

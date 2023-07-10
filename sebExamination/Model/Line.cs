@@ -53,6 +53,7 @@ namespace sebExamination.Model
             int colonIndex = inputString.IndexOf(":");
             if (colonIndex == -1)
                 return false;
+            if (inputString.Length < 9) return false;
             // không viết hoa đáp án là sai định dạng
             string answer = inputString.Substring(colonIndex + 2);
             if (!char.IsUpper(answer[0]))

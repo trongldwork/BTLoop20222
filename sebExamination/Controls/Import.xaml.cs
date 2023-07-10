@@ -202,6 +202,7 @@ namespace sebExamination.Controls
             List<Line> lines = new List<Line>();
             using (WordprocessingDocument document = WordprocessingDocument.Open(filePath, false))
             {
+                string tempper = "";
                 // Get the main document part (i.e. the content)
                 var body = document.MainDocumentPart.Document.Body;
                 int pos = 0;
@@ -264,9 +265,23 @@ namespace sebExamination.Controls
 
                                     // Decode the byte array to a string using UTF-8
                                     string line = Encoding.UTF8.GetString(bytes);
-
+                                    if (line.Length == 2)
+                                    {
+                                        tempper = line;
+                                        continue;
+                                    }
+                                    if (line.Length == 3)
+                                    {
+                                        tempper = line;
+                                        continue;
+                                    }
                                     // Do something with the line
                                     pos++;
+                                    if (tempper != "")
+                                    {
+                                        line = tempper + line;
+                                        tempper = "";
+                                    }
                                     Line tmpLine = new Line(line, pos);
                                     if (tmpLine.Type != "none") lines.Add(tmpLine);
                                 }

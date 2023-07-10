@@ -11,7 +11,8 @@
           "Aspose.Words": "23.6.0",
           "Microsoft.Office.Interop.Word": "15.0.4797.1004",
           "Open-XML-SDK": "2.9.1",
-          "WpfAnimatedGif": "2.0.2"
+          "WpfAnimatedGif": "2.0.2",
+          "iTextSharp": "5.5.13.3"
         },
         "runtime": {
           "sebExamination.dll": {}
@@ -33,6 +34,25 @@
           "lib/net6.0/Aspose.Words.dll": {
             "assemblyVersion": "23.6.0.0",
             "fileVersion": "23.6.0.0"
+          }
+        }
+      },
+      "BouncyCastle/1.8.9": {
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.9.0",
+            "fileVersion": "1.8.20343.1"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.3",
+            "fileVersion": "5.5.13.3"
           }
         }
       },
@@ -880,6 +900,20 @@
       "sha512": "sha512-p8TEq20VtuHeYkgYXdliEfvGoNrB41EXnB2hztrW51+0BYb7aRXyVOuCom5agriiwoX0+rRkTFQzl2drd0BBcQ==",
       "path": "aspose.words/23.6.0",
       "hashPath": "aspose.words.23.6.0.nupkg.sha512"
+    },
+    "BouncyCastle/1.8.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
+      "path": "bouncycastle/1.8.9",
+      "hashPath": "bouncycastle.1.8.9.nupkg.sha512"
+    },
+    "iTextSharp/5.5.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vtnMhTEJdZFCkLqaQLjD8aqTBIVKHPrSFuSXnxbLEJlvE/j/l88fvG9wtsejXTmhtErMo0lA9T2LdfdfbwplYw==",
+      "path": "itextsharp/5.5.13.3",
+      "hashPath": "itextsharp.5.5.13.3.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",

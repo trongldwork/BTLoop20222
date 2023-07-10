@@ -47,6 +47,7 @@
 
   <ItemGroup>
     <PackageReference Include="Aspose.Words" Version="23.6.0" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
     <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
     <PackageReference Include="Open-XML-SDK" Version="2.9.1" />
     <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />

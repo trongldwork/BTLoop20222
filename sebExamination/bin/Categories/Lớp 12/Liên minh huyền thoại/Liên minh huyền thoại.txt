@@ -1,2 +1,0 @@
-Category name: Liên minh huyền thoại
-this line support the file reader to read both quizz file and category file

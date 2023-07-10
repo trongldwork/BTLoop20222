@@ -5,66 +5,138 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:sebExamination.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="530" d:DesignWidth="800">
     <Grid x:Name="Questions" Visibility="Visible">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <TextBlock FontSize="32"
+        <StackPanel>
+            <TextBlock FontSize="32"
                                                FontFamily="Cambria"
                                                Foreground="#C02424">
                                         Question Bank
-        </TextBlock>
-        
-        <TextBlock Margin="0 48 0 0"
+            </TextBlock>
+
+            
+            <Grid x:Name="category_Selector"
+                                              Height="30" 
+                                              HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="0 5 0 0">
+                <TextBlock 
                                                FontSize="18"
                                                Foreground="Gray">
                                         Select a category:
-        </TextBlock>
-        <Grid x:Name="category_Selector"
-                                              Height="30" Width="200" 
-                                              HorizontalAlignment="Left" VerticalAlignment="Top" 
-                                              Margin="160 48 0 0">
-            <ComboBox SelectionChanged="changeCategory"
-                    x:Name="category_parent">
-            </ComboBox>
-            
-        </Grid>
-        <TextBlock Margin="0 90 0 0"
-                                               Foreground="#444444">
+                </TextBlock>
+                <ComboBox SelectionChanged="changeCategory"
+                          x:Name="category_parent"
+                          Margin="150 0 0 0">
+                </ComboBox>
+
+            </Grid>
+            <TextBlock Margin="0 5 0 0"
+                       Foreground="#444444">
                                         The default category for questions shared in context
-        </TextBlock>
-        <CheckBox x:Name="Show_subcate" Checked="Show_subcate_Checked"
-                                              Margin="0 115 0 0"
+            </TextBlock>
+            <CheckBox x:Name="Show_subcate" Click="Show_subcate_Checked"
                                               Content="Also show questions from subcategories"
                                               Foreground="gray"
-                  
+                      Margin="0 5 0 0"
                                               />
-        <CheckBox x:Name="showOldQuestions"
-                                              Margin="0 135 0 0"
+            <CheckBox x:Name="showOldQuestions"
+                      Margin="0 5 0 0"
                                               Content="Also show old questions"
                                               Foreground="gray"
                                               />
-        <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
                                                   x:Name="CreateQuestionBtn" 
                                                   Click="CreateQuestionBtn_Click"
-                                                  Margin="0,160,0,0"
                                                   Background="#0073A5"
                                                   Width="200" Height="30"
                                                   HorizontalAlignment="Left"
-                                                  VerticalAlignment="Top">
-            <TextBlock FontSize="12"
+                                                  VerticalAlignment="Top"
+                          Margin="0 5 0 0">
+                <TextBlock FontSize="12"
                                                    Foreground="white"
                                                    FontFamily="cambria"
                                                    FontWeight="Light">
                                                     CREATE NEW QUESTIONS...
-            </TextBlock>
-        </ToggleButton>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" Margin="0,20,0,5">
-            <StackPanel x:Name="QuestionContainer">
-                <!-- Các nội dung của bạn sẽ được chèn vào đây -->
-            </StackPanel>
-        </ScrollViewer>
+                </TextBlock>
+            </ToggleButton>
+            <ScrollViewer Height="330" Margin="0 15 0 0">
+                <StackPanel x:Name="QuestionContainer">
+                    <!-- Các nội dung của bạn sẽ được chèn vào đây -->
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="0.5" 
+                Height="300" Width="400" 
+                Background="#eeeeee"
+                x:Name="EditBox" 
+                Visibility="Collapsed">
+            <ScrollViewer>
+                <StackPanel 
+              Margin="15">
+                    <TextBlock FontSize="24"
+                       FontFamily="Cambria"
+                       Foreground="#C02424">
+                                        Edit question
+                    </TextBlock>
+                    <Border BorderThickness="0.5" BorderBrush="Black" Margin="0 5 0 10"/>
+                    <Grid>
+                        <TextBlock>
+                        Question:
+                        </TextBlock>
+                        <TextBox x:Name="questField"
+                             Margin="80 0 0 0"
+                             Height="35"
+                             TextWrapping="Wrap">
+
+                        </TextBox>
+                    </Grid>
+                    <StackPanel x:Name="choiceField"
+                            Margin="0 20 0 0">
+
+
+                    </StackPanel>
+
+                    <Grid Margin="0 0 0 10">
+                        <TextBlock>
+                        Answer
+                        </TextBlock>
+                        <TextBox x:Name="ans"
+                                 Margin="80 0 60 0">
+
+                        </TextBox>
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          x:Name="Confirm" 
+                              Click="confirm_Click"
+                                          Background="#C02424"
+                                          Width="100"
+                                          HorizontalAlignment="Right"
+                                          Height="30"
+                                          Margin="0,0,15,0">
+                            <TextBlock FontSize="20"
+                                           Foreground="white" FontFamily="cambria">
+                            CONFIRM
+                            </TextBlock>
+                        </ToggleButton>
+                        <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          x:Name="Cancel" 
+                              Click="cancel_btn_Click"
+                                          Background="#0073A5"
+                                          Width="100"
+                                          HorizontalAlignment="Right"
+                                          Height="30"
+                                          Margin="0,0,20,0">
+                            <TextBlock FontSize="20"
+                                           Foreground="white" FontFamily="cambria">
+                            CANCEL
+                            </TextBlock>
+                        </ToggleButton>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+        
     </Grid>
 </UserControl>

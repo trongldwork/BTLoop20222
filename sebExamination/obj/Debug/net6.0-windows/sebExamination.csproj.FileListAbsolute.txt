@@ -518,3 +518,10 @@ D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bi
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.Pdf2Word.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\SkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll

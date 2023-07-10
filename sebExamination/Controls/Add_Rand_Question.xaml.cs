@@ -294,7 +294,7 @@ namespace sebExamination.Controls
 
         private void AddQuestion_btn_Click(object sender, RoutedEventArgs e)
         {
-            if (Number_of_Rand_Ques_cb.SelectedIndex != 0)
+            if (Number_of_Rand_Ques_cb.SelectedIndex < questions.Count)
             {
                 Random random = new Random();
                 List<Questions> temp = new List<Questions>();
@@ -302,7 +302,7 @@ namespace sebExamination.Controls
 
                 while (randomNumbers.Count < Number_of_Rand_Ques_cb.SelectedIndex)
                 {
-                    int randomNumber = random.Next(questions.Count+1);
+                    int randomNumber = random.Next(questions.Count + 1);
                     if (!randomNumbers.Contains(randomNumber))
                     {
                         randomNumbers.Add(randomNumber);
@@ -319,6 +319,7 @@ namespace sebExamination.Controls
                     mainWindow.Iborder_menu.Content = new EditQuiz(fileName);
                 }
             }
+            else MessageBox.Show($"Mời chọn số câu hỏi nhỏ hơn{questions.Count}");
             
         }
 

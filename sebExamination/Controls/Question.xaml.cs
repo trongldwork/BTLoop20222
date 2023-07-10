@@ -35,9 +35,7 @@ namespace sebExamination.Controls
         {
             // Tạo đường dẫn đến thư mục "Categories"
             string currentDirectory = Directory.GetCurrentDirectory();
-
             string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
-
             string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
 
             // Tạo ComboBox và thêm tên thư mục vào nó
@@ -48,9 +46,9 @@ namespace sebExamination.Controls
             comboBox.Width = 200;
             comboBox.HorizontalAlignment = HorizontalAlignment.Left;
             comboBox.SelectedIndex = 0;
-            comboBox.Background = Brushes.White;
+            comboBox.Background = Brushes.Transparent;
             comboBox.FontSize = 12;
-
+            comboBox.SelectionChanged += changeCategory;
 
             // Gọi hàm để lấy tất cả các thư mục trong "Categories" và thư mục con bên trong chúng
             GetAllFolders(categoriesPath, comboBox);
@@ -74,9 +72,7 @@ namespace sebExamination.Controls
                         folderName = "   " + folderName;
                     }
                     elevator++;
-
                     string dataPath = Directory.GetParent(folder).FullName;
-
                     dataPath = System.IO.Path.Combine(dataPath, folder);
                     dataPath = System.IO.Path.Combine(dataPath, "Count.txt");
                     string data = File.ReadAllText(dataPath);
@@ -112,12 +108,14 @@ namespace sebExamination.Controls
         }
         private void changeCategory(object sender, EventArgs e)
         {
-            numcheck = 0;
+            num = 0;
+
             StackPanel questionContainer = (StackPanel)FindName("QuestionContainer");
             if (questionContainer != null)
             {
                 questionContainer.Children.Clear();
             }
+            questions.Clear();
             string folderPath = GetFilePathFrombox();
             List<Grid> grids = Read_Category(folderPath);
             foreach (Grid grid in grids)
@@ -126,6 +124,7 @@ namespace sebExamination.Controls
             }
             if (Show_subcate.IsChecked == true) { Show_subcate_Checked(sender, null); }
         }
+
         public string GetFilePathFrombox()
         {
             string currentDirectory = Directory.GetCurrentDirectory();
@@ -175,14 +174,16 @@ namespace sebExamination.Controls
         /// đọc categories thành một list chứa các grid câu hỏi từ path (vị trí file chứa câu hỏi)
         /// </summary>
         /// <param name="path"></param>
+        int num = 0;
         public List<Grid> Read_Category(string path)
         {
             List<Grid> tmpGrid = new List<Grid>();
             FileImp fileImp = new FileImp();
-            questions = new List<Questions>();
-            checkBoxes.Clear();
-            questions = fileImp.LoadDataFromFile(path);
-            numberOfQues = questions.Count;
+            List<Questions> tmp = new List<Questions>();
+
+            tmp = fileImp.LoadDataFromFile(path);
+            questions.AddRange(tmp);
+            numberOfQues = tmp.Count;
             for (int i = 0; i < numberOfQues; i++)
             {
                 Grid grid = new Grid()
@@ -191,22 +192,10 @@ namespace sebExamination.Controls
                     Background = Brushes.White
                 };
 
-                Image imagePlus = new Image()
+                Grid innerGrid = new Grid()
                 {
-                    Source = new BitmapImage(new Uri("../Assets/image/plus-small.png", UriKind.Relative)),
-                    Height = 20,
-                    HorizontalAlignment = HorizontalAlignment.Left
+                    Margin = new Thickness(15, 0, 0, 0)
                 };
-                grid.Children.Add(imagePlus);
-
-                CheckBox checkBox = new CheckBox()
-                {
-                    Name = $"ques{i}",
-                    Margin = new Thickness(20, 2, 0, 0),
-                    Foreground = Brushes.DarkGray
-                };
-
-                Grid innerGrid = new Grid();
                 Image imageList = new Image()
                 {
                     Source = new BitmapImage(new Uri("../Assets/image/list.png", UriKind.Relative)),
@@ -217,26 +206,30 @@ namespace sebExamination.Controls
 
                 TextBlock textBlock = new TextBlock()
                 {
-                    Margin = new Thickness(20, 0, 30, 0),
-                    Text = fileImp.SplitStringByImage(questions[i].Quest).Item1,                     
+                    Margin = new Thickness(25, 0, 30, 0),
+                    Text = fileImp.SplitStringByImage(questions[num++].Quest).Item1,
+                    Foreground = Brushes.DimGray,
                     FontWeight = FontWeights.Bold
                 };
                 innerGrid.Children.Add(textBlock);
 
-                checkBox.Content = innerGrid;
-                checkBoxes.Add(checkBox);
-                grid.Children.Add(checkBox);
+                grid.Children.Add(innerGrid);
 
-                Image imageSearch = new Image()
+                TextBlock tb = new TextBlock()
                 {
-                    Source = new BitmapImage(new Uri("../Assets/image/search.png", UriKind.Relative)),
-                    Height = 18,
-                    HorizontalAlignment = HorizontalAlignment.Right
+                    HorizontalAlignment = HorizontalAlignment.Right,
+                    Margin = new Thickness(0, 0, 10, 0)
                 };
 
-                grid.Children.Add(imageSearch);
+                Hyperlink hyperlink = new Hyperlink()
+                {
+                    Tag = num-1,
+                    Inlines = { "edit" }
+                };
 
-
+                tb.Inlines.Add(hyperlink);
+                hyperlink.Click += ShowEditBox;
+                grid.Children.Add(tb);
                 //QuestionContainer.Children.Add(grid);
                 tmpGrid.Add(grid);
             }
@@ -273,7 +266,7 @@ namespace sebExamination.Controls
         }
         private void Show_subcate_Checked(object sender, RoutedEventArgs e)
         {
-            if (numcheck == 0)
+            if (Show_subcate.IsChecked == true)
             {
                 string filePath = GetFilePathFrombox();
                 string folderPath = System.IO.Path.GetDirectoryName(filePath);
@@ -289,8 +282,61 @@ namespace sebExamination.Controls
                     }
                 }
             }
-            numcheck++;
+            if (Show_subcate.IsChecked == false)
+            {
+                GetFilePathFrombox();
+                changeCategory(null, null);
+            }
         }
+        int edittingQuest = 0;
+        List<TextBox> textBoxes = new List<TextBox>();
+        private void ShowEditBox(object sender, RoutedEventArgs e) {
+            EditBox.Visibility = Visibility.Visible;
+            edittingQuest = (int)((Hyperlink)sender).Tag;
+
+            questField.Text = questions[edittingQuest].Quest;
+            for(int i = 0; i < questions[edittingQuest].Ans.Count; i++)
+            {
+                Grid grid = new Grid()
+                {
+                    Margin = new Thickness(0, 0, 0, 10)
+                };
+
+                TextBlock textBlock = new TextBlock()
+                {
+                    Text = "Choice " + (char)(i + 65)
+                };
+
+                TextBox textBox = new TextBox()
+                {
+                    Name = $"Choice{i}",
+                    Margin = new Thickness(80, 0, 60, 0),
+                    Text = questions[edittingQuest].Ans[i].Substring(3)
+                };
+                textBoxes.Add(textBox);
+                grid.Children.Add(textBlock);
+                grid.Children.Add(textBox);
+                choiceField.Children.Add(grid);
+            }
+            ans.Text = questions[edittingQuest].Answer.Substring(8);
+        }
+        private void confirm_Click(object sender, RoutedEventArgs e)
+        {
+            questions[edittingQuest].Quest = questField.Text;
+            for (int i = 0; i < questions[edittingQuest].Ans.Count; i++)
+            {
+                TextBox textBox = textBoxes.FirstOrDefault(tb => tb.Name == $"choice{i}");
+                questions[edittingQuest].Ans[i] = (char)(i+65) +". " + textBox.Text;
+            }
+            questions[edittingQuest].Answer = "Answer " + ans.Text;
+
+        }
+        private void cancel_btn_Click(object sender, RoutedEventArgs e)
+        {
+            choiceField.Children.Clear();
+            EditBox.Visibility = Visibility.Collapsed;
+        }
+
         private void CreateQuestionBtn_Click(object sender, RoutedEventArgs e)
         {
             // Truyền giá trị newValue cho MainWindow

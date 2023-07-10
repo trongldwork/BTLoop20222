@@ -284,5 +284,53 @@ namespace filereader
 
             return (beforeImage, afterImage);
         }
+
+        public List<string> GetImagePath(string filePath)
+        {
+            List<string> imagePaths = new List<string>();
+
+            try
+            {
+                string[] lines = File.ReadAllLines(filePath);
+                foreach (string line in lines)
+                {
+                    if (line.Contains(":<image>:"))
+                    {
+                        int startIndex = line.IndexOf(":<image>:") + 9;
+                        string imagePath = line.Substring(startIndex);
+                        imagePaths.Add(imagePath);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("ERROR: " + e.Message);
+            }
+
+            return imagePaths;
+        }
+
+        public List<int> GetImageLine(string filePath)
+        {
+            List<int> imageLine = new List<int>();
+
+            try
+            {
+                string[] lines = File.ReadAllLines(filePath);
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    if (lines[i].Contains(":<image>:"))
+                    {
+                        imageLine.Add(i + 1);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("ERROR: " + e.Message);
+            }
+
+            return imageLine;
+        }
     }
 }

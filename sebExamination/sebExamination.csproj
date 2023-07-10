@@ -36,6 +36,7 @@
   <ItemGroup>
     <PackageReference Include="Aspose.Words" Version="23.6.0" />
     <PackageReference Include="Open-XML-SDK" Version="2.9.1" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>

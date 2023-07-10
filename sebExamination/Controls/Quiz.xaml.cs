@@ -12,10 +12,12 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using WpfAnimatedGif;
 
 namespace sebExamination.Controls
 {
@@ -271,14 +273,37 @@ namespace sebExamination.Controls
             string imgpath = fileImp.SplitStringByImage(questions[QuestionNumber - 1].Quest).Item2;
             if (imgpath != string.Empty)
             {
-                Image QuesImg = new Image()
+                if (imgpath.Substring(imgpath.Length - 4) == "gif\n")
                 {
-                    MaxHeight = 400,
-                    MaxWidth = 900,
-                    HorizontalAlignment = HorizontalAlignment.Left,
-                    Source = new BitmapImage(new Uri(imgpath, UriKind.Absolute))
-                };
-                contentStackPanel.Children.Add(QuesImg);
+                    Image QuesImg = new Image()
+                    {
+                        MaxHeight = 400,
+                        MaxWidth = 900,
+                        HorizontalAlignment = HorizontalAlignment.Left,
+                    };
+                    var image = new BitmapImage();
+                    image.BeginInit();
+                    image.UriSource = new Uri(imgpath, UriKind.Absolute);
+                    image.EndInit();
+                    ImageBehavior.SetAnimatedSource(QuesImg, image);
+
+                    // Below it needed to start animation. If not, it is only make visible but animation does not start.
+                    ImageBehavior.SetAutoStart(QuesImg, true);
+                    ImageBehavior.SetRepeatBehavior(QuesImg, RepeatBehavior.Forever);
+                    contentStackPanel.Children.Add(QuesImg);
+                }
+                else 
+                {
+                    Image QuesImg = new Image()
+                    {
+                        MaxHeight = 400,
+                        MaxWidth = 900,
+                        HorizontalAlignment = HorizontalAlignment.Left,
+                        Source = new BitmapImage(new Uri(imgpath, UriKind.Absolute))
+                    };
+                    contentStackPanel.Children.Add(QuesImg);
+                }
+                
             }
             //radioButtonStackPanel.Children.Add(Answer[0]);
             //radioButtonStackPanel.Children.Add(Answer[1]);

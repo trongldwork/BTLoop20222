@@ -63,11 +63,15 @@ namespace sebExamination.Controls
 
         private void Export_Click(object sender, RoutedEventArgs e)
         {
-            //FileImp fileImp = new FileImp();
-            //fileImp.ConvertTxtToDocx(path, "tempDocx.docx");
-            //string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-            //string filename = System.IO.Path.GetFileNameWithoutExtension(path);
-            //string FolderImagePath = project_path + "/question image/" + filename;
+            FileImp fileImp = new FileImp();
+            fileImp.ConvertTxtToDocx(path, "tempDocx.docx");
+            int count = 0;
+            for (int i = 0; i < fileImp.GetImageLine(path).Count; i++)
+            {
+                fileImp.AddImageToDocx("tempDocx.docx", fileImp.GetImagePath(path)[i+count], fileImp.GetImageLine(path)[i+count]);
+                count++;
+            }
+            fileImp.ConvertDocxToPdf("tempDocx.docx", "pdfPath.pdf");
         }
     }
 }

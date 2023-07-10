@@ -19,5 +19,7 @@ namespace filereader
         List<string> GetImagePaths(string folderPath);
         bool IsImageExtension(string extension);
         void AddImageToParagraph(WordprocessingDocument doc, string relationshipId, int lineIndex);
+        List<string> GetImagePath(string filePath);
+        List<int> GetImageLine(string filePath);
     }
 }

@@ -75,6 +75,7 @@ namespace sebExamination.Controls
             // Truyền giá trị newValue cho MainWindow
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
+                mainWindow.AddToMap(new Test_Preview(path), sender.ToString().Substring(32), 1);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.editBtn.Visibility = Visibility.Collapsed;
                 mainWindow.Iborder_menu.Content = new Test_Preview(path);

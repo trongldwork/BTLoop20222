@@ -11,6 +11,7 @@
 
         <!--tiêu đề-->
         <TextBlock FontSize="32"
+                   x:Name="Title"
                                    FontFamily="Cambria"
                                    Foreground="#C02424">
                             Adding a multipal choice

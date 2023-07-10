@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,22 +34,37 @@ namespace sebExamination.Controls
             get { return (UserControl)GetValue(MainContentControlProperty); }
             set { SetValue(MainContentControlProperty, value); }
         }
-
         public void Question_click(object sender, RoutedEventArgs e)
         {
             MainContentControl = new Question();
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                mainWindow.AddToMap(new Question(), "Question", 1);
+            }
         }
         public void Categories_click(object sender, RoutedEventArgs e)
         {
             MainContentControl = new Categories();
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                mainWindow.AddToMap(new Categories(), "Categories", 1);
+            }
         }
         public void Import_click(object sender, RoutedEventArgs e)
         {
             MainContentControl = new Import();
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                mainWindow.AddToMap(new Import(), "Import", 1);
+            }
         }
         public void Export_click(object sender, RoutedEventArgs e)
         {
             MainContentControl = new Export();
+            if (Window.GetWindow(this) is MainWindow mainWindow)
+            {
+                mainWindow.AddToMap(new Export(), "Export", 1);
+            }
         }
     }
 }

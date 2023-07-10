@@ -39,8 +39,11 @@ namespace sebExamination.Controls
         private List<ComboBox> comboboxs = new List<ComboBox>();
         List<TextBox> textBoxes = new List<TextBox>();
         string ques_image_path = "";
-        public AddQuestion()
+        int setter = 0;
+        string setterPath = "";
+        public AddQuestion(string path, int QuestionNumber, int index)
         {
+            setter = QuestionNumber;
             InitializeComponent();
             questions = new List<Questions>();
             create_category_parent_ComboBox();
@@ -48,6 +51,27 @@ namespace sebExamination.Controls
             textBoxes.Add(text_choice2);
             comboboxs.Add(text_choice1_mark);
             comboboxs.Add(text_choice2_mark);
+            if(path != null)
+            {
+                setterPath = path;
+                category_parent.SelectedIndex = index;
+                Title.Text = "Editting a multipal choice";
+                questions = fileImp.LoadDataFromFile(path);
+
+                questionName_addQuestion.Text = questions[QuestionNumber].Quest;
+                questionMark_addQuestion.Text = questions[QuestionNumber].Mark.ToString();
+                text_choice1.Text = questions[QuestionNumber].Ans[0].Substring(3);
+                text_choice2.Text = questions[QuestionNumber].Ans[1].Substring(3);
+                for (int i = 2; i< questions[QuestionNumber].Ans.Count; i++)
+                {
+                    moreChoices_btn_click(null, null);
+                    TextBox tmp = textBoxes.FirstOrDefault(tb => tb.Name == $"text_choice{i + 1}");
+                    tmp.Text = questions[QuestionNumber].Ans[i].Substring(3);
+                }
+                char da = questions[QuestionNumber].Answer[8];
+                ComboBox tmp1 = comboboxs.FirstOrDefault(tb => tb.Name == $"text_choice{(int)da-65+1}_mark");
+                tmp1.SelectedIndex = 1;
+            }
         }
         private void create_category_parent_ComboBox()
         {
@@ -113,94 +137,141 @@ namespace sebExamination.Controls
         }
         private void saveChangeAndContinue_addQuestion_btn_click(object sender, RoutedEventArgs e)
         {
-            if (category_parent.SelectedIndex == 0)
+            if(setter == -1)
             {
-                MessageBox.Show("Vui lòng chọn category");
-                return;
-            }
-            List<string> answer = new List<string>();
-
-            string ans = "ANSWER: ";
-            int tmp = 0;
-            foreach (TextBox textBox in textBoxes)
-            {
-                string line_choice = textBox.Text;
-                foreach (imagepath tmpImg in imagepaths)
+                if (category_parent.SelectedIndex == 0)
                 {
-                    if (tmpImg.pos == (tmp + 1).ToString()) { line_choice += tmpImg.Text; }
+                    MessageBox.Show("Vui lòng chọn category");
+                    return;
                 }
-                answer.Add((char)(65 + tmp++) + ". " + line_choice);
-            }
-            tmp = 0;
-            foreach (ComboBox comboBox in comboboxs)
-            {
+                List<string> answer = new List<string>();
 
-                if (comboBox.SelectedIndex == 1)
+                string ans = "ANSWER: ";
+                int tmp = 0;
+                foreach (TextBox textBox in textBoxes)
                 {
-                    ans += (char)(65 + tmp);
-                    break;
-                }
-                tmp++;
-
-            }
-            string ques = questionName_addQuestion.Text + ":" + questionText_addQuestion.Text;
-            ques += (ques_image_path != "") ? "<image>:" + ques_image_path : ques_image_path;
-            Questions tempQ = new Questions(ques,
-                answer,
-                ans,
-                double.Parse(questionMark_addQuestion.Text));
-            questions.Add(tempQ);
-            string currentDirectory = Directory.GetCurrentDirectory();
-            string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
-            string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
-            string filePath = "";
-
-            if (category_parent.SelectedIndex != 0)
-            {
-                int index = category_parent.SelectedIndex;
-                List<string> parent = new List<string>();
-                parent.Add(category_parent.Items[index].ToString());
-                int k = countLevel(parent[0]) - 1;
-
-                int n = countLevel(parent[0]);
-                while (parent[0][0] == ' ')
-                {
-                    parent[0] = parent[0].Substring(1);
-                }
-                parent[0] = parent[0].Substring(0, parent[0].Length - countLength(parent[n - k - 1]));
-
-                for (int i = index; i > 0; i--)
-                {
-                    if (countLevel(category_parent.Items[i].ToString()) == k)
+                    string line_choice = textBox.Text;
+                    foreach (imagepath tmpImg in imagepaths)
                     {
-                        parent.Add(category_parent.Items[i].ToString());
-                        while (parent[n - k][0] == ' ')
-                        {
-
-                            parent[n - k] = parent[n - k].Substring(1);
-                        }
-                        parent[n - k] = parent[n - k].Substring(0, parent[n - k].Length - countLength(parent[n - k]));
-                        k--;
+                        if (tmpImg.pos == (tmp + 1).ToString()) { line_choice += tmpImg.Text; }
                     }
+                    answer.Add((char)(65 + tmp++) + ". " + line_choice);
                 }
-
-                for (int i = n - 1; i >= 0; i--)
+                tmp = 0;
+                foreach (ComboBox comboBox in comboboxs)
                 {
-                    categoriesPath = System.IO.Path.Combine(categoriesPath, parent[i]);
+
+                    if (comboBox.SelectedIndex == 1)
+                    {
+                        ans += (char)(65 + tmp);
+                        break;
+                    }
+                    tmp++;
+
                 }
-                filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
+                string ques = questionName_addQuestion.Text + ":" + questionText_addQuestion.Text;
+                ques += (ques_image_path != "") ? "<image>:" + ques_image_path : ques_image_path;
+                Questions tempQ = new Questions(ques,
+                    answer,
+                    ans,
+                    double.Parse(questionMark_addQuestion.Text));
+                questions.Add(tempQ);
+                string currentDirectory = Directory.GetCurrentDirectory();
+                string projectDirectory = Directory.GetParent(currentDirectory).Parent.FullName;
+                string categoriesPath = System.IO.Path.Combine(projectDirectory, "Categories");
+                string filePath = "";
 
+                if (category_parent.SelectedIndex != 0)
+                {
+                    int index = category_parent.SelectedIndex;
+                    List<string> parent = new List<string>();
+                    parent.Add(category_parent.Items[index].ToString());
+                    int k = countLevel(parent[0]) - 1;
+
+                    int n = countLevel(parent[0]);
+                    while (parent[0][0] == ' ')
+                    {
+                        parent[0] = parent[0].Substring(1);
+                    }
+                    parent[0] = parent[0].Substring(0, parent[0].Length - countLength(parent[n - k - 1]));
+
+                    for (int i = index; i > 0; i--)
+                    {
+                        if (countLevel(category_parent.Items[i].ToString()) == k)
+                        {
+                            parent.Add(category_parent.Items[i].ToString());
+                            while (parent[n - k][0] == ' ')
+                            {
+
+                                parent[n - k] = parent[n - k].Substring(1);
+                            }
+                            parent[n - k] = parent[n - k].Substring(0, parent[n - k].Length - countLength(parent[n - k]));
+                            k--;
+                        }
+                    }
+
+                    for (int i = n - 1; i >= 0; i--)
+                    {
+                        categoriesPath = System.IO.Path.Combine(categoriesPath, parent[i]);
+                    }
+                    filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
+
+                }
+                //string folderPath = System.IO.Path.Combine(categoriesPath, category_parent.SelectedItem.ToString());
+                //string filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
+
+                fileImp.SaveDataToFile(filePath, questions);
+                string countFile = System.IO.Path.Combine(categoriesPath, "count.txt");
+                var data = File.ReadAllText(countFile);
+                int count = int.Parse(data) + 1;
+                File.WriteAllText(countFile, count.ToString());
+                ques_image_path = "";
             }
-            //string folderPath = System.IO.Path.Combine(categoriesPath, category_parent.SelectedItem.ToString());
-            //string filePath = System.IO.Path.Combine(categoriesPath, parent[0] + ".txt");
+            else
+            {
+                if (category_parent.SelectedIndex == 0)
+                {
+                    MessageBox.Show("Vui lòng chọn category");
+                    return;
+                }
+                List<string> answer = new List<string>();
 
-            fileImp.SaveDataToFile(filePath, questions);
-            string countFile = System.IO.Path.Combine(categoriesPath, "count.txt");
-            var data = File.ReadAllText(countFile);
-            int count = int.Parse(data) + 1;
-            File.WriteAllText(countFile, count.ToString());
-            ques_image_path = "";
+                string ans = "ANSWER: ";
+                int tmp = 0;
+                foreach (TextBox textBox in textBoxes)
+                {
+                    string line_choice = textBox.Text;
+                    MessageBox.Show(line_choice);
+                    foreach (imagepath tmpImg in imagepaths)
+                    {
+                        if (tmpImg.pos == (tmp + 1).ToString()) { line_choice += tmpImg.Text; }
+                    }
+                    answer.Add((char)(65 + tmp++) + ". " + line_choice);
+                }
+                tmp = 0;
+                foreach (ComboBox comboBox in comboboxs)
+                {
 
+                    if (comboBox.SelectedIndex == 1)
+                    {
+                        ans += (char)(65 + tmp);
+                        break;
+                    }
+                    tmp++;
+
+                }
+                string ques = questionName_addQuestion.Text + ":" + questionText_addQuestion.Text;
+                ques += (ques_image_path != "") ? "<image>:" + ques_image_path : ques_image_path;
+                Questions tempQ = new Questions(ques,
+                    answer,
+                    ans,
+                    double.Parse(questionMark_addQuestion.Text));
+                MessageBox.Show(setter.ToString());
+                MessageBox.Show(setterPath);
+                questions[setter] = tempQ;
+                File.WriteAllText(setterPath, string.Empty);
+                fileImp.SaveDataToFile(setterPath, questions);
+            }
         }
 
         private int countLevel(string str)
@@ -230,6 +301,7 @@ namespace sebExamination.Controls
             // Truyền giá trị newValue cho MainWindow
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
+                mainWindow.AddToMap(new Question(), "Question", 1);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 Menu_uc tmpuc = new Menu_uc();
                 tmpuc.MainContentControl = new Question();

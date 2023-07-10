@@ -35,6 +35,7 @@ namespace sebExamination.Controls
             // Truyền giá trị newValue cho MainWindow
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
+                mainWindow.AddToMap(new EditQuiz(path), "Edit quiz", 2);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new EditQuiz(path);
             }
@@ -54,6 +55,7 @@ namespace sebExamination.Controls
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
+                mainWindow.AddToMap(new Quiz(path), System.IO.Path.GetFileName(path).Remove(System.IO.Path.GetFileName(path).Length - 4) , 1);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new Quiz(path);
             }

@@ -218,7 +218,8 @@
                                 <TextBlock x:Name="map_Home">
                                     <Hyperlink Click="SwitchViewHome_Click"
                                                FontSize="20"
-                                               Foreground="#C02424">
+                                               Foreground="#C02424"
+                                               TextDecorations="none">
                                             Home
                                     </Hyperlink>
                                 </TextBlock>
@@ -226,16 +227,10 @@
                                 <TextBlock x:Name="map_course"
                                            Margin="10 0 0 0">
                                     <Hyperlink Click="SwitchViewCourse_Click"
-                                               FontSize="20">
-                                            /           My course
+                                               FontSize="20"
+                                               TextDecorations="none">
+                                            /My course
                                     </Hyperlink>
-                                </TextBlock>
-
-                                <TextBlock x:Name="map_courseName"
-                                           Margin="10 0 0 0"
-                                           Foreground="#C02424"
-                                           FontSize="20">
-                                    /          THI CUỐI KỲ
                                 </TextBlock>
 
                             </StackPanel>

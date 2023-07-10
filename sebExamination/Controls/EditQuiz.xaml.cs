@@ -184,6 +184,7 @@ namespace sebExamination.Controls
             // Truyền giá trị newValue cho MainWindow
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
+                mainWindow.AddToMap(new Test_Preview(fileName), "MyCourse", 0);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new Test_Preview(fileName);
             }
@@ -192,6 +193,7 @@ namespace sebExamination.Controls
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
+                mainWindow.AddToMap(new Add_Rand_Question(fileName), "Add random questions", 3);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new Add_Rand_Question(fileName);
             }
@@ -200,6 +202,7 @@ namespace sebExamination.Controls
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
+                mainWindow.AddToMap(new AddQuesToQuiz_fromBank(fileName), "Add question from questions bank", 3);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new AddQuesToQuiz_fromBank(fileName);
             }

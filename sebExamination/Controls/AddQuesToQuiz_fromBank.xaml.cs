@@ -199,9 +199,14 @@ namespace sebExamination.Controls
             {
                 Grid grid = new Grid()
                 {
-                    Height = 20,
-                    Background = Brushes.White
+                    Height = 20
                 };
+
+                if (num % 2 == 0)
+                {
+                    grid.Background = Brushes.White;
+                }
+                else grid.Background = new SolidColorBrush(Color.FromRgb(0xEE, 0xEE, 0xEE));
 
                 Image imagePlus = new Image()
                 {
@@ -309,16 +314,13 @@ namespace sebExamination.Controls
                 }
             }
             fileImp.SaveDataToFile(fileName, temp);
-            if (Window.GetWindow(this) is MainWindow mainWindow)
-            {
-                // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
-                mainWindow.Iborder_menu.Content = new EditQuiz(fileName);
-            }
+            close(null, null);
         }
         private void close(object sender, RoutedEventArgs e)
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)
             {
+                mainWindow.AddToMap(new EditQuiz(fileName), "Edit quiz", 2);
                 // Truy cập đến thành phần có x:name="Iborder_menu" trong MainWindow và thay đổi giá trị
                 mainWindow.Iborder_menu.Content = new EditQuiz(fileName);
             }

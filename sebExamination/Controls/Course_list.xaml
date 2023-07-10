@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:sebExamination.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
-    <StackPanel>
+    <Grid x:Name="grid_uc" Height="400">
+        <StackPanel>
         <Grid Height="30">
 
         </Grid>
@@ -22,4 +22,5 @@
             
         </Grid>
     </StackPanel>
+        </Grid>
 </UserControl>

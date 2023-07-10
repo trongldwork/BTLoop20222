@@ -292,7 +292,19 @@ namespace sebExamination.Controls
                     ImageBehavior.SetRepeatBehavior(QuesImg, RepeatBehavior.Forever);
                     contentStackPanel.Children.Add(QuesImg);
                 }
-                else 
+                else if (imgpath.Substring(imgpath.Length - 4) == "mp4\n" || imgpath.Substring(imgpath.Length - 4) == "avi\n")
+                {
+                    MediaElement mediaElement = new MediaElement();
+                    mediaElement.LoadedBehavior = MediaState.Manual;
+                    mediaElement.Source = new Uri(imgpath, UriKind.Absolute);
+                    mediaElement.Visibility = Visibility.Visible;
+                    mediaElement.MediaEnded += Video_ended;
+                    mediaElement.Volume = 0;
+                    mediaElement.MaxHeight = 500;
+                    contentStackPanel.Children.Add(mediaElement);
+                    mediaElement.Play();
+                }
+                else
                 {
                     Image QuesImg = new Image()
                     {
@@ -612,6 +624,12 @@ namespace sebExamination.Controls
             Grid.SetColumn(textBlock, column);
         }
 
+        private void Video_ended(object sender, EventArgs e)
+        {
+            MediaElement mediaElement = (MediaElement)sender;
+            mediaElement.Position = TimeSpan.FromSeconds(0);
+            mediaElement.Play();
+        }
         private void finishReview_Click(object sender, RoutedEventArgs e)
         {
             if (Window.GetWindow(this) is MainWindow mainWindow)

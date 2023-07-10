@@ -1,2 +1,0 @@
-Quizname testtime
-Time 600

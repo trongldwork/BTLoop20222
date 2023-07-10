@@ -63,6 +63,7 @@ namespace sebExamination.Controls
                 button.Click += test1_Checked;
                 stackPanel.Children.Add(button);
                 QuizContainer.Children.Add(stackPanel);
+                grid_uc.Height += 50;
 
             }
         }

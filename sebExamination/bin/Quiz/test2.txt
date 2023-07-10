@@ -1,2 +1,0 @@
-Quizname test2
-Time 72000

@@ -170,6 +170,7 @@ namespace sebExamination.Controls
                     tmp++;
 
                 }
+                if (tmp == comboboxs.Count) { MessageBox.Show("Phải có đáp án"); return; }
                 string ques = questionName_addQuestion.Text + "\n" + questionText_addQuestion.Text;
                 ques += (ques_image_path != "") ? "<image>:" + ques_image_path : ques_image_path;
                 Questions tempQ = new Questions(ques,
@@ -421,9 +422,9 @@ namespace sebExamination.Controls
         private void add_ques_img_Click(object sender, RoutedEventArgs e)
         {
             add_ques_img.Background = Brushes.Transparent;
-            
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Tập tin hình ảnh|*.jpg;*.jpeg;*.png;*.gif";
+            openFileDialog.Filter = "Tập tin hình ảnh|*.jpg;*.jpeg;*.png;*.gif;*.mp4;*.avi";
             openFileDialog.Title = "Chọn hình ảnh";
 
             if (openFileDialog.ShowDialog() == true)
@@ -432,7 +433,34 @@ namespace sebExamination.Controls
 
                 // Thực hiện xử lý thông tin hình ảnh ở đây
                 // Ví dụ: Lấy tên tập tin
-                string imageName = System.IO.Path.GetFileName(selectedImagePath); 
+                string imageName = System.IO.Path.GetFileName(selectedImagePath);
+                string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+                string FolderImagePath = project_path + "/categories image/";
+                if (category_parent.SelectedIndex != 0)
+                {
+                    int index = category_parent.SelectedIndex;
+                    List<string> parent = new List<string>();
+                    parent.Add(category_parent.Items[index].ToString());
+                    int k = countLevel(parent[0]) - 1;
+
+                    int n = countLevel(parent[0]);
+                    while (parent[0][0] == ' ')
+                    {
+                        parent[0] = parent[0].Substring(1);
+                    }
+                    parent[0] = parent[0].Substring(0, parent[0].Length - countLength(parent[n - k - 1]));
+                    FolderImagePath += parent[0];
+                }
+                if (!Directory.Exists(FolderImagePath)) Directory.CreateDirectory(FolderImagePath);
+                string outputImagePath = System.IO.Path.Combine(FolderImagePath, imageName);
+                int p = 0;
+                while (System.IO.File.Exists(outputImagePath))
+                {
+                    p++;
+                    outputImagePath = FolderImagePath + p + imageName;
+                }
+                File.Copy(selectedImagePath, outputImagePath);
+                ques_image_path = outputImagePath;
                 // them thong tin anh
                 if (ques_img.Children.Count > 1) ques_img.Children.RemoveAt(ques_img.Children.Count - 1);
                 TextBox textBox = new TextBox()
@@ -446,13 +474,13 @@ namespace sebExamination.Controls
                     VerticalAlignment = VerticalAlignment.Center,
                     HorizontalAlignment = HorizontalAlignment.Left,
                     Margin = new Thickness(5)
-                    
+
                 };
                 ques_img.Children.Add(textBox);
                 ques_image_path = selectedImagePath;
             }
 
-            
+
         }
 
         private void add_ques_img_Checked(object sender, RoutedEventArgs e)
@@ -473,11 +501,37 @@ namespace sebExamination.Controls
                 // Thực hiện xử lý thông tin hình ảnh ở đây
                 // Ví dụ: Lấy tên tập tin
                 string imageName = System.IO.Path.GetFileName(selectedImagePath);
+                string project_path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+                string FolderImagePath = project_path + "/categories image/";
+                if (category_parent.SelectedIndex != 0)
+                {
+                    int index = category_parent.SelectedIndex;
+                    List<string> parent = new List<string>();
+                    parent.Add(category_parent.Items[index].ToString());
+                    int k = countLevel(parent[0]) - 1;
+
+                    int n = countLevel(parent[0]);
+                    while (parent[0][0] == ' ')
+                    {
+                        parent[0] = parent[0].Substring(1);
+                    }
+                    parent[0] = parent[0].Substring(0, parent[0].Length - countLength(parent[n - k - 1]));
+                    FolderImagePath += parent[0];
+                }
+                if (!Directory.Exists(FolderImagePath)) Directory.CreateDirectory(FolderImagePath);
+                string outputImagePath = System.IO.Path.Combine(FolderImagePath, imageName);
+                int p = 0;
+                while (System.IO.File.Exists(outputImagePath))
+                {
+                    p++;
+                    outputImagePath = FolderImagePath + p + imageName;
+                }
+                File.Copy(selectedImagePath, outputImagePath);
 
                 // luu anh theo choice
                 ToggleButton toggle = (ToggleButton)sender;
                 imagepath tmp;
-                tmp.Text = "<image>:" +selectedImagePath;
+                tmp.Text = "<image>:" + outputImagePath;
                 tmp.pos = toggle.Name.Substring(10);
                 imagepaths.Add(tmp);
             }

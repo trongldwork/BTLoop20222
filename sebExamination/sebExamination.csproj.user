@@ -7,7 +7,105 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Controls\AddQuestion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\AddQuesToQuiz_fromBank.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\AddQuiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Categories.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Course_list.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Export.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Footer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Import.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Menu_uc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Question.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Quiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\AddQuestion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\AddQuesToQuiz_fromBank.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\AddQuiz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Add_Rand_Question.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Categories.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Course_list.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\EditQuiz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Export.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Footer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Import.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Menu_uc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Question.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Quiz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Test_Preview.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\ButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\course_exam.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\examListItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\SquareRadioButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\textStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\toggleBtnStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Template\toggleBtnStyle2.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

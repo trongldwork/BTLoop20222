@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DataTemplate x:Key="examListItem">
+
+        <ListBox x:Name="cours_examListItem"
+                                 Margin="50 40 50 400"
+                                 BorderThickness="0"
+                                 >
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Assets/Images/task.png"
+                                       Height="30"
+                                       Margin="35 0 15 0"/>
+                <TextBlock Text="nhét list với hyperlink của C# vào nhưng t chưa học" 
+                                           FontSize="24"
+                                           FontFamily="Cambria"
+                                           VerticalAlignment="Bottom"/>
+            </StackPanel>
+
+        </ListBox>
+
+    </DataTemplate>
+</ResourceDictionary>

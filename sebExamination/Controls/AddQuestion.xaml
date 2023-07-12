@@ -1,0 +1,299 @@
+﻿<UserControl x:Class="sebExamination.Controls.AddQuestion"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sebExamination.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="972.771" d:DesignWidth="866.084">
+    <Grid Height="auto"
+                          Margin="20">
+
+        <!--tiêu đề-->
+        <TextBlock FontSize="32"
+                   x:Name="Title"
+                                   FontFamily="Cambria"
+                                   Foreground="#C02424">
+                            Adding a multipal choice
+        </TextBlock>
+
+        <!--Btn khi ấn sẽ hiện nội dung của phần general(phần duy nhất trong box này)-->
+        <ToggleButton x:Name="addQuestion_general_btn"
+                                      Click="addQuestion_general_click"
+                                      Height="24"
+                                      Margin="20 80 0 0"
+                                      Width="auto"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Top"
+                                      Background="White"
+                                      BorderThickness="0">
+
+            <StackPanel Orientation="Horizontal">
+                <Image x:Name="addQuestion_general_status"
+                                       Source="../image/arrow-down.png"
+                                       Margin="2.5"/>
+                <TextBlock FontSize="16"
+                                           Margin="5 0 0 0"
+                                           FontFamily="Cambria"
+                                           FontWeight="SemiBold"
+                                           Foreground="#C02424">
+                                        General
+                </TextBlock>
+
+            </StackPanel>
+
+        </ToggleButton>
+
+        <!--Nội dung của add question-->
+        <StackPanel>
+            <Grid Margin="20 120 0 0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Foreground="gray"
+                                           FontSize="16"
+                                           >
+                                    Category
+                </TextBlock>
+                <TextBlock Foreground="gray"
+                                           FontSize="16"
+                                           Grid.Row="1">
+                                    Question name
+                </TextBlock>
+                <TextBlock Foreground="gray"
+                                           FontSize="16"
+                                           Grid.Row="2">
+                                    Question text
+                </TextBlock>
+                <TextBlock Foreground="gray"
+                                           FontSize="16"
+                                           Grid.Row="3">
+                                    Default mark
+                </TextBlock>
+
+                <!--Combobox chọn categories cho câu hỏi mới-->
+                <ComboBox
+                    x:Name="category_parent"
+                    Grid.Column="1"></ComboBox>
+
+                <!--Text box nhập tên của câu hỏi-->
+                <TextBox x:Name="questionName_addQuestion"
+                                         Grid.Column="1" Grid.Row="1"
+                                         Height="30" Width="300"
+                                         HorizontalAlignment="Left"
+                                         Margin="0 5">
+
+                </TextBox>
+
+                <!--Text box nhập nội dung của câu hỏi-->
+                <StackPanel Grid.Column="1" Grid.Row="2">
+                    <TextBox x:Name="questionText_addQuestion"
+                                         
+                                         Height="150" Width="400"
+                                         HorizontalAlignment="Left"
+                                         Margin="0 5">
+
+                    </TextBox>
+                    <StackPanel Orientation="Horizontal" x:Name="ques_img">
+                    <ToggleButton x:Name="add_ques_img" 
+                                  Checked="add_ques_img_Checked"
+                                  Height="40"
+                                  Width="50" 
+                                  HorizontalAlignment="Left" 
+                                  BorderThickness="0"
+                                  Background="Transparent"
+                                  Click="add_ques_img_Click" Foreground="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="../Assets/image/add-image.png"/>
+                    </ToggleButton>
+                    </StackPanel>
+                </StackPanel>
+                <!--Text box nhập điểm của câu hỏi-->
+                <TextBox x:Name="questionMark_addQuestion"
+                                         Grid.Column="1" Grid.Row="3"
+                                         Height="30" Width="70"
+                                         HorizontalAlignment="Left"
+                                         Margin="0 5"
+                                         InputScope="Number">
+
+                </TextBox>
+
+                <!--stackPanel này theo chiều dọc chứa các đáp án của câu hỏi
+                                        yêu cầu thêm dynamic template để thêm câu hỏi-->
+                <StackPanel x:Name="Choices"
+                            Orientation="Vertical"
+                            Grid.Column="1" Grid.Row="4">
+
+                    <!--demo cho đáp án thứ nhất tại chưa có dynamic template-->
+                    <Grid x:Name="choice1_addQuestion"
+                                          Height="80" Width="400"
+                                          HorizontalAlignment="Left"
+                                          Margin="0 10 0 10" Background="AntiqueWhite">
+                        <TextBlock Foreground="Gray" FontSize="16" Text="Choice 1" Margin="5"/>
+                        <TextBlock Foreground="Gray" FontSize="16" Text="Grade" Margin="5 45 0 0"/>
+                        <TextBox x:Name="text_choice1" Height="30" Width="300" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5"/>
+                        <ComboBox x:Name="text_choice1_mark" Height="30" Width="100" Margin="95 45 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" SelectedIndex="0" FontSize="18" Foreground="Gray">
+                            <ComboBoxItem>None</ComboBoxItem>
+                            <ComboBoxItem>100%</ComboBoxItem>
+                            <ComboBoxItem>90%</ComboBoxItem>
+                            <ComboBoxItem>83.33333%</ComboBoxItem>
+                            <ComboBoxItem>80%</ComboBoxItem>
+                            <ComboBoxItem>75%</ComboBoxItem>
+                            <ComboBoxItem>70%</ComboBoxItem>
+                            <ComboBoxItem>66.66666%</ComboBoxItem>
+                            <ComboBoxItem>60%</ComboBoxItem>
+                            <ComboBoxItem>50%</ComboBoxItem>
+                            <ComboBoxItem>40%</ComboBoxItem>
+                            <ComboBoxItem>33.33333%</ComboBoxItem>
+                            <ComboBoxItem>30%</ComboBoxItem>
+                            <ComboBoxItem>25%</ComboBoxItem>
+                            <ComboBoxItem>20%</ComboBoxItem>
+                            <ComboBoxItem>16.66667%</ComboBoxItem>
+                            <ComboBoxItem>66.66666%</ComboBoxItem>
+                            <ComboBoxItem>12.5%</ComboBoxItem>
+                            <ComboBoxItem>10%</ComboBoxItem>
+                        </ComboBox>
+                        <ToggleButton x:Name="choice_img1" 
+                                  Height="40"
+                                  Width="50" 
+                                  HorizontalAlignment="Left" 
+                                  BorderThickness="0"
+                                  Background="Transparent"
+                                      Margin="340, 40, 0, 0"
+                                  Click="add_choice_click" Foreground="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../Assets/image/add-image.png"/>
+                        </ToggleButton>
+                    </Grid>
+
+                    <!--demo cho đáp án thứ hai tại chưa có dynamic template-->
+                    <Grid x:Name="choice2_addQuestion"
+                                          Height="80" Width="400"
+                                          HorizontalAlignment="Left"
+                                          Margin="0 10 0 10" Background="AntiqueWhite">
+                        <TextBlock Foreground="Gray" FontSize="16" Text="Choice 2" Margin="5"/>
+                        <TextBlock Foreground="Gray" FontSize="16" Text="Grade" Margin="5 45 0 0"/>
+                        <TextBox x:Name="text_choice2" Height="30" Width="300" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5"/>
+                        <ComboBox x:Name="text_choice2_mark" Height="30" Width="100" Margin="95 45 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" SelectedIndex="0" FontSize="18" Foreground="Gray">
+                            <ComboBoxItem>None</ComboBoxItem>
+                            <ComboBoxItem>100%</ComboBoxItem>
+                            <ComboBoxItem>90%</ComboBoxItem>
+                            <ComboBoxItem>83.33333%</ComboBoxItem>
+                            <ComboBoxItem>80%</ComboBoxItem>
+                            <ComboBoxItem>75%</ComboBoxItem>
+                            <ComboBoxItem>70%</ComboBoxItem>
+                            <ComboBoxItem>66.66666%</ComboBoxItem>
+                            <ComboBoxItem>60%</ComboBoxItem>
+                            <ComboBoxItem>50%</ComboBoxItem>
+                            <ComboBoxItem>40%</ComboBoxItem>
+                            <ComboBoxItem>33.33333%</ComboBoxItem>
+                            <ComboBoxItem>30%</ComboBoxItem>
+                            <ComboBoxItem>25%</ComboBoxItem>
+                            <ComboBoxItem>20%</ComboBoxItem>
+                            <ComboBoxItem>16.66667%</ComboBoxItem>
+                            <ComboBoxItem>66.66666%</ComboBoxItem>
+                            <ComboBoxItem>12.5%</ComboBoxItem>
+                            <ComboBoxItem>10%</ComboBoxItem>
+                        </ComboBox>
+                        <ToggleButton x:Name="choice_img2" 
+                                  Height="40"
+                                  Width="50" 
+                                  HorizontalAlignment="Left" 
+                                  BorderThickness="0"
+                                  Background="Transparent"
+                                      Margin="340, 40, 0, 0"
+                                  Click="add_choice_click" Foreground="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../Assets/image/add-image.png"/>
+                        </ToggleButton>
+                    </Grid>
+
+
+                </StackPanel>
+
+            </Grid>
+            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                          x:Name="moreChoices_btn"
+                          Click="moreChoices_btn_click"
+                          Background="#009FE5"
+                          Width="150" Height="35"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Top"
+                          Margin="170 0 0 0">
+                <TextBlock FontSize="18"
+                           Foreground="white"
+                           FontFamily="cambria"
+                           FontWeight="Light">
+
+                    More choice
+                </TextBlock>
+            </ToggleButton>
+            <!--Nút lưu câu hỏi và tiếp tục-->
+            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                                  x:Name="saveChangeAndContinue_addQuestion_btn"
+                                                  Click="saveChangeAndContinue_addQuestion_btn_click"
+                                                  Background="#009FE5"
+                                                  Width="350" Height="35"
+                                                  HorizontalAlignment="Center"
+                                                  VerticalAlignment="Top"
+                                                  Margin="0 20 0 0">
+                <TextBlock FontSize="18"
+                                                   Foreground="white"
+                                                   FontFamily="cambria"
+                                                   FontWeight="Light">
+                                                SAVE CHANGES AND CONTINUE EDITING
+                </TextBlock>
+            </ToggleButton>
+
+            <!--Một chú căn chỉnh-->
+            <Grid HorizontalAlignment="Center"
+                                                  VerticalAlignment="Top"
+                                                  Margin="0 10 0 0">
+                <StackPanel Orientation="Horizontal">
+
+                    <!--Nút lưu câu hỏi và thoát-->
+                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                                  x:Name="saveChange_addQuestion_btn"
+                                                  Click="saveChange_addQuestion_btn_click"
+                                                  Background="#C02424"
+                                                  Width="130" Height="35"
+                                                  HorizontalAlignment="Center"
+                                                  VerticalAlignment="Top"
+                                                  Margin="5 0 5 0">
+                        <TextBlock FontSize="18"
+                                                   Foreground="white"
+                                                   FontFamily="cambria"
+                                                   FontWeight="Light">
+                                                SAVE CHANGES
+                        </TextBlock>
+                    </ToggleButton>
+
+                    <!--nút huỷ-->
+                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                                  x:Name="cancel_addQuestion_btn"
+                                                  Click="cancel_addQuestion_btn_click"
+                                                  Background="#009FE5"
+                                                  Width="90" Height="35"
+                                                  HorizontalAlignment="Center"
+                                                  VerticalAlignment="Top"
+                                                  Margin="5 0 5 0">
+                        <TextBlock FontSize="18"
+                                                   Foreground="white"
+                                                   FontFamily="cambria"
+                                                   FontWeight="Light">
+                                                CANCEL
+                        </TextBlock>
+                    </ToggleButton>
+                </StackPanel>
+
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

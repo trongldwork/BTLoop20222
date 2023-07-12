@@ -1,0 +1,219 @@
+﻿<UserControl x:Class="sebExamination.Controls.EditQuiz"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sebExamination.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Template\toggleBtnStyle2.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid Height="600">
+        <StackPanel>
+            <Grid Height="100"
+                                      Margin="20 10 20 0">
+                <TextBlock x:Name="editTitle"
+                                           FontSize="34"
+                                           Foreground="#C02424"
+                                           FontFamily="Ariel"
+                                           FontWeight="Medium" HorizontalAlignment="Left" Width="1001"
+                                           >
+
+                </TextBlock>
+
+                <ToggleButton Style="{DynamicResource ToggleButtonStyle}" x:Name="settingTestBtn"
+                                              Margin="0,10,10,10"
+                                              Width="70"
+                                              BorderThickness="0"
+                                              Background="White"
+                                              HorizontalAlignment="Right"
+                                              VerticalAlignment="Top" Click="settingTestBtn_Click">
+                    <Grid>
+                        <Image Source="../Assets/image/settings.png"
+                                               Margin="0,0,20,0"/>
+                        <Image Source="../Assets/image/arrowRed.png"
+                                               Margin="55 0 0 0"/>
+                    </Grid>
+                </ToggleButton>
+            </Grid>
+            <Grid Height="80"
+                                      Margin="15,0,15,0">
+                <TextBlock HorizontalAlignment="Left"
+                           x:Name="questNum"
+                                               Text="Question: 0"
+                                               FontSize="20" Margin="0,7,0,0"
+                                               >
+                </TextBlock>
+                <StackPanel Margin="0,0,0,40"
+                                                Orientation="Horizontal"
+                                                HorizontalAlignment="Right">
+                    <TextBlock Text="Maximum grade"
+                                               FontSize="20"
+                                                   VerticalAlignment="Center">
+                    </TextBlock>
+                    <TextBox x:Name="MaxGradeTxb"
+                                                 Width="100"
+                                                 Height="35"
+                                                 BorderBrush="Black"
+                                                 BorderThickness="0.5,0.5"
+                                                 Margin="10,0,0,0"
+                                                 FontSize="24" FontFamily="Times New Roman"
+                             Text="10.00">
+
+                    </TextBox>
+                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          x:Name="save_max_geadeBtn"
+                                          Margin="20,0,0,0"
+                                          Background="#0073A5"
+                                          Width="100" Height="45"
+                                          HorizontalAlignment="Right"
+                                  Click="save_Click">
+                        <TextBlock FontSize="24" Foreground="white" FontFamily="cambria">
+                                                    SAVE
+                        </TextBlock>
+                    </ToggleButton>
+                </StackPanel>
+            </Grid>
+            <Grid Height="80"
+                                      Margin="15,0,15,0">
+                <StackPanel Orientation="Horizontal"
+                                                Width="400"
+                                                HorizontalAlignment="Left">
+                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          x:Name="RepaginateBtn" 
+                                          Background="#0073A5"
+                                          Width="140" Height="45"
+                                          VerticalAlignment="Top">
+                        <TextBlock FontSize="24"
+                                                Foreground="white"
+                                                FontFamily="cambria">
+                                                    Repaginate
+                        </TextBlock>
+                    </ToggleButton>
+                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          x:Name="Select_Multiple_ItemBtn" 
+                                          Background="#0073A5"
+                                          Width="210" Height="45"
+                                          Margin="10,0,0,0" VerticalAlignment="Top">
+                        <TextBlock FontSize="24" Foreground="white" FontFamily="cambria">
+                                                    Select MultipleItem
+                        </TextBlock>
+                    </ToggleButton>
+                </StackPanel>
+                <TextBlock HorizontalAlignment="Right"
+                                               VerticalAlignment="Top"
+                                               Text="Total of marks:" FontFamily="Times New Roman" FontSize="20"
+                                               Margin="0,0,50,0">
+
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Right"
+                           x:Name="totalMark"
+                                               VerticalAlignment="Top"
+                                               Text="0.00" FontFamily="Times New Roman" FontSize="20"
+                                               Margin="0,0,10,0">
+
+                </TextBlock>
+            </Grid>
+            <Grid Height="100"
+                                      Background="#FFF7F6F6"
+                                      Margin="15,0,15,0">
+                <Image Source="\Assets\image\edit-text.png"
+                                           Height="30" Width="30"
+                       Margin="30"
+                                           HorizontalAlignment="Left">
+
+                </Image>
+                <CheckBox HorizontalAlignment="Right" VerticalAlignment="Center"
+                          x:Name="shuffle_checkbox"
+                          Click="shuffle_checkbox_Click"
+                                              Margin="0,10,60,10" Height="25" FontSize="22"
+                                              Content="Shuffle" FontFamily="Ariel">
+
+                </CheckBox>
+                <Image Source="\Assets\image\question.png"
+                                           HorizontalAlignment="Right" Margin="0,20,30,48" Width="23" RenderTransformOrigin="0.539,0.943"
+                                           VerticalAlignment="Center">
+
+                </Image>
+                <ToggleButton x:Name="Add_QuestionBtn"
+                                      HorizontalAlignment="Right" 
+                                      Style="{StaticResource CustomToggleButtonStyle}"
+                                      Height="40" Width="100" Background="Transparent"
+                                      Margin="0,52,10,8" BorderThickness="0" Click="Add_QuestionBtn_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Add" FontFamily="Times New Roman" FontSize="22"
+                                           Foreground="#56AAD6" Width="50" Margin="10,0,0,0">
+                        </TextBlock>
+                        <Image Source="\Assets\image\arrow-down.png" Height="15" Width="15"></Image>
+                    </StackPanel>
+                </ToggleButton>
+                <StackPanel>
+
+                </StackPanel>
+            </Grid>
+            
+            <ScrollViewer Height="240">
+                <StackPanel x:Name="quesContainer"
+                        Orientation="Vertical" Margin="0 0 0 10">
+                </StackPanel>
+            </ScrollViewer>
+            
+        </StackPanel>
+        <Border x:Name="Add_Ques_Grid" Height="85" Width="220"
+                                      HorizontalAlignment="Right" Margin="0,230,30,0" Background="#FFFBF6F6"
+                                      Visibility="Collapsed"
+                BorderBrush="Black" BorderThickness="0.5">
+            <Grid>
+                <StackPanel Orientation="Vertical" >
+
+                    <ToggleButton Background="Transparent" BorderBrush="Transparent"
+                                          BorderThickness="0" MouseEnter="Add_Ques_MouseEnter" MouseLeave="Add_Ques_MouseLeave">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="\Assets\image\plus-small.png"
+                                           Height="25" Width="25" Margin="-30,0,0,0" >
+                            </Image>
+                            <TextBlock Text="a new question" FontFamily="Times New Roman" FontSize="22"
+                                                                    >
+
+                            </TextBlock>
+                        </StackPanel>
+                    </ToggleButton>
+
+                    <ToggleButton Background="Transparent" BorderBrush="Transparent"
+                                  Click="open_addFromQuestionBank_Click"
+                                          BorderThickness="0"  MouseEnter="Add_Ques_MouseEnter" MouseLeave="Add_Ques_MouseLeave">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="\Assets\image\plus-small.png"
+                                           Height="25" Width="25" Margin="8,0,0,0">
+                            </Image>
+                            <TextBlock Text="from question bank" 
+                                               FontFamily="Times New Roman" FontSize="22">
+
+                            </TextBlock>
+                        </StackPanel>
+                    </ToggleButton>
+
+                    <ToggleButton Background="Transparent" BorderBrush="Transparent" Click="Add_Random_Question"
+                                          BorderThickness="0"  MouseEnter="Add_Ques_MouseEnter" MouseLeave="Add_Ques_MouseLeave">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="\Assets\image\plus-small.png"
+                                           Height="25" Width="25" Margin="0,0,0,0">
+                            </Image>
+                            <TextBlock Text="a random question" 
+                                               FontFamily="Times New Roman" FontSize="22"
+                                                                    >
+                            </TextBlock>
+                        </StackPanel>
+                    </ToggleButton>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+
+</UserControl>

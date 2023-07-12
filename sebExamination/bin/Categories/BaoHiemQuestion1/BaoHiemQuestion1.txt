@@ -1,0 +1,629 @@
+Category name: BaoHiemQuestion1
+thisline support the file reader to read both quizz file and category file
+1. Đối với sản phẩm bảo hiểm liên kết đơn vị, phí chuyển đổi quỹ liên kết đơn vị là:
+A. Khoản phí dùng để trang trải chi phí phát hành hợp đồng bảo hiểm, chi phí thẩm định bảo hiểm, chi phí kiểm tra y tế, chi hoa hồng đại lý và chi phí khác.
+B. Khoản phí bên mua bảo hiểm phải trả cho doanh nghiệp bảo hiểm khi thực hiện chuyển đổi tài sản đầu tư giữa các quỹ liên kết đơn vị.
+C. Khoản phí để bù đắp chi phí liên quan đến việc duy trì hợp đồng bảo hiểm và cung cấp thông tin liên quan đến hợp đồng bảo hiểm cho bên mua bảo hiểm.
+D. Khoản phí đối với quyền lợi bảo hiểm rủi ro theo cam kết tại hợp đồng bảo hiểm.
+ANSWER: B
+1
+
+2. Theo quy định của Pháp luật, Văn phòng đại diện của doanh nghiệp bảo hiểm, doanh nghiệp môi giới bảo hiểm nước ngoài tại Việt Nam được thực hiện hoạt động nào sau đây:
+A. Xúc tiến xây dựng các dự án đầu tư của doanh nghiệp bảo hiểm, doanh nghiệp môi giới bảo hiểm nước ngoài.
+B. Thúc đẩy và theo dõi việc thực hiện các dự án do doanh nghiệp bảo hiểm, doanh nghiệp môi giới bảo hiểm nước ngoài tài trợ tại Việt Nam.
+C. Nghiên cứu thị trường.
+D. A, B, C đúng.
+ANSWER: D
+1
+
+3. Đại lý bảo hiểm không có quyền nào sau đây:
+A. Yêu cầu doanh nghiệp bảo hiểm hoàn trả tiền ký quĩ hoặc thế chấp tài sản theo thỏa thuận trong hợp đồng đại lý bảo hiểm.
+B. Tham dự các lớp đào tạo, bồi dưỡng, nâng cao trình độ cho đại lý bảo hiểm do doanh nghiệp bảo hiểm tổ chức.
+C. Ký thay khách hàng.
+D. Hưởng hoa hồng và các quyền, lợi ích hợp pháp khác từ hoạt động đại lý bảo hiểm.
+ANSWER: C
+1
+
+4. Anh A 33 tuổi tham gia một hợp đồng Bảo Hiểm Ung Thư 360 vào ngày 01/05/2019 với STBH 01 tỷ đồng. Trong thời gian hợp đồng có hiệu lực, anh A lần lượt gặp các rủi ro sau: Ngày 04/07/2025: được chẩn đoán mắc ung thư dạ dày giai đoạn sớm.  Ngày 30/10/2025: phẫu thuật tái tạo hình dạng dạ dày (Phẫu Thuật Phục Hồi). Ngày 07/09/2028: tử vong do tai nạn. Giả sử các sự kiện trên đều được Manulife chấp thuận chi trả, tổng số tiền mà anh A sẽ nhận được là: 
+A. 1,7 tỷ đồng. 
+B. 2,7 tỷ đồng. 
+C. 1,5 tỷ đồng. 
+D. 2,5 tỷ đồng.
+ANSWER: A 
+1
+
+5. Khách hàng A tham gia Sản phẩm Bảo hiểm Ung Thư 360 vào ngày 1/1/2019 với số tiền bảo hiểm là 500 triệu đồng. Ngày 17/03/2019, khách hàng A được chẩn đoán mắc ung thư giai đoạn sớm. Quyền lợi ung thư giai đoạn sớm khách hàng A nhận được là:
+A. 250 triệu đồng
+B. 300 triệu đồng
+C. 0 đồng
+D. 500 triệu đồng
+ANSWER: C
+1
+
+6. Kể từ sau thời điểm Manulife đồng ý chi trả quyền lợi Ung Thư Giai Đoạn Cuối cho Người Được Bảo Hiểm của hợp đồng Bảo hiểm Ung Thư 360, vào mỗi ngày kỷ niệm hợp đồng hàng tháng, Manulife sẽ chi trả QLBH Trợ Cấp Thu Nhập bằng:
+A. 1% Số Tiền Bảo Hiểm
+B. 0,5% Số Tiền Bảo Hiểm
+C. 1,5% Số Tiền Bảo Hiểm
+ANSWER: C
+1
+
+7. Doanh nghiệp bảo hiểm có quyền từ chối trả tiền bảo hiểm cho người thụ hưởng hoặc từ chối bồi thường cho người được bảo hiểm trong trường hợp:
+A. Sự kiện bảo hiểm xảy ra không thuộc phạm vi trách nhiệm bảo hiểm theo thỏa thuận trong hợp đồng bảo hiểm (A).
+B. Sự kiện bảo hiểm xảy ra thuộc các trường hợp loại trừ trách nhiệm bảo hiểm theo thỏa thuận trong hợp đồng bảo hiểm (B).
+C. Sự kiện bảo hiểm xảy ra trong thời gian gia hạn nộp phí bảo hiểm.  
+D. A, B đúng. 
+ANSWER: D
+1
+
+8. Đối với hợp đồng bảo hiểm con người, trường hợp một hoặc một số người thụ hưởng cố ý gây ra cái chết hoặc thương tật vĩnh viễn cho người được bảo hiểm thì:
+A. Doanh nghiệp bảo hiểm không phải trả tiền bảo hiểm.
+B. Doanh nghiệp bảo hiểm vẫn trả tiền cho tất cả người thụ hưởng bảo hiểm.
+C. Doanh nghiệp bảo hiểm vẫn phải trả tiền bảo hiểm cho những người thụ hưởng khác theo thoả thuận trong hợp đồng bảo hiểm.
+D. Không trường hợp nào đúng.
+ANSWER: C
+1
+
+9. Doanh nghiệp bảo hiểm có nghĩa vụ:
+A. Chi trả tất cả các chi phí khai thác hợp đồng bảo hiểm cho đại lý ngoài hoa hồng bảo hiểm (A).
+B. Yêu cầu đại lý bảo hiểm phải có tài sản thế chấp.
+C. Chịu trách nhiệm về những thiệt hại hay tổn thất do hoạt động đại lý bảo hiểm của mình gây ra theo thỏa thuận trong hợp đồng đại lý bảo hiểm (C).
+D. A, C đúng.
+ANSWER: C
+1
+
+10. Trong Sản phẩm Bảo hiểm Ung Thư 360, quyền lợi nào sau đây sẽ chấm dứt ngay khi Manulife chấp nhận chi trả:
+A. Quyền lợi bảo hiểm Ung Thư Giai Đoạn Cuối
+B. Quyền lợi bảo hiểm Ung Thư Chi Phí Lớn
+C. Quyền lợi bảo hiểm Miễn Đóng Phí
+D. Cả ba đáp án A, B và C.
+ANSWER: D
+1
+
+11. Khách hàng A tham gia Sản phẩm Bảo hiểm Ung Thư 360 với số tiền bảo hiểm là 800 triệu đồng. Trong thời gian hợp đồng có hiệu lực, khách hàng A được chẩn đoán mắc 2 bệnh ung thư giai đoạn sớm thuộc phạm vi bảo hiểm, được chẩn đoán trong cùng 1 ngày. Tổng quyền lợi ung thư giai đoạn sớm khách hàng nhận được là:
+A. 480 triệu đồng
+B. 920 triệu đồng
+C. 600 triệu đồng
+D. 800 triệu đồng
+ANSWER: A
+1
+
+12. Theo qui định của Pháp luật, chương trình đào tạo Phần kiến thức chung dành cho đại lý bảo hiểm gồm:
+A. Kiến thức chung về bảo hiểm; Pháp luật về kinh doanh bảo hiểm
+B. Trách nhiệm của đại lý, đạo đức hành nghề đại lý; Quyền và nghĩa vụ của doanh nghiệp bảo hiểm, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài, đại lý bảo hiểm trong hoạt động đại lý bảo hiểm
+C. Kỹ năng bán bảo hiểm
+D. Cả A,B,C
+ANSWER: D
+1
+
+13. Mức vốn pháp định của doanh nghiệp bảo hiểm nhân thọ, kinh doanh bảo hiểm nhân thọ (trừ bảo hiểm liên kết đơn vị, bảo hiểm hưu trí) và bảo hiểm sức khỏe là:
+A. 1.000 tỷ đồng Việt Nam
+B. 800 tỷ đồng Việt Nam
+C. 600 tỷ đồng Việt Nam
+D. 300 tỷ đồng Việt Nam
+ANSWER: C
+1
+
+14. Đại lý bảo hiểm không được doanh nghiệp bảo hiểm uỷ quyền tiến hành hoạt động nào dưới đây:
+A. Thu xếp việc giao kết hợp đồng bảo hiểm.
+B. Thu xếp giải quyết bồi thường, trả tiền bảo hiểm khi xảy ra sự kiện bảo hiểm.
+C. Thu phí bảo hiểm.
+D. Trực tiếp ký kết hợp đồng bảo hiểm.
+ANSWER: D
+1
+
+15. Theo Luật kinh doanh bảo hiểm, thời gian 15 ngày là quy định về thời hạn nào trong những thời hạn dưới đây:
+A. Thời hiệu khởi kiện về hợp đồng bảo hiểm, kể từ ngày pháp sinh tranh chấp.
+B. Thời hạn doanh nghiệp bảo hiểm phải trả tiền bảo hiểm hoặc bồi thường kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường (trừ trường hợp có thỏa thuận khác về thời hạn trong hợp đồng bảo hiểm).
+C. Thời hạn yêu cầu trả tiền bảo hiểm hoặc bồi thường theo hợp đồng bảo hiểm, kể từ ngày xảy ra sự kiện bảo hiểm.
+ANSWER: B
+1
+
+16.  Chọn 1 phương án đúng về đặc điểm của nghiệp vụ bảo hiểm trọn đời:
+A. Doanh nghiệp bảo hiểm trả tiền bảo hiểm cho người thụ hưởng khi bên mua bảo hiểm chết ở bất kỳ thời điểm nào trong suốt cuộc đời của người đó
+B. Doanh nghiệp bảo hiểm trả tiền bảo hiểm cho người thụ hưởng khi người được bảo hiểm vẫn sống tại thời điểm kết thúc hiệu lực hợp đồng
+C. Doanh nghiệp bảo hiểm trả tiền bảo hiểm cho người thụ hưởng khi người được bảo hiểm chết vào bất kỳ thời điểm nào trong suốt cuộc đời của người đó
+ANSWER: C
+1
+
+17. Trong trường hợp NĐBH của Sản phẩm Bảo hiểm Ung Thư 360 tử vong và Manulife đã chi trả QLBH Trợ Cấp Thu Nhập vượt quá thời điểm này, Manulife sẽ: 
+A. Không cấn trừ số tiền đã chi trả dư vào quyền lợi Tử Vong. 
+B. Cấn trừ số tiền đã chi trả dư vào quyền lợi Tử Vong. 
+C. Cả hai đáp án trên đều đúng. 
+ANSWER: B
+1
+
+18. Chọn phương án sai về trường hợp Hợp đồng bảo hiểm vô hiệu:
+A. Tại thời điểm giao kết hợp đồng bảo hiểm, đối tượng bảo hiểm không tồn tại.
+B. Tại thời điểm giao kết hợp đồng bảo hiểm, bên mua bảo hiểm biết sự kiện bảo hiểm đã xảy ra.
+C. Đại lý bảo hiểm không nộp phí bảo hiểm đã thu của bên mua bảo hiểm cho doanh nghiệp bảo hiểm.
+D. Bên mua bảo hiểm không có quyền lợi có thể được bảo hiểm.
+ANSWER: C
+1
+
+19. Đại lý bảo hiểm không được tranh giành khách hàng dưới các hình thức ngăn cản, lôi kéo, mua chuộc, đe dọa nhân viên hoặc khách hàng của:
+A. Doanh nghiệp bảo hiểm khác
+B. Đại lý bảo hiểm khác
+C. Doanh nghiệp môi giới bảo hiểm khác
+D. Cả A, B, C
+ANSWER: D
+1
+
+20. Theo quy định của Pháp luật, hợp đồng bảo hiểm chấm dứt nếu bên mua bảo hiểm không đóng đủ phí bảo hiểm hoặc không đóng phí bảo hiểm theo thời hạn thỏa thuận trong hợp đồng bảo hiểm (trừ trường hợp các bên có thỏa thuận khác). Khi đó, bên mua bảo hiểm vẫn phải đóng đủ phí bảo hiểm đến thời điểm chấm dứt hợp đồng bảo hiểm nếu hợp đồng bảo hiểm đó là:
+A. Hợp đồng bảo hiểm con người (A)
+B. Hợp đồng bảo hiểm tài sản (B)
+C. Hợp đồng bảo hiểm trách nhiệm dân sự (C)
+D. B, C đúng
+ANSWER: D
+1
+
+21. Trong Sản phẩm Bảo hiểm Ung Thư 360, trong trường hợp con của Người Được Bảo Hiểm được Manulife chấp thuận cấp quyền lợi Bảo Hiểm Miễn Phí Dành Cho Con Của Người Được Bảo Hiểm, ngày bắt đầu bảo hiểm sẽ là:
+A. Ngày Manulife đồng ý cấp quyền lợi Bảo Hiểm Miễn Phí Dành Cho Con Của Người Được Bảo Hiểm
+B. Ngày Manulife chấp nhận chi trả quyền lợi Ung Thư Giai Đoạn Cuối cho Người Được Bảo Hiểm.
+C. Ngày hoàn thành hồ sơ yêu cầu cấp quyền lợi Bảo Hiểm Miễn Phí Dành Cho Con Của Người Được Bảo Hiểm
+D. Ngày Người Được Bảo Hiểm được chẩn đoán mắc bệnh Ung Thư Giai Đoạn Cuối
+ANSWER: D
+1
+
+22. Khoản tiền mà bên mua bảo hiểm đóng cho doanh nghiệp bảo hiểm theo thỏa thuận trong hợp đồng bảo hiểm là:
+A. Số tiền bảo hiểm.
+B. Giá trị bảo hiểm.
+C. Số tiền bồi thường.
+D. Phí bảo hiểm.
+ANSWER: D
+1
+
+23. Trong trường hợp không có thỏa thuận về thời hạn, doanh nghiệp bảo hiểm phải trả tiền bảo hiểm hoặc bồi thường cho người được bảo hiểm trong vòng:
+A. 45 ngày kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường.
+B. 30 ngày kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường. 
+C. 60 ngày kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường.
+D. 15 ngày kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường. 
+ANSWER: D
+1
+
+24. Việc yêu cầu tham gia bảo hiểm được thực hiện bởi: 
+A. Môi giới bảo hiểm.
+B. Doanh nghiệp bảo hiểm
+C. Đại lý bảo hiểm.
+D. Bên mua bảo hiểm.
+ANSWER: D
+1
+
+25. Trong nghiệp vụ bảo hiểm trả tiền định kỳ, khi người được bảo hiểm còn sống nhưng chưa đạt đến thời hạn nhất định theo thỏa thuận trong hợp đồng bảo hiểm, doanh nghiệp bảo hiểm có trách nhiệm:
+A. Chi trả tiền bảo hiểm cho Bên mua bảo hiểm
+B. Chi trả tiền bảo hiểm cho Người thụ hưởng
+C. Không chi trả bất cứ quyền lợi bảo hiểm nào cả
+D. Chi trả tiền bảo hiểm cho Người được bảo hiểm
+ANSWER: C
+1
+
+26. Đại lý bảo hiểm có thể:
+A. Lựa chọn và ký kết hợp đồng đại lý bảo hiểm đối với doanh nghiệp bảo hiểm theo đúng quy định pháp luật
+B. Yêu cầu doanh nghiệp bảo hiểm hoàn trả tiền ký quỹ hoặc tài sản thế chấp theo thỏa thuận trong hợp đồng đại lý bảo hiểm
+C. Sửa đổi, bổ sung điều khoản trong hợp đồng bảo hiểm theo ý kiến của bên mua bảo hiểm
+D. A, B đúng
+ANSWER: D
+1
+
+27. Tỷ lệ hoa hồng tối đa tính trên phí bảo hiểm của hợp đồng bảo hiểm nhân thọ cá nhân đối với nghiệp vụ bảo hiểm trả tiền định kỳ, phương thức nộp phí bảo hiểm 1 lần là:
+A. 10%
+B. 15%
+C. 5%
+D. 7%
+ANSWER: D
+1
+
+28. Chọn một phương án đúng về các đặc điểm của sản phẩm bảo hiểm nhân thọ hỗn hợp
+A. Có giá trị hoàn lại, có chia lãi hoặc không chia lãi
+B. Có cả 2 yếu tố bảo vệ và tiết kiệm
+C. A, B đúng
+D. Không có đáp án đúng
+ANSWER: C
+1
+
+29. Chọn phương án đúng về nghiệp vụ bảo hiểm mà doanh nghiệp bảo hiểm nhân thọ và phi nhân thọ đều được triển khai:
+A. Bảo hiểm hưu trí.
+B. Bảo hiểm tài sản.
+C. Bảo hiểm sức khỏe.
+D. Không trường hợp nào đúng.
+ANSWER: C
+1
+
+30. Đại lý bảo hiểm có thể được lựa chọn và ký kết hợp đồng đại lý bảo hiểm với đối tượng nào dưới đây:
+A. Doanh nghiệp bảo hiểm nhân thọ, doanh nghiệp bảo hiểm phi nhân thọ
+B. Doanh nghiệp bảo hiểm sức khỏe, doanh nghiệp tái bảo hiểm
+C. Chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài
+D. Cả A, B, C
+ANSWER: D
+1
+
+31. Trong trường hợp bên mua bảo hiểm chứng minh được rằng họ không biết thời điểm xảy ra sự kiện bảo hiểm thì thời hạn yêu cầu trả tiền bảo hiểm hoặc bồi thường là:
+A. 1 năm kể từ ngày xảy ra sự kiện bảo hiểm.
+B. 1 năm kể từ ngày bên mua bảo hiểm biết việc xảy ra sự kiện bảo hiểm.
+C.  2 năm kể từ ngày xảy ra sự kiện bảo hiểm.
+D. 2 năm kể từ ngày bên mua bảo hiểm biết việc xảy ra sự kiện bảo hiểm.
+ANSWER: B
+1
+
+32. Bên mua bảo hiểm đã đóng phí bảo hiểm nhân thọ từ hai năm trở lên, nhưng không thể đóng các khoản phí bảo hiểm tiếp theo thì sau thời hạn 60 ngày, kể từ ngày gia hạn đóng phí, trừ trường hợp các bên có thỏa thuận khác, doanh nghiệp bảo hiểm có quyền đơn phương đình chỉ hợp đồng và bên mua bảo hiểm:
+A. Nhận giá trị hoàn lại của hợp đồng bảo hiểm
+B. Không có quyền đòi lại khoản phí bảo hiểm đã đóng
+C. Nhận lại toàn bộ phí bảo hiểm đã đóng
+ANSWER: A
+1
+
+33. Quỹ bảo vệ người được bảo hiểm được thành lập tại doanh nghiệp bảo hiểm nhằm bảo vệ quyền lợi của người được bảo hiểm trong trường hợp nào sau đây:
+A. Người được bảo hiểm bị thất nghiệp 
+B. Doanh nghiệp bảo hiểm phá sản hoặc mất khả năng thanh toán
+C. Người được bảo hiểm gặp khó khăn về tài chính, không có khả năng đóng phí bảo hiểm
+D. Người được bảo hiểm gặp rủi ro do chiến tranh, động đất
+ANSWER: B
+1
+
+34. Phát biểu nào sau đây là đúng về QLBH Ung Thư Chi Phí Lớn của Sản phẩm Bảo hiểm Ung Thư 360: 
+A. Chi trả 100% STBH khi NĐBH được chẩn đoán Ung Thư Giai Đoạn Sớm hoặc Ung Thư Giai Đoạn Cuối thuộc danh sách bệnh Ung Thư Chi Phí Lớn. QLBH này sẽ chấm dứt ngay sau khi Manulife chi trả quyền lợi Ung Thư Giai Đoạn Sớm hoặc Ung Thư Giai Đoạn Cuối. 
+B. Chi trả 100% STBH khi NĐBH được chẩn đoán Ung Thư Giai Đoạn Cuối thuộc danh sách bệnh Ung Thư Chi Phí Lớn. QLBH nàysẽ chấm dứt ngay sau khi Manulife chi trả QLBH Ung Thư Giai Đoạn Sớm hoặc Ung Thư Giai Đoạn Cuối. 
+C. Chi trả 50% STBH khi NĐBH được chẩn đoán Ung Thư Giai Đoạn Cuối thuộc danh sách bệnh Ung Thư Chi Phí Lớn. QLBH này sẽ chấm dứt ngay sau khi Manulife chấp nhận chi trả hoặc khi QLBH Ung Thư Giai Đoạn Cuối đã được chi trả. 
+D. Chi trả 50% STBH khi NĐBH được chẩn đoán Ung Thư Giai Đoạn Sớm hoặc Ung Thư Giai Đoạn Cuối thuộc danh sách bệnh Ung Thư Chi Phí Lớn. QLBH này sẽ chấm dứt ngay sau khi Manulife chi trả QLBH Ung Thư Giai Đoạn Sớm hoặc Ung Thư Giai Đoạn Cuối. 
+ANSWER: C
+1
+
+35. Luật kinh doanh bảo hiểm quy định Bên mua bảo hiểm đóng phí bảo hiểm nhân thọ theo cách:
+A. Đóng một lần theo quy định bắt buộc của Doanh nghiệp bảo hiểm
+B. Đóng nhiều lần theo quy định bắt buộc của Doanh nghiệp bảo hiểm
+C. Đóng một lần hoặc nhiều lần theo thời hạn, phương thức thỏa thuận trong hợp đồng bảo hiểm
+D. A, B, C sai
+ANSWER: C
+1
+
+36. Ngày 1/1/2019, khách hàng A tham gia Sản phẩm Bảo hiểm Ung Thư 360. Đến 31/5/2020, khách hàng A được chẩn đoán mắc ung thư giai đoạn cuối, thuộc danh mục ung thư chi phí lớn, các quyền lợi mà khách hàng A nhận được là:
+A. 150% số tiền bảo hiểm + quyền lợi miễn đóng phí +  quyền lợi trợ cấp thu nhập + quyền lợi miễn phí dành cho con
+B. 150% số tiền bảo hiểm + quyền lợi miễn đóng phí + quyền lợi miễn phí dành cho con
+C. 105% số tiền bảo hiểm + quyền lợi miễn đóng phí + quyền lợi trợ cấp thu nhập + quyền lợi miễn phí dành cho con
+D. 160% số tiền bảo hiểm + quyền lợi miễn đóng phí + quyền lợi trợ cấp thu nhập + quyền lợi miễn phí dành cho con 
+ANSWER: D
+1
+
+37. Theo quy định của Pháp luật, phát biểu nào dưới đây sai:
+A. Kinh doanh bảo hiểm là hoạt động của doanh nghiệp bảo hiểm nhằm mục đích sinh lợi, theo đó doanh nghiệp bảo hiểm nhận một khoản phí bảo hiểm của doanh nghiệp bảo hiểm khác để cam kết bồi thường cho các trách nhiệm đã nhận bảo hiểm.
+B. Hoạt động đại lý bảo hiểm là hoạt động giới thiệu, chào bán bảo hiểm, thu xếp việc giao kết hợp đồng bảo hiểm và các công việc khác nhằm thực hiện hợp đồng bảo hiểm theo ủy quyền của doanh nghiệp bảo hiểm.
+C. Sự kiện bảo hiểm là sự kiện khách quan do các bên thỏa thuận hoặc pháp luật quy định mà khi sự kiện đó xảy ra thì doanh nghiệp bảo hiểm phải trả tiền bảo hiểm cho người thụ hưởng hoặc bồi thường cho người được bảo hiểm.
+ANSWER: A
+1
+
+38. Cơ quan có trách nhiệm kiểm tra, giám sát hoạt động đào tạo đại lý bảo hiểm là:
+A. Bộ Tài chính.
+B. Bộ Công thương.
+C. Hiệp hội bảo hiểm Việt Nam.
+D. Bộ Giáo dục và Đào tạo.
+ANSWER: A
+1
+
+39. Theo quy định của pháp luật về kinh doanh bảo hiểm, các sản phẩm thuộc nghiệp vụ bảo hiểm nhân thọ trước khi triển khai phải được:
+A. Bộ Tài chính phê chuẩn quy tắc, điều khoản, biểu phí
+B. Đăng ký quy tắc, điều khoản, biểu phí với Hiệp hội Bảo hiểm Việt Nam
+C. Đăng ký quy tắc, điều khoản, biểu phí với Bộ Tài chính
+D. Hiệp hội Bảo hiểm Việt Nam phê chuẩn quy tắc, điều khoản, biểu phí
+ANSWER: A
+1
+
+40. Ý nào dưới đây là đúng về thời hạn bảo hiểm của Quyền lợi Bảo Hiểm Miễn Phí Dành Cho Con Của Người Được Bảo Hiểm trong Sản phẩm Bảo hiểm Ung Thư 360:
+A. Thời hạn bảo hiểm tối đa là 20 năm
+B. Tuổi bảo hiểm tối đa là 30 tuổi
+C. Đáp án A hoặc B tùy thời điểm nào đến trước
+ANSWER: C
+1
+
+
+1. Giá trị hoàn lại của một hợp đồng bảo hiểm liên kết chung được xác định:
+A. Là giá trị hợp đồng đó trong quỹ liên kết chung vào ngày hủy bỏ hợp đồng bảo hiểm trừ đi phí quản lý hợp đồng bảo hiểm.
+B. Là giá trị hợp đồng đó trong quỹ liên kết chung vào ngày kết thúc hợp đồng bảo hiểm
+C. Là giá trị hợp đồng đó trong quỹ liên kết chung vào ngày hủy bỏ hợp đồng bảo hiểm
+D. Là giá trị hợp đồng đó trong quỹ liên kết chung vào ngày hủy bỏ hợp đồng bảo hiểm trừ đi phí hủy bỏ hợp đồng bảo hiểm.
+ANSWER: D
+1
+
+2. Theo Pháp luật kinh doanh bảo hiểm, văn phòng đại diện của doanh nghiệp bảo hiểm, doanh nghiệp môi giới bảo hiểm nước ngoài tại Việt Nam không được thực hiện hoạt động nào sau đây:
+A. Thúc đẩy và theo dõi việc thực hiện các dự án do doanh nghiệp bảo hiểm, doanh nghiệp môi giới bảo hiểm nước ngoài tài trợ tại Việt Nam.
+B. Kinh doanh bảo hiểm.
+C. Nghiên cứu thị trường
+D. Xúc tiến xây dựng các dự án đầu tư của doanh nghiệp bảo hiểm, doanh nghiệp môi giới bảo hiểm nước ngoài.
+ANSWER: B
+1
+
+3. Chi quản lý đại lý của doanh nghiệp bảo hiểm, chi nhánh nước ngoài không bao gồm:
+A. Chi đào tạo nâng cao kiến thức cho đại lý.
+B. Chi tuyển dụng đại lý, khen thưởng đại lý và hỗ trợ đại lý.
+C. Chi đào tạo ban đầu và thi cấp chứng chỉ đại lý.
+D. Chi hoa hồng bảo hiểm.
+ANSWER: D
+1
+
+4. Thời hạn đóng phí và thời hạn hợp đồng của Sản phẩm Bảo hiểm Ung Thư 360 là: 
+A. Thời hạn đóng phí 10 năm; Thời hạn hợp đồng 10 năm 
+B. Thời hạn đóng phí 10 năm; Thời hạn hợp đồng đến khi NĐBH 99 tuổi 
+C. Thời hạn đóng phí 10 năm; Thời hạn hợp đồng 12 năm 
+D. Thời hạn đóng phí 12 năm; Thời hạn hợp đồng đến khi NĐBH 99 tuổi
+ANSWER: A
+1
+
+5. Trong Sản phẩm Bảo hiểm Ung thư 360, trường hợp NĐBH là trẻ em 1,5 tuổi số tiền bảo hiểm chi trả khi các sự kiện bảo hiểm xảy ra được điều chỉnh theo tỷ lệ % là bao nhiêu:
+A. 40%
+B. 60%
+C. 20%
+D. 80%
+ANSWER: A
+1
+
+6. Khách hàng A của hợp đồng Sản phẩm Bảo hiểm Ung Thư 360 được chẩn đoán mắc ung thư giai đoạn cuối, quyền lợi bảo hiểm giai đoạn cuối đã được chi trả, hợp đồng của khách hàng A sẽ chấm dứt hiệu lực, đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: B
+1
+
+7. Trong trường hợp không có thỏa thuận về thời hạn, doanh nghiệp bảo hiểm phải trả tiền bảo hiểm hoặc bồi thường cho người được bảo hiểm trong vòng:
+A. 60 ngày kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường.
+B. 45 ngày kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường.
+C. 30 ngày kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường. 
+D. 15 ngày kể từ ngày nhận được đầy đủ hồ sơ hợp lệ về yêu cầu trả tiền bảo hiểm hoặc bồi thường. 
+ANSWER: D
+1
+
+8. Trường hợp nào dưới đây doanh nghiệp bảo hiểm phải trả tiền bảo hiểm trong hợp đồng bảo hiểm con người:
+A. Người được bảo hiểm chết do bị thi hành án tử hình
+B. Người được bảo hiểm chết hoặc bị thương tật vĩnh viễn do lỗi cố ý của bên mua bảo hiểm
+C. Người được bảo hiểm chết do tự tử trong thời hạn hai năm, kể từ ngày nộp khoản phí bảo hiểm đầu tiên hoặc kể từ ngày hợp đồng bảo hiểm tiếp tục có hiệu lực
+D. Người được bảo hiểm chết do tự tử sau thời hạn hai năm, kể từ ngày nộp khoản phí bảo hiểm đầu tiên hoặc kể từ ngày hợp đồng bảo hiểm tiếp tục có hiệu lực
+ANSWER: D
+1
+
+9. Phát biểu nào sau đây là sai về nội dung hoạt động đại lý bảo hiểm:
+A. Giới thiệu, chào bán bảo hiểm
+B. Thu phí bảo hiểm.
+C. Hỗ trợ giảm phí bảo hiểm hoặc khuyến mại khách hàng tham gia bảo hiểm.
+D. A, B đúng.
+ANSWER: C
+1
+
+10. Phát biểu nào sau đây là đúng về quyền lợi Hỗ Trợ Trượt Giá của Sản phẩm Bảo hiểm Ung Thư 360: 
+A. Tương đương 5% STBH từ năm hợp đồng đầu tiên, mỗi năm sau đó cộng thêm 5% STBH (A). 
+B. Được chi trả cùng với quyền lợi Ung Thư Giai Đoạn Cuối (B). 
+C. Mỗi đầu năm hợp đồng, BMBH cần cung cấp bằng chứng NĐBH còn sống. Quyền lợi này sẽ chấm dứt sau khi Manulife đã chi trả đủ 60 lần, hoặc sau khi NĐBH tử vong. 
+D. A và B là đáp án đúng. 
+ANSWER: D
+1
+
+11. Ngày 1/1/2019, khách hàng A tham gia Sản phẩm Bảo hiểm Ung Thư 360. Đến 31/5/2020, khách hàng A được chẩn đoán mắc ung thư giai đoạn cuối, thuộc danh mục ung thư chi phí lớn. Ngày 9/6/2020, khách hàng A tử vong. Các quyền lợi mà khách hàng A nhận được là:
+A. 150% số tiền bảo hiểm + quyền lợi miễn đóng phí + quyền lợi trợ cấp thu nhập + quyền lợi miễn phí dành cho con + quyền lợi tử vong
+B. 150% số tiền bảo hiểm + quyền lợi miễn đóng phí + quyền lợi miễn phí dành cho con+ quyền lợi tử vong
+C. 105% số tiền bảo hiểm + quyền lợi miễn đóng phí + quyền lợi trợ cấp thu nhập + quyền lợi miễn phí dành cho con + quyền lợi tử vong
+D. 160% số tiền bảo hiểm + quyền lợi miễn đóng phí + quyền lợi trợ cấp thu nhập + quyền lợi miễn phí dành cho con + quyền lợi tử vong
+ANSWER: D
+1
+
+12. Đại lý bảo hiểm là:
+A. Người được doanh nghiệp bảo hiểm ủy quyền thực hiện tất cả các công việc liên quan đến nghiệp vụ bảo hiểm.
+B. Tổ chức, cá nhân được doanh nghiệp bảo hiểm ủy quyền trên cơ sở hợp đồng đại lý bảo hiểm để thực hiện hoạt động đại lý bảo hiểm theo quy định của pháp luật.
+C.  Người đại diện cho khách hàng.
+D. A, B, C đúng.
+ANSWER: B
+1
+
+13. Mức vốn pháp định của doanh nghiệp bảo hiểm nhân thọ, kinh doanh bảo hiểm nhân thọ (bao gồm cả bảo hiểm liên kết đơn vị, bảo hiểm hưu trí) và bảo hiểm sức khỏe là:
+A. 600 tỷ đồng Việt Nam
+B. 800 tỷ đồng Việt Nam
+C. 1.000 tỷ đồng Việt Nam
+D. 300 tỷ đồng Việt Nam
+ANSWER: C
+1
+
+14. Đại lý bảo hiểm không được doanh nghiệp bảo hiểm uỷ quyền tiến hành hoạt động nào dưới đây:
+A. Thu xếp giải quyết bồi thường, trả tiền bảo hiểm khi xảy ra sự kiện bảo hiểm.
+B. Đánh giá rủi ro.
+C. Giới thiệu, chào bán bảo hiểm. 
+D. Thu phí bảo hiểm.
+ANSWER: B
+1
+
+15. Theo quy định của Pháp luật, phát biểu nào dưới đây sai:
+A. Các loại hợp đồng bảo hiểm bao gồm: hợp đồng bảo hiểm con người, hợp đồng bảo hiểm tài sản, hợp đồng bảo hiểm trách nhiệm dân sự.
+B. Hợp đồng bảo hiểm là sự thỏa thuận giữa bên mua bảo hiểm và doanh nghiệp bảo hiểm, theo đó bên mua bảo hiểm phải đóng phí bảo hiểm, doanh nghiệp bảo hiểm phải trả tiền bảo hiểm cho người thụ hưởng hoặc bồi thường cho người được bảo hiểm khi xảy ra sự kiện bảo hiểm.
+C. Hợp đồng bảo hiểm phải được lập thành văn bản.
+D. Trong trường hợp hợp đồng bảo hiểm có điều khoản không rõ ràng thì điều khoản đó được giải thích theo hướng có lợi cho doanh nghiệp bảo hiểm.
+ANSWER: D
+1
+
+16. Đối với nghiệp vụ bảo hiểm trọn đời, doanh nghiệp bảo hiểm không có trách nhiệm đối với sự kiện nào sau đây:
+A. Bên mua bảo hiểm chết vào bất kỳ thời điểm nào trong suốt cuộc đời của người đó (A)
+B. Người thụ hưởng chết vào bất kỳ thời điểm nào trong suốt cuộc đời của người đó (B)
+C. Người được bảo hiểm chết vào bất kỳ thời điểm nào trong suốt cuộc đời của người đó
+D. A, B đúng
+ANSWER: D
+1
+
+17. Với Sản phẩm Bảo hiểm Ung Thư 360, khách hàng có những lựa chọn gói Bảo hiểm nào sau đây: 
+A. Một trong bốn gói với STBH tương ứng: 200 triệu, 400 triệu, 600 triệu và 800 triệu đồng. 
+B. Số tiền bảo hiểm tối đa 10 tỷ đồng. 
+C. Một trong bốn gói với STBH tương ứng: 500 triệu; 01 tỷ; 1,5 tỷ và 2 tỷ đồng. 
+D. Một trong bốn gói với STBH tương ứng: 300 triệu, 500 triệu, 700 triệu, 01 tỷ đồng; và gói tùy chọn với STBH tối thiểu 100 triệu đồng, tối đa 01 tỷ đồng. 
+ANSWER: D
+1
+
+18. Theo Luật kinh doanh bảo hiểm, ngoài các nghiệp vụ bảo hiểm đặc thù do Chính phủ qui định, các nghiệp vụ bảo hiểm được chia thành:
+A. Bảo hiểm con người, bảo hiểm tài sản và bảo hiểm trách nhiệm dân sự.
+B. Bảo hiểm cá nhân, bảo hiểm nhóm.
+C. Bảo hiểm ngắn hạn, bảo hiểm dài hạn.
+D. Bảo hiểm nhân thọ, bảo hiểm phi nhân thọ và bảo hiểm sức khỏe. 
+ANSWER: D
+1
+
+19. Đáp án nào dưới đây đúng:
+A. Đại lý bảo hiểm có thể lựa chọn và ký kết hợp đồng đại lý bảo hiểm với doanh nghiệp bảo hiểm, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài
+B. Hoa hồng đại lý bảo hiểm được chi trả cho bên mua bảo hiểm và doanh nghiệp môi giới bảo hiểm
+C. Hoa hồng đại lý bảo hiểm được chi trả cho bên mua bảo hiểm và đại lý bảo hiểm
+D. Đại lý bảo hiểm có thể sửa đổi, bổ sung quy tắc, điều khoản bảo hiểm cho phù hợp với tình hình thực tế của khách hàng.
+ANSWER: A
+1
+
+20. Theo quy định của Pháp luật, đáp án nào đúng khi nói về việc chuyển nhượng hợp đồng bảo hiểm:
+A. Hợp đồng bảo hiểm không được chuyển nhượng
+B. Bên mua bảo hiểm có thể chuyển nhượng hợp đồng bảo hiểm theo thỏa thuận trong hợp đồng bảo hiểm
+C. Bên mua bảo hiểm có thể chuyển nhượng hợp đồng bảo hiểm cho bất kỳ người nào
+ANSWER: B
+1
+
+21. Với Sản phẩm Bảo hiểm Ung Thư 360, số tiền bảo hiểm tối thiểu của một Hợp Đồng là: 
+A. 200 triệu đồng. 
+B. 250 triệu đồng. 
+C. 150 triệu đồng. 
+D. 100 triệu đồng. 
+ANSWER: D
+1
+
+22. Chọn phương án sai về khái niệm sau:
+A. Người được bảo hiểm có thể đồng thời là người thụ hưởng
+B. Bên mua bảo hiểm có thể đồng thời là người được bảo hiểm và người thụ hưởng.
+C. Người thụ hưởng là người được doanh nghiệp bảo hiểm chỉ định để nhận tiền bảo hiểm theo hợp đồng bảo hiểm con người.   
+D. Người thụ hưởng là người được bên mua bảo hiểm chỉ định để nhận tiền bảo hiểm theo hợp đồng bảo hiểm con người.   
+ANSWER: C
+1
+
+23. Theo Luật kinh doanh bảo hiểm, trường hợp doanh nghiệp bảo hiểm không phải bồi thường hoặc không phải trả tiền bảo hiểm khi xảy ra sự kiện bảo hiểm thì:
+A. Phải được quy định rõ trong hợp đồng bảo hiểm và được doanh nghiệp bảo hiểm giải thích rõ cho bên mua bảo hiểm khi giao kết hợp đồng.
+B. Không cần quy định rõ trong hợp đồng bảo hiểm mà thực hiện theo các nguyên tắc chung mang tính nội bộ doanh nghiệp bảo hiểm.
+C. Không cần quy định rõ trong hợp đồng bảo hiểm vì pháp luật đã quy định rõ các trường hợp này.
+D. Không cần quy định rõ trong hợp đồng bảo hiểm và áp dụng theo thông lệ quốc tế.
+ANSWER: A
+1
+
+24. Bên mua bảo hiểm có thể được giảm phí bảo hiểm khi mua bảo hiểm nhân thọ, bảo hiểm sức khỏe trong trường hợp:
+A. Mua bảo hiểm trực tiếp từ doanh nghiệp bảo hiểm và doanh nghiệp bảo hiểm không phải chi trả hoa hồng bảo hiểm cho đại lý bảo hiểm hoặc doanh nghiệp môi giới bảo hiểm
+B. Mua bảo hiểm thông qua đại lý bảo hiểm 
+C. A, B đúng
+ANSWER: A
+1
+
+25.  Quyền lợi bảo hiểm rủi ro của sản phẩm bảo hiểm hưu trí phải bao gồm tối thiểu các quyền lợi nào?
+A. Quyền lợi trợ cấp mai táng, quyền lợi chăm sóc y tế, quyền lợi hỗ trợ nằm viện.
+B. Quyền lợi chăm sóc y tế.
+C. Quyền lợi trợ cấp mai táng, quyền lợi tử vong hoặc thương tật toàn bộ vĩnh viễn, quyền lợi bảo hiểm thất nghiệp.
+D. Quyền lợi trợ cấp mai táng, quyền lợi tử vong hoặc thương tật toàn bộ vĩnh viễn.
+ANSWER: D
+1
+
+26. Chọn phương án đúng khi nói về đại lý bảo hiểm: 
+A. Đại lý bảo hiểm chịu sự kiểm tra giám sát của cơ quan nhà nước có thẩm quyền và thực hiện đầy đủ nghĩa vụ tài chính theo quy định của pháp luật (A).
+B. Đại lý bảo hiểm thực hiện hợp đồng bảo hiểm theo phạm vi được ủy quyền trong hợp đồng đại lý bảo hiểm (B).
+C. Đại lý bảo hiểm có thể đem phí bảo hiểm đi đầu tư và trả một phần lãi cho doanh nghiệp bảo hiểm (C).
+D. A,B đúng
+ANSWER: D
+1
+
+27. Tỷ lệ hoa hồng tối đa tính trên phí bảo hiểm của hợp đồng bảo hiểm nhân thọ cá nhân thuộc nghiệp vụ bảo hiểm liên kết đơn vị, thời hạn từ 10 năm trở lên, phương thức nộp phí một lần là: 
+A. 5%
+B. 10%
+C. 7%
+D. 15%
+ANSWER: C
+1
+
+28. Theo Luật kinh doanh bảo hiểm, bảo hiểm nhân thọ hỗn hợp là nghiệp vụ bảo hiểm kết hợp:
+A. Bảo hiểm tử kỳ và bảo hiểm hưu trí. 
+B. Bảo hiểm trọn đời và bảo hiểm hưu trí. 
+C. Bảo hiểm sinh kỳ và bảo hiểm trọn đời. 
+D. Bảo hiểm sinh kỳ và bảo hiểm tử kỳ. 
+ANSWER: D
+1
+
+29. Đơn vị nào dưới đây được phép kinh doanh bảo hiểm sức khỏe?
+A. Doanh nghiệp bảo hiểm Nhân thọ, doanh nghiệp bảo hiểm Phi Nhân thọ
+B. Văn phòng doanh nghiệp bảo hiểm nước ngoài tại Việt Nam
+C. Văn phòng doanh nghiệp môi giới bảo hiểm nước ngoài tại Việt Nam
+D. A, B, C đúng
+ANSWER: A
+1
+
+30. Đại lý bảo hiểm có quyền:
+A. Tiết lộ thông tin liên quan đến khách hàng
+B. Tạm ứng hoặc cho khách hàng vay tiền để đóng phí
+C. Dùng tiền hoa hồng để giảm phí hoặc khuyến mãi cho khách hàng
+D. Được hưởng hoa hồng đại lý
+ANSWER: D
+1
+
+31. Doanh nghiệp bảo hiểm có nghĩa vụ:
+A. Giải thích cho bên mua bảo hiểm về các điều kiện, điều khoản bảo hiểm; quyền, nghĩa vụ của bên mua bảo hiểm.
+B. Trả tiền bảo hiểm kịp thời cho người thụ hưởng hoặc bồi thường cho người được bảo hiểm khi xảy ra sự kiện bảo hiểm.
+C. Giải thích bằng văn bản lý do từ chối trả tiền bảo hiểm.
+D. A, B, C đúng.
+ANSWER: D
+1
+
+32. Thông thường một hợp đồng bảo hiểm nhân thọ bị chấm dứt vì không tiếp tục đóng phí bảo hiểm, có thể khôi phục:
+A. Trong vòng 2 năm kể từ khi mất hiệu lực và bên mua bảo hiểm đã đóng đủ phí bảo hiểm còn thiếu.
+B. Tại bất kỳ thời điểm nào kể từ khi mất hiệu lực và bên mua bảo hiểm đã đóng đủ phí bảo hiểm còn thiếu.  
+C. Trong vòng 4 năm kể từ khi mất hiệu lực và bên mua bảo hiểm đã đóng đủ phí bảo hiểm còn thiếu.
+D. Trong vòng 3 năm kể từ khi mất hiệu lực và bên mua bảo hiểm đã đóng đủ phí bảo hiểm còn thiếu.
+ANSWER: A
+1
+
+33. Theo Pháp luật kinh doanh bảo hiểm, đối tượng nào sau đây có trách nhiệm nộp Quỹ bảo vệ người được bảo hiểm?
+A. Doanh nghiệp bảo hiểm, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài, doanh nghiệp môi giới bảo hiểm, đại lý bảo hiểm.
+B. Doanh nghiệp bảo hiểm, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài (trừ doanh nghiệp bảo hiểm sức khỏe).
+C. Doanh nghiệp bảo hiểm, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài, doanh nghiệp môi giới bảo hiểm.
+D. Doanh nghiệp bảo hiểm, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài (trừ doanh nghiệp tái bảo hiểm).
+ANSWER: D
+1
+
+34. Kể từ sau thời điểm Manulife đồng ý chi trả quyền lợi Ung Thư Giai Đoạn Cuối cho Người Được Bảo Hiểm của hợp đồng Bảo hiểm Ung Thư 360, vào mỗi ngày kỷ niệm hợp đồng hàng tháng, Manulife sẽ chi trả QLBH Trợ Cấp Thu Nhập bằng:
+A. 1% Số Tiền Bảo Hiểm
+B. 0,5% Số Tiền Bảo Hiểm
+C. 1,5% Số Tiền Bảo Hiểm
+ANSWER: C
+1
+
+35. Hợp đồng bảo hiểm nhân thọ chấm dứt trong các trường hợp nào sau đây:
+A. Bên mua bảo hiểm không còn quyền lợi có thể được bảo hiểm.
+B. Bên mua bảo hiểm tham gia một hợp đồng bảo hiểm khác cung cấp quyền lợi tương tự
+C. Câu A và B đều đúng
+D. Câu A và B đều sai
+ANSWER: A
+1
+
+36. Trong Sản phẩm Bảo hiểm Ung Thư 360, thời hạn tối đa để con của Người Được Bảo Hiểm hoặc người giám hộ hợp pháp của con của Người Được Bảo Hiểm gửi yêu cầu và hoàn thành hồ sơ yêu cầu Manulife cấp quyền lợi Bảo Hiểm Miễn Phí Dành Cho Con Của NĐBH là:
+A. 07 ngày kể từ ngày  Manulife chấp nhận chi trả Quyền lợi Ung Thư Giai Đoạn Cuối.
+B. 60 ngày kể từ ngày Manulife chấp nhận chi trả Quyền lợi Ung Thư Giai Đoạn Cuối.
+C. 90 ngày kể từ ngày Manulife chấp nhận chi trả Quyền lợi Ung Thư Giai Đoạn Cuối.
+D. 30 ngày kể từ ngày  Manulife chấp nhận chi trả Quyền lợi Ung Thư Giai Đoạn Cuối.
+ANSWER: C
+1
+
+37. Theo Luật kinh doanh bảo hiểm, kinh doanh bảo hiểm là:
+A. Hoạt động của doanh nghiệp bảo hiểm nhằm mục đích sinh lợi, theo đó doanh nghiệp bảo hiểm chấp nhận rủi ro của người được bảo hiểm, trên cơ sở bên mua bảo hiểm đóng phí bảo hiểm để doanh nghiệp bảo hiểm trả tiền bảo hiểm cho người thụ hưởng hoặc bồi thường cho người được bảo hiểm khi xảy ra sự kiện bảo hiểm.
+B. Hoạt động của doanh nghiệp bảo hiểm nhằm mục đích sinh lợi, theo đó doanh nghiệp bảo hiểm nhận một khoản phí bảo hiểm của doanh nghiệp bảo hiểm khác để cam kết bồi thường cho các trách nhiệm đã nhận bảo hiểm.
+C. Cả A và B
+ANSWER: A
+1
+
+38. Chọn phương án sai về đại lý bảo hiểm:
+A. Đại lý bảo hiểm được hưởng hoa hồng bảo hiểm do doanh nghiệp bảo hiểm trả.
+B. Đại lý bảo hiểm là người đại diện cho khách hàng tham gia bảo hiểm.
+C. Đại lý bảo hiểm có thể được doanh nghiệp bảo hiểm ủy quyền trả tiền bảo hiểm.
+D. Đại lý bảo hiểm là người được doanh nghiệp bảo hiểm ủy quyền để thực hiện những công việc liên quan đến hợp đồng bảo hiểm.
+ANSWER: B
+1
+
+39. Đối với hợp đồng bảo hiểm con người, trường hợp một hoặc một số người thụ hưởng cố ý gây ra cái chết hoặc thương tật vĩnh viễn cho người được bảo hiểm thì:
+A. Doanh nghiệp bảo hiểm không phải trả tiền bảo hiểm.
+B. Doanh nghiệp bảo hiểm vẫn trả tiền cho tất cả người thụ hưởng bảo hiểm.
+C. Doanh nghiệp bảo hiểm vẫn phải trả tiền bảo hiểm cho những người thụ hưởng khác theo thoả thuận trong hợp đồng bảo hiểm.
+D. Không trường hợp nào đúng.
+ANSWER: C
+1
+
+40. Trong Sản phẩm Bảo hiểm Ung Thư 360, trong trường hợp con của Người Được Bảo Hiểm được Manulife chấp thuận cấp quyền lợi Bảo Hiểm Miễn Phí Dành Cho Con Của Người Được Bảo Hiểm, ngày bắt đầu bảo hiểm sẽ là:
+A. Ngày Manulife đồng ý cấp quyền lợi Bảo Hiểm Miễn Phí Dành Cho Con Của Người Được Bảo Hiểm
+B. Ngày Người Được Bảo Hiểm được chẩn đoán mắc bệnh Ung Thư Giai Đoạn Cuối
+C. Ngày hoàn thành hồ sơ yêu cầu cấp quyền lợi Bảo Hiểm Miễn Phí Dành Cho Con Của Người Được Bảo Hiểm
+D. Ngày Manulife chấp nhận chi trả quyền lợi Ung Thư Giai Đoạn Cuối cho Người Được Bảo Hiểm.
+ANSWER: B
+1

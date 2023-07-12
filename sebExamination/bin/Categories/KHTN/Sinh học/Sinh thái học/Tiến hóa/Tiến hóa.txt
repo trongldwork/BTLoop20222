@@ -1,0 +1,352 @@
+Category name: Tiến hoá
+thisline support the file reader to read both quizz file and category file
+
+
+Tiến hóa là quá trình nào?
+A. Sự thích nghi của các sinh vật với môi trường
+B. Sự thay đổi di truyền trong một quần thể
+C. Sự phát triển của các loài qua thời gian
+D. Tất cả các câu trên đều đúng
+ANSWER: D
+1
+
+Cơ chế chính góp phần vào tiến hóa là gì?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Cả A và C đều đúng
+ANSWER: D
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+
+Đột biến di truyền xảy ra do quá trình nào?
+A. Thay đổi ngẫu nhiên trong gene
+B. Sự thay đổi môi trường
+C. Quá trình hình thành hóa thạch
+D. Chọn lọc tự nhiên
+ANSWER: A
+1
+
+Nguyên tắc cơ bản của tiến hóa là gì?
+A. Tính ngẫu nhiên
+B. Tính thừa kế
+C. Tính biến đổi
+D. Tính thích nghi
+ANSWER: D
+1
+
+Định nghĩa "chọn lọc tự nhiên" trong tiến hóa là gì?
+A. Quá trình con cái chọn đối tác để sinh sản
+B. Quá trình tồn tại và sinh sản của các cá thể có sự khác biệt di truyền
+C. Quá trình đột biến di truyền
+D. Quá trình thích nghi của sinh vật với môi trường
+ANSWER: B
+1
+
+Trong tiến hóa, các sự thay đổi di truyền xảy ra ở đâu?
+A. Quần thể
+B. Sinh vật cá thể
+C. Môi trường
+D. Tất cả các câu trên đều đúng
+ANSWER: B
+1
+
+Quá trình nào đóng vai trò quan trọng trong việc tạo ra sự đa dạng di truyền trong quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Quá trình phân giải
+D. Quá trình truyền gen ngang
+ANSWER: A
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+
+Sự đa dạng di truyền trong một quần thể là do quá trình nào?
+A. Đột biến di truyền
+B. Quá trình chọn lọc
+C. Quá trình phân giải
+D. Quá trình kết hợp
+ANSWER: A
+1
+
+Các bằng chứng tiến hóa gồm những gì?
+A. Hóa thạch, phân tử, quan sát hiện tại
+B. Đột biến di truyền, chọn lọc tự nhiên, phân giải
+C. Sự thay đổi môi trường, phát triển sinh học, chọn lọc tự nhiên
+D. Tất cả các câu trên đều đúng
+ANSWER: A
+1
+
+Quá trình nào giúp tạo ra sự thay đổi di truyền trong một quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Sự thích nghi
+D. Quá trình hóa thạch
+ANSWER: A
+1
+
+Lý thuyết nào giải thích về sự phát triển của các loài qua thời gian?
+A. Lý thuyết tiến hóa
+B. Lý thuyết Big Bang
+C. Lý thuyết trọng lực
+D. Lý thuyết tương đối
+ANSWER: A
+1
+
+Định nghĩa "chọn lọc nhân tạo" trong tiến hóa là gì?
+A. Quá trình con cái chọn đối tác để sinh sản
+B. Quá trình tồn tại và sinh sản của các cá thể có sự khác biệt di truyền
+C. Quá trình đột biến di truyền
+D. Quá trình thích nghi của sinh vật với môi trường
+ANSWER: A
+1
+
+Quá trình nào xảy ra khi các cá thể có sự khác biệt di truyền tồn tại và sinh sản dễ dàng hơn các cá thể khác?
+A. Quá trình đồng hóa
+B. Quá trình chọn lọc tự nhiên
+C. Quá trình hóa thạch
+D. Quá trình truyền gen ngang
+ANSWER: B
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D.Hóa thạch học
+ANSWER: A
+1
+
+Quá trình nào giúp tạo ra sự thay đổi di truyền trong một quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Sự thích nghi
+D. Quá trình hóa thạch
+ANSWER: A
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+
+Định nghĩa "các bằng chứng tiến hóa" là gì?
+A. Các bằng chứng về sự thích nghi của các sinh vật với môi trường
+B. Các bằng chứng về sự phát triển của các loài qua thời gian
+C. Các bằng chứng về sự thay đổi di truyền trong một quần thể
+D. Các bằng chứng về sự phân giải của các loài
+ANSWER: B
+1
+
+Quá trình nào giúp tạo ra sự thay đổi di truyền trong một quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Quá trình phân giải
+D. Quá trình kết hợp
+ANSWER: A
+1
+
+Định nghĩa "lý thuyết tiến hóa" là gì?
+A. Lý thuyết về sự phát triển của vũ trụ
+B. Lý thuyết về sự phát triển của các loài qua thời gian
+C. Lý thuyết về nguyên tử và phân tử
+D. Lý thuyết về nguyên tắc di truyền
+ANSWER: B
+1
+
+Cơ chế nào giải thích sự thay đổi di truyền trong một quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Sự thích nghi
+D. Quá trình hóa thạch
+ANSWER: A
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+
+Quá trình nào giúp tạo ra sự thay đổi di truyền trong một quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Sự thích nghi
+D. Quá trình hóa thạch
+ANSWER: A
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+
+Định nghĩa "chọn lọc nhân tạo" trong tiến hóa là gì?
+A. Quá trình con cái chọn đối tác để sinh sản
+B. Quá trình tồn tại và sinh sản của các cá thể có sự khác biệt di truyền
+C. Quá trình đột biến di truyền
+D. Quá trình thích nghi của sinh vật với môi trường
+ANSWER: A
+1
+
+Trong tiến hóa, sự phát triển của các loài qua thời gian dựa vào quá trình nào?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Sự thích nghi
+D. Hóa thạch học
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi các cá thể có sự khác biệt di truyền tồn tại và sinh sản dễ dàng hơn các cá thể khác?
+A. Quá trình đồng hóa
+B. Quá trình chọn lọc tự nhiên
+C. Quá trình hóa thạch
+D. Quá trình truyền gen ngang
+ANSWER: B
+1
+
+Cơ chế chính góp phần vào tiến hóa là gì?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Cả A và C đều đúng
+ANSWER: D
+1
+
+Đột biến di truyền xảy ra do quá trình nào?
+A. Thay đổi ngẫu nhiên trong gene
+B. Sự thay đổi môi trường
+C. Quá trình hình thành hóa thạch
+D. Chọn lọc tự nhiên
+ANSWER: A
+1
+
+Nguyên tắc cơ bản của tiến hóa là gì?
+A. Tính ngẫu nhiên
+B. Tính thừa kế
+C. Tính biến đổi
+D. Tính thích nghi
+ANSWER: D
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+
+Lýthuyết nào giải thích về sự phát triển của các loài qua thời gian?
+A. Lý thuyết tiến hóa
+B. Lý thuyết Big Bang
+C. Lý thuyết trọng lực
+D. Lý thuyết tương đối
+ANSWER: A
+1
+
+Định nghĩa "chọn lọc nhân tạo" trong tiến hóa là gì?
+A. Quá trình con cái chọn đối tác để sinh sản
+B. Quá trình tồn tại và sinh sản của các cá thể có sự khác biệt di truyền
+C. Quá trình đột biến di truyền
+D. Quá trình thích nghi của sinh vật với môi trường
+ANSWER: A
+1
+
+Cơ chế nào giải thích sự thay đổi di truyền trong một quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Sự thích nghi
+D. Quá trình hóa thạch
+ANSWER: A
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+
+Quá trình nào giúp tạo ra sự thay đổi di truyền trong một quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Sự thích nghi
+D. Quá trình hóa thạch
+ANSWER: A
+1
+
+Quá trình nào giải thích sự thích nghi của các sinh vật với môi trường?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Hóa thạch học
+ANSWER: A
+1
+
+Định nghĩa "các bằng chứng tiến hóa" là gì?
+A. Các bằng chứng về sự thích nghi của các sinh vật với môi trường
+B. Các bằng chứng về sự phát triển của các loài qua thời gian
+C. Các bằng chứng về sự thay đổi di truyền trong một quần thể
+D. Các bằng chứng về sự phân giải của các loài
+ANSWER: B
+1
+
+Quá trình nào giúp tạo ra sự thay đổi di truyền trong một quần thể?
+A. Đột biến di truyền
+B. Chọn lọc tự nhiên
+C. Quá trình phân giải
+D. Quá trình kết hợp
+ANSWER: A
+1
+
+Định nghĩa "lý thuyết tiến hóa" là gì?
+A. Lý thuyết về sự phát triển của vũ trụ
+B. Lý thuyết về sự phát triển của các loài qua thời gian
+C. Lý thuyết về nguyên tử và phân tử
+D. Lý thuyết về nguyên tắc di truyền
+ANSWER: B
+1
+
+Cơ chế chính góp phần vào tiến hóa là gì?
+A. Chọn lọc tự nhiên
+B. Chọn lọc nhân tạo
+C. Đột biến di truyền
+D. Cả A và C đều đúng
+ANSWER: D
+1
+
+Đột biến di truyền xảy ra do quá trình nào?
+A. Thay đổi ngẫu nhiên trong gene
+B. Sự thay đổi môi trường
+C. Quá trình hình thành hóa thạch
+D. Chọn lọc tự nhiên
+ANSWER: A
+11
+1
+A. 1
+B. 1
+ANSWER: A
+1

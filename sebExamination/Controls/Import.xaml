@@ -1,0 +1,180 @@
+﻿<UserControl x:Class="sebExamination.Controls.Import"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sebExamination.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="Import_uc">
+        <TextBlock FontSize="32"
+                                               FontFamily="Cambria"
+                                               Foreground="#C02424" Grid.ColumnSpan="2">
+                                        Import questions from file
+        </TextBlock>
+
+        <StackPanel Orientation="Vertical"
+                                                Margin="0 60 0 0">
+
+            <ToggleButton x:Name="import_fileFormat_btn"
+                                                      Click="import_fileFormat_click"
+                                                      Height="24"
+                                                      Width="auto"
+                                                      HorizontalAlignment="Left"
+                                                      Background="White"
+                                                      BorderThickness="0">
+
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="fileFomat_status"
+                                                       Source="../Assets/image/arrow-right.png"
+                                                       Margin="2.5"/>
+                    <TextBlock FontSize="16"
+                                                           Margin="5 0 0 0"
+                                                           FontFamily="Cambria"
+                                                           FontWeight="SemiBold"
+                                                           Foreground="#C02424">
+                                                    File format
+                    </TextBlock>
+
+                </StackPanel>
+
+            </ToggleButton>
+
+            <Grid x:Name="import_fileFormat_box" Visibility="Collapsed"
+                                              Height="auto">
+                <TextBlock FontFamily="cambria"
+                                                       FontSize="16">Aiken format</TextBlock>
+            </Grid>
+
+            <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
+
+            <ToggleButton x:Name="import_general_btn"
+                                                      Click="import_general_click"
+                                                      Height="24"
+                                                      Width="auto"
+                                                      HorizontalAlignment="Left"
+                                                      Background="White"
+                                                      BorderThickness="0">
+
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="general_status"
+                                                       Source="../Assets/image/arrow-right.png"
+                                                       Margin="2.5"/>
+                    <TextBlock FontSize="16"
+                                                           Margin="5 0 0 0"
+                                                           FontFamily="Cambria"
+                                                           FontWeight="SemiBold"
+                                                           Foreground="#C02424">
+                                                    General
+                    </TextBlock>
+
+                </StackPanel>
+
+            </ToggleButton>
+
+            <Grid x:Name="import_general_box" Visibility="Collapsed"
+                                              Height="auto">
+                <TextBlock FontFamily="cambria"
+                                                       FontSize="18">Đề bài không nói trong nút này có gì</TextBlock>
+            </Grid>
+
+            <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
+
+            <ToggleButton x:Name="import_file_btn"
+                                                      Click="import_file_click"
+                                                      Height="24"
+                                                      Width="auto"
+                                                      HorizontalAlignment="Left"
+                                                      Background="White"
+                                                      BorderThickness="0">
+
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="file_status"
+                                                       Source="../Assets/image/arrow-down.png"
+                                                       Margin="2.5"/>
+                    <TextBlock FontSize="16"
+                                                           Margin="5 0 0 0"
+                                                           FontFamily="Cambria"
+                                                           FontWeight="SemiBold"
+                                                           Foreground="#C02424">
+                                                    Import questions from file
+                    </TextBlock>
+
+                </StackPanel>
+
+            </ToggleButton>
+
+            <Grid x:Name="import_file_box" Visibility="Visible"
+                                              Height="200"
+                                              Margin="0 20 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock FontSize="16">
+                                        
+                </TextBlock>
+
+                <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                                          x:Name="upload_Btn"
+                                                          Click="Choose_file_click"
+                                                          Grid.Column="1"
+                                                          Margin="0,0,20,20"
+                                                          Background="#009FE5"
+                                                          Width="200"
+                                                          Height="40"
+                                                          HorizontalAlignment="Left"
+                                                          VerticalAlignment="Top">
+                    <TextBlock FontSize="20"
+                               Foreground="white"
+                               FontFamily="cambria">
+                                                    CHOOSE A FILE...
+                    </TextBlock>
+
+                </ToggleButton>
+                <Border BorderThickness="1" BorderBrush="Black" Width="auto" Height="auto" AllowDrop="True" 
+                                                    DragEnter="OnDragEnter" DragLeave="OnDragLeave" Drop="OnDrop"
+                                                    Grid.Column="1"
+                                                    Margin="0 60 0 0"
+                                                    Background="AliceBlue">
+
+                            <TextBlock x:Name="input_field"  
+                                       Text="Kéo thả file vào đây để upload" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
+
+                  
+                </Border>
+
+
+            </Grid>
+            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                                  x:Name="importQuestion_btn"
+                                                  Click="Import_btn_click"
+                                                  Background="#C02424"
+                                                  Width="100" Height="35"
+                                                  HorizontalAlignment="Center"
+                                                  VerticalAlignment="Top"
+                                                  Margin="0 20 0 0">
+                <TextBlock FontSize="18"
+                                                   Foreground="white"
+                                                   FontFamily="cambria"
+                                                   FontWeight="Light">
+                                                IMPORT
+                </TextBlock>
+            </ToggleButton>
+
+            <TextBlock HorizontalAlignment="Center"
+                                               VerticalAlignment="Top"
+                                               Margin="0 10 0 0"
+                                               Foreground="Gray"
+                                               FontSize="16">
+                                            There are required fields in this form marked
+                                            <Image 
+                                               HorizontalAlignment="Right"
+                                               Height="15"
+                                               Source="../Assets/image/warning.png"/>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

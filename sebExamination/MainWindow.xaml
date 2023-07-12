@@ -4,68 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sebExamination"
+        xmlns:local_uc="clr-namespace:sebExamination.Controls"
+        xmlns:VM="clr-namespace:sebExamination.ViewModels"
         mc:Ignorable="d"
+        WindowState="Maximized"
         Title="MainWindow" Height="auto" Width="960">
+    <Window.DataContext>
+        <VM:HomeViewModel/>
+    </Window.DataContext>
     <Window.Resources>
-
-        <Style x:Key="FocusVisual">
-            <Setter Property="Control.Template">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
-        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
-        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
-        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
-        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
-        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
-        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
-        <Style x:Key="ToggleButtonStyle" TargetType="{x:Type ToggleButton}">
-            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
-            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
-            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Padding" Value="1"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type ToggleButton}">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="Button.IsDefaulted" Value="true">
-                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="true">
-                                <Setter Property="Cursor" Value="Hand"></Setter>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="true">
-                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
-                            </Trigger>
-                            <Trigger Property="IsEnabled" Value="false">
-                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
-                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
         <DataTemplate x:Key="course_exam">
             <StackPanel Orientation="Horizontal">
-                <Image Source="/task.png"
+                <Image Source="Assets/image/task.png"
                        Margin="35 0 15 0"/>
                 <TextBlock Text="{Binding Path=courseName}" />
             </StackPanel>
@@ -78,7 +28,7 @@
                                  BorderThickness="0"
                                  >
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/task.png"
+                    <Image Source="Assets/image/task.png"
                                        Height="30"
                                        Margin="35 0 15 0"/>
                     <TextBlock Text="nhét list với hyperlink của C# vào nhưng t chưa học" 
@@ -116,7 +66,7 @@
 
                         <ToggleButton.Background>
 
-                            <ImageBrush ImageSource="/menu.png"/>
+                            <ImageBrush ImageSource="Assets/image/menu.png"/>
 
                         </ToggleButton.Background>
 
@@ -146,9 +96,9 @@
                                   BorderThickness="0"
                                   Background="#0073A5">
                         <Grid>
-                            <Image Source="/user.png"
+                            <Image Source="Assets/image/user.png"
                                    Margin="0 0 20 0"/>
-                            <Image Source="/arrowWhite.png"
+                            <Image Source="Assets/image/arrowWhite.png"
                                    Margin="55 0 0 0"/>
                         </Grid>
 
@@ -190,9 +140,9 @@
                                               Background="White"
                                               HorizontalAlignment="Right">
                                     <Grid>
-                                        <Image Source="/settings.png"
+                                        <Image Source="Assets/image/settings.png"
                                                Margin="0 0 20 0"/>
-                                        <Image Source="/arrowRed.png"
+                                        <Image Source="Assets/image/arrowRed.png"
                                                Margin="55 0 0 0"/>
                                     </Grid>
 
@@ -220,28 +170,36 @@
                                             <TextBlock Margin="400 40 0 0">
                                                 <Hyperlink x:Name="settingQuestions"
                                                            FontFamily="cambria"
-                                                           FontSize="24">
+                                                           FontSize="24"
+                                                           Click="QuestionBank_Click_question"
+                                                           >
                                                     Question
                                                 </Hyperlink>
                                             </TextBlock>
                                             <TextBlock Margin="400 70 0 0">
                                                 <Hyperlink x:Name="settingCategories"
                                                            FontFamily="cambria"
-                                                           FontSize="24">
+                                                           FontSize="24"
+                                                           Click="QuestionBank_Click_categories"
+                                                           >
                                                     Categories
                                                 </Hyperlink>
                                             </TextBlock>
                                             <TextBlock Margin="400 100 0 0">
                                                 <Hyperlink x:Name="settingImport"
                                                            FontFamily="cambria"
-                                                           FontSize="24"> 
+                                                           FontSize="24"
+                                                           Click="QuestionBank_Click_import"
+                                                           > 
                                                     Import
                                                 </Hyperlink>
                                             </TextBlock>
                                             <TextBlock Margin="400 130 0 0">
                                                 <Hyperlink x:Name="settingExport"
                                                            FontFamily="cambria"
-                                                           FontSize="24">
+                                                           FontSize="24"
+                                                           Click="QuestionBank_Click_export"
+                                                           >
                                                     Export
                                                 </Hyperlink>
                                             </TextBlock>
@@ -260,7 +218,8 @@
                                 <TextBlock x:Name="map_Home">
                                     <Hyperlink Click="SwitchViewHome_Click"
                                                FontSize="20"
-                                               Foreground="#C02424">
+                                               Foreground="#C02424"
+                                               TextDecorations="none">
                                             Home
                                     </Hyperlink>
                                 </TextBlock>
@@ -268,21 +227,16 @@
                                 <TextBlock x:Name="map_course"
                                            Margin="10 0 0 0">
                                     <Hyperlink Click="SwitchViewCourse_Click"
-                                               FontSize="20">
-                                            /           My course
+                                               FontSize="20"
+                                               TextDecorations="none">
+                                            /My course
                                     </Hyperlink>
-                                </TextBlock>
-
-                                <TextBlock x:Name="map_courseName"
-                                           Margin="10 0 0 0"
-                                           Foreground="#C02424"
-                                           FontSize="20">
-                                    /          THI CUỐI KỲ
                                 </TextBlock>
 
                             </StackPanel>
 
                             <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
+                                          Click="ClickEditOn"
                                           x:Name="editBtn" 
                                           Margin="0,130,20,20"
                                           Background="#0073A5"
@@ -298,468 +252,16 @@
                         </Grid>
                     </Border>
 
-                    <Border BorderThickness="1"
+
+                    <Border x:Name="border_menu"
+                            BorderThickness="1"
                             BorderBrush="#888888"
                             Margin="15 20 15 0">
-
-                        <Grid 
-                            Height="600">
-                            <Menu 
-                                Margin="20"
-                                Background="white">
-                                <MenuItem x:Name="QuestionBank_Questions" Visibility="Visible"
-                                          Click="MenuItem_Questions_Click"
-                                          Header="Questions"
-                                          FontSize="16"
-                                          FontFamily="Arial"
-                                          Foreground="Gray"
-                                          Height="30"
-                                          Width="100">
-
-                                </MenuItem>
-                                <MenuItem x:Name="QuestionBank_Categories" Visibility="Visible"
-                                          Header="Categories"
-                                          Click="MenuItem_Categories_Click"
-                                          FontSize="16"
-                                          FontFamily="Arial"
-                                          Foreground="#009FE5"
-                                          Height="30"
-                                          Width="100">
-
-                                </MenuItem>
-                                <MenuItem x:Name="QuestionBank_Import" Visibility="Visible"
-                                          Click="MenuItem_Import_Click"
-                                          Header="Import"
-                                          FontSize="16"
-                                          FontFamily="Arial"
-                                          Foreground="#009FE5"
-                                          Height="30"
-                                          Width="100">
-
-                                </MenuItem>
-                                <MenuItem x:Name="QuestionBank_Export" Visibility="Visible"
-                                          Click="MenuItem_Export_Click"
-                                          Header="Export"
-                                          FontSize="16"
-                                          FontFamily="Arial"
-                                          Foreground="#009FE5"
-                                          Height="30"
-                                          Width="100">
-
-                                </MenuItem>
-
-                            </Menu>
-
-                            <Grid Margin="20 60 20 20">
-
-                                <Grid x:Name="Questions" Visibility="Visible">
-                                    <TextBlock FontSize="32"
-                                               FontFamily="Cambria"
-                                               Foreground="#C02424">
-                                        Question Bank
-                                    </TextBlock>
-                                    <TextBlock Margin="0 48 0 0"
-                                               FontSize="18"
-                                               Foreground="Gray">
-                                        Select a category:
-                                    </TextBlock>
-                                    <ComboBox x:Name="categorySelector"
-                                              Height="30" Width="200" 
-                                              HorizontalAlignment="Left" VerticalAlignment="Top" 
-                                              Margin="160 48 0 0"
-                                              SelectedIndex="0"
-                                              Background="White"
-                                              FontSize="16">
-                                        <ComboBox.ItemTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="destination" Foreground="{Binding YourColor}"
-                                                           FontWeight="{Binding YourFontWeight}" />
-                                            </DataTemplate>
-                                        </ComboBox.ItemTemplate>
-                                        <ComboBoxItem>Default</ComboBoxItem>
-                                        <ComboBoxItem>Top for IT</ComboBoxItem>
-                                        <ComboBoxItem>Default for IT</ComboBoxItem>
-                                    </ComboBox>
-                                    <TextBlock Margin="0 90 0 0"
-                                               Foreground="#444444">
-                                        The default category for questions shared in context
-                                    </TextBlock>
-                                    <CheckBox x:Name="showSubcategoriesQuestions"
-                                              Margin="0 115 0 0"
-                                              Content="Also show questions from subcategories"
-                                              Foreground="gray"
-                                              Checked="showSubcategoriesQuestions_check"/>
-                                    <CheckBox x:Name="showOldQuestions"
-                                              Margin="0 135 0 0"
-                                              Content="Also show old questions"
-                                              Foreground="gray"
-                                              Checked="showOldQuestions_check"/>
-
-                                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
-                                                  x:Name="CreateQuestionBtn" 
-                                                  Margin="0,160,0,0"
-                                                  Background="#0073A5"
-                                                  Width="200" Height="30"
-                                                  HorizontalAlignment="Left"
-                                                  VerticalAlignment="Top">
-                                        <TextBlock FontSize="12"
-                                                   Foreground="white"
-                                                   FontFamily="cambria"
-                                                   FontWeight="Light">
-                                                    CREATE NEW QUESTIONS...
-                                        </TextBlock>
-                                    </ToggleButton>
-                                </Grid>
-
-                                <Grid x:Name="Categories" Visibility="Collapsed">
-                                    
-                                    <TextBlock FontSize="32"
-                                               FontFamily="Cambria"
-                                               Foreground="#C02424" Grid.ColumnSpan="2">
-                                        Add category
-                                    </TextBlock>
-                                    <Grid Margin="0 60 0 0" Grid.ColumnSpan="2">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="300"/>
-                                            <ColumnDefinition/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="35"/>
-                                            <RowDefinition Height="35"/>
-                                            <RowDefinition Height="200"/>
-                                            <RowDefinition Height="35"/>
-                                            <RowDefinition/>
-                                        </Grid.RowDefinitions>
-                                        <TextBlock Grid.Column="0" Grid.Row="0"
-                                                   VerticalAlignment="Center"
-                                                   Foreground="Gray"
-                                                   FontSize="16">
-                                            Parent category
-                                        </TextBlock>
-                                        <Image Grid.Column="0"
-                                               Grid.Row="0"
-                                               HorizontalAlignment="Right"
-                                               Height="15"
-                                               Margin="0 7.5 10 7.5"
-                                               Source="/question.png"/>
-
-                                        <TextBlock Grid.Column="0" Grid.Row="1"
-                                                   VerticalAlignment="Center"
-                                                   Foreground="Gray"
-                                                   FontSize="16">
-                                            Name
-                                        </TextBlock>
-                                        
-                                        <Image Grid.Column="0"
-                                               Grid.Row="1"
-                                               HorizontalAlignment="Right"
-                                               Height="15"
-                                               Margin="0 7.5 10 7.5"
-                                               Source="/warning.png"/>
-
-                                        <TextBlock Grid.Column="0" Grid.Row="2"
-                                                   VerticalAlignment="Top"
-                                                   Margin="0 10 0 0"
-                                                   Foreground="Gray"
-                                                   FontSize="16">
-                                            Category info
-                                        </TextBlock>
-
-                                        <Image Grid.Column="0"
-                                               Grid.Row="2"
-                                               HorizontalAlignment="Right"
-                                               VerticalAlignment="Top"
-                                               Height="15"
-                                               Margin="0 7.5 10 7.5"
-                                               Source="/question.png"/>
-
-                                        <TextBlock Grid.Column="0" Grid.Row="3"
-                                                   VerticalAlignment="Center"
-                                                   Foreground="Gray"
-                                                   FontSize="16">
-                                            ID number
-                                        </TextBlock>
-
-                                        <Image Grid.Column="0"
-                                               Grid.Row="3"
-                                               HorizontalAlignment="Right"
-                                               Height="15"
-                                               Margin="0 7.5 10 7.5"
-                                               Source="/question.png"/>
-
-                                        <ComboBox x:Name="categoryParent"
-                                                  Grid.Column="1"
-                                                  Grid.Row="0"
-                                                  Height="25" Width="200"
-                                                  Margin="5"
-                                                  HorizontalAlignment="Left" VerticalAlignment="Top"
-                                                  SelectedIndex="0"
-                                                  Background="White"
-                                                  FontSize="12">
-
-                                            <ComboBoxItem>Default</ComboBoxItem>
-                                            <ComboBoxItem>Top for IT</ComboBoxItem>
-                                            <ComboBoxItem>Default for IT</ComboBoxItem>
-                                        </ComboBox>
-
-                                        <TextBox Grid.Column="1" Grid.Row="1"
-                                                 Width="300"
-                                                 Margin="5"
-                                                 HorizontalAlignment="Left">
-
-                                        </TextBox>
-
-                                        <TextBox Grid.Column="1" Grid.Row="2"
-                                                 Margin="5">
-
-                                        </TextBox>
-
-                                        <TextBox Grid.Column="1" Grid.Row="3"
-                                                 Width="150"
-                                                 Margin="5"
-                                                 HorizontalAlignment="Left">
-
-                                        </TextBox>
-                                        
-
-                                    </Grid>
-
-                                    <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="100 370 100 0"/>
-
-                                    <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
-                                                  x:Name="addCategoryBtn"
-                                                  Click="addCategory_click"
-                                                  Background="#C02424"
-                                                  Width="170" Height="35"
-                                                  HorizontalAlignment="Center"
-                                                  VerticalAlignment="Top"
-                                                  Margin="0 385 0 0">
-                                        <TextBlock FontSize="12"
-                                                   Foreground="white"
-                                                   FontFamily="cambria"
-                                                   FontWeight="Light">
-                                                    ADD CATEGORY
-                                        </TextBlock>
-                                    </ToggleButton>
-
-                                    <TextBlock HorizontalAlignment="Center"
-                                               VerticalAlignment="Top"
-                                               Margin="0 430 0 0"
-                                               Foreground="Gray"
-                                               FontSize="18">
-                                            There are required fields in this form marked
-                                            <Image 
-                                               HorizontalAlignment="Right"
-                                               Height="15"
-                                               Source="/warning.png"/>
-                                    </TextBlock>
-                                </Grid>
-
-                                <Grid x:Name="Import" Visibility="Collapsed">
-                                    
-                                    <TextBlock FontSize="32"
-                                               FontFamily="Cambria"
-                                               Foreground="#C02424" Grid.ColumnSpan="2">
-                                        Import questions from file
-                                    </TextBlock>
-
-                                    <StackPanel Orientation="Vertical"
-                                                Margin="0 60 0 0">
-
-                                        <ToggleButton x:Name="import_fileFormat_btn"
-                                                      Click="import_fileFormat_click"
-                                                      Height="24"
-                                                      Width="auto"
-                                                      HorizontalAlignment="Left"
-                                                      Background="White"
-                                                      BorderThickness="0">
-
-                                            <StackPanel Orientation="Horizontal">
-                                                <Image x:Name="fileFomat_status"
-                                                       Source="/arrow-down.png"
-                                                       Margin="2.5"/>
-                                                <TextBlock FontSize="16"
-                                                           Margin="5 0 0 0"
-                                                           FontFamily="Cambria"
-                                                           FontWeight="SemiBold"
-                                                           Foreground="#C02424">
-                                                    File format
-                                                </TextBlock>
-                                                
-                                            </StackPanel>
-
-                                        </ToggleButton>
-                                        
-                                        <Grid x:Name="import_fileFormat_box" Visibility="Collapsed"
-                                              Height="auto">
-                                            <TextBlock FontFamily="cambria"
-                                                       FontSize="16">chưa biết nhét gì vào đây import_fileFormat_box</TextBlock>
-                                        </Grid>
-
-                                        <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
-
-                                        <ToggleButton x:Name="import_general_btn"
-                                                      Click="import_general_click"
-                                                      Height="24"
-                                                      Width="auto"
-                                                      HorizontalAlignment="Left"
-                                                      Background="White"
-                                                      BorderThickness="0">
-
-                                            <StackPanel Orientation="Horizontal">
-                                                <Image x:Name="general_status"
-                                                       Source="/arrow-down.png"
-                                                       Margin="2.5"/>
-                                                <TextBlock FontSize="16"
-                                                           Margin="5 0 0 0"
-                                                           FontFamily="Cambria"
-                                                           FontWeight="SemiBold"
-                                                           Foreground="#C02424">
-                                                    General
-                                                </TextBlock>
-
-                                            </StackPanel>
-
-                                        </ToggleButton>
-
-                                        <Grid x:Name="import_general_box" Visibility="Collapsed"
-                                              Height="auto">
-                                            <TextBlock FontFamily="cambria"
-                                                       FontSize="18">chưa biết nhét gì vào đây import_general_box</TextBlock>
-                                        </Grid>
-
-                                        <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="5 10 5 10"/>
-
-                                        <ToggleButton x:Name="import_file_btn"
-                                                      Click="import_file_click"
-                                                      Height="24"
-                                                      Width="auto"
-                                                      HorizontalAlignment="Left"
-                                                      Background="White"
-                                                      BorderThickness="0">
-
-                                            <StackPanel Orientation="Horizontal">
-                                                <Image x:Name="file_status"
-                                                       Source="/arrow-down.png"
-                                                       Margin="2.5"/>
-                                                <TextBlock FontSize="16"
-                                                           Margin="5 0 0 0"
-                                                           FontFamily="Cambria"
-                                                           FontWeight="SemiBold"
-                                                           Foreground="#C02424">
-                                                    Import questions from file
-                                                </TextBlock>
-
-                                            </StackPanel>
-
-                                        </ToggleButton>
-
-                                        <Grid x:Name="import_file_box" Visibility="Visible"
-                                              Height="200"
-                                              Margin="0 20 0 0">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="400"/>
-                                                <ColumnDefinition/>
-                                            </Grid.ColumnDefinitions>
-                                            <TextBlock FontSize="16">
-                                                import
-                                            </TextBlock>
-
-                                            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
-                                                          x:Name="upload_Btn"
-                                                          Click="upload_Btn_click"
-                                                          Grid.Column="1"
-                                                          Margin="0,0,20,20"
-                                                          Background="#009FE5"
-                                                          Width="200"
-                                                          Height="40"
-                                                          HorizontalAlignment="Left"
-                                                          VerticalAlignment="Top">
-                                                <TextBlock FontSize="20"
-                                                           Foreground="white"
-                                                           FontFamily="cambria">
-                                                    CHOOSE A FILE...
-                                                </TextBlock>
-                                                
-                                            </ToggleButton>
-
-                                            <Border BorderThickness="1" BorderBrush="Black" Width="auto" Height="auto" AllowDrop="True" 
-                                                    DragEnter="OnDragEnter" DragLeave="OnDragLeave" Drop="OnDrop"
-                                                    Grid.Column="1"
-                                                    Margin="0 60 0 0">
-                                                <TextBlock Text="Kéo thả file vào đây để upload" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                                            </Border>
-
-                                        </Grid>
-                                        <ToggleButton Style="{DynamicResource ToggleButtonStyle}" 
-                                                  x:Name="importQuestion_btn"
-                                                  Click="importQuestion_btn_click"
-                                                  Background="#C02424"
-                                                  Width="100" Height="35"
-                                                  HorizontalAlignment="Center"
-                                                  VerticalAlignment="Top"
-                                                  Margin="0 20 0 0">
-                                            <TextBlock FontSize="18"
-                                                   Foreground="white"
-                                                   FontFamily="cambria"
-                                                   FontWeight="Light">
-                                                IMPORT
-                                            </TextBlock>
-                                        </ToggleButton>
-
-                                        <TextBlock HorizontalAlignment="Center"
-                                               VerticalAlignment="Top"
-                                               Margin="0 10 0 0"
-                                               Foreground="Gray"
-                                               FontSize="16">
-                                            There are required fields in this form marked
-                                            <Image 
-                                               HorizontalAlignment="Right"
-                                               Height="15"
-                                               Source="/warning.png"/>
-                                        </TextBlock>
-                                    </StackPanel>
-                                    
-                                </Grid>
-
-                                <Grid x:Name="Export" Visibility="Collapsed">
-
-                                    <TextBlock FontSize="32"
-                                               FontFamily="Cambria"
-                                               Foreground="#C02424" Grid.ColumnSpan="2">
-                                        Export nhưng không biết giao diện nó như nào
-                                    </TextBlock>
-
-                                </Grid>
-                                
-                            </Grid>
-
-                        </Grid>
-
+                        <ContentControl x:Name="Iborder_menu" Content="{Binding MenuContentControl, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"/>
                     </Border>
 
-
-                    <Border BorderThickness="1"
-                            BorderBrush="#888888"
-                            Margin="15 20 15 0">
-
-                        <ListBox x:Name="cours_examList"
-                                 Margin="50 40 50 400"
-                                 BorderThickness="0"
-                                 >
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/task.png"
-                                       Height="30"
-                                       Margin="35 0 15 0"/>
-                                <TextBlock Text="nhét list với hyperlink của C# vào nhưng t chưa học" 
-                                           FontSize="24"
-                                           FontFamily="Cambria"
-                                           VerticalAlignment="Bottom"/>
-                            </StackPanel>
-
-                        </ListBox>
-
-                    </Border>
+<!-- da an di border-->
+                    <local_uc:Footer/>
 
                 </StackPanel>
 

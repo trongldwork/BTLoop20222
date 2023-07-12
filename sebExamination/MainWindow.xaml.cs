@@ -1,6 +1,9 @@
-﻿using System;
+﻿
+using sebExamination.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,189 +23,122 @@ namespace sebExamination
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static readonly DependencyProperty MenuContentControlProperty =
+        DependencyProperty.Register("MenuContentControl", typeof(Menu_uc), typeof(MainWindow), new PropertyMetadata(null));
+
         public MainWindow()
         {
             InitializeComponent();
+            Iborder_menu.Content = new Course_list();
         }
 
-        private void SwitchViewHome_Click(object sender, RoutedEventArgs e)
+
+        public Menu_uc MenuContentControl
         {
+            get { return (Menu_uc)GetValue(MenuContentControlProperty); }
+            set { SetValue(MenuContentControlProperty, value); }
+        }
+        public void SwitchViewHome_Click(object sender, RoutedEventArgs e)
+        {
+            Iborder_menu.Content = new Course_list();
+            editBtn.Visibility = Visibility.Visible;
+            while(map.Children.Count > 2) map.Children.RemoveAt(map.Children.Count - 1);
 
         }
 
         private void SwitchViewCourse_Click(object sender, RoutedEventArgs e)
         {
-
+            goTo(null, null ,new Course_list(), 1);
+            editBtn.Visibility = Visibility.Visible;
         }
         
         private void ShowQuestionBank_Click(object sender, RoutedEventArgs e)
         {
             QuestionBank.IsOpen = true;
         }
+        private void QuestionBank_Click_question(object sender, RoutedEventArgs e)
+        {
+            // Gọi hàm trong MainWindow từ UserControl
+            AddToMap(new Question(), "Question", 1);
+            MenuContentControl = new Menu_uc();
+            MenuContentControl.MainContentControl = new Question();
+            Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+            editBtn.Visibility = Visibility.Collapsed;
+
+        }
+        private void QuestionBank_Click_categories(object sender, RoutedEventArgs e)
+        {
+            AddToMap(new Categories(), "Categories", 1);
+            MenuContentControl = new Menu_uc();
+            MenuContentControl.MainContentControl = new Categories();
+            Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+            editBtn.Visibility = Visibility.Collapsed;
+
+        }
+        private void QuestionBank_Click_import(object sender, RoutedEventArgs e)
+        {
+            AddToMap(new Import(), "Import", 1);  
+            MenuContentControl = new Menu_uc();
+            MenuContentControl.MainContentControl = new Import();
+            Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+            editBtn.Visibility = Visibility.Collapsed;
+
+        }
+        private void QuestionBank_Click_export(object sender, RoutedEventArgs e)
+        {
+            AddToMap(new Export(), "Export", 1);
+            MenuContentControl = new Menu_uc();
+            MenuContentControl.MainContentControl = new Export();
+            Iborder_menu.Content = MenuContentControl; // Gán lại Iborder_menu.Content với MenuContentControl
+            editBtn.Visibility = Visibility.Collapsed;
+        }
+        public void AddToMap(UserControl userControl, string name, int level)
+        {
+            for(int i = map.Children.Count-1; i>level; i-- )
+            {
+                map.Children.RemoveAt(i);
+            }
+
+            TextBlock map_course = new TextBlock()
+            {
+                Margin = new Thickness(10, 0, 0, 0)
+            };
+
+            Hyperlink hyperlink = new Hyperlink()
+            {
+                FontSize = 20,
+                TextDecorations = null
+            };
+            hyperlink.Click += (sender, e) => goTo(sender, e, userControl, level+1); ;
+            hyperlink.Inlines.Add('/'+name);
+
+            map_course.Inlines.Add(hyperlink);
+            map.Children.Add(map_course);
+        }
+        private void goTo(object sender, RoutedEventArgs e, UserControl userControl, int level)
+        {
+            for (int i = map.Children.Count - 1; i > level; i--)
+            {
+                map.Children.RemoveAt(i);
+            }
+            if (userControl is Question || userControl is Import || userControl is Categories || userControl is Export)
+            {
+                MenuContentControl = new Menu_uc();
+                MenuContentControl.MainContentControl = userControl;
+                Iborder_menu.Content = MenuContentControl;
+            }
+            else Iborder_menu.Content = userControl;
+        }
+        private void ClickEditOn(object sender, RoutedEventArgs e)
+        {
+            Iborder_menu.Content = new AddQuiz();
+            editBtn.Visibility = Visibility.Collapsed;
+        }
+
         public class courseSource
         {
             public string courseName { get; set; }
-        }
-
-        private void showSubcategoriesQuestions_check(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void showOldQuestions_check(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void MenuItem_Questions_Click(object sender, RoutedEventArgs e)
-        {
-            Questions.Visibility = Visibility.Visible;
-            Categories.Visibility = Visibility.Collapsed;
-            Import.Visibility = Visibility.Collapsed;
-            Export.Visibility = Visibility.Collapsed;
-            QuestionBank_Questions.Foreground = Brushes.Gray;
-            QuestionBank_Categories.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Import.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Export.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-        }
-
-        private void MenuItem_Categories_Click(object sender, RoutedEventArgs e)
-        {
-            Questions.Visibility = Visibility.Collapsed;
-            Categories.Visibility = Visibility.Visible;
-            Import.Visibility = Visibility.Collapsed;
-            Export.Visibility = Visibility.Collapsed;
-            QuestionBank_Questions.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Categories.Foreground = Brushes.Gray;
-            QuestionBank_Import.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Export.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-        }
-
-        private void MenuItem_Import_Click(object sender, RoutedEventArgs e)
-        {
-            Questions.Visibility = Visibility.Collapsed;
-            Categories.Visibility = Visibility.Collapsed;
-            Import.Visibility = Visibility.Visible;
-            Export.Visibility = Visibility.Collapsed;
-            QuestionBank_Questions.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Categories.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Import.Foreground = Brushes.Gray;
-            QuestionBank_Export.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-        }
-
-        private void MenuItem_Export_Click(object sender, RoutedEventArgs e)
-        {
-            Questions.Visibility = Visibility.Collapsed;
-            Categories.Visibility = Visibility.Collapsed;
-            Import.Visibility = Visibility.Collapsed;
-            Export.Visibility = Visibility.Visible;
-            QuestionBank_Questions.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Categories.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Import.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#009FE5"));
-            QuestionBank_Export.Foreground = Brushes.Gray;
-        }
-
-        private void addCategory_click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void import_fileFormat_click(object sender, RoutedEventArgs e)
-        {
-            if(import_fileFormat_box.Visibility==Visibility.Visible)
-            {
-                import_fileFormat_box.Visibility = Visibility.Collapsed;
-                fileFomat_status.Source = new BitmapImage(new Uri("/arrow-right.png", UriKind.Relative));
-            }
-
-            else if (import_fileFormat_box.Visibility == Visibility.Collapsed)
-            {
-                import_fileFormat_box.Visibility = Visibility.Visible;
-                fileFomat_status.Source = new BitmapImage(new Uri("/arrow-down.png", UriKind.Relative));
-            }
-        }
-
-        private void import_general_click(object sender, RoutedEventArgs e)
-        {
-            if (import_general_box.Visibility == Visibility.Visible)
-            {
-                import_general_box.Visibility = Visibility.Collapsed;
-                general_status.Source = new BitmapImage(new Uri("/arrow-right.png", UriKind.Relative));
-            }
-
-            else if (import_general_box.Visibility == Visibility.Collapsed)
-            {
-                import_general_box.Visibility = Visibility.Visible;
-                general_status.Source = new BitmapImage(new Uri("/arrow-down.png", UriKind.Relative));
-            }
-        }
-
-        private void import_file_click(object sender, RoutedEventArgs e)
-        {
-            if (import_file_box.Visibility == Visibility.Visible)
-            {
-                import_file_box.Visibility = Visibility.Collapsed;
-                file_status.Source = new BitmapImage(new Uri("/arrow-right.png", UriKind.Relative));
-            }
-
-            else if (import_file_box.Visibility == Visibility.Collapsed)
-            {
-                import_file_box.Visibility = Visibility.Visible;
-                file_status.Source = new BitmapImage(new Uri("/arrow-down.png", UriKind.Relative));
-            }
-        }
-
-        private void upload_Btn_click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void OnDragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop))
-            {
-                e.Effects = DragDropEffects.Copy;
-            }
-        }
-
-        private void OnDragLeave(object sender, DragEventArgs e)
-        {
-            e.Effects = DragDropEffects.None;
-        }
-
-        private void OnDrop(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop))
-            {
-                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-                string filePath = files[0];
-
-                // Upload file to server
-                // ...
-
-                // Reset the text in the Border
-                ((TextBlock)((Border)sender).Child).Text = "Kéo thả file vào đây để upload";
-            }
-        }
-
-        private void importQuestion_btn_click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        List<courseSource> courseL = new List<courseSource> { new courseSource { courseName = "toan" } };
-
-        
-        private void ListBox_Drop(object sender, DragEventArgs e)
-        {
-
-        }
-
-        private void import_general_Click(object sender, RoutedEventArgs e)
-        {
 
         }
     }
-
-    
 }

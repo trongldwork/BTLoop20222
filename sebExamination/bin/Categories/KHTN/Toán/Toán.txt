@@ -1,0 +1,323 @@
+Category name: Giải tích
+thisline support the file reader to read both quizz file and category file
+
+
+Đạo hàm của hàm số f(x) = 3x^2 - 4x + 1 là gì?
+A. 6x - 4
+B. 3x^2 - 4
+C. 6x - 8
+D. 3x - 4
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (2x^2 - 3x + 1) / (x - 1) khi x tiến tới 1.
+A. 2
+B. 3
+C. 1
+D. Không tồn tại
+ANSWER: B
+1
+
+Tích phân của hàm số f(x) = 2x^3 - 3x^2 + 1 trong khoảng từ 0 đến 1 là bao nhiêu?
+A. 0
+B. 1/4
+C. 1/2
+D. 1
+ANSWER: C
+1
+
+Đạo hàm của hàm số f(x) = sin(x) là gì?
+A. cos(x)
+B. -cos(x)
+C. sin(x)
+D. -sin(x)
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = e^x / x khi x tiến tới vô cùng.
+A. 0
+B. 1
+C. Vô cùng
+D. Không tồn tại
+ANSWER: C
+1
+
+Tích phân của hàm số f(x) = ln(x) trong khoảng từ 1 đến e là bao nhiêu?
+A. 0
+B. 1
+C. e - 1
+D. e
+ANSWER: C
+1
+
+Đạo hàm của hàm số f(x) = 5x^4 + 3x^2 - 2x + 1 là gì?
+A. 20x^3 + 6x - 2
+B. 20x^3 + 6x^2 - 2x
+C. 20x^3 + 6x^2 - 2
+D. 20x^3 + 6x^2 - 2x + 1
+ANSWER: B
+1
+
+Hãy tính giới hạn của hàm số f(x) = (x^2 - 4) / (x - 2) khi x tiến tới 2.
+A. 2
+B. 4
+C. 0
+D. Không tồn tại
+ANSWER: B
+1
+
+Tích phân của hàm số f(x) = cos(x) trong khoảng từ 0 đến π/2 là bao nhiêu?
+A. 0
+B. 1
+C. -1
+D. π/2
+ANSWER: B
+1
+
+Đạo hàm của hàm số f(x) = e^(2x) là gì?
+A. e^(2x)
+B. 2e^(2x)
+C. 2e^x
+D. e^x
+ANSWER: B
+1
+
+Hãy tính giới hạn của hàm số f(x) = (3x^2 + 2x + 1) / (2x^2 + x - 1) khi x tiến tới vô cùng.
+A. 3/2
+B. 2/3
+C. 3
+D. Không tồn tại
+ANSWER: A
+1
+
+Tích phân của hàm số f(x) = 1 / x trong khoảng từ 1 đến 2 là bao nhiêu?
+A. 0
+B. 1
+C. ln(2)
+D. 1/2
+ANSWER: C
+1
+
+Đạo hàm của hàm số f(x) = ln(x^2) là gì?
+A. 2/x
+B. 2x
+C. 1/x
+D. x^2
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (x^2 - 1) / (x + 1) khi x tiến tới -1.
+A. 0
+B. 1
+C. -1
+D. Không tồn tại
+ANSWER: B
+1
+
+Tích phân của hàm số f(x) = sin(2x) trong khoảng từ 0 đến π/4 là bao nhiêu?
+A. 0
+B. 1
+C. 2
+D. π/4
+ANSWER: B
+1
+
+Đạo hàm của hàm số f(x) = tan(x) là gì?
+A. sec^2(x)
+B. -sec^2(x)
+C. sin(x)
+D. -sin(x)
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (x^3 - 3x^2 + 1) / (2x - 3) khi x tiến tới 3/2.
+A. 0
+B. 1
+C. 3
+D. Không tồn tại
+ANSWER: C
+1
+
+Tích phân của hàm số f(x) = e^x / (1 + e^x) trong khoảng từ 0 đến ∞ là bao nhiêu?
+A. 0
+B. 1
+C. ∞
+D. Không tồn tại
+ANSWER: B
+1
+
+Đạo hàm của hàm số f(x) = 4x^3 - 2x + 1 là gì?
+A. 12x^2 - 2
+B. 12x^2 - 2x
+C. 12x^2 - 2x + 1
+D. 12x^2 - 2x - 1
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (3x^2 + 2x - 1) / (4x^2 - 3x + 1) khi x tiến tới ∞.
+A. 3/4
+B. 4/3
+C. 3
+D. Không tồn tại
+ANSWER: A
+1
+
+Tích phân của hàm số f(x) = ln(2x) trong khoảng từ 1 đến 2 là bao nhiêu?
+A. 0
+B. 1
+C. ln(2)
+D. 1/2
+ANSWER: C
+1
+
+Đạo hàm của hàm số f(x) = sqrt(x) là gì?
+A. 1/2sqrt(x)
+B. sqrt(x)
+C. 1/2sqrt(x) + 1
+D. 1/2sqrt(x) - 1
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (x^2 - 2) / (x + 1) khi x tiến tới -1.
+A. 0
+B. 1
+C. -1
+D. Không tồn tại
+ANSWER: C
+1
+
+Tích phân của hàm số f(x) = cos(3x) trong khoảng từ 0 đến π/6 là bao nhiêu?
+A. 0
+B. 1
+C. 2
+D. π/6
+ANSWER: B
+1
+
+Đạo hàm của hàm số f(x) = 3^x là gì?
+A. 3^x
+B. ln(3) * 3^x
+C. ln(3) * 3^(x-1)
+D. ln(3) * 3^(x+1)
+ANSWER: B
+1
+
+Hãy tính giới hạn của hàm số f(x) = (2x^3 + 3x^2 + 1) / (3x^2 + 2x - 1) khi x tiến tới ∞.
+A. 2/3
+B. 3/2
+C. 2
+D. Không tồn tại
+ANSWER: A
+1
+
+Tích phân của hàm số f(x) = e^(-x) trong khoảng từ 0 đến ∞ là bao nhiêu?
+A. 0
+B. 1
+C. ∞
+D. Không tồn tại
+ANSWER: B
+1
+
+Đạo hàm của hàm số f(x) = ln(sin(x)) là gì?
+A. cos(x) / sin(x)
+B. cos(x) / sin^2(x)
+C. 1 / sin(x)
+D. 1 / sin^2(x)
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (2x^2 + x - 1) / (3x^2 - 2x + 1) khi x tiến tới -∞.
+A. 2/3
+B. 3/2
+C. 2
+D. Không tồn tại
+ANSWER: B
+1
+
+Tích phân của hàm số f(x) = x^2 + 2x + 1 trong khoảng từ 0 đến 2 là bao nhiêu?
+A. 0
+B. 1
+C. 4
+D. 9
+ANSWER: C
+1
+
+Đạo hàm của hàm số f(x) = e^(3x) là gì?
+A. 3e^(3x)
+B. 3e^(3x) + 1
+C. e^(3x)
+D. e^(3x) - 1
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (x^3 + x^2 - 1) / (2x - 3) khi x tiến tới 3/2.
+A. 0
+B. 1
+C. 3
+D. Không tồn tại
+ANSWER: C
+1
+
+Tích phân của hàm số f(x) = sin(x) trong khoảng từ 0 đến π là bao nhiêu?
+A. 0
+B. 1
+C. 2
+D. π
+ANSWER: B
+1
+
+Đạo hàm của hàm số f(x) = tan(x) là gì?
+A. sec^2(x)
+B. -sec^2(x)
+C. sin(x)
+D. -sin(x)
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (3x^2 + 2x + 1) / (4x^2 + 3x - 1) khi x tiến tới -∞.
+A. 3/4
+B. 4/3
+C. 3
+D. Không tồn tại
+ANSWER: A
+1
+
+Tích phân của hàm số f(x) = ln(2x) trong khoảng từ 1 đến 2 là bao nhiêu?
+A. 0
+B. 1
+C. ln(2)
+D. 1/2
+ANSWER: C
+1
+
+Đạo hàm của hàm số f(x) = sqrt(x) là gì?
+A. 1/2sqrt(x)
+B. sqrt(x)
+C. 1/2sqrt(x) + 1
+D. 1/2sqrt(x) -1
+ANSWER: A
+1
+
+Hãy tính giới hạn của hàm số f(x) = (x^2 - 2) / (x + 1) khi x tiến tới -1.
+A. 0
+B. 1
+C. -1
+D. Không tồn tại
+ANSWER: C
+1
+
+Tích phân của hàm số f(x) = cos(3x) trong khoảng từ 0 đến π/6 là bao nhiêu?
+A. 0
+B. 1
+C. 2
+D. π/6
+ANSWER: B
+1
+
+Đạo hàm của hàm số f(x) = 3^x là gì?
+A. 3^x
+B. ln(3) * 3^x
+C. ln(3) * 3^(x-1)
+D. ln(3) * 3^(x+1)
+ANSWER: B
+1

@@ -1,0 +1,330 @@
+﻿<UserControl x:Class="sebExamination.Controls.AddQuiz"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sebExamination.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                                    Height="600"
+                                    Margin="20">
+            <TextBlock FontSize="32"
+                                   FontFamily="Cambria"
+                                   Foreground="#C02424">
+                                Adding a new quiz
+            </TextBlock>
+
+            <!--Btn này khi ấn vào sẽ hiện nội dung phần general-->
+            <ToggleButton x:Name="addQuiz_general_btn"
+                                      Click="addQuiz_general_click"
+                                      Height="24"
+                                      Margin="20 20 0 0"
+                                      Width="auto"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Top"
+                                      Background="White"
+                                      BorderThickness="0">
+
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="addQuiz_general_status"
+                                       Source="../Assets/image/arrow-down.png"
+                                       Margin="2.5"/>
+                    <TextBlock FontSize="16"
+                               
+                                           Margin="5 0 0 0"
+                                           FontFamily="Cambria"
+                                           FontWeight="SemiBold"
+                                           Foreground="#C02424">
+                                        General
+                    </TextBlock>
+
+                </StackPanel>
+
+            </ToggleButton>
+            <!--nội dung phần general-->
+            <Grid x:Name="addQuiz_general_box"
+                                  Visibility="Visible"
+                                  Margin="20 10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Foreground="Gray"
+                           
+                                           FontSize="18">
+                                    Name
+                </TextBlock>
+
+                <Image Grid.Column="0"
+                                               Grid.Row="0"
+                                               HorizontalAlignment="Right"
+                                               Height="15"
+                                               Margin="0 7.5 10 7.5"
+                                               Source="../Assets/image/warning.png"/>
+
+                <TextBlock Foreground="Gray"
+                                           FontSize="18"
+                                           Grid.Row="1">
+                                    Description
+                </TextBlock>
+                <TextBox x:Name="quizName"
+                                         Grid.Column="1"
+                                         Height="30"
+                                         Width="350" HorizontalAlignment="Left"
+                                         Margin="0 5 0 5"></TextBox>
+                <TextBox x:Name="description_addQuiz"
+                                         Grid.Column="1" Grid.Row="1"
+                                         Height="150"
+                                         
+                                         Margin="0 5 0 5"></TextBox>
+
+                <CheckBox x:Name="displayDes_addquiz_checkbox"
+                                          Margin="0 5 0 0"
+                                          Grid.Column="1" Grid.Row="2"
+                                          Content="Also show questions from subcategories"
+                                          Foreground="gray"
+                                          Checked="displayDes_addquiz_check"/>
+            </Grid>
+
+            <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="30 0"/>
+
+            <!--Btn này khi ấn vào sẽ hiện nội dung phần timing-->
+            <ToggleButton x:Name="addQuiz_timing_btn"
+                                      Click="addQuiz_timing_click"
+                                      Height="24"
+                                      Margin="20 20 0 0"
+                                      Width="auto"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Top"
+                                      Background="White"
+                                      BorderThickness="0">
+
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="addQuiz_timing_status"
+                                       Source="../Assets/image/arrow-down.png"
+                                       Margin="2.5"/>
+                    <TextBlock FontSize="16"
+                                           Margin="5 0 0 0"
+                                           FontFamily="Cambria"
+                                           FontWeight="SemiBold"
+                                           Foreground="#C02424">
+                                        Timing
+                    </TextBlock>
+
+                </StackPanel>
+
+            </ToggleButton>
+            <!--nội dung phần timing-->
+            <Grid x:Name="addQuiz_timing_box"
+                                  Visibility="Visible"
+                                  Margin="20 10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Foreground="Gray"
+                                           FontSize="18">
+                                    Open the quiz
+                </TextBlock>
+
+                <Image Grid.Column="0"
+                                       Grid.Row="0"
+                                       HorizontalAlignment="Right"
+                                       Height="15"
+                                       Margin="0 7.5 10 7.5"
+                                       Source="../Assets/image/question.png"/>
+
+                <TextBlock Foreground="Gray"
+                                           FontSize="18"
+                                           Grid.Row="1">
+                                    Close the quiz
+                </TextBlock>
+
+                <TextBlock Foreground="Gray"
+                                           FontSize="18"
+                                           Grid.Row="2">
+                                    Time limit
+                </TextBlock>
+
+                <Image Grid.Column="0"
+                                       Grid.Row="2"
+                                       HorizontalAlignment="Right"
+                                       Height="15"
+                                       Margin="0 7.5 10 7.5"
+                                       Source="../Assets/image/question.png"/>
+
+                <TextBlock Foreground="Gray"
+                                           FontSize="18"
+                                           Grid.Row="3">
+                                    When time expires
+                </TextBlock>
+
+                <Image Grid.Column="0"
+                                       Grid.Row="3"
+                                       HorizontalAlignment="Right"
+                                       Height="15"
+                                       Margin="0 7.5 10 7.5"
+                                       Source="../Assets/image/question.png"/>
+
+                <!--code tiếp vào đây máy cái đoạn thời gian các kiểu-->
+
+                <StackPanel Grid.Column=" 1"
+                                            Orientation="Horizontal">
+                    <ComboBox x:Name="cb_opentime_day"
+                                              Height="25" Width="50"
+                                              SelectedIndex="0"
+                              >
+                    </ComboBox>
+                    <ComboBox x:Name ="cb_opentime_month"
+                                              Margin="10,0,0,0"
+                                              Width="90" Height= "25"
+                                              SelectedIndex="0"
+                              >
+                    </ComboBox>
+                    <ComboBox x:Name="cb_opentime_year"
+                                              Margin="10,0,0,0"
+                                              Width ="55" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_opentime_hour"
+                                              Margin =" 10,0,0,0"
+                                              Width="65" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_opentime_minute"
+                                              Margin ="10,0,0,0"
+                                              Width ="55" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <Image Source="/Assets/Image/calendar.png" 
+                                           Height="15" Width="15"
+                                           Margin="7,7,7,7"
+                                           >
+                    </Image>
+                    <CheckBox x:Name="cb_opentime_enable"
+                              Margin="5,5,0,0"
+                              VerticalAlignment="Center"
+                                              Content="Enable">
+                    </CheckBox>
+
+                </StackPanel>
+                <StackPanel Grid.Column=" 1"
+                                            Grid.Row="1"
+                                            Orientation="Horizontal">
+                    <ComboBox x:Name="cb_closetime_day"
+                                              Height="25" Width="50"
+                                              SelectedIndex="0">
+
+                    </ComboBox>
+                    <ComboBox x:Name ="cb_closetime_month"
+                                              Margin="10,0,0,0"
+                                              Width="90" Height= "25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_closetime_year"
+                                              Margin="10,0,0,0"
+                                              Width ="55" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_closetime_hour"
+                                              Margin =" 10,0,0,0"
+                                              Width="65" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_closetime_minute"
+                                              Margin ="10,0,0,0"
+                                              Width ="55" Height ="25"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <Image Source="/Assets/Image/calendar.png" 
+                                           Height="15" Width="15"
+                                           Margin="7,7,7,7"
+                                           >
+                    </Image>
+                    <CheckBox Margin="5,5,0,0"
+                              x:Name="cb_closetime_enable"
+                              VerticalAlignment="Center"
+                                              Content="Enable">
+                    </CheckBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1"
+                                            Grid.Row="2"
+                                            Orientation="Horizontal">
+                    <ComboBox x:Name="cb_timelimit" IsEnabled="False"
+                                              Height="25" Width="55"
+                                              SelectedIndex="0">
+                    </ComboBox>
+                    <ComboBox x:Name="cb_timelimit2" IsEnabled="False"
+                                              Height="25" Width="90"
+                                              Margin="10,0,0,0"
+                                              SelectedIndex="0">
+                        <ComboBoxItem>Minutes</ComboBoxItem>
+                        <ComboBoxItem>Hours</ComboBoxItem>
+                    </ComboBox>
+                    <CheckBox Unchecked="cb_timelimit_enable_Unchecked" Checked="cb_timelimit_enable_Checked" Content="Enable" x:Name="cb_timelimit_enable" VerticalAlignment="Center" Margin="10,0,0,0"></CheckBox>
+                </StackPanel>
+                <ComboBox Grid.Row="3"
+                          x:Name="whenclose"
+                                          Grid.Column="1"
+                                          Height="25" Width="290"
+                                          HorizontalAlignment="Left" IsReadOnly="True"
+                                          SelectedIndex="0">
+                    <ComboBoxItem Content="Open attempts are submitted automatically"/>
+                    <ComboBoxItem Content="Open attempts are submitted manually"/>
+                </ComboBox>
+
+            </Grid>
+
+            <Border BorderThickness="0 1 0 0" BorderBrush="Gray" Margin="30 0"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <!--nút addquiz-->
+                <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
+                                              x:Name="addQuiz_btn" 
+                                              Click="addQuiz_btn_click"
+                                              Margin="10"
+                                              Background="#C02424"
+                                              Width="120" Height="40">
+                    <TextBlock FontSize="20"
+                                               Foreground="white"
+                                               FontFamily="cambria"
+                                               FontWeight="Light">
+                                    ADD QUIZ
+                    </TextBlock>
+                </ToggleButton>
+                <!--nút cancel-->
+                <ToggleButton Style="{DynamicResource ToggleButtonStyle}"
+                                              x:Name="cancel_addQuiz_btn" 
+                                              Click="cancel_addQuiz_btn_click"
+                                              Margin="10"
+                                              Background="#009FE5"
+                                              Width="120" Height="40">
+                    <TextBlock FontSize="20"
+                                               Foreground="white"
+                                               FontFamily="cambria"
+                                               FontWeight="Light">
+                                    CANCEL
+                    </TextBlock>
+                </ToggleButton>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

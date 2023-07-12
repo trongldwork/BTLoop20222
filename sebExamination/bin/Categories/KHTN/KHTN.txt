@@ -1,0 +1,322 @@
+Category name: KHTN
+thisline support the file reader to read both quizz file and category file
+
+Ngành nào nghiên cứu về các quy luật và quy tắc của vũ trụ?
+A. Vật lý
+B. Hóa học
+C. Sinh học
+D. Thiên văn học
+ANSWER: D
+1
+
+Nhiệt độ nào đóng vai trò quan trọng trong quá trình biến dạng của chất?
+A. Nhiệt độ sôi
+B. Nhiệt độ đông đặc
+C. Nhiệt độ kích thích
+D. Nhiệt độ nóng chảy
+ANSWER: D
+1
+
+Nguồn năng lượng mặt trời chính là gì?
+A. Năng lượng hạt nhân
+B. Năng lượng điện
+C. Nhiệt năng
+D. Năng lượng ánh sáng
+ANSWER: D
+1
+
+Chất nào là nguyên tố có số hiệu nguyên tử là 1 trong bảng tuần hoàn các nguyên tố hóa học?
+A. Hiđrô
+B. Oxi
+C. Canxi
+D. Nhôm
+ANSWER: A
+1
+
+Lực nào giữ các hạt nhân nguyên tử lại với nhau?
+A. Lực hút
+B. Lực đẩy
+C. Lực điện
+D. Lực hấp dẫn
+ANSWER: D
+1
+
+Môi trường tự nhiên được định nghĩa là gì?
+A. Môi trường ngoại vi của con người
+B. Môi trường sống của động vật và cây cỏ
+C. Môi trường không có sự can thiệp của con người
+D. Môi trường sống tự nhiên trên Trái Đất
+ANSWER: D
+1
+
+Loại vật liệu nào được sử dụng để tạo ra điện từ trong mạch điện?
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: A
+1
+
+Nguyên tử của phần tử nào chứa số proton lớn nhất trong bảng tuần hoàn các nguyên tố hóa học?
+A. Oxi
+B. Nitơ
+C. Canxi
+D. Uran
+ANSWER: D
+1
+
+Đơn vị nào được sử dụng để đo khối lượng?
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
+ANSWER: A
+1
+
+Quá trình nào giúp cây xanh tạo ra thức ăn và oxi từ ánh sáng mặt trời?
+A. Quang hợp
+B. Quang phổ
+C. Quang điện
+D. Quang phát
+ANSWER: A
+1
+
+Loại năng lượng nào được tạo ra từ chuyển động của đối tượng?
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi một chất lỏng biến thành hơi?
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: B
+1
+
+Loại vật liệu nào dẫn điện tốt nhất?
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: A
+1
+
+Loại chất nào là hỗn hợp của hai hay nhiều nguyên tố?
+A. Phân tử
+B. Đơn chất
+C. Hợp chất
+D. Hỗn hợp
+ANSWER: D
+1
+
+Quá trình nào diễn ra khi một chất rắn trở thành lỏng?
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: C
+1
+
+Nguyên tử của phần tử nào chứa số proton nhỏ nhất trong bảng tuần hoàn các nguyên tố hóa học?
+A. Hiđrô
+B. Oxi
+C. Canxi
+D. Nhôm
+ANSWER: A
+1
+
+Đơn vị nào được sử dụng để đo thời gian?
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
+ANSWER: C
+1
+
+Loại năng lượng nào được sử dụng để làm nóng nước trong bình đun?
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: A
+1
+
+Quá trình nào xảy ra khi ánh sáng phân tán qua một chất khí hoặc chất lỏng?
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: C
+1
+
+Đơn vị nào được sử dụng để đo nhiệt độ?
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
+ANSWER: D
+1
+
+Loại năng lượng nào được tạo ra từ sự phân hủy của nguyên tử?
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: D
+1
+
+Quá trình nào xảy ra khi ánh sáng được phản xạ từbề mặt phẳng?
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: A
+1
+
+Ngành nào nghiên cứu về cấu trúc, tính chất và biểu hiện của các chất hóa học?
+A. Vật lý
+B. Hóa học
+C. Sinh học
+D. Địa chất học
+ANSWER: B
+1
+
+Nguồn năng lượng chính trong mạch điện là gì?
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: C
+1
+
+Đơn vị nào được sử dụng để đo chiều dài?
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi một chất lỏng biến thành rắn?
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: A
+1
+
+Loại vật liệu nào không dẫn điện?
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: D
+1
+
+Loại chất nào chỉ chứa một nguyên tử?
+A. Phân tử
+B. Đơn chất
+C. Hợp chất
+D. Hỗn hợp
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi một chất khí biến thành chất lỏng?
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: C
+1
+
+Nguyên tử của phần tử nào chứa số proton và số electron bằng nhau trong bảng tuần hoàn các nguyên tố hóa học?
+A. Oxi
+B. Nitơ
+C. Canxi
+D. Uran
+ANSWER: B
+1
+
+Đơn vị nào được sử dụng để đo khối lượng của một chất?
+A. Gram
+B. Mét
+C. Giây
+D. Độ Kelvin
+ANSWER: A
+1
+
+Loại năng lượng nào được sử dụng để làm chạy các thiết bị điện tử?
+A. Năng lượng nhiệt
+B. Năng lượng cơ
+C. Năng lượng điện
+D. Năng lượng hạt nhân
+ANSWER: C
+1
+
+Quá trình nào xảy ra khi ánh sáng bị giữ lại và không đi xuyên qua một chất?
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: A
+1
+
+Nguồn năng lượng chính trong hệ mặt trời là gì?
+A. Năng lượng hạt nhân
+B. Năng lượng điện
+C. Nhiệt năng
+D. Năng lượng ánh sáng
+ANSWER: D
+1
+
+Loại vật liệu nào không dẫn điện?
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: D
+1
+
+Loại chất nào chỉ chứa một nguyên tử?
+A. Phân tử
+B. Đơn chất
+C. Hợp chất
+D. Hỗn hợp
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi một chất rắn trở thành chất khí mà không thông qua giai đoạn lỏng?
+A. Đông đặc
+B. Sôi
+C. Nóng chảy
+D. Quang hợp
+ANSWER: B
+1
+
+Loại vật liệu nào dẫn điện tốt nhất?
+A. Kim loại
+B. Gỗ
+C. Nhựa
+D. Kính
+ANSWER: A
+1
+
+Loại chất nào là kết hợp của hai hoặc nhiều nguyên tử khác nhau?
+A. Phân tử
+B. Đơn chất
+C. Hợp chất
+D. Hỗn hợp
+ANSWER: C
+1
+
+Quá trình nào xảy ra khi ánh sáng được giữ lại hoặc hấp thụ bởi một chất?
+A. Phản xạ
+B. Khiển chế
+C. Phân tán
+D. Hút
+ANSWER: D
+1

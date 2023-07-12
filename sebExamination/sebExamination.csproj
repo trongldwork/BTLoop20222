@@ -8,31 +8,110 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="arrow-down.png" />
-    <None Remove="arrow-point-to-down.png" />
-    <None Remove="arrow-right.png" />
-    <None Remove="arrowRed.png" />
-    <None Remove="arrowWhite.png" />
-    <None Remove="menu.png" />
-    <None Remove="question.png" />
-    <None Remove="settings.png" />
-    <None Remove="task.png" />
-    <None Remove="user.png" />
-    <None Remove="warning.png" />
+    <None Remove="Assets\Image\add-image.png" />
+    <None Remove="Assets\Image\arrow-down.png" />
+    <None Remove="Assets\Image\arrow-point-to-down.png" />
+    <None Remove="Assets\Image\arrow-right.png" />
+    <None Remove="Assets\Image\arrowRed.png" />
+    <None Remove="Assets\Image\arrowWhite.png" />
+    <None Remove="Assets\Image\bin.png" />
+    <None Remove="Assets\Image\calendar.png" />
+    <None Remove="Assets\Image\cross.png" />
+    <None Remove="Assets\Image\edit-text.png" />
+    <None Remove="Assets\Image\list.png" />
+    <None Remove="Assets\Image\menu.png" />
+    <None Remove="Assets\Image\move.png" />
+    <None Remove="Assets\Image\online-test.png" />
+    <None Remove="Assets\Image\plus-small.png" />
+    <None Remove="Assets\Image\question.png" />
+    <None Remove="Assets\Image\search.png" />
+    <None Remove="Assets\Image\settings.png" />
+    <None Remove="Assets\Image\task.png" />
+    <None Remove="Assets\Image\test.png" />
+    <None Remove="Assets\Image\user.png" />
+    <None Remove="Assets\Image\warning.png" />
+    <None Remove="Assets\Image\white-plus-small.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="arrow-down.png" />
-    <Resource Include="arrow-point-to-down.png" />
-    <Resource Include="arrow-right.png" />
-    <Resource Include="arrowRed.png" />
-    <Resource Include="arrowWhite.png" />
-    <Resource Include="menu.png" />
-    <Resource Include="question.png" />
-    <Resource Include="settings.png" />
-    <Resource Include="task.png" />
-    <Resource Include="user.png" />
-    <Resource Include="warning.png" />
+    <COMReference Include="Microsoft.Office.Core">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>8</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>2df8d04c-5bfa-101b-bde5-00aa0044de52</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Categories\KHTN\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa học.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa hữu cơ\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa hữu cơ\Hóa 12\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa hữu cơ\Hóa 12\Hóa 12.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa hữu cơ\Hóa hữu cơ.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa vô cơ\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa vô cơ\Hóa vô cơ.txt" />
+    <Content Include="bin\Categories\KHTN\KHTN.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh học.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Sinh thái học.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Tiến hóa\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Tiến hóa\Di truyền và biến dị\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Tiến hóa\Di truyền và biến dị\Di truyền và biến dị.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Tiến hóa\Tiến hóa.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Tế bào\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Tế bào\Tế bào.txt" />
+    <Content Include="bin\Categories\KHTN\Toán\count.txt" />
+    <Content Include="bin\Categories\KHTN\Toán\Toán.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.Words" Version="23.6.0" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+    <PackageReference Include="Open-XML-SDK" Version="2.9.1" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Image\add-image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Image\arrow-down.png" />
+    <Resource Include="Assets\Image\arrow-point-to-down.png" />
+    <Resource Include="Assets\Image\arrow-right.png" />
+    <Resource Include="Assets\Image\arrowRed.png" />
+    <Resource Include="Assets\Image\arrowWhite.png" />
+    <Resource Include="Assets\Image\bin.png" />
+    <Resource Include="Assets\Image\calendar.png" />
+    <Resource Include="Assets\Image\cross.png" />
+    <Resource Include="Assets\Image\edit-text.png" />
+    <Resource Include="Assets\Image\list.png" />
+    <Resource Include="Assets\Image\menu.png" />
+    <Resource Include="Assets\Image\move.png" />
+    <Resource Include="Assets\Image\online-test.png" />
+    <Resource Include="Assets\Image\plus-small.png" />
+    <Resource Include="Assets\Image\question.png" />
+    <Resource Include="Assets\Image\search.png" />
+    <Resource Include="Assets\Image\settings.png" />
+    <Resource Include="Assets\Image\task.png" />
+    <Resource Include="Assets\Image\test.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Image\user.png" />
+    <Resource Include="Assets\Image\warning.png" />
+    <Resource Include="Assets\Image\white-plus-small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="categories image\" />
   </ItemGroup>
 
 </Project>

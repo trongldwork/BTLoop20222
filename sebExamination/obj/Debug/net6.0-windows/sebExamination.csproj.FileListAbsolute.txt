@@ -19,3 +19,587 @@ D:\code_learning\Sonyaaa_CS\sebExamination\obj\Debug\net6.0-windows\refint\sebEx
 D:\code_learning\Sonyaaa_CS\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
 D:\code_learning\Sonyaaa_CS\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
 D:\code_learning\Sonyaaa_CS\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+C:\Users\trong\Source\Repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+C:\Users\trong\source\repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+C:\Users\trong\source\repos\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+D:\code\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+D:\code\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+D:\code\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+D:\code\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+D:\code\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\code\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+D:\code\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+D:\code\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+D:\code\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+D:\code\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+D:\code\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Categories.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Export.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Import.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Menu_uc.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Question.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+D:\code\sebExamination\obj\Debug\net6.0-windows\App.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Categories.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Export.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Import.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Menu_uc.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Question.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+D:\code\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+D:\code\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+D:\code\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Footer.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Footer.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuiz.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuiz.baml
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuestion.g.cs
+D:\code\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuestion.baml
+D:\code\local\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+D:\code\local\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+D:\code\local\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+D:\code\local\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+D:\code\local\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuestion.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuiz.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Categories.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Export.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Footer.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Import.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Menu_uc.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Question.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\App.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuestion.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuiz.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Categories.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Export.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Footer.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Import.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Menu_uc.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Question.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+D:\code\local\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.g.cs
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
+D:\code\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.baml
+D:\code\sth\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+D:\code\sth\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+D:\code\sth\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+D:\code\sth\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuestion.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuiz.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Categories.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Export.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Footer.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Import.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Menu_uc.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Question.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuestion.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuiz.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Categories.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Export.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Footer.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Import.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Menu_uc.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Question.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+D:\code\sth\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuestion.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuiz.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Categories.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Export.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Footer.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Import.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Menu_uc.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Question.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Export.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\App.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuestion.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\AddQuiz.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Categories.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Export.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Footer.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Import.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Menu_uc.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Assets\Controls\Question.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Export.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+C:\Users\Phong Vu\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Export.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\App.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Export.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CopyComplete
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\course_exam.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\examListItem.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\textStyle.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle2.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.g.cs
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.baml
+C:\Users\trong\Downloads\BTLoop20222-1.0\BTLoop20222-1.0\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\course_exam.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\examListItem.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\textStyle.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle2.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CopyComplete
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\SquareRadioButton.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\course_exam.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\examListItem.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\SquareRadioButton.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\textStyle.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle2.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\TestUC.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CopyComplete
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Quiz.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Quiz.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\course_exam.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\examListItem.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\SquareRadioButton.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\textStyle.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle2.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Quiz.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\App.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Export.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Quiz.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CopyComplete
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.g.cs
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.baml
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.Pdf2Word.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\SkiaSharp.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.Pdf2Word.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\SkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\WpfAnimatedGif.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Word.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Core.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.ResolveComReference.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\sebExamination.exe
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\sebExamination.deps.json
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\sebExamination.runtimeconfig.json
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.Pdf2Word.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\Aspose.Words.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Word.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\SkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\WpfAnimatedGif.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.AssemblyReference.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Core.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.ResolveComReference.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Template\ButtonTheme.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Template\course_exam.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Template\examListItem.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Template\SquareRadioButton.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Template\textStyle.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Template\toggleBtnStyle2.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Export.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Import.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Question.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Quiz.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination_MarkupCompile.lref
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\App.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuestion.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuesToQuiz_fromBank.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\AddQuiz.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Add_Rand_Question.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Categories.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Course_list.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\EditQuiz.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Export.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Footer.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Import.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Menu_uc.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Question.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Quiz.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\Controls\Test_Preview.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.g.resources
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfoInputs.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.AssemblyInfo.cs
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.csproj.CopyComplete
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\refint\sebExamination.dll
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.pdb
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\sebExamination.genruntimeconfig.cache
+C:\Users\Administrator\OneDrive - Hanoi University of Science and Technology\Documents\GitHub\sebExamination\obj\Debug\net6.0-windows\ref\sebExamination.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\bin\Debug\net6.0-windows\itextsharp.dll
+D:\code\sth\BTLoop20222\sebExamination\BTLoop20222\BTLoop20222\sebExamination\obj\Debug\net6.0-windows\sebExamination_Content.g.cs

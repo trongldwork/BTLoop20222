@@ -1,0 +1,347 @@
+Category name: Hoá hữu cơ
+thisline support the file reader to read both quizz file and category file
+
+
+Công thức cấu tạo chung của các hidrocacbon no là gì?
+A. CnH2n
+B. CnH2n+1
+C. CnH2n-2
+D. CnH2n+2
+ANSWER: B
+1
+
+Tên gọi khác của butan là gì?
+A. Propan
+B. Pentan
+C. Ethan
+D. Propin
+ANSWER: B
+1
+
+Đơn vị đo độ dài trong hóa học là gì?
+A. Đặc biệt
+B. Mét
+C. Kilogram
+D. Gram
+ANSWER: B
+1
+
+Nhóm chức -COOH trong hợp chất hữu cơ được gọi là gì?
+A. Carboxyl
+B. Carbonyl
+C. Hydroxyl
+D. Amino
+ANSWER: A
+1
+
+Điểm sôi của ethanol là bao nhiêu độ Celsius?
+A. 78
+B. 100
+C. 0
+D. -114
+ANSWER: A
+1
+
+Chất nào là dạng chính của glucose?
+A. C6H10O5
+B. C6H12O6
+C. C6H8O7
+D. C6H6O
+ANSWER: B
+1
+
+Chất nào là monome của PVC (polyvinyl chloride)?
+A. Ethylene
+B. Propylene
+C. Vinyl chloride
+D. Ethanol
+ANSWER: C
+1
+
+Loại phản ứng nào xảy ra khi một hidrocacbon và một halogen tạo thành một hợp chất mới?
+A. Phản ứng cộng
+B. Phản ứng chuyển vị
+C. Phản ứng thế
+D. Phản ứng oxi hóa khử
+ANSWER: A
+1
+
+Tên gọi chính xác của chất có công thức C2H5OH là gì?
+A. Ethanol
+B. Methanol
+C. Ethylene
+D. Ethene
+ANSWER: A
+1
+
+Nhóm chức -NH2 trong hợp chất hữu cơ được gọi là gì?
+A. Carboxyl
+B. Carbonyl
+C. Hydroxyl
+D. Amino
+ANSWER: D
+1
+
+Công thức cấu tạo của benzen là gì?
+A. C6H6
+B. C6H8
+C. C6H10
+D. C6H12
+ANSWER: A
+1
+
+Chất nào là sản phẩm chính của quá trình sục khí Cl2 vào hydrocacbon mạch hở?
+A. Alkan
+B. Alken
+C. Alkyn
+D. Alkyl chloride
+ANSWER: D
+1
+
+Loại phản ứng nào xảy ra khi một rượu và một axit tạo thành một este và nước?
+A. Phản ứng cộng
+B. Phản ứng thế
+C. Phản ứng trùng hợp
+D. Phản ứng este hóa
+ANSWER: D
+1
+
+Chất nào là sản phẩm chính của quá trình oxi hóa toluen?
+A. Benzaldehyd
+B. Benzoic acid
+C. Benzene
+D. Benzyl chloride
+ANSWER: B
+1
+
+Nhóm chức -OH trong hợp chất hữu cơ được gọi là gì?
+A. Carboxyl
+B. Carbonyl
+C. Hydroxyl
+D. Amino
+ANSWER: C
+1
+
+Công thức cấu tạo của etylen là gì?
+A. C2H4
+B. C2H6
+C. C2H2
+D. C2H5OH
+ANSWER: A
+1
+
+Tên gọi chính xác của chất có công thức CH3COOH là gì?
+A. Acetic acid
+B. Acetaldehyde
+C. Acetone
+D. Acetylene
+ANSWER: A
+1
+
+Loại phản ứng nào xảy ra khi một halogen thay thế một nguyên tử hydro trong hidrocacbon?
+A. Phản ứng cộng
+B. Phản ứng chuyển vị
+C. Phản ứng thế
+D. Phản ứng oxi hóa khử
+ANSWER: C
+1
+
+Công thức cấu tạo của propan là gì?
+A. C3H6
+B. C3H8
+C. C3H4
+D. C3H5OH
+ANSWER: B
+1
+
+Nhóm chức -CHO trong hợp chất hữu cơ được gọi là gì?
+A. Carboxyl
+B. Carbonyl
+C. Hydroxyl
+D. Amino
+ANSWER: B
+1
+
+Tên gọi chính xác của chất có công thức CH3CH2CH3 là gì?
+A. Methane
+B. Ethane
+C. Propane
+D. Butane
+ANSWER: C
+1
+
+Công thức cấu tạo của axetilen là gì?
+A. C2H4
+B. C2H6
+C. C2H2
+D. C2H5OH
+ANSWER: C
+1
+
+Loại phản ứng nào xảy ra khi một rượu và một axit tạo thành một este và nước?
+A. Phản ứng cộng
+B. Phản ứng thế
+C. Phản ứng trùng hợp
+D. Phản ứng este hóa
+ANSWER: D
+1
+
+Tên gọi chính xác của chất có công thức C6H6 là gì?
+A. Benzene
+B. Ethene
+C. Propene
+D. Butene
+ANSWER: A
+1
+
+Chất nào là sản phẩm chính của quá trình sục khí Cl2 vào etanol?
+A. Ethyl chloride
+B. Ethylene
+C. Ethane
+D. Ethyl alcohol
+ANSWER: A
+1
+
+Nhóm chức -NH2 trong hợp chất hữu cơ được gọi là gì?
+A. Carboxyl
+B. Carbonyl
+C. Hydroxyl
+D. Amino
+ANSWER: D
+1
+
+Công thức cấu tạo của phenol là gì?
+A. C6H6O
+B. C6H12O6
+C. C6H5OH
+D. C6H5COOH
+ANSWER: C
+1
+
+Loại phản ứng nào xảy ra khi một ancol bị oxi hóa thành một aldehyd hoặc axit?
+A. Phản ứng cộng
+B. Phản ứng chuyển vị
+C. Phản ứng thế
+D. Phản ứng oxi hóa khử
+ANSWER: D
+1
+
+Chất nào là sản phẩm chính của quá trình oxi hóa etylen?
+A. Ethanol
+B. Ethanoic acid
+C. Ethyne
+D. Ethanal
+ANSWER: B
+1
+
+Nhóm chức -C=O trong hợp chất hữu cơ được gọi là gì?
+A. Carboxyl
+B. Carbonyl
+C. Hydroxyl
+D. Amino
+ANSWER: B
+1
+
+Công thức cấu tạo của propyn là gì?
+A. C3H6
+B. C3H8
+C. C3H4
+D. C3H5OH
+ANSWER: C
+1
+
+Tên gọi chính xác của chất có công thức CH3CHO là gì?
+A. Acetic acid
+B. Acetaldehyde
+C. Acetone
+D. Acetylene
+ANSWER: B
+1
+
+Loại phản ứng nào xảy ra khi một halogen thay thế một nguyên tử hydro trong hidrocacbon?
+A. Phản ứng cộng
+B. Phản ứng chuyển vị
+C. Phản ứng thế
+D. Phản ứng oxi hóa khử
+ANSWER: C
+1
+
+Công thức cấu tạo của buten-1 là gì?
+A. C4H6
+B. C4H8
+C. C4H10
+D. C4H8O
+ANSWER: B
+1
+
+Nhóm chức -COOH trong hợp chất hữu cơ được gọi là gì?
+A. Carboxyl
+B. Carbonyl
+C. Hydroxyl
+D. Amino
+ANSWER: A
+1
+
+Tên gọi chính xác của chất có công thức C2H4 là gì?
+A. Ethanol
+B. Methanol
+C. Ethylene
+D. Ethene
+ANSWER: C
+1
+
+Công thức cấu tạo của axetilen là gì?
+A. C2H4
+B. C2H6
+C. C2H2
+D. C2H5OH
+ANSWER: C
+1
+
+Loại phản ứng nào xảy ra khi một rượu và một axit tạo thành một este và nước?
+A. Phản ứng cộng
+B. Phản ứng thế
+C. Phản ứng trùng hợp
+D. Phản ứng este hóa
+ANSWER: D
+1
+
+Tên gọi chính xác của chất có công thức CH3CH2CH3 là gì?
+A. Methane
+B. Ethane
+C. Propane
+D. Butane
+ANSWER: C
+1
+
+Nhóm chức -CHO trong hợp chất hữu cơ được gọi là gì?
+A. Carboxyl
+B. Carbonyl
+C. Hydroxyl
+D. Amino
+ANSWER: B
+1
+
+Công thức cấu tạo của etylen là gì?
+A. C2H4
+B. C2H6
+C. C2H2
+D. C2H5OH
+ANSWER: A
+1
+
+Loại phản ứng nào xảy ra khi một rượu và một axit tạo thành một este và nước?
+A. Phản ứng cộng
+B. Phản ứng thế
+C. Phản ứng trùng hợp
+D. Phản ứng este hóa
+ANSWER: D
+1
+
+Tên gọi chính xác của chất có công thức C6H6 là gì?
+A. Benzene
+B. Ethene
+C. Propene
+D. Butene
+ANSWER: A
+1

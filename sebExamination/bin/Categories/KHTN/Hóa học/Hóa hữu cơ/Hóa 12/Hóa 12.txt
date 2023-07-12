@@ -1,0 +1,322 @@
+Category name: Hoá 12
+thisline support the file reader to read both quizz file and category file
+
+
+Kim loại nào sau đây không có tính chất từ tính?
+A. Sắt
+B. Niken
+C. Nhôm
+D. Đồng
+ANSWER: C
+1
+
+Công thức hóa học của photpho pentaxit là gì?
+A. P2O3
+B. P4O6
+C. P4O10
+D. P2O5
+ANSWER: C
+1
+
+Chất nào sau đây không phải là chất chống ăn mòn?
+A. Sơn
+B. Dầu
+C. Mực in
+D. Chất bảo quản thực phẩm
+ANSWER: C
+1
+
+Kim loại nào sau đây là kim loại kiềm thổ?
+A. Natri
+B. Kali
+C. Magie
+D. Canxi
+ANSWER: C
+1
+
+Trong phản ứng hóa học, số oxi hóa tăng khi:
+A. Nhận electron
+B. Mất electron
+C. Giữ nguyên số electron
+D. Lưu giữ electron
+ANSWER: B
+1
+
+Trạng thái tự do của nguyên tử là:
+A. Nguyên tử trung hòa
+B. Cation
+C. Anion
+D. Phân tử
+ANSWER: A
+1
+
+Cấu hình electron của nguyên tử Nito (N) là gì?
+A. 1s22s22p3
+B. 1s22s22p4
+C. 1s22s22p5
+D. 1s22s22p6
+ANSWER: B
+1
+
+Phân tử H2O có hình dạng như thế nào?
+A. Tứ diện
+B. Tam giác tù
+C. Tetraedr
+D. Góc
+ANSWER: D
+1
+
+Công thức hóa học của anilin là gì?
+A. C6H6
+B. C6H5OH
+C. C6H5COOH
+D. C6H5NH2
+ANSWER: D
+1
+
+Chất nào sau đây không phải là chất trung tính?
+A. Nước
+B. Muối
+C. Dung dịch axit đậm đặc
+D. Dung dịch bazơ đậm đặc
+ANSWER: A
+1
+
+Kích thước của nguyên tử tăng khi di chuyển từ:
+A. Trái qua phải trong một chu kỳ
+B. Trên xuống dưới trong một nhóm
+C. Phải qua trái trong một chu kỳ
+D. Dưới lên trên trong một nhóm
+ANSWER: B
+1
+
+Kim loại nào sau đây có độ âm điện cao nhất?
+A. Alumin
+B. Sắt
+C. Đồng
+D. Kẽm
+ANSWER: A
+1
+
+Trong phản ứng hóa học, số oxi hóa giảm khi:
+A. Nhận electron
+B. Mất electron
+C. Giữ nguyên số electron
+D. Lưu giữ electron
+ANSWER: A
+1
+
+Chất nào sau đây không phải là chất trung tính?
+A. Nước
+B. Muối
+C. Dung dịch axit đậm đặc
+D. Dung dịch bazơ đậm đặc
+ANSWER: A
+1
+
+Công thức hóa học của nước vôi là gì?
+A. Ca(OH)2
+B. CaCO3
+C. CaO
+D. CaCl2
+ANSWER: A
+1
+
+Công thức hóa học của este etyl axetat là gì?
+A. C2H5OH
+B. CH3COOH
+C. CH3COOC2H5
+D. C2H6O
+ANSWER: C
+1
+
+Chất nào sau đây là chất tạo axit trong nước?
+A. NaOH
+B. H2SO4
+C. NH3
+D. KOH
+ANSWER: B
+1
+
+Công thức hóa học của amoniac là gì?
+A. NH3
+B. NH4OH
+C. NH4Cl
+D. NH2OH
+ANSWER: A
+1
+
+Chất nào sau đây có tính chất cơ bản?
+A. HCl
+B. NaOH
+C. H2SO4
+D. HNO3
+ANSWER: B
+1
+
+Công thức hóa học của axit clohidric là gì?
+A. HCl
+B. H2SO4
+C. HNO3
+D. H3PO4
+ANSWER: A
+1
+
+Kim loại nào sau đây không có tính chất từ tính?
+A. Sắt
+B. Niken
+C. Nhôm
+D. Đồng
+ANSWER: C
+1
+
+Công thức hóa học của photpho pentaxit là gì?
+A. P2O3
+B. P4O6
+C. P4O10
+D. P2O5
+ANSWER: C
+1
+
+Kim loại nào sau đây là kim loại kiềm thổ?
+A. Natri
+B. Kali
+C. Magie
+D. Canxi
+ANSWER: C
+1
+
+Trong phản ứng hóa học, số oxi hóa tăng khi:
+A. Nhận electron
+B. Mất electron
+C. Giữ nguyên số electron
+D. Lưu giữ electron
+ANSWER: B
+1
+
+Trạng thái tự do của nguyên tử là:
+A. Nguyên tử trung hòa
+B. Cation
+C. Anion
+D. Phân tử
+ANSWER: A
+1
+
+Cấu hình electron của nguyên tử Nito (N) là gì?
+A. 1s22s22p3B. 1s22s22p4
+C. 1s22s22p5
+D. 1s22s22p6
+ANSWER: B
+1
+
+Phân tử H2O có hình dạng như thế nào?
+A. Tứ diện
+B. Tam giác tù
+C. Tetraedr
+D. Góc
+ANSWER: D
+1
+
+Công thức hóa học của anilin là gì?
+A. C6H6
+B. C6H5OH
+C. C6H5COOH
+D. C6H5NH2
+ANSWER: D
+1
+
+Chất nào sau đây không phải là chất trung tính?
+A. Nước
+B. Muối
+C. Dung dịch axit đậm đặc
+D. Dung dịch bazơ đậm đặc
+ANSWER: A
+1
+
+Kích thước của nguyên tử tăng khi di chuyển từ:
+A. Trái qua phải trong một chu kỳ
+B. Trên xuống dưới trong một nhóm
+C. Phải qua trái trong một chu kỳ
+D. Dưới lên trên trong một nhóm
+ANSWER: B
+1
+
+Kim loại nào sau đây có độ âm điện cao nhất?
+A. Alumin
+B. Sắt
+C. Đồng
+D. Kẽm
+ANSWER: A
+1
+
+Trong phản ứng hóa học, số oxi hóa giảm khi:
+A. Nhận electron
+B. Mất electron
+C. Giữ nguyên số electron
+D. Lưu giữ electron
+ANSWER: A
+1
+
+Chất nào sau đây không phải là chất trung tính?
+A. Nước
+B. Muối
+C. Dung dịch axit đậm đặc
+D. Dung dịch bazơ đậm đặc
+ANSWER: A
+1
+
+Công thức hóa học của nước vôi là gì?
+A. Ca(OH)2
+B. CaCO3
+C. CaO
+D. CaCl2
+ANSWER: A
+1
+
+Công thức hóa học của este etyl axetat là gì?
+A. C2H5OH
+B. CH3COOH
+C. CH3COOC2H5
+D. C2H6O
+ANSWER: C
+1
+
+Chất nào sau đây là chất tạo axit trong nước?
+A. NaOH
+B. H2SO4
+C. NH3
+D. KOH
+ANSWER: B
+1
+
+Công thức hóa học của amoniac là gì?
+A. NH3
+B. NH4OH
+C. NH4Cl
+D. NH2OH
+ANSWER: A
+1
+
+Chất nào sau đây có tính chất cơ bản?
+A. HCl
+B. NaOH
+C. H2SO4
+D. HNO3
+ANSWER: B
+1
+
+Công thức hóa học của axit clohidric là gì?
+A. HCl
+B. H2SO4
+C. HNO3
+D. H3PO4
+ANSWER: A
+1
+
+Kim loại nào sau đây không có tính chất từ tính?
+A. Sắt
+B. Niken
+C. Nhôm
+D. Đồng
+ANSWER: C
+1

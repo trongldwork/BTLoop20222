@@ -394,12 +394,6 @@ namespace sebExamination.Controls
                         randomNumbers.Add(randomNumber);
                     }
                 }
-                string t = "";
-                for(int i = 0; i<randomNumbers.Count; i++)
-                {
-                    t = t+ "/" + randomNumbers[i].ToString();
-                }
-                MessageBox.Show(t);
                 for (int i = 0; i < randomNumbers.Count; i++)
                 {
                     temp.Add(questions[randomNumbers[i]]);

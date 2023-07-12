@@ -1,0 +1,339 @@
+Category name: Sinh thái học
+thisline support the file reader to read both quizz file and category file
+
+
+Sinh thái học là môn khoa học nghiên cứu về gì?
+A. Các yếu tố về môi trường
+B. Các yếu tố về di truyền
+C. Các yếu tố về sức khỏe con người
+D. Các yếu tố về công nghệ
+ANSWER: A
+1
+
+Hệ sinh thái là gì?
+A. Tập hợp các loài sống trong một vùng địa lý cụ thể
+B. Một cá thể sống trong một môi trường cụ thể
+C. Một nhóm cá thể cùng loài sống trong một vùng địa lý cụ thể
+D. Tất cả câu trên đều sai
+ANSWER: A
+1
+
+Các nhà sinh thái học nghiên cứu về mối quan hệ giữa các yếu tố trong một hệ sinh thái gọi là gì?
+A. Quan hệ sinh thái
+B. Đa dạng sinh học
+C. Công nghệ sinh thái
+D. Sự phát triển sinh thái
+ANSWER: A
+1
+
+Sự đa dạng sinh học đề cập đến gì?
+A. Số lượng các loài có mặt trong một môi trường
+B. Sự khác biệt về cấu trúc và chức năng giữa các loài
+C. Sự phân bố các loài trong một khu vực cụ thể
+D. Sự tương tác giữa các loài trong một môi trường
+ANSWER: B
+1
+
+Khái niệm "sự phân bố địa lý" trong sinh thái học đề cập đến gì?
+A. Sự biến đổi di truyền trong một quần thể
+B. Sự khác biệt về cấu trúc và chức năng giữa các loài
+C. Sự phân bố các loài trong một khu vực cụ thể
+D. Sự tương tác giữa các loài trong một môi trường
+ANSWER: C
+1
+
+Quá trình chuyển đổi năng lượng mặt trời thành năng lượng hóa học thông qua quá trình quang hợp xảy ra ở đâu?
+A. Trophic level
+B. Food chain
+C. Food web
+D. Producer
+ANSWER: D
+1
+
+Môi trường sinh thái đáy đại dương được gọi là gì?
+A. Abyssal zone
+B. Intertidal zone
+C. Neritic zone
+D. Pelagic zone
+ANSWER: A
+1
+
+Sự tương tác giữa các loài trong một môi trường cụ thể được gọi là gì?
+A. Cộng sinh
+B. Hợp sinh
+C. Ký sinh
+D. Symbiosis
+ANSWER: D
+1
+
+Khái niệm "dinh dưỡng" trong sinh thái học đề cập đến gì?
+A. Quá trình di chuyển của các loài trong môi trường
+B. Quá trình trao đổi gen giữa các loài
+C. Sự lấy thức ăn và quá trình sử dụng năng lượng của các loài
+D. Sự sinh sản và phát triển của các loài
+ANSWER: C
+1
+
+Hệ thống con đường mà các chất dinh dưỡng chuyển đổi qua các cấp độ trophic trong một hệ sinh thái được gọi là gì?
+A. Trophic level
+B. Food chain
+C. Food web
+D. Producer
+ANSWER: B
+1
+
+Quá trình nào cho phép các chất dinh dưỡng được tái tạo và trở lại môi trường từ sinh vật chết?
+A. Phân huỷ
+B. Quang hợp
+C. Hô hấp
+D. Hợp nhất
+ANSWER: A
+1
+
+Khi một loài sinh vật tồn tại trong một khu vực mà không gây ảnh hưởng đáng kể đến các loài khác, điều này được gọi là gì?
+A. Sự cạnh tranh
+B. Sự ký sinh
+C. Sự hợp sinh
+D. Sự thống trị
+ANSWER: D
+1
+
+Môi trường nước ngọt được chia thành các loại gì dựa trên sự cường độ ánh sáng xâm nhập và sự phân tán của thực vật nước?
+A. Zonation
+B. Ecosystem
+C. Biome
+D. Trophic level
+ANSWER: A
+1
+
+Sự cân bằng giữa các loài trong một hệ sinh thái gọi là gì?
+A. Cân bằng sinh thái
+B. Sự tương tác sinh thái
+C. Sự đa dạng sinh học
+D. Sự phân bố sinh thái
+ANSWER: A
+1
+
+Quá trình nào xảy ra khi một loài sinhvật chuyển đổi năng lượng hóa học thành năng lượng nhiệt?
+A. Quá trình quang hợp
+B. Quá trình hô hấp
+C. Quá trình phân giải
+D. Quá trình cân bằng sinh thái
+ANSWER: B
+1
+
+Một cộng đồng sinh vật bao gồm các loài sống chung một môi trường cụ thể, được gọi là gì?
+A. Hệ sinh thái
+B. Tổ hợp sinh thái
+C. Trophic level
+D. Cộng sinh
+ANSWER: A
+1
+
+Các nhà sinh thái học sử dụng khái niệm "phân bố sinh thái" để nói về gì?
+A. Sự khác biệt về cấu trúc và chức năng giữa các loài
+B. Sự phân bố các loài trong một khu vực cụ thể
+C. Sự tương tác giữa các loài trong một môi trường
+D. Sự thay đổi di truyền trong một quần thể
+ANSWER: B
+1
+
+Một nhóm các loài trong cùng một khu vực cụ thể, có khả năng sinh sản với nhau và tạo ra hậu duệ là gì?
+A. Quần thể
+B. Cộng đồng
+C. Sinh vật
+D. Ecosystem
+ANSWER: A
+1
+
+Quá trình nào xảy ra khi các chất dinh dưỡng di chuyển qua lại giữa sinh vật sống và môi trường xung quanh?
+A. Quá trình cân bằng sinh thái
+B. Quá trình trao đổi chất
+C. Quá trình hấp thụ
+D. Quá trình đồng hóa
+ANSWER: B
+1
+
+Một nhóm các hệ sinh thái gần nhau có tính tương đồng sinh thái và đặc điểm địa lý được gọi là gì?
+A. Biome
+B. Ecosystem
+C. Food chain
+D. Zonation
+ANSWER: A
+1
+
+Quá trình nào xảy ra khi một loài sinh vật sống trên hoặc trong một loài khác và gây hại cho loài chủ?
+A. Sự cạnh tranh
+B. Sự ký sinh
+C. Sự hợp sinh
+D. Sự thống trị
+ANSWER: B
+1
+
+Sự thay đổi di truyền trong một quần thể sinh vật xảy ra thông qua quá trình nào?
+A. Quá trình phân giải
+B. Quá trình đồng hóa
+C. Quá trình trao đổi chất
+D. Quá trình truyền gen
+ANSWER: D
+1
+
+Quá trình nào xảy ra khi một loài sinh vật sử dụng nguồn tài nguyên một cách ưu tiên trước các loài khác?
+A. Sự cạnh tranh
+B. Sự ký sinh
+C. Sự hợp sinh
+D. Sự thống trị
+ANSWER: A
+1
+
+Một môi trường nào gặp biến đổi nhanh về môi trường và các điều kiện sống?
+A. Biome
+B. Ecosystem
+C. Food chain
+D. Tidal zone
+ANSWER: D
+1
+
+Một nhóm các chuỗi thức ăn trong một hệ sinh thái được gọi là gì?
+A. Trophic level
+B. Food chain
+C. Food web
+D. Producer
+ANSWER: C
+1
+
+Sự tương tác giữa các loài trong một môi trường cụ thể được gọi là gì?
+A. Cộng sinh
+B. Hợp sinh
+C. Ký sinh
+D. Symbiosis
+ANSWER: D
+1
+
+Sự tương tác giữa các loài trong một môi trường cụ thể được gọi là gì?
+A. Cộng sinh
+B. Hợp sinh
+C. Ký sinh
+D. Symbiosis
+ANSWER: D
+1
+
+Môi trường nước ngọt được chia thành các loại gì dựa trên sự cường độ ánh sáng xâm nhập và sự phân tán của thực vật nước?
+A. Zonation
+B. Ecosystem
+C. Biome
+D. Trophic level
+ANSWER: A
+1
+
+Sự cân bằng giữa các loài trong một hệ sinh thái gọi là gì?
+A. Cân bằng sinh thái
+B. Sự tương tác sinh thái
+C. Sự đa dạng sinh học
+D. Sự phân bố sinh thái
+ANSWER: A
+1
+
+Quá trình nào cho phép các chất dinh dưỡng được tái tạo và trở lại môi trường từ sinh vật chết?
+A. Phân huỷ
+B. Quang hợp
+C. Hô hấp
+D. Hợp nhất
+ANSWER: A
+1
+
+Khi một loài sinh vật tồn tại trong một khu vực mà không gây ảnh hưởng đáng kể đến các loài khác, điều này được gọi là gì?
+A. Sự cạnh tranh
+B. Sự ký sinh
+C. Sự hợp sinh
+D. Sự thống trị
+ANSWER: D
+1
+
+Môi trường nước ngọt được chia thành các loại gì dựa trên sự cường độ ánh sáng xâm nhập và sự phân tán của thực vật nước?
+A. Zonation
+B. Ecosystem
+C. Biome
+D. Trophic level
+ANSWER: A
+1
+
+Sự tương tác giữa các loài trong một môi trường cụ thể được gọi là gì?
+A. Cộng sinh
+B. Hợp sinh
+C. Ký sinh
+D. Symbiosis
+ANSWER: D
+1
+
+Khái niệm "hệ sinh thái" đề cập đến gì?
+A. Tổ hợp các loài sống chung một môi trường cụ thể
+B. Một cá thể sống trong một môi trường cụ thể
+C. Một nhóm cá thể cùng loài sống trong một vùng địa lý cụ thể
+D. Tất cả câu trên đều sai
+ANSWER: A
+1
+
+Sự cân bằng giữa các loài trong một hệ sinh thái gọi là gì?
+A. Cân bằng sinh thái
+B. Sự tương tác sinh thái
+C. Sự đa dạng sinh học
+D. Sự phân bố sinh thái
+ANSWER: A
+1
+
+Quá trình chuyển đổi năng lượng mặt trời thành năng lượng hóa học thông qua quá trình quang hợp xảy ra ở đâu?
+A. Trophic level
+B. Food chain
+C. Food web
+D. Producer
+ANSWER: D
+1
+
+Sự thay đổi di truyền trong một quần thể sinh vật xảy ra thông qua quá trình nào?
+A. Quá trình phân giải
+B. Quá trình đồng hóa
+C. Quá trình trao đổi chất
+D. Quá trình truyền gen
+ANSWER: D
+1
+
+Quá trình nào xảy ra khi một loài sinh vật sống trên hoặc trong một loài khác và gây hại cho loài chủ?
+A. Sự cạnh tranh
+B. Sự ký sinh
+C. Sự hợp sinh
+D. Sự thống trị
+ANSWER: B
+1
+
+Môi trường nào gặp biến đổi nhanh về môi trường và các điều kiện sống?
+A. Biome
+B. Ecosystem
+C. Food chain
+D. Tidal zone
+ANSWER: D
+1
+
+Sự tương tác giữa các loài trong một môi trường cụ thể được gọi là gì?
+A. Cộng sinh
+B. Hợp sinh
+C. Ký sinh
+D. Symbiosis
+ANSWER: D
+1
+
+Môi trường nước ngọt được chia thành các loại gì dựa trên sự cường độ ánh sáng xâm nhập và sự phân tán của thực vật nước?
+A. Zonation
+B. Ecosystem
+C. Biome
+D. Trophic level
+ANSWER: A
+1
+
+Sự cân bằng giữa các loài trong một hệ sinh thái gọi là gì?
+A. Cân bằng sinh thái
+B. Sự tương tác sinh thái
+C. Sự đa dạng sinh học
+D. Sự phân bố sinh thái
+ANSWER: A
+1

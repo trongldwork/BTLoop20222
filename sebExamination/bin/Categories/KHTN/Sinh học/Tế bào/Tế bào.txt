@@ -1,0 +1,363 @@
+Category name: Tế bào
+thisline support the file reader to read both quizz file and category file
+
+
+Tế bào là gì?
+A. Đơn vị cấu tạo của cơ thể sống
+B. Đơn vị cấu tạo của gen
+C. Đơn vị cấu tạo của tạp chất
+D. Đơn vị cấu tạo của nguyên tử
+ANSWER: A
+1
+
+Ai là nhà khoa học đã khám phá và đặt tên cho tế bào?
+A. Robert Hooke
+B. Albert Einstein
+C. Isaac Newton
+D. Charles Darwin
+ANSWER: A
+1
+
+Tế bào có nhân và không có nhân được gọi là gì?
+A. Tế bào eukaryotic
+B. Tế bào prokaryotic
+C. Tế bào thực vật
+D. Tế bào động vật
+ANSWER: B
+1
+
+Phần của tế bào chứa hệ gen và chịu trách nhiệm điều khiển hoạt động của tế bào được gọi là gì?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+
+Tế bào thực vật có cấu trúc bổ sung gọi là gì, giúp tăng cường chức năng quang hợp?
+A. Thân
+B. Lá
+C. Rễ
+D. Hoa
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm tạo ra các protein?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình truyền gen
+ANSWER: B
+1
+
+Cấu trúc nào trong tế bào chịu trách nhiệm bảo vệ và điều tiết sự chất lượng chất lỏng trong và ngoài tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm tạo ra năng lượng cần thiết cho hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: C
+1
+
+Tế bào thực vật được bao bọc bởi cấu trúc gì, có nhiệm vụ bảo vệ và duy trì hình dạng của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Vách tế bào
+ANSWER: D
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm sản xuất năng lượng hóa học thông qua quang hợp?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: D
+1
+
+Cấu trúc nào trong tế bào chứa các hạt nhân bên trong và chứa các hệ thống di truyền?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+
+Tế bào có cấu trúc nhân đều gọi là gì?
+A. Tế bào đa nhân
+B. Tế bào đơn nhân
+C. Tế bào ác nhân
+D. Tế bào nhân đa
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm tạo ra các phân tử mới giống hệt như tế bào gốc ban đầu?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: A
+1
+
+Cấu trúc nào trong tế bào chứa các cơ quan và hệ thống hoạt động của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: C
+1
+
+Tế bào động vật có cấu trúc bổ sung gọi là gì, giúp thực hiện chức năng di chuyển?
+A. Thân
+B. Lá
+C. Rễ
+D. Chân
+ANSWER: D
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm điều khiển và điều chỉnh các hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: B
+1
+
+17.Cấu trúc nào trong tế bào chịu trách nhiệm bảo vệ và kiểm soát lưu thông chất lỏng trong và ngoài tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm cung cấp năng lượng cần thiết cho hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: C
+1
+
+Tế bào thực vật được bao bọc bởi cấu trúc nào, có nhiệm vụ bảo vệ và duy trì hình dạng của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Vách tế bào
+ANSWER: D
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm sản xuất năng lượng hóa học thông qua quang hợp?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: D
+1
+
+Cấu trúc nào trong tế bào chứa các hạt nhân bên trong và chứa các hệ thống di truyền?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+
+Tế bào có cấu trúc nhân đều gọi là gì?
+A. Tế bào đa nhân
+B. Tế bào đơn nhân
+C. Tế bào ác nhân
+D. Tế bào nhân đa
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm tạo ra các phân tử mới giống hệt như tế bào gốc ban đầu?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: A
+1
+
+Cấu trúc nào trong tế bào chứa các cơ quan và hệ thống hoạt động của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: C
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm điều khiển và điều chỉnh các hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: B
+1
+
+Cấu trúc nào trong tế bào chịu trách nhiệm bảo vệ và kiểm soát lưu thông chất lỏng trong và ngoài tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm cung cấp năng lượng cần thiết cho hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: C
+1
+
+Tế bào thực vật được bao bọc bởi cấu trúc nào, có nhiệm vụ bảo vệ và duy trì hình dạng của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Vách tế bào
+ANSWER: D
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm sản xuất năng lượng hóa học thông qua quang hợp?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: D
+1
+
+Cấu trúc nào trong tế bào chứa các hạt nhân bên trong và chứa các hệ thống di truyền?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+
+Tế bào có cấu trúc nhân đều gọi là gì?
+A. Tế bào đa nhân
+B. Tế bào đơn nhân
+C. Tế bào ác nhân
+D. Tế bào nhân đa
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm tạo ra các phân tử mới giống hệt như tế bào gốc ban đầu?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D.Quá trình quang hợp
+ANSWER: A
+1
+
+Cấu trúc nào trong tế bào chứa các cơ quan và hệ thống hoạt động của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: C
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm điều khiển và điều chỉnh các hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: B
+1
+
+Cấu trúc nào trong tế bào chịu trách nhiệm bảo vệ và kiểm soát lưu thông chất lỏng trong và ngoài tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm cung cấp năng lượng cần thiết cho hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: C
+1
+
+Tế bào thực vật được bao bọc bởi cấu trúc nào, có nhiệm vụ bảo vệ và duy trì hình dạng của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Vách tế bào
+ANSWER: D
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm sản xuất năng lượng hóa học thông qua quang hợp?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: D
+1
+
+Cấu trúc nào trong tế bào chứa các hạt nhân bên trong và chứa các hệ thống di truyền?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+
+Tế bào có cấu trúc nhân đều gọi là gì?
+A. Tế bào đa nhân
+B. Tế bào đơn nhân
+C. Tế bào ác nhân
+D. Tế bào nhân đa
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm tạo ra các phân tử mới giống hệt như tế bào gốc ban đầu?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: A
+1
+
+Cấu trúc nào trong tế bào chứa các cơ quan và hệ thống hoạt động của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: C
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm điều khiển và điều chỉnh các hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: B
+1
+
+Cấu trúc nào trong tế bào chịu trách nhiệm bảo vệ và kiểm soát lưu thông chất lỏng trong và ngoài tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: B
+1
+
+Quá trình nào trong tế bào chịu trách nhiệm cung cấp năng lượng cần thiết cho hoạt động của tế bào?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: C
+1

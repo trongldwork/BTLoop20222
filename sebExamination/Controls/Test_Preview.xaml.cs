@@ -68,9 +68,9 @@ namespace sebExamination.Controls
         }
         private void Export_Click(object sender, RoutedEventArgs e)
         {
-            FileImp fileImp = new FileImp();
-            fileImp.splitImage(path);
-            fileImp.ConvertTxtToPdf(path, "pdftest.pdf");
+            FileImp fileImp = new FileImp(); 
+            string outputpath = fileImp.ReplaceImageTags(path);
+            fileImp.ConvertTextToPdf(outputpath , "pdfxx.pdf");
         }
     }
 }

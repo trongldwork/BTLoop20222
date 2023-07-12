@@ -1,0 +1,325 @@
+Category name: Di truyền và biến dị
+thisline support the file reader to read both quizz file and category file
+
+
+Di truyền là quá trình truyền dẫn thông tin gen từ thế hệ này sang thế hệ khác. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Điểm biến dị là hiện tượng thay đổi di truyền của một gen trong một quần thể. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Gen là đơn vị di truyền cơ bản. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Quần thể là tập hợp các cá thể cùng loài sinh sống trong cùng một môi trường. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Loài là nhóm cá thể có khả năng sinh sản tạo ra hậu duệ khác biệt với nhóm khác. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Sự chuyển giao thông tin di truyền từ DNA sang RNA được gọi là quá trình nào?
+A. Transkript
+B. Translokation
+C. Transkription
+D. Translation
+ANSWER: C
+1
+
+Tất cả các gen có thể được biểu hiện trong tất cả các tế bào của một sinh vật. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: B
+1
+
+Tế bào mẹ là tế bào sinh ra từ quá trình phân chia tế bào. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: B
+1
+
+Sự chuyển giao thông tin di truyền từ RNA sang protein được gọi là quá trình nào?
+A. Transkript
+B. Translokation
+C. Transkription
+D. Translation
+ANSWER: D
+1
+
+Đột biến là hiện tượng thay đổi trong DNA mà có thể được truyền từ thế hệ này sang thế hệ khác. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Phân tử DNA làm nhiệm vụ lưu trữ thông tin di truyền trong tế bào. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Loại di truyền được truyền từ cha mẹ sang con cái qua các thể tế bào sinh sản được gọi là di truyền:
+A. Vô hình
+B. Có hình
+C. Lập thể
+D. Đột biến
+ANSWER: B
+1
+
+Tập hợp các gen có trong một quần thể được gọi là:
+A. Hàm di truyền
+B. Gen học
+C. Di truyền học
+D. Genom
+ANSWER: D
+1
+
+Định luật phân li là định luật nào trong di truyền học?
+A. Định luật Mendel thứ nhất
+B. Định luật Mendel thứ hai
+C. Định luật Mendel thứ ba
+D. Định luật Hardy-Weinberg
+ANSWER: B
+1
+
+Bộ gen hoàn chỉnh của một sinh vật được gọi là:
+A. Hàm di truyền
+B. Gen học
+C. Di truyền học
+D. Genom
+ANSWER: D
+1
+
+Định luật phân li ngẫu nhiên là định luật nào trong di truyền học?
+A. Định luật Mendel thứ nhất
+B. Định luật Mendel thứ hai
+C. Định luật Mendel thứ ba
+D. Định luật Hardy-Weinberg
+ANSWER: A
+1
+
+Sự biểu hiện của một gen thông qua các đặc điểm hình thái hoặc chức năng của một sinh vật được gọi là:
+A. Gen học
+B. Biểu hiện gen
+C. Di truyền học
+D. Genom
+ANSWER: B
+1
+
+Trong di truyền học, kí hiệu "AA" biểu thị cho:
+A. Đột biến
+B. Đồng hợp
+C. Kép
+D. Heterozygote
+ANSWER: B
+1
+
+Trong di truyền học, kí hiệu "Aa" biểu thị cho:
+A. Đột biến
+B. Đồng hợp
+C. Kép
+D. Heterozygote
+ANSWER: D
+1
+
+Trong di truyền học, kí hiệu "aa" biểu thị cho:
+A. Đột biến
+B. Đồng hợp
+C. Kép
+D. Heterozygote
+ANSWER: A
+1
+
+Gen được biểu hiện chỉ khi có hiện diện của một gen tương ứng trên cả hai nhiễm sắc thể là:
+A. Gen liên kết
+B. Gen đôi
+C. Gen bất hoạt
+D. Gen kiểm soát
+ANSWER: B
+1
+
+Hiện tượng khi các gen đôi độc lập nhau giữa các cặp nhiễm sắc thể không liên kết giao cắt xảy ra là:
+A. Kết hợp gen
+B. Liên kết gen
+C. Phân li gen
+D. Chuyển gen
+ANSWER: A
+1
+
+Hiện tượng khi các gen trên cùng một cặp nhiễm sắc thể liên kết chặt chẽ và không xảy ra sự giao cắt là:
+A. Kết hợp gen
+B. Liên kết gen
+C. Phân li gen
+D. Chuyển gen
+ANSWER: B
+1
+
+Hiện tượng chuyển gen xảy ra khi:
+A. Gen trên một nhiễm sắc thể chuyển sang nhiễm sắc thể khác
+B. Gen được biểu hiện chỉ khi có hiện diện của một gen tương ứng trên cùng một nhiễm sắc thể
+C. Gen trên cùng một nhiễm sắc thể liên kết chặt chẽ và không xảy ra sự giao cắt
+D. Gen đôi độc lập nhau giữa các cặp nhiễm sắc thể không liên kết giao cắt xảy ra
+ANSWER: A
+1
+
+Hiện tượng phân li gen xảy ra khi:
+A. Gen trên một nhiễm sắc thể chuyển sang nhiễm sắc thể khác
+B. Gen được biểu hiện chỉ khi có hiện diện của một gen tương ứng trên cùng một nhiễm sắc thể
+C. Gen trên cùng một nhiễm sắc thể liên kết chặt chẽ và không xảy ra sự giao cắt
+D. Gen đôi độc lập nhau giữa các cặp nhiễm sắc thể không liên kết giao cắt xảy ra
+ANSWER: A
+1
+
+Hiện tượng kết hợp gen xảy ra khi:
+A. Gen trên một nhiễm sắc thể chuyển sang nhiễm sắc thể khác
+B. Gen được biểu hiện chỉ khi có hiện diện của một gen tương ứng trên cùng một nhiễm sắc thể
+C. Gen trên cùng một nhiễm sắc thể liên kết chặt chẽ và không xảy ra sự giao cắt
+D. Gen đôi độc lập nhau giữa các cặp nhiễm sắc thể không liên kết giao cắt xảy ra
+ANSWER: C
+1
+
+Hiện tượng liên kết gen xảy ra khi:
+A. Gen trên một nhiễm sắc thể chuyển sang nhiễm sắc thể khác
+B. Gen được biểu hiện chỉ khi có hiện diện của một gen tương ứng trên cùng một nhiễm sắc thể
+C. Gen trên cùng một nhiễm sắc thể liên kết chặt chẽ và không xảy ra sự giao cắt
+D. Gen đôi độc lập nhau giữa các cặp nhiễm sắc thể không liên kết giao cắt xảy ra
+ANSWER: C
+1
+
+Chất liệu di truyền được tạo thành từ tất cả các gen trong một sinh vật được gọi là:
+A. Gen học
+B. Biểu hiện gen
+C. Di truyền học
+D. Genom
+ANSWER: D
+1
+
+Hiện tượng đột biến có thể gây ra các biến dạng di truyền và tạo ra đa dạng trong một quần thể. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Hiện tượng chuyển gen xảy ra tự nhiên và không có ảnh hưởng từ môi trường. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: B
+1
+
+Hiện tượng đột biến có thể được gây ra bởi tác động của môi trường như tia X, chất độc, hoặc sự thay đổi nhiệt độ. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Một gen đột biến có thể được truyền từ thế hệ này sang thế hệ khác. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Một đột biến di truyền có thể làm thay đổi diện mạo và tính chất của một sinh vật. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Hiện tượng biến dị di truyền chỉ xảy ra ở động vật và không xảy ra ở thực vật. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: B
+1
+
+Một biến dị di truyền có thể làm tăng khả năng sinh tồn và thích ứng của một sinh vật trong môi trường thay đổi. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Hiện tượng đột biến di truyền chỉ xảy ra ở vi sinh vật và không xảy ra ở động vật. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: B
+1
+
+Hiện tượng biến dị di truyền chỉ xảy ra ở thực vật và không xảy ra ở động vật. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Đột biến di truyền có thể xảy ra tự nhiên hoặc được tạo ra thông qua các phương pháp nhân tạo. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Hiện tượng biến dị di truyền chỉ xảy ra ở vi sinh vật và không xảy ra ởđộng vật. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: B
+1
+
+Một biến dị di truyền có thể làm thay đổi diện mạo và tính chất của một sinh vật. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Đột biến di truyền là hiện tượng thay đổi trong DNA mà có thể được truyền từ thế hệ này sang thế hệ khác. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Biến dị di truyền là hiện tượng thay đổi di truyền của một gen trong một quần thể. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Gen là đơn vị di truyền cơ bản. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Quần thể là tập hợp các cá thể cùng loài sinh sống trong cùng một môi trường. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Loài là nhóm cá thể có khả năng sinh sản tạo ra hậu duệ khác biệt với nhóm khác. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: A
+1
+
+Sự chuyển giao thông tin di truyền từ DNA sang RNA được gọi là quá trình nào?
+A. Transkript
+B. Translokation
+C. Transkription
+D. Translation
+ANSWER: C
+1
+
+Tất cả các gen có thể được biểu hiện trong tất cả các tế bào của một sinh vật. Đúng hay sai?
+A. Đúng
+B. Sai
+ANSWER: B
+1

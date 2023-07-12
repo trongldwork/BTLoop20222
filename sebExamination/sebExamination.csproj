@@ -46,6 +46,31 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="bin\Categories\KHTN\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa học.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa hữu cơ\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa hữu cơ\Hóa 12\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa hữu cơ\Hóa 12\Hóa 12.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa hữu cơ\Hóa hữu cơ.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa vô cơ\count.txt" />
+    <Content Include="bin\Categories\KHTN\Hóa học\Hóa vô cơ\Hóa vô cơ.txt" />
+    <Content Include="bin\Categories\KHTN\KHTN.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh học.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Sinh thái học.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Tiến hóa\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Tiến hóa\Di truyền và biến dị\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Tiến hóa\Di truyền và biến dị\Di truyền và biến dị.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Sinh thái học\Tiến hóa\Tiến hóa.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Tế bào\count.txt" />
+    <Content Include="bin\Categories\KHTN\Sinh học\Tế bào\Tế bào.txt" />
+    <Content Include="bin\Categories\KHTN\Toán\count.txt" />
+    <Content Include="bin\Categories\KHTN\Toán\Toán.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Aspose.Words" Version="23.6.0" />
     <PackageReference Include="iTextSharp" Version="5.5.13.3" />
     <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />

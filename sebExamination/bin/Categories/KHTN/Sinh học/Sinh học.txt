@@ -1,0 +1,331 @@
+Category name: Sinh học
+thisline support the file reader to read both quizz file and category file
+
+
+Quá trình chuyển đổi năng lượng ánh sáng thành năng lượng hóa học trong thực vật được gọi là gì?
+A. Quang hợp
+B. Hô hấp
+C. Quang trị
+D. Quang phân li
+ANSWER: A
+1
+
+Bộ phận nào trong tế bào thực vật chịu trách nhiệm tiến hành quang hợp?
+A. Lá
+B. Thân
+C. Rễ
+D. Hoa
+ANSWER: A
+1
+
+Trong quá trình phân tử hoá, quá trình nào tạo ra RNA dựa trên thông tin từ DNA?
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: A
+1
+
+Loại tế bào nào không có nhân?
+A. Tế bào thực vật
+B. Tế bào động vật
+C. Tế bào vi khuẩn
+D. Tế bào nấm
+ANSWER: C
+1
+
+Sự tăng trưởng và phân chia tế bào xảy ra trong giai đoạn nào của chu kỳ tế bào?
+A. G1
+B. S
+C. G2
+D. M
+ANSWER: D
+1
+
+Cấu trúc nào của tế bào chịu trách nhiệm điều chỉnh quá trình trao đổi chất và hoạt động của tế bào?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: B
+1
+
+Các loại tế bào nào được gọi là "tế bào thần kinh"?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào dịch
+D. Tế bào thần kinh
+ANSWER: D
+1
+
+Quá trình tiếp xúc giữa tế bào hạch và tế bào trứng được gọi là gì?
+A. Quá trình lắng đọng
+B. Quá trình nguyên bào
+C. Quá trình phân bào
+D. Quá trình chồi bào
+ANSWER: B
+1
+
+Loại gen nào có khả năng thay đổi tính trạng di truyền của một sinh vật?
+A. Gen hiện hữu
+B. Gen hóa ngoại
+C. Gen chủ
+D. Gen thay đổi
+ANSWER: D
+1
+
+Quá trình sinh sản nào xảy ra khi một sinh vật tự sản xuất giống mình mà không cần sự tham gia của sinh vật khác?
+A. Sinh sản hữu tính
+B. Sinh sản vô tính
+C. Sinh sản kết hợp
+D. Sinh sản không giới tính
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi tế bào đơn nhân chia thành hai tế bào con có số lượng nhân bằng nhau?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: A
+1
+
+Quá trình truyền gen từ cha mẹ sang con cái gọi là gì?
+A. Kế thừa di truyền
+B. Chuyển gen
+C. Sắp xếp gen
+D. Đột biến gen
+ANSWER: A
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất insulin trong cơ thể?
+A. Tế bào thần kinh
+B. Tế bào gan
+C. Tế bào cơ
+D. Tế bào tuyến tụy
+ANSWER: D
+1
+
+Quá trình chuyển đổi năng lượng hóa học thành năng lượng di động trong tế bào được gọi là gì?
+A. Quang hợp
+B. Hô hấp
+C. Quang trị
+D. Quang phân li
+ANSWER: B
+1
+
+Loại tế bào nào có khả năng tự di chuyển?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào máu
+ANSWER: A
+1
+
+Cấu trúc nào trong tế bào chứa các hạt nhân bên trong và chứa các hệ thống di truyền?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+
+Quá trình nào tạo ra protein dựa trên thông tin từ RNA?
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: B
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất màng và tạo nên cấu trúc của sinh vật?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào tế bào
+ANSWER: D
+1
+
+Quá trình tạo ra một bản sao chính xác của DNA được gọi là gì?
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: C
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất các tế bào mới trong cơ thể?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào tế bào
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi tế bào đơn nhân chia thành hai tế bào con có số lượng nhân bằng nhau?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: A
+1
+
+Quá trình truyền gen từ cha mẹ sang con cái gọi là gì?
+A. Kế thừa di truyền
+B. Chuyển gen
+C. Sắp xếp gen
+D. Đột biến gen
+ANSWER: A
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất hormone trong cơ thể?
+A. Tế bào thần kinh
+B. Tế bào gan
+C. Tế bào cơ
+D. Tế bào tuyến
+ANSWER: D
+1
+
+Quá trình chuyển đổi năng lượng hóa học thành năng lượng di động trong tế bào được gọi là gì?
+A. Quang hợp
+B. Hô hấp
+C. Quang trị
+D. Quang phân li
+ANSWER: B
+1
+
+Loại tế bào nào có khả năng tự di chuyển?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào máu
+ANSWER: A
+1
+
+Cấu trúc nào trong tế bào chứa các hạt nhân bên trong và chứa các hệ thống di truyền?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+
+Quá trình nào tạo ra protein dựa trên thông tin từ RNA?
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: B
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất màng và tạo nên cấu trúc của sinh vật?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào tế bào
+ANSWER: D
+1
+
+Quá trình tạo ra một bản sao chính xác của DNA được gọi là gì?
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: C
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất các tế bào mới trong cơ thể?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào tế bào
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi tế bào đơn nhân chia thành hai tế bào con có số lượng nhân bằng nhau?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: A
+1
+
+Quá trình truyền gen từ cha mẹ sang con cái gọi là gì?
+A. Kế thừa di truyền
+B. Chuyển gen
+C. Sắp xếp gen
+D. Đột biến gen
+ANSWER: A
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất hormone trong cơ thể?
+A. Tế bào thần kinh
+B. Tế bào gan
+C. Tế bào cơ
+D. Tế bào tuyến
+ANSWER: D
+1
+
+Quá trình chuyển đổi năng lượng hóa học thành năng lượng di động trong tế bào được gọi là gì?
+A. Quang hợp
+B. Hô hấp
+C. Quang trị
+D. Quang phân li
+ANSWER: B
+1
+
+Loại tế bào nào có khả năng tự di chuyển?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào máu
+ANSWER: A
+1
+
+Cấu trúc nào trong tế bào chứa các hạt nhân bên trong và chứa các hệ thống di truyền?
+A. Lõi tế bào
+B. Màng tế bào
+C. Cytoplasm
+D. Hệ vi sinh vật
+ANSWER: A
+1
+
+Quá trình nào tạo ra protein dựa trên thông tin từ RNA?
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: B
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất màng và tạo nên cấu trúc của sinh vật?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào tế bào
+ANSWER: D
+1
+
+Quá trình tạo ra một bản sao chính xác của DNA được gọi là gì?
+A. Transcription
+B. Translation
+C. Replication
+D. Mutation
+ANSWER: C
+1
+
+Loại tế bào nào chịu trách nhiệm sản xuất các tế bào mới trong cơ thể?
+A. Tế bào cơ
+B. Tế bào xương
+C. Tế bào thần kinh
+D. Tế bào tế bào
+ANSWER: B
+1
+
+Quá trình nào xảy ra khi tế bào đơn nhân chia thành hai tế bào con có số lượng nhân bằng nhau?
+A. Quá trình nguyên phân
+B. Quá trình trao đổi gen
+C. Quá trình hô hấp
+D. Quá trình quang hợp
+ANSWER: A
+1

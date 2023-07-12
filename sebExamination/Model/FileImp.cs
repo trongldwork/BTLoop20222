@@ -41,6 +41,53 @@ namespace filereader
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns></returns>
+        /// 
+        public void ConvertTextToPdf(string textFilePath, string pdfFilePath)
+        {
+            iTextSharp.text.Document document = new iTextSharp.text.Document();
+
+            try
+            {
+                using (StreamReader sr = new StreamReader(textFilePath))
+                {
+                    PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(pdfFilePath, FileMode.Create));
+                    iTextSharp.text.Font vietnameseFontStyle = FontFactory.GetFont(FontFactory.TIMES, 12, BaseColor.BLACK);
+
+
+
+                    document.Open();
+
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        if (line.StartsWith(":<image>:"))
+                        {
+                            string imagePath = line.Substring(":<image>:".Length);
+                            Image image = Image.GetInstance(imagePath);
+                            float newWidth = 400f;
+                            float newHeight = 300f;
+                            image.ScaleAbsolute(newWidth, newHeight);
+                            image.Alignment = Image.ALIGN_LEFT;
+
+                            document.Add(image);
+                        }
+                        else
+                        {
+                            if (!string.IsNullOrEmpty(line))
+                            {
+                                document.Add(new iTextSharp.text.Paragraph(line, vietnameseFontStyle));
+                            }
+                        }
+                    }
+
+                    document.Close();
+                }
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+            }
+        }
         public List<Questions> LoadDataFromFile(string fileName)
         {
             List<Questions> questions = new List<Questions>();
@@ -193,11 +240,11 @@ namespace filereader
             {
                 string content = File.ReadAllText(textFilePath);
                 List<int> imagePositions = new List<int>();
-                int index = content.IndexOf(":<image>:");
+                int index = content.IndexOf("<image>");
                 while (index != -1)
                 {
                     imagePositions.Add(index);
-                    index = content.IndexOf(":<image>:", index + 1);
+                    index = content.IndexOf("<image>", index + 1);
                 }
                 StringBuilder formattedContent = new StringBuilder();
                 int startIndex = 0;
@@ -216,51 +263,23 @@ namespace filereader
         }
 
 
-        public void ConvertTxtToPdf(string textFilePath, string pdfFilePath)
+        public string ReplaceImageTags(string textFilePath)
         {
-            iTextSharp.text.Document document = new iTextSharp.text.Document();
-
+            string newFilePath = "";
             try
             {
-                using (StreamReader sr = new StreamReader(textFilePath))
-                {
-                    PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(pdfFilePath, FileMode.Create));
-                    BaseFont vietnameseFont = BaseFont.CreateFont("times.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-                    iTextSharp.text.Font vietnameseFontStyle = new iTextSharp.text.Font(vietnameseFont, 12);
-                    document.Open();
+                string content = File.ReadAllText(textFilePath);
 
-                    string line;
-                    while ((line = sr.ReadLine()) != null)
-                    {
-                        if (line.StartsWith(":<image>:"))
-                        {
-                            string imagePath = line.Substring(":<image>:".Length);
-                            iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(imagePath);
+                string modifiedContent = content.Replace("<image>", ":<image>");
 
-                            float newWidth = 400f;
-                            float newHeight = 300f;
-                            image.ScaleAbsolute(newWidth, newHeight);
-
-                            image.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
-
-                            document.Add(image);
-                        }
-                        else
-                        {
-                            if (!string.IsNullOrEmpty(line))
-                            {
-                                document.Add(new iTextSharp.text.Paragraph(line, vietnameseFontStyle));
-                            }
-                        }
-                    }
-
-                    document.Close();
-                }
+                newFilePath = Path.GetFileNameWithoutExtension(textFilePath) + "new" + Path.GetExtension(textFilePath);
+                File.WriteAllText(newFilePath, modifiedContent);
             }
             catch (IOException e)
             {
                 Console.WriteLine("Error: " + e.Message);
             }
+            return newFilePath;
         }
         public void AddImageToParagraph(WordprocessingDocument doc, string relationshipId, int lineIndex)
         {

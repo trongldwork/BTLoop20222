@@ -1,0 +1,323 @@
+Category name: Hoá học
+thisline support the file reader to read both quizz file and category file
+
+
+Nhiệt độ tối đa mà một chất có thể nóng chảy gọi là gì?
+A. Điểm sôi
+B. Điểm chảy
+C. Điểm nóng chảy
+D. Điểm hóa hơi
+ANSWER: B
+1
+
+Nguyên tố nào là nguyên tố phổ biến nhất trong vỏ Trái Đất?
+A. Oxy
+B. Silic
+C. Nhôm
+D. Sắt
+ANSWER: A
+1
+
+Phản ứng hóa học diễn ra nhanh nhất ở điều kiện nào?
+A. Áp suất cao
+B. Nhiệt độ thấp
+C. Phản ứng pha khí
+D. Phản ứng pha lỏng
+ANSWER: A
+1
+
+Loại chất nào không dẫn điện?
+A. Kim loại
+B. Các chất điện phân
+C. Chất rắn ion không phân cực
+D. Chất lỏng phân cực
+ANSWER: D
+1
+
+Hiđroxit của nguyên tố nào có tính bazơ mạnh nhất?
+A. Natri
+B. Kali
+C. Li
+D. Amônium
+ANSWER: A
+1
+
+Công thức hóa học của nước là gì?
+A. H2O
+B. HOH
+C. H3O
+D. H2O2
+ANSWER: A
+1
+
+Trong bảng tuần hoàn các nguyên tố, nguyên tố nào có số nguyên tử lớn nhất?
+A. Uran
+B. Radium
+C. Lantan
+D. Plutonium
+ANSWER: A
+1
+
+Kim loại nào dễ oxi hóa nhất?
+A. Đồng
+B. Sắt
+C. Nhôm
+D. Kẽm
+ANSWER: C
+1
+
+Trạng thái vật lý của clo là gì?
+A. Khí
+B. Chất rắn
+C. Chất lỏng
+D. Pha khí
+ANSWER: A
+1
+
+Hiđrocacbon no nào có công thức phân tử là C4H10?
+A. Metan
+B. Etan
+C. Propan
+D. Butan
+ANSWER: D
+1
+
+Trong các loại phản ứng hóa học, phản ứng trao đổi là gì?
+A. Phản ứng giữa kim loại và axit
+B. Phản ứng giữa kim loại và oxi
+C. Phản ứng giữa axit và bazơ
+D. Phản ứng giữa oxi và bazơ
+ANSWER: C
+1
+
+Đơn vị đo khối lượng trong hệ SI là gì?
+A. Gram
+B. Kilogram
+C. Miligram
+D. Tấn
+ANSWER: B
+1
+
+Chất nào không phải là axit?
+A. H2SO4
+B. NaOH
+C. HCl
+D. HNO3
+ANSWER: B
+1
+
+Trong phân tử nước, các nguyên tử hiđro và ôxi có tỷ lệ là bao nhiêu?
+A. 1:1
+B. 2:1
+C. 1:2
+D. 1:3
+ANSWER: B
+1
+
+Định luật bảo toàn khối lượng nói rằng:
+A. Khối lượng không thể biến đổi trong một phản ứng hóa học
+B. Khối lượng tăng trong một phản ứng hóa học
+C. Khối lượng giảm trong một phản ứng hóa học
+D. Khối lượng không liên quan đến phản ứng hóa học
+ANSWER: A
+1
+
+Loại phản ứng hóa học nào xảy ra khi hai chất tạo thành một chất mới?
+A. Phản ứng trao đổi
+B. Phản ứng tổng hợp
+C. Phản ứng phân hủy
+D. Phản ứng trùng hợp
+ANSWER: B
+1
+
+Chất nào không phải là nguyên tố hóa học?
+A. Oxi
+B. Hydro
+C. Kẽm
+D. Sắt
+ANSWER: C
+1
+
+Đơn vị đo nhiệt độ trong hệ SI là gì?
+A. Độ Celsius
+B. Độ Kelvin
+C. Độ Fahrenheit
+D. Độ Rankine
+ANSWER: B
+1
+
+Trong phản ứng oxi hóa, chất nào bị mất electron?
+A. Chất oxi hóa
+B. Chất bị oxi hóa
+C. Chất chuyển electron
+D. Không có chất nào mất electron
+ANSWER: B
+1
+
+Hiđrocacbon không no nào có công thức phân tử là C2H2?
+A. Metan
+B. Etan
+C. Eten
+D. Eten
+ANSWER: C
+1
+
+Cấu tạo của nguyên tử bao gồm các hạt nào?
+A. Proton, electron, neutron
+B. Proton, positron, neutron
+C. Proton, neutron, ion
+D. Proton, positron, electron
+ANSWER: A
+1
+
+Trạng thái vật lý của heli là gì?
+A. Khí
+B. Chất rắn
+C. Chất lỏng
+D. Pha khí
+ANSWER: A
+1
+
+Kim loại nào có màu vàng?
+A. Bạc
+B. Đồng
+C. Nhôm
+D. Kẽm
+ANSWER: B
+1
+
+Đạy là gì?
+A. Kích thước của một chất
+B. Tính chất hóa học của một chất
+C. Sự thay đổi hình thức của một chất
+D. Khối lượng của một chất
+ANSWER: C
+1
+
+Nguyên tử nào được sử dụng để đo khối lượng trong hóa học?
+A. Kilogram
+B. Gram
+C. Mole
+D. Đồng
+ANSWER: C
+1
+
+Phân tử nước có gồm những liên kết nào?
+A. Liên kết ion
+B. Liên kết cộng hóa trị
+C. Liên kết ion và liên kết cộng hóa trị
+D. Không có liên kết nào
+ANSWER: C
+1
+
+Trạng thái vật lý của khí oxi là gì?
+A. Khí
+B. Chất rắn
+C. Chất lỏng
+D. Pha khí
+ANSWER: A
+1
+
+Đơn vị đo thể tích trong hóa học là gì?
+A. Kilogram
+B. Lit
+C. Mol
+D. Gram
+ANSWER: B
+1
+
+Loại phản ứng hóa học nào xảy ra khi một chất bị chia tách thành các chất khác?
+A. Phản ứng trao đổi
+B. Phản ứng tổng hợp
+C. Phản ứng phân hủy
+D. Phản ứng trùng hợp
+ANSWER: C
+1
+
+Nguyên tử nào có khối lượng nhỏ nhất trong các nguyên tử sau?
+A. Carbon
+B. Oxi
+C. Hydro
+D. Nitơ
+ANSWER: C
+1
+
+Trong phản ứng oxi hóa, chất nào nhận electron?
+A. Chất oxi hóa
+B. Chất bị oxi hóa
+C. Chất chuyển electron
+D. Không có chất nào nhận electron
+ANSWER: A
+1
+
+Điểm sôi của nước ở điều kiện tiêu chuẩn là bao nhiêu?
+A. 0 độ Celsius
+B. 100 độ Celsius
+C. 273 độ Kelvin
+D. 373 độ Kelvin
+ANSWER: B
+1
+
+Hiđrocacbon mạch hở nào có công thức phân tử là C3H8?
+A. Metan
+B. Etan
+C. Propan
+D. Butan
+ANSWER: C
+1
+
+Loại phản ứng hóa học nào xảy ra khi hai chất hoán đổi vị trí các nhóm chức?
+A. Phản ứng trao đổi
+B. Phản ứng tổng hợp
+C. Phản ứng phân hủy
+D. Phản ứng trùng hợp
+ANSWER: A
+1
+
+Đơn vị đo thời gian trong hóa học là gì?
+A. Giây
+B. Phút
+C. Giờ
+D. Ngày
+ANSWER: A
+1
+
+Phản ứng hóa học là sự thay đổi nào sau đây không phải là phản ứng hóa học?
+A. Cháy gỗ
+B. Rỉ sắt
+C. Nước đá tan trong nước ấm
+D. Sự phân rã của nước
+ANSWER: C
+1
+
+Trạng thái vật lý của clo là gì?
+A. Khí
+B. Chất rắn
+C. Chất lỏng
+D. Pha khí
+ANSWER: A
+1
+
+Kim loại nào không phản ứng với axit?
+A. Kẽm
+B. Nhôm
+C. Sắt
+D. Bạc
+ANSWER: D
+1
+
+Chất nào không phải là bazơ?
+A. NaOH
+B. HCl
+C. KOH
+D. NH3
+ANSWER: B
+1
+
+Trong phân tử nước, góc giữa hai liên kết hiđro là bao nhiêu độ?
+A. 90 độ
+B. 109.5 độ
+C. 120 độ
+D. 180 độ
+ANSWER: B
+1

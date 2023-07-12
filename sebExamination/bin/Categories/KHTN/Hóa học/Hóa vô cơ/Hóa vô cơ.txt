@@ -1,0 +1,371 @@
+Category name: Hoá vô cơ
+thisline support the file reader to read both quizz file and category file
+
+
+Nguyên tử của nguyên tố nào có số hiệu nguyên tử lớn nhất?
+A. Uranium
+B. Plutonium
+C. Neptunium
+D. Americium
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có khối lượng nguyên tử nhỏ nhất?
+A. Hydrogen
+B. Helium
+C. Lithium
+D. Beryllium
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số electron bên ngoài ít nhất?
+A. Sodium
+B. Magnesium
+C. Aluminum
+D. Silicon
+ANSWER: D
+1
+
+Trong bảng tuần hoàn các nguyên tố, số proton tăng dần theo chiều nào?
+A. Từ trái qua phải
+B. Từ trên xuống dưới
+C. Từ phải qua trái
+D. Từ dưới lên trên
+ANSWER: A
+1
+
+Nguyên tố nào có số hiệu nguyên tử là 8?
+A. Oxygen
+B. Carbon
+C. Nitrogen
+D. Hydrogen
+ANSWER: A
+1
+
+Phân tử của chất nào được tạo bởi liên kết ion?
+A. Sodium chloride (NaCl)
+B. Carbon dioxide (CO2)
+C. Methane (CH4)
+D. Ethanol (C2H5OH)
+ANSWER: A
+1
+
+Nguyên tố nào có số electron bên ngoài là 2?
+A. Calcium
+B. Chlorine
+C. Sodium
+D. Potassium
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có khối lượng nguyên tử lớn nhất?
+A. Uranium
+B. Plutonium
+C. Neptunium
+D. Americium
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số proton là 6?
+A. Carbon
+B. Nitrogen
+C. Oxygen
+D. Fluorine
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số electron bên ngoài là 1?
+A. Hydrogen
+B. Helium
+C. Lithium
+D. Beryllium
+ANSWER: C
+1
+
+Liên kết ion xảy ra giữa hai nguyên tử có sự chênh lệch lớn về gì?
+A. Số electron
+B. Số proton
+C. Số neutron
+D. Số electron valence
+ANSWER: A
+1
+
+Nguyên tố nào có cấu hình electron bên trong là [He]2s22p4?
+A. Oxygen
+B. Carbon
+C. Nitrogen
+D. Hydrogen
+ANSWER: A
+1
+
+Trong phân tử H2O, electron của nguyên tử hydro được chia sẻ với nguyên tử nào?
+A. Oxygen
+B. Carbon
+C. Nitrogen
+D. Hydrogen
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có khối lượng nguyên tử là 12?
+A. Carbon
+B. Nitrogen
+C. Oxygen
+D. Fluorine
+ANSWER: A
+1
+
+Cấu hình electron của nguyên tử Nitơ (N) là gì?
+A. 1s22s22p3
+B. 1s22s22p4
+C. 1s22s22p5
+D. 1s22s22p6
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số hiệu nguyên tử là 79?
+A. Gold
+B. Silver
+C. Copper
+D. Zinc
+ANSWER: A
+1
+
+Trong bảng tuần hoàn các nguyên tố, các nguyên tố có cùng cấu hình electron bên trong thuộc cùng một gì?
+A. Nhóm
+B. Chu kỳ
+C. Loạt
+D. Chiều
+ANSWER: B
+1
+
+Nguyên tử của nguyên tố nào có số electron bên ngoài là 7?
+A. Chlorine
+B. Bromine
+C. Iodine
+D. Fluorine
+ANSWER: A
+1
+
+Cấu hình electron của nguyên tử Oxy (O) là gì?
+A. 1s22s22p3
+B. 1s22s22p4
+C. 1s22s22p5
+D. 1s22s22p6
+ANSWER: B
+1
+
+Liên kết ion xảy ra giữa hai nguyên tử có sự chênh lệch lớn về gì?
+A. Số electron
+B. Số proton
+C. Số neutron
+D. Số electron valence
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số proton là 20?
+A. Calcium
+B. Chlorine
+C. Sodium
+D. Potassium
+ANSWER: A
+1
+
+Trong phân tử CO2, nguyên tử carbon có cấu hình electron bên trong là gì?
+A. [He]2s22p2
+B. [He]2s22p3
+C. [He]2s22p4
+D. [He]2s22p5
+ANSWER: C
+1
+
+Nguyên tử của nguyên tố nào có khối lượng nguyên tử nhỏ nhất?
+A. Hydrogen
+B. Helium
+C. Lithium
+D. Beryllium
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số electron bên ngoài ít nhất?
+A. Sodium
+B. Magnesium
+C. Aluminum
+D. Silicon
+ANSWER: D
+1
+
+Trong bảng tuần hoàn các nguyên tố,số proton tăng dần theo chiều nào?
+A. Từ trái qua phải
+B. Từ trên xuống dưới
+C. Từ phải qua trái
+D. Từ dưới lên trên
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số hiệu nguyên tử là 8?
+A. Oxygen
+B. Carbon
+C. Nitrogen
+D. Hydrogen
+ANSWER: A
+1
+
+Phân tử của chất nào được tạo bởi liên kết ion?
+A. Sodium chloride (NaCl)
+B. Carbon dioxide (CO2)
+C. Methane (CH4)
+D. Ethanol (C2H5OH)
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số electron bên ngoài là 2?
+A. Calcium
+B. Chlorine
+C. Sodium
+D. Potassium
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có khối lượng nguyên tử lớn nhất?
+A. Uranium
+B. Plutonium
+C. Neptunium
+D. Americium
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số proton là 6?
+A. Carbon
+B. Nitrogen
+C. Oxygen
+D. Fluorine
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số electron bên ngoài là 1?
+A. Hydrogen
+B. Helium
+C. Lithium
+D. Beryllium
+ANSWER: C
+1
+
+Liên kết ion xảy ra giữa hai nguyên tử có sự chênh lệch lớn về gì?
+A. Số electron
+B. Số proton
+C. Số neutron
+D. Số electron valence
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có khối lượng nguyên tử là 12?
+A. Carbon
+B. Nitrogen
+C. Oxygen
+D. Fluorine
+ANSWER: A
+1
+
+Cấu hình electron của nguyên tử Nitơ (N) là gì?
+A. 1s22s22p3
+B. 1s22s22p4
+C. 1s22s22p5
+D. 1s22s22p6
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có số hiệu nguyên tử là 79?
+A. Gold
+B. Silver
+C. Copper
+D. Zinc
+ANSWER: A
+1
+
+Trong bảng tuần hoàn các nguyên tố, các nguyên tố có cùng cấu hình electron bên trong thuộc cùng một gì?
+A. Nhóm
+B. Chu kỳ
+C. Loạt
+D. Chiều
+ANSWER: B
+1
+
+Nguyên tử của nguyên tố nào có số electron bên ngoài là 7?
+A. Chlorine
+B. Bromine
+C. Iodine
+D. Fluorine
+ANSWER: A
+1
+
+Cấu hình electron của nguyên tử Oxy (O) là gì?
+A. 1s22s22p3
+B. 1s22s22p4
+C. 1s22s22p5
+D. 1s22s22p6
+ANSWER: B
+1
+
+Nguyên tử của nguyên tố nào có số proton là 20?
+A. Calcium
+B. Chlorine
+C. Sodium
+D. Potassium
+ANSWER: A
+1
+
+Trong phân tử CO2, nguyên tử carbon có cấu hình electron bên trong là gì?
+A. [He]2s22p2
+B. [He]2s22p3
+C. [He]2s22p4
+D. [He]2s22p5
+ANSWER: C
+1
+
+Nguyên tử của nguyên tố nào có số proton là 6?
+A. Carbon
+B. Nitrogen
+C. Oxygen
+D. Fluorine
+ANSWER: A
+1
+
+Trong bảng tuần hoàn các nguyên tố, các nguyên tố có cùng cấu hình electron bên trong thuộc cùng một gì?
+A. Nhóm
+B. Chu kỳ
+C. Loạt
+D. Chiều
+ANSWER: B
+1
+
+Nguyên tử của nguyên tố nào có số hiệu nguyên tử là 79?
+A. Gold
+B. Silver
+C. Copper
+D. Zinc
+ANSWER: A
+1
+
+Trong phân tử H2O, electron của nguyên tử hydro được chia sẻ với nguyên tử nào?
+A. Oxygen
+B. Carbon
+C. Nitrogen
+D. Hydrogen
+ANSWER: A
+1
+
+Nguyên tử của nguyên tố nào có khối lượng nguyên tử là 12?
+A. Carbon
+B. Nitrogen
+C. Oxygen
+D. Fluorine
+ANSWER: A
+1
+
+Cấu hình electron của nguyên tử Oxy (O) là gì?
+A. 1s22s22p3
+B. 1s22s22p4
+C. 1s22s22p5
+D. 1s22s22p6
+ANSWER: B
+1
